@@ -1,0 +1,31 @@
+[{
+    "id":"c1",
+    "name":"warrior",
+    "image_url":"./assets/graphics/character/1.png",
+    "price":600
+},{
+    "id":"c2",
+    "name":"mage",
+    "image_url":"./assets/graphics/character/2.png",
+    "price":700
+},{
+    "id":"c3",
+    "name":"flora",
+    "image_url":"./assets/graphics/character/3.png",
+    "price":500
+},{
+    "id":"c4",
+    "name":"fluffy",
+    "image_url":"./assets/graphics/character/4.png",
+    "price":800
+},{
+    "id":"c5",
+    "name":"fananys",
+    "image_url":"./assets/graphics/character/5.png",
+    "price":400
+},{
+    "id":"c6",
+    "name":"mark",
+    "image_url":"./assets/graphics/character/6.png",
+    "price":500
+}]
