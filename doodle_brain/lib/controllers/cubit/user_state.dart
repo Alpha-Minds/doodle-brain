@@ -28,6 +28,16 @@ class UserLoaded extends UserState {
       .where((item) => !user.inventoryItemsIds.contains(item.id))
       .toList();
 }
+///function to get all the characters for the store
+List<Item> getShopCharacters(){
+  return getShopItems().where((item) => item.id.startsWith('c'))
+        .toList();
+}
+///function to get all the weapons for the store
+List<Item> getShopWeapons(){
+  return getShopItems().where((item) => item.id.startsWith('w'))
+        .toList();
+}
   ///getter for all the items in the inventory of the user
   List<Item> getUserItems() =>
       ItemService().getItemsByIds(user.inventoryItemsIds);

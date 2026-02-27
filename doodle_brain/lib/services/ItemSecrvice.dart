@@ -20,11 +20,11 @@ class ItemService {
   List<Item> getAllItems() {
     return _items;
   }
-  ///function to get all the characters for the store
+  ///function to get all the characters 
   List<Item> getAllCharacters() {
     return _items.where((item) => item.id.startsWith('c')).toList();
   }
-  ///function to get all the weapons for the store
+  ///function to get all the weapons
   List<Item> getAllWeapons() {
     return _items.where((item) => item.id.startsWith('w')).toList();
   }
