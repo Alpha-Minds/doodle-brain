@@ -3,7 +3,6 @@ import 'package:doodle_brain/services/ItemSecrvice.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doodle_brain/models/user_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:meta/meta.dart';
 
 // this is cubit for the user
 class UserCubit extends Cubit<UserState> {

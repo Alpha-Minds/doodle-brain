@@ -66,6 +66,8 @@ flutter:
   assets:
     - lib/assets/data/items.json
     - lib/assets/graphics/character/
+    - lib/assets/graphics/weapons/
+    - lib/assets/graphics/enemies/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
