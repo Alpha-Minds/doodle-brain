@@ -1,16 +1,23 @@
-
+import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
+import 'package:doodle_brain/models/user_model.dart';
+import 'package:doodle_brain/services/ItemSecrvice.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-Future<void> main() async {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  WidgetsFlutterBinding.ensureInitialized(); 
+  await Hive.initFlutter();
+  Hive.registerAdapter(UserAdapter());
 
-  await Hive.initFlutter(); 
+  final box = await Hive.openBox<User>('userBox');
 
- 
+  await ItemService().loadItems();
 
-  runApp(const DoodleBrain());
+  runApp(
+    BlocProvider(create: (context) => UserCubit(box), child: DoodleBrain()),
+  );
 }
 
 class DoodleBrain extends StatelessWidget {
@@ -19,7 +26,6 @@ class DoodleBrain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
     );
   }
 }

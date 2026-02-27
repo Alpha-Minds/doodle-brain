@@ -1,38 +1,97 @@
-import 'package:bloc/bloc.dart';
+import 'package:doodle_brain/controllers/cubit/user_state.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doodle_brain/models/user_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:meta/meta.dart';
 
-part 'user_state.dart';
-
+// this is cubit for the user
 class UserCubit extends Cubit<UserState> {
-  UserCubit() : super(UserInitial());
-  final Box<User> box = Hive.box<User>('userBox');
+  final Box<User> box;
 
-  void loadUser() {
-    final user = box.get('current_user');
+  UserCubit(this.box) : super(UserLoading()){
+    loadUser();
+  }
+  ///function load the user from the database and if it the initialization of the app it will make the init user model
+  Future<void> loadUser()async{
+    User? user = box.get('currentUser');
 
-    if (user != null) {
-      emit(UserLoaded(user));
+  if (user == null) {
+    user = User(
+      name: 'player',
+      points: 0,
+      coins: 0,
+      inventoryItemsIds: ['c1'],
+      equippedCharacter: "c1",
+    );
+
+    await box.put('currentUser', user);
+  }
+  emit(UserLoaded(user));
+  }
+  ///function for change coins by adding (if you want to buy make the amount negative to subtract)
+  Future<void> ChangeCoins(int amount) async{
+    if(state is UserLoaded){
+      final current = (state as UserLoaded).user;
+      final updated = current.copyWith(coins: current.coins+amount);
+      await box.put('currentUser', updated);
+      emit(UserLoaded(updated));
     }
   }
-
-  void addItemToInventory(String id) {
-    final user = box.get('current_user');
-    if (user != null) {
-      final updateUser=
-      user.copyWith(inventoryItemsIds: [...user.inventoryItemsIds, id]);
-      box.put('current_user', updateUser);
-      emit(UserLoaded(updateUser));
+  /// function for change points by adding (if the user lose in game make the amount negative to subtract)
+  Future<void> ChangePoints(int amount) async{
+    if(state is UserLoaded){
+      final current = (state as UserLoaded).user;
+      final updated = current.copyWith(points: current.points+amount);
+      await box.put('currentUser', updated);
+      emit(UserLoaded(updated));
     }
   }
-  void changePointsBy(int points) {
-    final user = box.get('current_user');
-    if (user != null) {
-      final updateUser=
-      user.copyWith(points: user.points +points);
-      box.put('current_user', updateUser);
-      emit(UserLoaded(updateUser));
+  /// function for buy item and add it to inventory
+  Future<void> addItem(String itemId) async {
+    if (state is UserLoaded) {
+      final current = (state as UserLoaded).user;
+
+      if (current.inventoryItemsIds.contains(itemId)) return;
+
+      String? newWeaponId = current.equippedWeapon;
+
+      if (itemId.startsWith('w') && newWeaponId == null) {
+        newWeaponId = itemId;
+      }
+
+      final updated = current.copyWith(
+        inventoryItemsIds: [...current.inventoryItemsIds, itemId],
+        equippedWeapon: newWeaponId,
+      );
+
+      await box.put('currentUser', updated);
+      emit(UserLoaded(updated));
+    }
+  }
+  ///function equipped the character from inventory
+  Future<void> equipCharacter(String characterId) async {
+    if (state is UserLoaded) {
+      final current = (state as UserLoaded).user;
+
+      if (!current.inventoryItemsIds.contains(characterId)) return;
+      if (!characterId.startsWith('c')) return;
+
+      final updated = current.copyWith(equippedCharacter: characterId);
+      await box.put('currentUser', updated);
+      emit(UserLoaded(updated));
+    }
+  }
+  ///function equipped the weapon from inventory
+  Future<void> equipWeapon(String weaponId) async {
+    if (state is UserLoaded) {
+      final current = (state as UserLoaded).user;
+
+      if (!current.inventoryItemsIds.contains(weaponId)) return;
+      if (!weaponId.startsWith('w')) return;
+
+      final updated = current.copyWith(equippedWeapon: weaponId);
+      await box.put('currentUser', updated);
+      emit(UserLoaded(updated));
     }
   }
 }

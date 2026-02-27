@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 part 'user_model.g.dart';
 
 @HiveType(typeId: 0)
-class User extends HiveObject {
+class User extends HiveObject with EquatableMixin {
 
   @HiveField(0)
   final String name;
@@ -44,9 +45,21 @@ class User extends HiveObject {
       points: points ?? this.points,
       coins: coins ?? this.coins,
       inventoryItemsIds:
-          inventoryItemsIds ?? List<String>.from(this.inventoryItemsIds),
+          inventoryItemsIds ?? this.inventoryItemsIds,
       equippedCharacter: equippedCharacter ?? this.equippedCharacter,
       equippedWeapon: equippedWeapon ?? this.equippedWeapon,
     );
   }
+
+  
+  
+  @override
+ List<Object?> get props => [
+        name,
+        points,
+        coins,
+        inventoryItemsIds,
+        equippedCharacter,
+        equippedWeapon,
+      ]; 
 }
