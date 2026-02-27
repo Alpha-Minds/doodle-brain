@@ -16,6 +16,10 @@ class ItemService {
     final List decoded = json.decode(jsonString);
     _items = decoded.map((item) => Item.fromJson(item)).toList();
   }
+  ///function to get all item
+  List<Item> getAllItems() {
+    return _items;
+  }
   ///function to get all the characters for the store
   List<Item> getAllCharacters() {
     return _items.where((item) => item.id.startsWith('c')).toList();

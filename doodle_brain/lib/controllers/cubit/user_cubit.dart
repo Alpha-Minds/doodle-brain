@@ -1,4 +1,5 @@
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
+import 'package:doodle_brain/services/ItemSecrvice.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doodle_brain/models/user_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -29,7 +30,7 @@ class UserCubit extends Cubit<UserState> {
   emit(UserLoaded(user));
   }
   ///function for change coins by adding (if you want to buy make the amount negative to subtract)
-  Future<void> ChangeCoins(int amount) async{
+  Future<void> changeCoins(int amount) async{
     if(state is UserLoaded){
       final current = (state as UserLoaded).user;
       final updated = current.copyWith(coins: current.coins+amount);
@@ -38,7 +39,7 @@ class UserCubit extends Cubit<UserState> {
     }
   }
   /// function for change points by adding (if the user lose in game make the amount negative to subtract)
-  Future<void> ChangePoints(int amount) async{
+  Future<void> changePoints(int amount) async{
     if(state is UserLoaded){
       final current = (state as UserLoaded).user;
       final updated = current.copyWith(points: current.points+amount);
@@ -46,12 +47,19 @@ class UserCubit extends Cubit<UserState> {
       emit(UserLoaded(updated));
     }
   }
-  /// function for buy item and add it to inventory
-  Future<void> addItem(String itemId) async {
+  /// function for buy item and add it to inventory and subtract the price from thr user coins
+  Future<bool> buyItem(String itemId) async {
     if (state is UserLoaded) {
       final current = (state as UserLoaded).user;
 
-      if (current.inventoryItemsIds.contains(itemId)) return;
+      if (current.inventoryItemsIds.contains(itemId)) return false;
+
+      final price = ItemService().getItemById(itemId).price;
+
+      if (current.coins < price ) {
+      return false;
+    }
+    changeCoins(-price);
 
       String? newWeaponId = current.equippedWeapon;
 
@@ -66,7 +74,9 @@ class UserCubit extends Cubit<UserState> {
 
       await box.put('currentUser', updated);
       emit(UserLoaded(updated));
+      return true;
     }
+    return false;
   }
   ///function equipped the character from inventory
   Future<void> equipCharacter(String characterId) async {

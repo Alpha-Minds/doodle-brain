@@ -21,6 +21,13 @@ class UserLoaded extends UserState {
     if (id == null) return null;
     return ItemService().getItemById(id);
   }
+  ///function to get all items those are available for buy
+  List<Item> getShopItems() {
+  final allItems = ItemService().getAllItems();
+  return allItems
+      .where((item) => !user.inventoryItemsIds.contains(item.id))
+      .toList();
+}
   ///getter for all the items in the inventory of the user
   List<Item> getUserItems() =>
       ItemService().getItemsByIds(user.inventoryItemsIds);
