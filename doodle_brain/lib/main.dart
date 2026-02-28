@@ -12,6 +12,7 @@ void main() async {
   Hive.registerAdapter(UserAdapter());
 
   final box = await Hive.openBox<User>('userBox');
+  await Hive.openBox('quizProgress');
 
   await ItemService().loadItems();
 
