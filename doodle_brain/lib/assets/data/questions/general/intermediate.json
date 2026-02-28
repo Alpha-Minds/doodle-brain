@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "Who developed the theory of relativity?",
+    "choices": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+    "answer": "Albert Einstein"
+  },
+  {
+    "id": 2,
+    "question": "What is the largest internal organ in the human body?",
+    "choices": ["Heart", "Brain", "Liver", "Lungs"],
+    "answer": "Liver"
+  },
+  {
+    "id": 3,
+    "question": "Which country has the largest population in the world (as of recent years)?",
+    "choices": ["India", "China", "USA", "Indonesia"],
+    "answer": "India"
+  },
+  {
+    "id": 4,
+    "question": "Which element has the chemical symbol 'Fe'?",
+    "choices": ["Fluorine", "Iron", "Francium", "Fermium"],
+    "answer": "Iron"
+  },
+  {
+    "id": 5,
+    "question": "In which year did World War II end?",
+    "choices": ["1943", "1944", "1945", "1946"],
+    "answer": "1945"
+  },
+  {
+    "id": 6,
+    "question": "What is the capital of Canada?",
+    "choices": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "answer": "Ottawa"
+  },
+  {
+    "id": 7,
+    "question": "Which scientist discovered penicillin?",
+    "choices": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Gregor Mendel"],
+    "answer": "Alexander Fleming"
+  },
+  {
+    "id": 8,
+    "question": "Which planet has the most moons?",
+    "choices": ["Earth", "Mars", "Jupiter", "Venus"],
+    "answer": "Jupiter"
+  },
+  {
+    "id": 9,
+    "question": "Which river flows through Baghdad?",
+    "choices": ["Nile", "Amazon", "Tigris", "Euphrates"],
+    "answer": "Tigris"
+  },
+  {
+    "id": 10,
+    "question": "What is the currency of Japan?",
+    "choices": ["Won", "Yuan", "Yen", "Ringgit"],
+    "answer": "Yen"
+  },
+  {
+    "id": 11,
+    "question": "Which country gifted the Statue of Liberty to the USA?",
+    "choices": ["Germany", "France", "Italy", "Spain"],
+    "answer": "France"
+  },
+  {
+    "id": 12,
+    "question": "Who is the author of '1984'?",
+    "choices": ["George Orwell", "J.K. Rowling", "Ernest Hemingway", "F. Scott Fitzgerald"],
+    "answer": "George Orwell"
+  },
+  {
+    "id": 13,
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "choices": ["100°F", "180°F", "212°F", "250°F"],
+    "answer": "212°F"
+  },
+  {
+    "id": 14,
+    "question": "Which continent has the most countries?",
+    "choices": ["Asia", "Europe", "Africa", "South America"],
+    "answer": "Africa"
+  },
+  {
+    "id": 15,
+    "question": "Which blood type is known as the universal donor?",
+    "choices": ["A+", "O-", "AB+", "B-"],
+    "answer": "O-"
+  },
+  {
+    "id": 16,
+    "question": "Who was the first person to walk on the Moon?",
+    "choices": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "id": 17,
+    "question": "Which ocean is the smallest?",
+    "choices": ["Atlantic", "Indian", "Pacific", "Arctic"],
+    "answer": "Arctic"
+  },
+  {
+    "id": 18,
+    "question": "What is the largest island in the world?",
+    "choices": ["Madagascar", "Greenland", "Borneo", "New Guinea"],
+    "answer": "Greenland"
+  },
+  {
+    "id": 19,
+    "question": "Which country is known as the birthplace of democracy?",
+    "choices": ["Italy", "Greece", "Egypt", "UK"],
+    "answer": "Greece"
+  },
+  {
+    "id": 20,
+    "question": "What is the main ingredient in traditional Japanese miso soup?",
+    "choices": ["Rice", "Soybeans", "Fish", "Seaweed"],
+    "answer": "Soybeans"
+  },
+  {
+    "id": 21,
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "choices": ["Leonardo da Vinci", "Raphael", "Michelangelo", "Donatello"],
+    "answer": "Michelangelo"
+  },
+  {
+    "id": 22,
+    "question": "Which country has the most natural lakes?",
+    "choices": ["USA", "Canada", "Russia", "Brazil"],
+    "answer": "Canada"
+  },
+  {
+    "id": 23,
+    "question": "What is the official language of Argentina?",
+    "choices": ["Portuguese", "Spanish", "French", "English"],
+    "answer": "Spanish"
+  },
+  {
+    "id": 24,
+    "question": "Which vitamin is primarily obtained from sunlight?",
+    "choices": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D"
+  },
+  {
+    "id": 25,
+    "question": "Which mountain range separates Europe and Asia in Russia?",
+    "choices": ["Alps", "Himalayas", "Ural Mountains", "Andes"],
+    "answer": "Ural Mountains"
+  },
+  {
+    "id": 26,
+    "question": "What is the capital of Australia?",
+    "choices": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "answer": "Canberra"
+  },
+  {
+    "id": 27,
+    "question": "Which empire built Machu Picchu?",
+    "choices": ["Aztec", "Mayan", "Inca", "Roman"],
+    "answer": "Inca"
+  },
+  {
+    "id": 28,
+    "question": "Who formulated the laws of motion?",
+    "choices": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "James Clerk Maxwell"],
+    "answer": "Isaac Newton"
+  },
+  {
+    "id": 29,
+    "question": "What is the longest bone in the human body?",
+    "choices": ["Femur", "Tibia", "Humerus", "Spine"],
+    "answer": "Femur"
+  },
+  {
+    "id": 30,
+    "question": "Which country is the largest by land area?",
+    "choices": ["USA", "China", "Russia", "Canada"],
+    "answer": "Russia"
+  },
+  {
+    "id": 31,
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "choices": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Nitrogen"
+  },
+  {
+    "id": 32,
+    "question": "Who discovered gravity when observing a falling apple?",
+    "choices": ["Albert Einstein", "Isaac Newton", "Galileo", "Kepler"],
+    "answer": "Isaac Newton"
+  },
+  {
+    "id": 33,
+    "question": "Which African country was formerly known as Abyssinia?",
+    "choices": ["Kenya", "Ethiopia", "Sudan", "Somalia"],
+    "answer": "Ethiopia"
+  },
+  {
+    "id": 34,
+    "question": "What is the chemical formula for table salt?",
+    "choices": ["NaCl", "KCl", "Na2CO3", "HCl"],
+    "answer": "NaCl"
+  },
+  {
+    "id": 35,
+    "question": "Which country won the FIFA World Cup in 2018?",
+    "choices": ["Brazil", "Germany", "France", "Argentina"],
+    "answer": "France"
+  },
+  {
+    "id": 36,
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "choices": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "answer": "Mitochondria"
+  },
+  {
+    "id": 37,
+    "question": "What is the main language spoken in Switzerland?",
+    "choices": ["German", "French", "Italian", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 38,
+    "question": "Which ancient civilization built the Colosseum?",
+    "choices": ["Greek", "Egyptian", "Roman", "Persian"],
+    "answer": "Roman"
+  },
+  {
+    "id": 39,
+    "question": "What is the speed of light approximately?",
+    "choices": ["300,000 km/s", "150,000 km/s", "1,000 km/s", "30,000 km/s"],
+    "answer": "300,000 km/s"
+  },
+  {
+    "id": 40,
+    "question": "Which desert is the largest hot desert in the world?",
+    "choices": ["Gobi", "Kalahari", "Sahara", "Arabian"],
+    "answer": "Sahara"
+  },
+  {
+    "id": 41,
+    "question": "Who was the first President of the United States?",
+    "choices": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+    "answer": "George Washington"
+  },
+  {
+    "id": 42,
+    "question": "Which country is famous for the Taj Mahal?",
+    "choices": ["Pakistan", "India", "Nepal", "Bangladesh"],
+    "answer": "India"
+  },
+  {
+    "id": 43,
+    "question": "What is the square root of 144?",
+    "choices": ["10", "11", "12", "13"],
+    "answer": "12"
+  },
+  {
+    "id": 44,
+    "question": "Which scientist proposed the three laws of planetary motion?",
+    "choices": ["Newton", "Kepler", "Copernicus", "Galileo"],
+    "answer": "Kepler"
+  },
+  {
+    "id": 45,
+    "question": "Which city is known as the Big Apple?",
+    "choices": ["Los Angeles", "Chicago", "New York", "Boston"],
+    "answer": "New York"
+  },
+  {
+    "id": 46,
+    "question": "Which country is both in Europe and Asia?",
+    "choices": ["Egypt", "Turkey", "Spain", "Italy"],
+    "answer": "Turkey"
+  },
+  {
+    "id": 47,
+    "question": "Which is the largest coral reef system in the world?",
+    "choices": ["Red Sea Reef", "Belize Barrier Reef", "Great Barrier Reef", "Florida Reef"],
+    "answer": "Great Barrier Reef"
+  },
+  {
+    "id": 48,
+    "question": "What is the hardest rock type?",
+    "choices": ["Marble", "Granite", "Basalt", "Obsidian"],
+    "answer": "Granite"
+  },
+  {
+    "id": 49,
+    "question": "Who invented the telephone?",
+    "choices": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
+    "answer": "Alexander Graham Bell"
+  },
+  {
+    "id": 50,
+    "question": "Which country has the most volcanoes?",
+    "choices": ["Japan", "USA", "Indonesia", "Chile"],
+    "answer": "Indonesia"
+  }
+]
