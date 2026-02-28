@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "Which physicist proposed the uncertainty principle?",
+    "choices": ["Albert Einstein", "Niels Bohr", "Werner Heisenberg", "Erwin Schrödinger"],
+    "answer": "Werner Heisenberg"
+  },
+  {
+    "id": 2,
+    "question": "What is the capital of Kazakhstan?",
+    "choices": ["Almaty", "Astana", "Tashkent", "Bishkek"],
+    "answer": "Astana"
+  },
+  {
+    "id": 3,
+    "question": "Which element has the highest melting point?",
+    "choices": ["Iron", "Carbon", "Tungsten", "Platinum"],
+    "answer": "Tungsten"
+  },
+  {
+    "id": 4,
+    "question": "In which year did the Berlin Wall fall?",
+    "choices": ["1987", "1988", "1989", "1990"],
+    "answer": "1989"
+  },
+  {
+    "id": 5,
+    "question": "Who wrote 'The Republic'?",
+    "choices": ["Aristotle", "Socrates", "Plato", "Herodotus"],
+    "answer": "Plato"
+  },
+  {
+    "id": 6,
+    "question": "Which country has the longest coastline in the world?",
+    "choices": ["USA", "Australia", "Canada", "Russia"],
+    "answer": "Canada"
+  },
+  {
+    "id": 7,
+    "question": "What is the smallest country in the world by area?",
+    "choices": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+    "answer": "Vatican City"
+  },
+  {
+    "id": 8,
+    "question": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+    "choices": ["Pulmonary artery", "Aorta", "Pulmonary vein", "Vena cava"],
+    "answer": "Pulmonary vein"
+  },
+  {
+    "id": 9,
+    "question": "Who discovered the neutron?",
+    "choices": ["Ernest Rutherford", "James Chadwick", "J.J. Thomson", "Max Planck"],
+    "answer": "James Chadwick"
+  },
+  {
+    "id": 10,
+    "question": "Which empire was ruled by Suleiman the Magnificent?",
+    "choices": ["Roman Empire", "Ottoman Empire", "Byzantine Empire", "Persian Empire"],
+    "answer": "Ottoman Empire"
+  },
+  {
+    "id": 11,
+    "question": "What is the deepest ocean trench in the world?",
+    "choices": ["Puerto Rico Trench", "Java Trench", "Mariana Trench", "Tonga Trench"],
+    "answer": "Mariana Trench"
+  },
+  {
+    "id": 12,
+    "question": "Which mathematician is known for Fermat’s Last Theorem?",
+    "choices": ["Euler", "Gauss", "Pierre de Fermat", "Descartes"],
+    "answer": "Pierre de Fermat"
+  },
+  {
+    "id": 13,
+    "question": "Which country was formerly known as Ceylon?",
+    "choices": ["Myanmar", "Sri Lanka", "Laos", "Cambodia"],
+    "answer": "Sri Lanka"
+  },
+  {
+    "id": 14,
+    "question": "What is the SI unit of electric resistance?",
+    "choices": ["Volt", "Ohm", "Ampere", "Watt"],
+    "answer": "Ohm"
+  },
+  {
+    "id": 15,
+    "question": "Who was the first female Prime Minister of the United Kingdom?",
+    "choices": ["Theresa May", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
+    "answer": "Margaret Thatcher"
+  },
+  {
+    "id": 16,
+    "question": "Which gas is used in neon signs?",
+    "choices": ["Helium", "Argon", "Neon", "Krypton"],
+    "answer": "Neon"
+  },
+  {
+    "id": 17,
+    "question": "What is the largest moon of Saturn?",
+    "choices": ["Europa", "Titan", "Ganymede", "Io"],
+    "answer": "Titan"
+  },
+  {
+    "id": 18,
+    "question": "Which African river is the second longest after the Nile?",
+    "choices": ["Congo", "Niger", "Zambezi", "Orange"],
+    "answer": "Congo"
+  },
+  {
+    "id": 19,
+    "question": "Who composed the Four Seasons?",
+    "choices": ["Mozart", "Beethoven", "Vivaldi", "Bach"],
+    "answer": "Vivaldi"
+  },
+  {
+    "id": 20,
+    "question": "Which country launched the first artificial satellite?",
+    "choices": ["USA", "Germany", "USSR", "China"],
+    "answer": "USSR"
+  },
+  {
+    "id": 21,
+    "question": "What is the chemical symbol for gold?",
+    "choices": ["Ag", "Au", "Gd", "Go"],
+    "answer": "Au"
+  },
+  {
+    "id": 22,
+    "question": "Which philosopher wrote 'Critique of Pure Reason'?",
+    "choices": ["Kant", "Hegel", "Nietzsche", "Locke"],
+    "answer": "Kant"
+  },
+  {
+    "id": 23,
+    "question": "Which city hosted the first modern Olympic Games in 1896?",
+    "choices": ["Paris", "London", "Athens", "Rome"],
+    "answer": "Athens"
+  },
+  {
+    "id": 24,
+    "question": "What is the rarest naturally occurring element on Earth?",
+    "choices": ["Astatine", "Francium", "Radon", "Polonium"],
+    "answer": "Astatine"
+  },
+  {
+    "id": 25,
+    "question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+    "choices": ["Stalin", "Lenin", "Khrushchev", "Brezhnev"],
+    "answer": "Khrushchev"
+  },
+  {
+    "id": 26,
+    "question": "Which is the longest mountain range in the world?",
+    "choices": ["Rockies", "Himalayas", "Andes", "Alps"],
+    "answer": "Andes"
+  },
+  {
+    "id": 27,
+    "question": "What is the term for animals that are active during twilight?",
+    "choices": ["Nocturnal", "Diurnal", "Crepuscular", "Arboreal"],
+    "answer": "Crepuscular"
+  },
+  {
+    "id": 28,
+    "question": "Which country has the most time zones?",
+    "choices": ["USA", "France", "Russia", "Australia"],
+    "answer": "France"
+  },
+  {
+    "id": 29,
+    "question": "Who discovered radioactivity?",
+    "choices": ["Marie Curie", "Henri Becquerel", "Rutherford", "Planck"],
+    "answer": "Henri Becquerel"
+  },
+  {
+    "id": 30,
+    "question": "What is the capital of Mongolia?",
+    "choices": ["Astana", "Ulaanbaatar", "Tbilisi", "Baku"],
+    "answer": "Ulaanbaatar"
+  },
+  {
+    "id": 31,
+    "question": "Which treaty ended World War I?",
+    "choices": ["Treaty of Paris", "Treaty of Versailles", "Treaty of Vienna", "Treaty of Berlin"],
+    "answer": "Treaty of Versailles"
+  },
+  {
+    "id": 32,
+    "question": "What is the hardest known natural material?",
+    "choices": ["Graphite", "Diamond", "Quartz", "Corundum"],
+    "answer": "Diamond"
+  },
+  {
+    "id": 33,
+    "question": "Which organ produces insulin?",
+    "choices": ["Liver", "Pancreas", "Kidney", "Stomach"],
+    "answer": "Pancreas"
+  },
+  {
+    "id": 34,
+    "question": "Which sea is the saltiest in the world?",
+    "choices": ["Red Sea", "Black Sea", "Dead Sea", "Caspian Sea"],
+    "answer": "Dead Sea"
+  },
+  {
+    "id": 35,
+    "question": "Who was the first emperor of Rome?",
+    "choices": ["Julius Caesar", "Nero", "Augustus", "Caligula"],
+    "answer": "Augustus"
+  },
+  {
+    "id": 36,
+    "question": "Which scientist introduced the concept of natural selection?",
+    "choices": ["Darwin", "Mendel", "Wallace", "Linnaeus"],
+    "answer": "Darwin"
+  },
+  {
+    "id": 37,
+    "question": "Which country has the highest number of pyramids?",
+    "choices": ["Egypt", "Sudan", "Mexico", "Peru"],
+    "answer": "Sudan"
+  },
+  {
+    "id": 38,
+    "question": "What is the speed of sound in air at sea level approximately?",
+    "choices": ["343 m/s", "300 m/s", "500 m/s", "150 m/s"],
+    "answer": "343 m/s"
+  },
+  {
+    "id": 39,
+    "question": "Which ancient city was buried by Mount Vesuvius in 79 AD?",
+    "choices": ["Sparta", "Pompeii", "Athens", "Carthage"],
+    "answer": "Pompeii"
+  },
+  {
+    "id": 40,
+    "question": "Which planet has the strongest magnetic field?",
+    "choices": ["Earth", "Saturn", "Jupiter", "Neptune"],
+    "answer": "Jupiter"
+  },
+  {
+    "id": 41,
+    "question": "Who wrote 'War and Peace'?",
+    "choices": ["Dostoevsky", "Tolstoy", "Chekhov", "Pushkin"],
+    "answer": "Tolstoy"
+  },
+  {
+    "id": 42,
+    "question": "What is the main component of natural gas?",
+    "choices": ["Propane", "Butane", "Methane", "Ethane"],
+    "answer": "Methane"
+  },
+  {
+    "id": 43,
+    "question": "Which country is home to Petra?",
+    "choices": ["Jordan", "Israel", "Saudi Arabia", "Lebanon"],
+    "answer": "Jordan"
+  },
+  {
+    "id": 44,
+    "question": "Which scientist developed the polio vaccine?",
+    "choices": ["Louis Pasteur", "Jonas Salk", "Edward Jenner", "Robert Koch"],
+    "answer": "Jonas Salk"
+  },
+  {
+    "id": 45,
+    "question": "What is the largest internal desert in Asia?",
+    "choices": ["Gobi", "Thar", "Karakum", "Taklamakan"],
+    "answer": "Gobi"
+  },
+  {
+    "id": 46,
+    "question": "Which metal is the best conductor of electricity?",
+    "choices": ["Copper", "Silver", "Gold", "Aluminum"],
+    "answer": "Silver"
+  },
+  {
+    "id": 47,
+    "question": "Which war was fought between the North and South regions of the United States?",
+    "choices": ["Revolutionary War", "Civil War", "World War I", "Mexican-American War"],
+    "answer": "Civil War"
+  },
+  {
+    "id": 48,
+    "question": "Which is the largest lake by surface area?",
+    "choices": ["Lake Superior", "Caspian Sea", "Lake Victoria", "Lake Baikal"],
+    "answer": "Caspian Sea"
+  },
+  {
+    "id": 49,
+    "question": "Who formulated the law of universal gravitation?",
+    "choices": ["Einstein", "Newton", "Galileo", "Kepler"],
+    "answer": "Newton"
+  },
+  {
+    "id": 50,
+    "question": "Which country is the largest producer of coffee?",
+    "choices": ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
+    "answer": "Brazil"
+  }
+]

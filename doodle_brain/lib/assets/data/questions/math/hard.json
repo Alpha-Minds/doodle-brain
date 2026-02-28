@@ -1,0 +1,61 @@
+[
+  { "id": 1, "question": "What is the derivative of x²?", "choices": ["x", "2x", "x²", "2"], "answer": "2x" },
+  { "id": 2, "question": "What is the derivative of 5x?", "choices": ["5", "x", "0", "5x"], "answer": "5" },
+  { "id": 3, "question": "What is the derivative of a constant?", "choices": ["1", "0", "Constant", "x"], "answer": "0" },
+  { "id": 4, "question": "What is the derivative of x³?", "choices": ["2x²", "3x²", "3x", "x²"], "answer": "3x²" },
+  { "id": 5, "question": "What is ∫ x dx?", "choices": ["x²", "x²/2 + C", "2x + C", "ln x"], "answer": "x²/2 + C" },
+
+  { "id": 6, "question": "What is ∫ 3 dx?", "choices": ["3x + C", "3", "x + C", "0"], "answer": "3x + C" },
+  { "id": 7, "question": "What is the derivative of sin(x)?", "choices": ["-sin(x)", "cos(x)", "-cos(x)", "tan(x)"], "answer": "cos(x)" },
+  { "id": 8, "question": "What is the derivative of cos(x)?", "choices": ["sin(x)", "-sin(x)", "cos(x)", "-cos(x)"], "answer": "-sin(x)" },
+  { "id": 9, "question": "What is ∫ 2x dx?", "choices": ["x² + C", "2x + C", "x²/2 + C", "2x² + C"], "answer": "x² + C" },
+  { "id": 10, "question": "What is the derivative of e^x?", "choices": ["e^x", "xe^x", "1", "ln(x)"], "answer": "e^x" },
+
+  { "id": 11, "question": "What is the derivative of ln(x)?", "choices": ["x", "1/x", "ln(x)", "e^x"], "answer": "1/x" },
+  { "id": 12, "question": "What is ∫ e^x dx?", "choices": ["e^x + C", "xe^x + C", "ln(x)", "1/x + C"], "answer": "e^x + C" },
+  { "id": 13, "question": "What is ∫ cos(x) dx?", "choices": ["-sin(x) + C", "sin(x) + C", "cos(x) + C", "-cos(x) + C"], "answer": "sin(x) + C" },
+  { "id": 14, "question": "What is ∫ sin(x) dx?", "choices": ["cos(x) + C", "-cos(x) + C", "-sin(x) + C", "tan(x) + C"], "answer": "-cos(x) + C" },
+  { "id": 15, "question": "What is the derivative of x⁴?", "choices": ["3x³", "4x³", "4x⁴", "x³"], "answer": "4x³" },
+
+  { "id": 16, "question": "What is ∫ x³ dx?", "choices": ["x⁴ + C", "x⁴/4 + C", "4x³ + C", "x³/3 + C"], "answer": "x⁴/4 + C" },
+  { "id": 17, "question": "What is the derivative of 1/x?", "choices": ["-1/x²", "1/x²", "-x²", "x²"], "answer": "-1/x²" },
+  { "id": 18, "question": "What is ∫ 1/x dx?", "choices": ["1/x² + C", "ln|x| + C", "x + C", "e^x + C"], "answer": "ln|x| + C" },
+  { "id": 19, "question": "What is the derivative of tan(x)?", "choices": ["sec²(x)", "cos²(x)", "sin(x)", "-sec²(x)"], "answer": "sec²(x)" },
+  { "id": 20, "question": "What is ∫ 0 dx?", "choices": ["0", "C", "1", "x"], "answer": "C" },
+
+  { "id": 21, "question": "What is the derivative of 7x²?", "choices": ["14x", "7x", "2x", "14x²"], "answer": "14x" },
+  { "id": 22, "question": "What is ∫ 4x³ dx?", "choices": ["x⁴ + C", "4x⁴ + C", "x⁴/4 + C", "3x⁴ + C"], "answer": "x⁴ + C" },
+  { "id": 23, "question": "What is the derivative of √x?", "choices": ["1/(2√x)", "√x", "2√x", "1/x"], "answer": "1/(2√x)" },
+  { "id": 24, "question": "What is ∫ √x dx?", "choices": ["2x√x/3 + C", "√x + C", "x² + C", "1/(2√x) + C"], "answer": "2x√x/3 + C" },
+  { "id": 25, "question": "What is the derivative of x⁵?", "choices": ["4x⁴", "5x⁴", "5x⁵", "x⁴"], "answer": "5x⁴" },
+
+  { "id": 26, "question": "What is ∫ 6x² dx?", "choices": ["2x³ + C", "6x³ + C", "3x³ + C", "x³ + C"], "answer": "2x³ + C" },
+  { "id": 27, "question": "What is the derivative of 3e^x?", "choices": ["3e^x", "e^x", "3xe^x", "0"], "answer": "3e^x" },
+  { "id": 28, "question": "What is ∫ sec²(x) dx?", "choices": ["tan(x) + C", "sec(x) + C", "cos(x) + C", "sin(x) + C"], "answer": "tan(x) + C" },
+  { "id": 29, "question": "What is the derivative of ln(3x)?", "choices": ["1/x", "1/(3x)", "3/x", "ln(x)"], "answer": "1/x" },
+  { "id": 30, "question": "What is ∫ 5e^x dx?", "choices": ["5e^x + C", "e^x + C", "5xe^x + C", "0"], "answer": "5e^x + C" },
+
+  { "id": 31, "question": "What is the derivative of x⁻²?", "choices": ["-2x⁻³", "2x⁻³", "-2x²", "x⁻³"], "answer": "-2x⁻³" },
+  { "id": 32, "question": "What is ∫ x⁻² dx?", "choices": ["-x⁻¹ + C", "x⁻¹ + C", "ln x + C", "x⁻³ + C"], "answer": "-x⁻¹ + C" },
+  { "id": 33, "question": "What is the derivative of x² + 3x?", "choices": ["2x + 3", "2x", "3x", "x + 3"], "answer": "2x + 3" },
+  { "id": 34, "question": "What is ∫ (2x + 3) dx?", "choices": ["x² + 3x + C", "2x² + 3x + C", "x² + C", "2x + C"], "answer": "x² + 3x + C" },
+  { "id": 35, "question": "What is the derivative of 4?", "choices": ["4", "1", "0", "x"], "answer": "0" },
+
+  { "id": 36, "question": "What is ∫ 8 dx?", "choices": ["8", "8x + C", "x + C", "C"], "answer": "8x + C" },
+  { "id": 37, "question": "What is the derivative of x⁶?", "choices": ["5x⁵", "6x⁵", "6x⁶", "x⁵"], "answer": "6x⁵" },
+  { "id": 38, "question": "What is ∫ x⁵ dx?", "choices": ["x⁶ + C", "x⁶/6 + C", "6x⁵ + C", "x⁵/5 + C"], "answer": "x⁶/6 + C" },
+  { "id": 39, "question": "What is the derivative of ln(x²)?", "choices": ["2/x", "1/x²", "2x", "ln(x)"], "answer": "2/x" },
+  { "id": 40, "question": "What is ∫ 1 dx?", "choices": ["1", "x + C", "C", "0"], "answer": "x + C" },
+
+  { "id": 41, "question": "What is the derivative of x²e^x? (product rule result simplified)", "choices": ["2xe^x + x²e^x", "x²e^x", "2x + e^x", "xe^x"], "answer": "2xe^x + x²e^x" },
+  { "id": 42, "question": "What is ∫ 2 dx?", "choices": ["2x + C", "x + C", "2", "C"], "answer": "2x + C" },
+  { "id": 43, "question": "What is the derivative of x³ + x²?", "choices": ["3x² + 2x", "3x + 2", "x² + x", "3x²"], "answer": "3x² + 2x" },
+  { "id": 44, "question": "What is ∫ 3x² dx?", "choices": ["x³ + C", "3x³ + C", "x² + C", "x³/3 + C"], "answer": "x³ + C" },
+  { "id": 45, "question": "What is the derivative of e^(2x)?", "choices": ["2e^(2x)", "e^(2x)", "2xe^x", "e^x"], "answer": "2e^(2x)" },
+
+  { "id": 46, "question": "What is ∫ 2e^(2x) dx?", "choices": ["e^(2x) + C", "2e^(2x) + C", "e^x + C", "x e^(2x)"], "answer": "e^(2x) + C" },
+  { "id": 47, "question": "What is the derivative of x⁷?", "choices": ["6x⁶", "7x⁶", "7x⁷", "x⁶"], "answer": "7x⁶" },
+  { "id": 48, "question": "What is ∫ x⁷ dx?", "choices": ["x⁸ + C", "x⁸/8 + C", "8x⁷ + C", "x⁷/7 + C"], "answer": "x⁸/8 + C" },
+  { "id": 49, "question": "What is the derivative of sin(2x)?", "choices": ["2cos(2x)", "cos(2x)", "-2cos(2x)", "2sin(2x)"], "answer": "2cos(2x)" },
+  { "id": 50, "question": "What is ∫ 2cos(2x) dx?", "choices": ["sin(2x) + C", "2sin(2x) + C", "cos(2x) + C", "-sin(2x) + C"], "answer": "sin(2x) + C" }
+]
