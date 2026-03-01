@@ -1,26 +1,24 @@
+import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
+import 'package:doodle_brain/controllers/cubit/user_state.dart';
+import 'package:doodle_brain/widgets/equip_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ItemCard extends StatelessWidget {
   final String id;
   final String image;
   final String title;
-  final String desc;
-  // final bool isEquipped;
 
   const ItemCard({
     super.key,
     required this.image,
     required this.title,
     required this.id,
-    required this.desc,
-    // required this.isEquipped,
   });
 
   @override
   Widget build(BuildContext context) {
-    final Color primaryColor = Theme.of(context).colorScheme.primary;
-
     return Align(
       alignment: Alignment.center,
       child: Container(
@@ -37,37 +35,36 @@ class ItemCard extends StatelessWidget {
 
         child: Column(
           children: [
-            ClipRRect(child: Image.asset(image, width: 85, height: 85)),
+            ClipRRect(child: Image.asset(image, width: 120, height: 85)),
             Text(
               title,
               style: GoogleFonts.permanentMarker(
                 // fredoka
-                fontSize: 24,
+                fontSize: 27,
                 letterSpacing: 1.0,
                 fontWeight: FontWeight.bold,
                 color: Color(0xffff5c5c),
               ),
             ),
             Spacer(),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFFf4b400),
-                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
-                ),
-                elevation: 8,
-              ),
-              onPressed: () {},
-              child: Text(
-                "EQUIP",
-                style: GoogleFonts.baloo2(
-                  // patrick hand
-                  fontWeight: FontWeight.w700,
-                  fontSize: 18,
-                  color: Colors.white,
-                ),
-              ),
+            BlocBuilder<UserCubit, UserState>(
+              builder: (context, state) {
+                bool isEquipped = false;
+                if (state is UserLoaded) {
+                  if (id.startsWith('c')) {
+                    isEquipped = (state.getEquippedCharacter().id == id)
+                        ? true
+                        : false;
+                  } else if (id.startsWith('w')) {
+                    isEquipped = (state.getEquippedWeapon()?.id == id)
+                        ? true
+                        : false;
+                  }
+                }
+                return isEquipped
+                    ? ButtonEquipped(itemId: id)
+                    : ButtonEquip(itemId: id);
+              },
             ),
           ],
         ),
