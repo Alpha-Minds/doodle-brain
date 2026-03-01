@@ -1,47 +1,16 @@
 import 'package:doodle_brain/models/item_model.dart';
-import 'package:doodle_brain/models/user_model.dart';
 import 'package:doodle_brain/widgets/item_card.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Inventory extends StatelessWidget {
   Inventory({super.key});
 
-  
-  
-
-  // final List<Item> items = [
-  //   Item(
-  //     image: "assets/spartan.png",
-  //     title: "Mark",
-  //     desc: "armored character imroves your performance in the fight.",
-  //     id: "c1",
-  //   ),
-  //   Item(
-  //     image: "assets/weapons.png",
-  //     title: "Magic Laser",
-  //     desc: "high-quality weapon imroves your performance in the fight.",
-  //     id: "w1",
-  //   ),
-  //   Item(
-  //     image: "assets/spartan.png",
-  //     title: "Mark",
-  //     desc: "armored character imroves your performance in the fight.",
-  //     id: "c1",
-  //   ),
-  //   Item(
-  //     image: "assets/weapons.png",
-  //     title: "Magic Laser",
-  //     desc: "high-quality weapon imroves your performance in the fight.",
-  //     id: "w1",
-  //   ),
-  // ];
-
   @override
   Widget build(BuildContext context) {
-
     final Color primaryColor = Theme.of(context).colorScheme.primary;
 
     return Stack(
@@ -106,7 +75,7 @@ class Inventory extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset(
-                            "assets/spartan.png",
+                            "lib/assets/icons/spartan.png",
                             width: 40,
                             height: 40,
                           ),
@@ -126,7 +95,7 @@ class Inventory extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset(
-                            "assets/weapons.png",
+                            "lib/assets/icons/weapons.png",
                             width: 45,
                             height: 45,
                           ),
@@ -152,37 +121,53 @@ class Inventory extends StatelessWidget {
                     Expanded(
                       child: TabBarView(
                         children: [
-                          GridView.builder(
-                            gridDelegate:
-                                SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2,
-                                  mainAxisSpacing: 10,
-                                  crossAxisSpacing: 10,
-                                ),
-                            shrinkWrap: true,
-                            itemCount: items.length,
-                            itemBuilder: (context, index) {
-                              return ItemCard(
-                                image: items[index].image,
-                                title: items[index].title,
-                                desc: items[index].desc,
-                                id: items[index].id,
+                          BlocBuilder<UserCubit, UserState>(
+                            builder: (BuildContext context, state) {
+                              List<Item> characters = [];
+                              if (state is UserLoaded) {
+                                characters = state.getUserCharacters();
+                              }
+                              return GridView.builder(
+                                gridDelegate:
+                                    SliverGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: 2,
+                                      mainAxisSpacing: 10,
+                                      crossAxisSpacing: 10,
+                                    ),
+                                shrinkWrap: true,
+                                itemCount: characters.length,
+                                itemBuilder: (context, index) {
+                                  return ItemCard(
+                                    image: characters[index].image_url,
+                                    title: characters[index].name,
+                                    id: characters[index].id,
+                                  );
+                                },
                               );
                             },
                           ),
-                          GridView.builder(
-                            gridDelegate:
-                                SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2,
-                                ),
-                            shrinkWrap: true,
-                            itemCount: items.length,
-                            itemBuilder: (context, index) {
-                              return ItemCard(
-                                image: items[index].image,
-                                title: items[index].title,
-                                desc: items[index].desc,
-                                id: items[index].id,
+                          BlocBuilder<UserCubit, UserState>(
+                            builder: (BuildContext context, state) {
+                              List<Item> weapons = [];
+                              if (state is UserLoaded) {
+                                weapons = state.getUserWeapons();
+                              }
+                              return GridView.builder(
+                                gridDelegate:
+                                    SliverGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: 2,
+                                      mainAxisSpacing: 10,
+                                      crossAxisSpacing: 10,
+                                    ),
+                                shrinkWrap: true,
+                                itemCount: weapons.length,
+                                itemBuilder: (context, index) {
+                                  return ItemCard(
+                                    image: weapons[index].image_url,
+                                    title: weapons[index].name,
+                                    id: weapons[index].id,
+                                  );
+                                },
                               );
                             },
                           ),
