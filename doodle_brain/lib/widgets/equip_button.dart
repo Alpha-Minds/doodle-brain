@@ -12,7 +12,7 @@ class ButtonEquip extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xffc26a2e),
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         elevation: 8,
@@ -25,11 +25,11 @@ class ButtonEquip extends StatelessWidget {
         }
       },
       child: Text(
-        "EQUIP",
-        style: GoogleFonts.baloo2(
+        "equip",
+        style: GoogleFonts.medievalSharp(
           fontWeight: FontWeight.w700,
           fontSize: 18,
-          color: Colors.white,
+          color: Color(0xffe6d2b5),
         ),
       ),
     );
@@ -45,7 +45,7 @@ class ButtonEquipped extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.grey,
+        backgroundColor: Color(0xffc26a2e).withOpacity(0.7),
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         elevation: 8,
@@ -54,11 +54,11 @@ class ButtonEquipped extends StatelessWidget {
         null;
       },
       child: Text(
-        "EQUIPPED",
-        style: GoogleFonts.baloo2(
+        "equipped",
+        style: GoogleFonts.medievalSharp(
           fontWeight: FontWeight.w700,
           fontSize: 18,
-          color: Colors.white,
+          color: Color(0xffe6d2b5),
         ),
       ),
     );
