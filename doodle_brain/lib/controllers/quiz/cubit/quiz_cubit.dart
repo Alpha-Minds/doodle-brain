@@ -4,7 +4,9 @@ import 'dart:convert'; // For JSON decoding
 import 'package:doodle_brain/models/enums.dart'; // Contains Topic, Difficulty, RoundStatus enums
 import 'package:doodle_brain/models/levelProgress.dart'; // Generic LevelProgress model
 import 'package:doodle_brain/models/question_model.dart'; // Question model
+import 'package:doodle_brain/models/themes.dart';
 import 'package:equatable/equatable.dart'; // For value comparison in states
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // For rootBundle (loading assets)
 import 'package:flutter_bloc/flutter_bloc.dart'; // For Cubit state management
 import 'package:hive_flutter/hive_flutter.dart'; // For local storage
@@ -91,7 +93,9 @@ class QuizCubit extends Cubit<QuizState> {
         currentDifficulty: difficulty,
         currentRound: [],
         isLoading: false,
-        currentMonsterUrl: state.monsterUrl[topic]
+        currentMonsterUrl: state.monsterUrl[topic],
+        backgroundUrl: state.backgrounds[topic],
+        roundTheme: fightTheme[topic],
       ),
     );
   }
@@ -144,15 +148,17 @@ class QuizCubit extends Cubit<QuizState> {
   }
 
   // Start a new round with initial stats
-  void startRound(){
+  void startRound() {
     nextRound(); // Load next batch of questions
 
-    emit(state.copyWith(
-      currentPlayerHealth: 2, // Player HP
-      currentMonsterHealth: 5, // Monster HP
-      remainingTime: 10, // 10 seconds per question
-      roundStatus: RoundStatus.playing, // Round started
-    ));
+    emit(
+      state.copyWith(
+        currentPlayerHealth: 2, // Player HP
+        currentMonsterHealth: 5, // Monster HP
+        remainingTime: 10, // 10 seconds per question
+        roundStatus: RoundStatus.playing, // Round started
+      ),
+    );
 
     startTimer(); // Start countdown
   }
@@ -170,9 +176,11 @@ class QuizCubit extends Cubit<QuizState> {
         timer.cancel(); // Stop timer
         timeUp(); // Apply damage if time ends
       } else {
-        emit(state.copyWith(
-          remainingTime: state.remainingTime - 1, // Decrease time
-        ));
+        emit(
+          state.copyWith(
+            remainingTime: state.remainingTime - 1, // Decrease time
+          ),
+        );
       }
     });
   }
@@ -190,28 +198,26 @@ class QuizCubit extends Cubit<QuizState> {
     _timer?.cancel(); // Stop timer
 
     // Check if answer is correct
-    final correct =
-        selectedAnswer == state.currentRound[0].answer;
+    final correct = selectedAnswer == state.currentRound[0].answer;
 
     _applyDamage(isCorrect: correct);
   }
 
   // Handles damage logic for player and monster
-  void _applyDamage({required bool isCorrect}){
+  void _applyDamage({required bool isCorrect}) {
     int playerHealth = state.currentPlayerHealth;
     int monsterHealth = state.currentMonsterHealth;
 
     List<Question> updatedQuestions = state.currentRound;
 
-    if(updatedQuestions.isEmpty)return;
+    if (updatedQuestions.isEmpty) return;
 
     final currentQuestion = updatedQuestions.first;
 
-    if(isCorrect){
+    if (isCorrect) {
       monsterHealth--; // Monster takes damage
       updatedQuestions.removeAt(0); // Remove question
-    }
-    else{
+    } else {
       playerHealth--; // Player takes damage
 
       updatedQuestions.removeAt(0);
@@ -220,32 +226,37 @@ class QuizCubit extends Cubit<QuizState> {
 
     // If player dies
     if (playerHealth <= 0) {
-      emit(state.copyWith(
-        currentPlayerHealth: 0,
-        roundStatus: RoundStatus.playerDead,
-      ));
+      emit(
+        state.copyWith(
+          currentPlayerHealth: 0,
+          roundStatus: RoundStatus.playerDead,
+        ),
+      );
       return;
     }
 
     // If monster dies
     if (monsterHealth <= 0) {
-      emit(state.copyWith(
-        currentRound: [],
-        currentMonsterHealth: 0,
-        roundStatus: RoundStatus.monsterDead,
-      ));
+      emit(
+        state.copyWith(
+          currentRound: [],
+          currentMonsterHealth: 0,
+          roundStatus: RoundStatus.monsterDead,
+        ),
+      );
       return;
     }
 
     // Continue round
-    emit(state.copyWith(
-      currentRound: updatedQuestions,
-      currentPlayerHealth: playerHealth,
-      currentMonsterHealth: monsterHealth,
-      remainingTime: 10, // Reset timer
-    ));
+    emit(
+      state.copyWith(
+        currentRound: updatedQuestions,
+        currentPlayerHealth: playerHealth,
+        currentMonsterHealth: monsterHealth,
+        remainingTime: 10, // Reset timer
+      ),
+    );
 
     startTimer(); // Restart timer
   }
-
 }
