@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../CustomWidget/expandedButton.dart';
+import '../CustomWidget/buildPointColumn.dart';
+
 class BattlePage extends StatelessWidget {
   const BattlePage({super.key});
 
@@ -19,8 +21,8 @@ class BattlePage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildPointColumn("Points", "+0"),
-              _buildPointColumn("Points", "+0"),
+              buildPointColumn("Points", "+0"),
+              buildPointColumn("Points", "+0"),
             ],
           ),
         ),
@@ -32,23 +34,9 @@ class BattlePage extends StatelessWidget {
               const SizedBox(height: 20),
               _buildPlayButton(),
               const SizedBox(height: 25),
-              _buildDifficultyButtons(),
+              buildDifficultyButtons(),
             ],
           ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildPointColumn(String title, String value) {
-    return Column(
-      children: [
-        Text(title),
-        Row(
-          children: [
-            Image.asset("lib/assets/coins.png", width: 20, height: 20),
-            Text(value),
-          ],
         ),
       ],
     );
@@ -76,7 +64,7 @@ class BattlePage extends StatelessWidget {
     );
   }
 
-  Widget _buildDifficultyButtons() {
+  Widget buildDifficultyButtons() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
