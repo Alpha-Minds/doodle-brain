@@ -13,7 +13,7 @@ class ButtonEquip extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: Color(0xffc26a2e),
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+        padding: EdgeInsets.symmetric(horizontal: 22, vertical: 10),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         elevation: 8,
       ),
@@ -46,7 +46,7 @@ class ButtonEquipped extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: Color(0xffc26a2e).withOpacity(0.7),
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+        padding: EdgeInsets.symmetric(horizontal: 22, vertical: 10),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         elevation: 8,
       ),
