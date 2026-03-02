@@ -64,19 +64,22 @@ class Inventory extends StatelessWidget {
                     return null; // Default
                   }),
                   indicator: UnderlineTabIndicator(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(width: 4, color: Color(0xffc26a2e)),
+                    borderRadius: BorderRadius.circular(35),
+                    borderSide: BorderSide(width: 3, color: Color(0xffc26a2e)),
                   ),
                   tabs: [
                     Tab(
                       child: Row(
                         children: [
-                          Image.asset(
-                            "lib/assets/icons/spartan.png",
-                            width: 40,
-                            height: 40,
+                          Container(
+                            margin: EdgeInsets.only(bottom: 3),
+                            child: Image.asset(
+                              "lib/assets/icons/helmet.png",
+                              width: 45,
+                              height: 45,
+                            ),
                           ),
-                          SizedBox(width: 5),
+                          SizedBox(width: 2),
                           Text(
                             "Characters",
                             style: GoogleFonts.playfair(
@@ -92,11 +95,11 @@ class Inventory extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset(
-                            "lib/assets/icons/weapons.png",
-                            width: 45,
-                            height: 45,
+                            "lib/assets/icons/swords.png",
+                            width: 33,
+                            height: 33,
                           ),
-                          SizedBox(width: 5),
+                          SizedBox(width: 8.5),
                           Text(
                             "Weapons",
                             style: GoogleFonts.playfair(
