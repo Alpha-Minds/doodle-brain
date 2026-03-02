@@ -127,6 +127,7 @@ class Inventory extends StatelessWidget {
                               return GridView.builder(
                                 gridDelegate:
                                     SliverGridDelegateWithFixedCrossAxisCount(
+                                      mainAxisExtent: 300,
                                       crossAxisCount: 2,
                                       mainAxisSpacing: 10,
                                       crossAxisSpacing: 10,
