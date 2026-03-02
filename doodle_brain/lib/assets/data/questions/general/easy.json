@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital city of France?",
+    "choices": ["Paris", "London", "Rome", "Berlin"],
+    "answer": "Paris"
+  },
+  {
+    "id": 2,
+    "question": "Which planet is known as the Red Planet?",
+    "choices": ["Earth", "Mars", "Jupiter", "Venus"],
+    "answer": "Mars"
+  },
+  {
+    "id": 3,
+    "question": "How many continents are there on Earth?",
+    "choices": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "id": 4,
+    "question": "What is the largest ocean in the world?",
+    "choices": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "id": 5,
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "choices": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Leo Tolstoy"],
+    "answer": "William Shakespeare"
+  },
+  {
+    "id": 6,
+    "question": "What is the chemical symbol for water?",
+    "choices": ["O2", "H2O", "CO2", "NaCl"],
+    "answer": "H2O"
+  },
+  {
+    "id": 7,
+    "question": "Which country is home to the Great Pyramids?",
+    "choices": ["Mexico", "Peru", "Egypt", "India"],
+    "answer": "Egypt"
+  },
+  {
+    "id": 8,
+    "question": "What is the largest mammal in the world?",
+    "choices": ["Elephant", "Blue Whale", "Giraffe", "Shark"],
+    "answer": "Blue Whale"
+  },
+  {
+    "id": 9,
+    "question": "How many days are there in a leap year?",
+    "choices": ["365", "366", "364", "367"],
+    "answer": "366"
+  },
+  {
+    "id": 10,
+    "question": "Which gas do plants absorb from the air?",
+    "choices": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "id": 11,
+    "question": "Who painted the Mona Lisa?",
+    "choices": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "id": 12,
+    "question": "What is the fastest land animal?",
+    "choices": ["Lion", "Cheetah", "Tiger", "Horse"],
+    "answer": "Cheetah"
+  },
+  {
+    "id": 13,
+    "question": "Which continent is Egypt located in?",
+    "choices": ["Asia", "Europe", "Africa", "Australia"],
+    "answer": "Africa"
+  },
+  {
+    "id": 14,
+    "question": "What is the currency of the United States?",
+    "choices": ["Euro", "Dollar", "Pound", "Yen"],
+    "answer": "Dollar"
+  },
+  {
+    "id": 15,
+    "question": "How many colors are in a rainbow?",
+    "choices": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "id": 16,
+    "question": "What is the hardest natural substance on Earth?",
+    "choices": ["Gold", "Iron", "Diamond", "Silver"],
+    "answer": "Diamond"
+  },
+  {
+    "id": 17,
+    "question": "Which organ pumps blood in the human body?",
+    "choices": ["Lungs", "Brain", "Heart", "Liver"],
+    "answer": "Heart"
+  },
+  {
+    "id": 18,
+    "question": "Which country invented pizza?",
+    "choices": ["France", "Italy", "USA", "Spain"],
+    "answer": "Italy"
+  },
+  {
+    "id": 19,
+    "question": "What is the tallest mountain in the world?",
+    "choices": ["K2", "Mount Everest", "Kilimanjaro", "Mont Blanc"],
+    "answer": "Mount Everest"
+  },
+  {
+    "id": 20,
+    "question": "Which animal is known as the King of the Jungle?",
+    "choices": ["Tiger", "Elephant", "Lion", "Leopard"],
+    "answer": "Lion"
+  },
+  {
+    "id": 21,
+    "question": "What is the boiling point of water at sea level?",
+    "choices": ["90°C", "95°C", "100°C", "110°C"],
+    "answer": "100°C"
+  },
+  {
+    "id": 22,
+    "question": "Which planet is closest to the Sun?",
+    "choices": ["Venus", "Earth", "Mercury", "Mars"],
+    "answer": "Mercury"
+  },
+  {
+    "id": 23,
+    "question": "How many legs does a spider have?",
+    "choices": ["6", "8", "10", "12"],
+    "answer": "8"
+  },
+  {
+    "id": 24,
+    "question": "Which language is primarily spoken in Brazil?",
+    "choices": ["Spanish", "Portuguese", "French", "English"],
+    "answer": "Portuguese"
+  },
+  {
+    "id": 25,
+    "question": "What is the largest desert in the world?",
+    "choices": ["Sahara", "Gobi", "Arctic", "Antarctic"],
+    "answer": "Antarctic"
+  },
+  {
+    "id": 26,
+    "question": "Which metal is liquid at room temperature?",
+    "choices": ["Gold", "Mercury", "Iron", "Copper"],
+    "answer": "Mercury"
+  },
+  {
+    "id": 27,
+    "question": "What is the smallest prime number?",
+    "choices": ["0", "1", "2", "3"],
+    "answer": "2"
+  },
+  {
+    "id": 28,
+    "question": "Which country hosted the 2016 Summer Olympics?",
+    "choices": ["China", "Brazil", "UK", "Japan"],
+    "answer": "Brazil"
+  },
+  {
+    "id": 29,
+    "question": "What do bees produce?",
+    "choices": ["Milk", "Honey", "Wax", "Silk"],
+    "answer": "Honey"
+  },
+  {
+    "id": 30,
+    "question": "Which is the largest continent?",
+    "choices": ["Africa", "Asia", "Europe", "North America"],
+    "answer": "Asia"
+  },
+  {
+    "id": 31,
+    "question": "What is the main language spoken in Canada?",
+    "choices": ["English", "French", "Both English and French", "Spanish"],
+    "answer": "Both English and French"
+  },
+  {
+    "id": 32,
+    "question": "Which instrument has keys, pedals, and strings?",
+    "choices": ["Guitar", "Drum", "Piano", "Violin"],
+    "answer": "Piano"
+  },
+  {
+    "id": 33,
+    "question": "Which bird is known for its ability to mimic sounds?",
+    "choices": ["Eagle", "Parrot", "Owl", "Sparrow"],
+    "answer": "Parrot"
+  },
+  {
+    "id": 34,
+    "question": "How many hours are there in a day?",
+    "choices": ["12", "24", "36", "48"],
+    "answer": "24"
+  },
+  {
+    "id": 35,
+    "question": "Which country is famous for the Eiffel Tower?",
+    "choices": ["Italy", "France", "Germany", "Spain"],
+    "answer": "France"
+  },
+  {
+    "id": 36,
+    "question": "What is the square root of 64?",
+    "choices": ["6", "7", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "id": 37,
+    "question": "Which ocean lies between Africa and Australia?",
+    "choices": ["Pacific", "Atlantic", "Indian", "Arctic"],
+    "answer": "Indian"
+  },
+  {
+    "id": 38,
+    "question": "What is the primary source of energy for Earth?",
+    "choices": ["Moon", "Wind", "Sun", "Coal"],
+    "answer": "Sun"
+  },
+  {
+    "id": 39,
+    "question": "Which sport uses a bat and a ball?",
+    "choices": ["Football", "Tennis", "Cricket", "Swimming"],
+    "answer": "Cricket"
+  },
+  {
+    "id": 40,
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "choices": ["China", "Thailand", "Japan", "South Korea"],
+    "answer": "Japan"
+  },
+  {
+    "id": 41,
+    "question": "What is the freezing point of water?",
+    "choices": ["0°C", "5°C", "10°C", "15°C"],
+    "answer": "0°C"
+  },
+  {
+    "id": 42,
+    "question": "Which organ helps humans breathe?",
+    "choices": ["Heart", "Lungs", "Kidneys", "Brain"],
+    "answer": "Lungs"
+  },
+  {
+    "id": 43,
+    "question": "How many sides does a triangle have?",
+    "choices": ["2", "3", "4", "5"],
+    "answer": "3"
+  },
+  {
+    "id": 44,
+    "question": "Which country is famous for the Great Wall?",
+    "choices": ["India", "China", "Japan", "Mongolia"],
+    "answer": "China"
+  },
+  {
+    "id": 45,
+    "question": "What is the largest planet in our solar system?",
+    "choices": ["Saturn", "Earth", "Jupiter", "Neptune"],
+    "answer": "Jupiter"
+  },
+  {
+    "id": 46,
+    "question": "Which element do humans need to breathe?",
+    "choices": ["Carbon", "Oxygen", "Hydrogen", "Helium"],
+    "answer": "Oxygen"
+  },
+  {
+    "id": 47,
+    "question": "How many months are there in a year?",
+    "choices": ["10", "11", "12", "13"],
+    "answer": "12"
+  },
+  {
+    "id": 48,
+    "question": "Which is the longest river in the world?",
+    "choices": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "answer": "Nile"
+  },
+  {
+    "id": 49,
+    "question": "Which device is used to measure temperature?",
+    "choices": ["Barometer", "Thermometer", "Speedometer", "Altimeter"],
+    "answer": "Thermometer"
+  },
+  {
+    "id": 50,
+    "question": "Which shape has four equal sides?",
+    "choices": ["Rectangle", "Triangle", "Square", "Circle"],
+    "answer": "Square"
+  }
+]

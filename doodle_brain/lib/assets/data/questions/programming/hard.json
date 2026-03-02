@@ -1,0 +1,277 @@
+[
+    {
+      "id": 1,
+      "question": "What is the correct order of Flutter rendering pipeline?",
+      "choices": [
+        "Widget → Element → RenderObject",
+        "Element → Widget → RenderObject",
+        "RenderObject → Widget → Element",
+        "Widget → RenderObject → Element"
+      ],
+      "answer": "Widget → Element → RenderObject"
+    },
+    {
+      "id": 2,
+      "question": "Which layer is responsible for layout and painting?",
+      "choices": [
+        "Widget layer",
+        "Element layer",
+        "RenderObject layer",
+        "Foundation layer"
+      ],
+      "answer": "RenderObject layer"
+    },
+    {
+      "id": 3,
+      "question": "What triggers a rebuild in Flutter?",
+      "choices": [
+        "Creating new Widget instance",
+        "Calling setState()",
+        "Element.markNeedsBuild()",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 4,
+      "question": "Why are Widgets immutable?",
+      "choices": [
+        "To improve rendering speed",
+        "To simplify rebuild diffing",
+        "To reduce memory",
+        "To allow multithreading"
+      ],
+      "answer": "To simplify rebuild diffing"
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of the Element tree?",
+      "choices": [
+        "Handles layout constraints",
+        "Stores mutable widget state",
+        "Paints pixels on screen",
+        "Handles gestures"
+      ],
+      "answer": "Stores mutable widget state"
+    },
+    {
+      "id": 6,
+      "question": "Which method must be overridden when creating a custom RenderObject?",
+      "choices": [
+        "build()",
+        "performLayout()",
+        "initState()",
+        "didUpdateWidget()"
+      ],
+      "answer": "performLayout()"
+    },
+    {
+      "id": 7,
+      "question": "What is the main purpose of Isolates in Dart?",
+      "choices": [
+        "Multithreading with shared memory",
+        "Parallel execution without shared memory",
+        "Async UI rendering",
+        "Background animations"
+      ],
+      "answer": "Parallel execution without shared memory"
+    },
+    {
+      "id": 8,
+      "question": "Which method is used to spawn a new isolate?",
+      "choices": [
+        "Isolate.run()",
+        "Isolate.spawn()",
+        "Future.spawn()",
+        "compute.spawn()"
+      ],
+      "answer": "Isolate.spawn()"
+    },
+    {
+      "id": 9,
+      "question": "What does the compute() function use internally?",
+      "choices": [
+        "Threads",
+        "Streams",
+        "Isolates",
+        "Microtasks"
+      ],
+      "answer": "Isolates"
+    },
+    {
+      "id": 10,
+      "question": "Which phase applies constraints in Flutter layout?",
+      "choices": [
+        "Build phase",
+        "Layout phase",
+        "Paint phase",
+        "Semantics phase"
+      ],
+      "answer": "Layout phase"
+    },
+    {
+      "id": 11,
+      "question": "What is the constraint rule in Flutter layout?",
+      "choices": [
+        "Parent sizes child",
+        "Child sizes parent",
+        "Parent gives constraints, child chooses size",
+        "Child gives constraints"
+      ],
+      "answer": "Parent gives constraints, child chooses size"
+    },
+    {
+      "id": 12,
+      "question": "Which widget prevents unnecessary rebuilds by using const constructor?",
+      "choices": [
+        "StatelessWidget",
+        "StatefulWidget",
+        "Const widget",
+        "Any widget with const constructor"
+      ],
+      "answer": "Any widget with const constructor"
+    },
+    {
+      "id": 13,
+      "question": "What does addPostFrameCallback() do?",
+      "choices": [
+        "Runs before build",
+        "Runs after layout & paint of current frame",
+        "Runs before layout",
+        "Runs during animation"
+      ],
+      "answer": "Runs after layout & paint of current frame"
+    },
+    {
+      "id": 14,
+      "question": "Which object manages animation tickers?",
+      "choices": [
+        "AnimationController",
+        "Ticker",
+        "TickerProvider",
+        "SchedulerBinding"
+      ],
+      "answer": "Ticker"
+    },
+    {
+      "id": 15,
+      "question": "What happens if you forget to dispose AnimationController?",
+      "choices": [
+        "Nothing",
+        "Memory leak & ticker error",
+        "App crash immediately",
+        "Animation stops"
+      ],
+      "answer": "Memory leak & ticker error"
+    },
+    {
+      "id": 16,
+      "question": "Which class bridges Widget and RenderObject?",
+      "choices": [
+        "State",
+        "BuildContext",
+        "Element",
+        "InheritedWidget"
+      ],
+      "answer": "Element"
+    },
+    {
+      "id": 17,
+      "question": "What is the difference between microtask and event queue?",
+      "choices": [
+        "Microtasks run before events",
+        "Events run before microtasks",
+        "They are identical",
+        "Microtasks are slower"
+      ],
+      "answer": "Microtasks run before events"
+    },
+    {
+      "id": 18,
+      "question": "Which binding gives access to scheduler?",
+      "choices": [
+        "WidgetsBinding",
+        "SchedulerBinding",
+        "GestureBinding",
+        "PaintingBinding"
+      ],
+      "answer": "SchedulerBinding"
+    },
+    {
+      "id": 19,
+      "question": "Which widget is best for very large scrollable custom layouts?",
+      "choices": [
+        "ListView",
+        "SingleChildScrollView",
+        "CustomScrollView with Slivers",
+        "Column"
+      ],
+      "answer": "CustomScrollView with Slivers"
+    },
+    {
+      "id": 20,
+      "question": "What does repaint boundary do?",
+      "choices": [
+        "Prevents rebuild",
+        "Isolates repaint area",
+        "Improves layout speed",
+        "Prevents state change"
+      ],
+      "answer": "Isolates repaint area"
+    },
+    {
+      "id": 21,
+      "question": "Which widget should be used for performance when list items are dynamic and large?",
+      "choices": [
+        "Column",
+        "ListView",
+        "ListView.builder",
+        "GridView.count"
+      ],
+      "answer": "ListView.builder"
+    },
+    {
+      "id": 22,
+      "question": "What does GlobalKey allow access to?",
+      "choices": [
+        "RenderObject",
+        "Widget state across tree",
+        "Navigator only",
+        "Theme only"
+      ],
+      "answer": "Widget state across tree"
+    },
+    {
+      "id": 23,
+      "question": "Which pattern avoids prop drilling in Flutter?",
+      "choices": [
+        "InheritedWidget",
+        "Passing constructor parameters",
+        "setState",
+        "FutureBuilder"
+      ],
+      "answer": "InheritedWidget"
+    },
+    {
+      "id": 24,
+      "question": "Which object is responsible for painting pixels?",
+      "choices": [
+        "Widget",
+        "RenderObject",
+        "Canvas",
+        "Element"
+      ],
+      "answer": "RenderObject"
+    },
+    {
+      "id": 25,
+      "question": "What does markNeedsLayout() trigger?",
+      "choices": [
+        "Rebuild",
+        "Relayout phase",
+        "Repaint only",
+        "Dispose"
+      ],
+      "answer": "Relayout phase"
+    }
+  ]
