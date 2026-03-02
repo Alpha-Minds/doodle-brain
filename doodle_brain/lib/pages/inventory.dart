@@ -11,14 +11,12 @@ class Inventory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color primaryColor = Theme.of(context).colorScheme.primary;
-
     return Stack(
       children: [
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/sketch.jpeg"),
+              image: AssetImage("lib/assets/backgrounds/Background.png"),
               fit: BoxFit.cover,
             ),
           ),
@@ -39,11 +37,11 @@ class Inventory extends StatelessWidget {
                       Container(
                         child: Text(
                           "INVENTORY",
-                          style: GoogleFonts.permanentMarker(
+                          style: GoogleFonts.uncialAntiqua(
                             fontSize: 45,
                             fontWeight: FontWeight.bold,
                             letterSpacing: 5,
-                            color: Color(0xffff5c5c),
+                            color: Color(0xff2a1b14),
                           ),
                         ),
                       ),
@@ -52,9 +50,8 @@ class Inventory extends StatelessWidget {
                 ),
                 centerTitle: true,
                 bottom: TabBar(
-                  labelColor: primaryColor,
-                  unselectedLabelColor: primaryColor.withOpacity(0.6),
-
+                  labelColor: Color(0xff2a1b14).withOpacity(0.9),
+                  unselectedLabelColor: Color(0xff2a1b14).withOpacity(0.65),
                   indicatorWeight: 3,
                   dividerColor: Colors.transparent,
                   overlayColor: MaterialStateProperty.resolveWith<Color?>((
@@ -68,7 +65,7 @@ class Inventory extends StatelessWidget {
                   }),
                   indicator: UnderlineTabIndicator(
                     borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(width: 4, color: Color(0xffff5c5c)),
+                    borderSide: BorderSide(width: 4, color: Color(0xffc26a2e)),
                   ),
                   tabs: [
                     Tab(
@@ -82,10 +79,10 @@ class Inventory extends StatelessWidget {
                           SizedBox(width: 5),
                           Text(
                             "Characters",
-                            style: GoogleFonts.baloo2(
+                            style: GoogleFonts.medievalSharp(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
-                              letterSpacing: 1.5,
+                              letterSpacing: 1.25,
                             ),
                           ),
                         ],
@@ -102,10 +99,10 @@ class Inventory extends StatelessWidget {
                           SizedBox(width: 5),
                           Text(
                             "Weapons",
-                            style: GoogleFonts.baloo2(
+                            style: GoogleFonts.medievalSharp(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
-                              letterSpacing: 1.5,
+                              letterSpacing: 1.25,
                             ),
                           ),
                         ],
