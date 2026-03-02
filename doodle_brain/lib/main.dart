@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'cubit/NavigationCubit.dart';
 import './CustomWidget/boxDecoration.dart';
+import 'CustomWidget/NavBar.dart';
+import 'CustomWidget/expandedButton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -66,7 +68,7 @@ class GameHomeScreen extends StatelessWidget {
                   },
                 ),
               ),
-              _buildCustomNavBar(context),
+              buildCustomNavBar(context),
             ],
           ),
         ],
@@ -100,75 +102,6 @@ class GameHomeScreen extends StatelessWidget {
               SizedBox(width: 4),
               Text("215"),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildCustomNavBar(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(16),
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      decoration: boxDecoration(),
-      child: BlocBuilder<NavigationCubit, int>(
-        builder: (context, state) {
-          return Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _buildNavIcon(
-                context,
-                'lib/assets/battle.png',
-                "Battle",
-                0,
-                state,
-              ),
-              _buildNavIcon(context, 'lib/assets/store.png', "Shop", 1, state),
-              _buildNavIcon(
-                context,
-                'lib/assets/inventory.png',
-                "Inventory",
-                2,
-                state,
-              ),
-              _buildNavIcon(
-                context,
-                'lib/assets/profile.png',
-                "Profile",
-                3,
-                state,
-              ),
-            ],
-          );
-        },
-      ),
-    );
-  }
-
-  Widget _buildNavIcon(
-    BuildContext context,
-    String imagePath,
-    String label,
-    int index,
-    int currentIndex,
-  ) {
-    bool isActive = currentIndex == index;
-    return GestureDetector(
-      onTap: () => context.read<NavigationCubit>().updateIndex(index),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Opacity(
-            opacity: isActive ? 1.0 : 0.5,
-            child: Image.asset(imagePath, width: 35, height: 35),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            label,
-            style: TextStyle(
-              fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
-              color: isActive ? Colors.brown : Colors.brown.withOpacity(0.6),
-            ),
           ),
         ],
       ),
@@ -257,26 +190,12 @@ class BattlePage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
         children: [
-          _expandedButton("Easy", const Color(0xFF81A263)),
+          expandedButton("Easy", const Color(0xFF81A263)),
           const SizedBox(width: 10),
-          _expandedButton("Medium", const Color(0xFFE79E4F)),
+          expandedButton("Medium", const Color(0xFFE79E4F)),
           const SizedBox(width: 10),
-          _expandedButton("Hard", const Color(0xFFAD524A)),
+          expandedButton("Hard", const Color(0xFFAD524A)),
         ],
-      ),
-    );
-  }
-
-  Widget _expandedButton(String label, Color color) {
-    return Expanded(
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: color,
-          foregroundColor: Colors.white,
-          side: const BorderSide(color: Color(0xFF3E2723), width: 2),
-        ),
-        onPressed: () {},
-        child: Text(label),
       ),
     );
   }

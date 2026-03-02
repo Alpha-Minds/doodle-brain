@@ -4,7 +4,7 @@ import '../cubit/NavigationCubit.dart';
 import 'boxDecoration.dart';
 
 
-Widget _buildCustomNavBar(BuildContext context) {
+Widget buildCustomNavBar(BuildContext context) {
   return Container(
     margin: const EdgeInsets.all(16),
     padding: const EdgeInsets.symmetric(vertical: 12),
@@ -14,16 +14,16 @@ Widget _buildCustomNavBar(BuildContext context) {
         return Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            _buildNavIcon(context, 'lib/assets/battle.png', "Battle", 0, state),
-            _buildNavIcon(context, 'lib/assets/store.png', "Shop", 1, state),
-            _buildNavIcon(
+            buildNavIcon(context, 'lib/assets/battle.png', "Battle", 0, state),
+            buildNavIcon(context, 'lib/assets/store.png', "Shop", 1, state),
+            buildNavIcon(
               context,
               'lib/assets/inventory.png',
               "Inventory",
               2,
               state,
             ),
-            _buildNavIcon(
+            buildNavIcon(
               context,
               'lib/assets/profile.png',
               "Profile",
@@ -37,7 +37,7 @@ Widget _buildCustomNavBar(BuildContext context) {
   );
 }
 
-Widget _buildNavIcon(
+Widget buildNavIcon(
   BuildContext context,
   String imagePath,
   String label,
