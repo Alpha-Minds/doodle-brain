@@ -1,5 +1,6 @@
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/models/user_model.dart';
+import 'package:doodle_brain/pages/inventory.dart';
 import 'package:doodle_brain/services/ItemSecrvice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,7 +26,6 @@ class DoodleBrain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Inventory());
   }
 }
