@@ -79,8 +79,8 @@ class Inventory extends StatelessWidget {
                           SizedBox(width: 5),
                           Text(
                             "Characters",
-                            style: GoogleFonts.medievalSharp(
-                              fontSize: 25,
+                            style: GoogleFonts.playfair(
+                              fontSize: 30,
                               fontWeight: FontWeight.w700,
                               letterSpacing: 1.25,
                             ),
@@ -99,8 +99,8 @@ class Inventory extends StatelessWidget {
                           SizedBox(width: 5),
                           Text(
                             "Weapons",
-                            style: GoogleFonts.medievalSharp(
-                              fontSize: 25,
+                            style: GoogleFonts.playfair(
+                              fontSize: 30,
                               fontWeight: FontWeight.w700,
                               letterSpacing: 1.25,
                             ),
@@ -127,7 +127,7 @@ class Inventory extends StatelessWidget {
                               return GridView.builder(
                                 gridDelegate:
                                     SliverGridDelegateWithFixedCrossAxisCount(
-                                      mainAxisExtent: 300,
+                                      mainAxisExtent: 310,
                                       crossAxisCount: 2,
                                       mainAxisSpacing: 10,
                                       crossAxisSpacing: 10,
@@ -153,6 +153,7 @@ class Inventory extends StatelessWidget {
                               return GridView.builder(
                                 gridDelegate:
                                     SliverGridDelegateWithFixedCrossAxisCount(
+                                      mainAxisExtent: 310,
                                       crossAxisCount: 2,
                                       mainAxisSpacing: 10,
                                       crossAxisSpacing: 10,
