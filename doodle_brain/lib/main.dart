@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'cubit/NavigationCubit.dart';
+import './CustomWidget/boxDecoration.dart';
 
 void main() {
   runApp(const MyApp());
@@ -77,7 +78,7 @@ class GameHomeScreen extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16),
       padding: const EdgeInsets.all(12),
-      decoration: _boxDecoration(),
+      decoration: boxDecoration(),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -109,7 +110,7 @@ class GameHomeScreen extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.symmetric(vertical: 12),
-      decoration: _boxDecoration(),
+      decoration: boxDecoration(),
       child: BlocBuilder<NavigationCubit, int>(
         builder: (context, state) {
           return Row(
@@ -171,14 +172,6 @@ class GameHomeScreen extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  BoxDecoration _boxDecoration() {
-    return BoxDecoration(
-      color: const Color(0xffC9B2A0),
-      borderRadius: BorderRadius.circular(12),
-      border: Border.all(color: Colors.brown, width: 2),
     );
   }
 }
