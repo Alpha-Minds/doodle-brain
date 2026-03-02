@@ -36,7 +36,7 @@ class BattlePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     buildPointColumn("Points", "${user.points}"),
-                    buildPointColumn("Player", user.name),
+                    buildPointColumn("Points", "${user.points}"),
                   ],
                 ),
               ),
