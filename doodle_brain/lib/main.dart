@@ -18,14 +18,11 @@ void main() async {
   final box = await Hive.openBox<User>('userBox');
   await ItemService().loadItems();
 
-  // 3. تشغيل التطبيق مع توفير الـ Cubits المطلوبة
-  runApp(
+   runApp(
     MultiBlocProvider(
       providers: [
-        // الـ Cubit الخاص ببيانات المستخدم (من الكود الحالي)
         BlocProvider(create: (context) => UserCubit(box)),
-        // الـ Cubit الخاص بالتنقل (من كودك أنت)
-        BlocProvider(create: (context) => NavigationCubit()),
+         BlocProvider(create: (context) => NavigationCubit()),
       ],
       child: const MyApp(),
     ),

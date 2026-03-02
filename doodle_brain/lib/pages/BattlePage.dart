@@ -11,19 +11,24 @@ class BattlePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // BlocBuilder listens to UserCubit changes to rebuild the UI accordingly
     return BlocBuilder<UserCubit, UserState>(
       builder: (context, state) {
+        // Display a loading spinner while the user data is being fetched from Hive
         if (state is UserLoading) {
           return const Center(child: CircularProgressIndicator());
         }
 
+        // Once the user data is loaded, display the battle interface
         if (state is UserLoaded) {
           final user = state.user;
+          // Retrieve the character currently equipped by the user
           final equippedChar = state.getEquippedCharacter();
 
           return Column(
             children: [
               const SizedBox(height: 12),
+              // Header container displaying real-time points from the database
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
                 padding: const EdgeInsets.all(12),
@@ -35,6 +40,7 @@ class BattlePage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
+                    // Displaying dynamic points using the user model
                     buildPointColumn("Points", "${user.points}"),
                     buildPointColumn("Points", "${user.points}"),
                   ],
@@ -44,10 +50,12 @@ class BattlePage extends StatelessWidget {
               Expanded(
                 child: Column(
                   children: [
+                    // Display the image of the character equipped in the user's state
                     Image.asset(
                       equippedChar.image_url,
                       width: 800,
                       height: 250,
+                      // Fallback image if the specific character image fails to load
                       errorBuilder: (context, error, stackTrace) =>
                           Image.asset("lib/assets/char.png"),
                     ),
@@ -61,6 +69,7 @@ class BattlePage extends StatelessWidget {
             ],
           );
         }
+        // Default empty state if no specific state is matched
         return const SizedBox();
       },
     );
