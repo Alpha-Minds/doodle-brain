@@ -23,8 +23,9 @@ class ItemCard extends StatelessWidget {
       alignment: Alignment.center,
       child: Container(
         width: 220,
-        height: 220,
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+        height: 300,
+        // padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+        padding: EdgeInsets.only(bottom: 15, top: 1, left: 10, right: 10),
         decoration: BoxDecoration(
           color: Color(0xffe6d2b5),
           boxShadow: [
@@ -41,7 +42,7 @@ class ItemCard extends StatelessWidget {
 
         child: Column(
           children: [
-            ClipRRect(child: Image.asset(image, width: 120, height: 75)),
+            ClipRRect(child: Image.asset(image, width: 120, height: 200)),
             Text(
               title,
               style: GoogleFonts.uncialAntiqua(
