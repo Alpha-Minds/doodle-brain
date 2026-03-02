@@ -11,7 +11,6 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
 
-  # المكتبات المدمجة (تم جمع كودك مع كودهم)
   flutter_bloc: ^9.1.1
   hive_flutter: ^1.1.0
   equatable: ^2.0.8
@@ -27,7 +26,6 @@ flutter:
   uses-material-design: true
 
   assets:
-    # الأصول الخاصة بك (الصور والواجهة)
     - lib/assets/background.jpeg
     - lib/assets/battle.png
     - lib/assets/game-store.png
@@ -41,7 +39,6 @@ flutter:
     - lib/assets/center.png
     - lib/assets/char.png
 
-    # الأصول الخاصة بهم (البيانات والجرافيكس الجديد)
     - lib/assets/data/items.json
     - lib/assets/data/questions/
     - lib/assets/graphics/character/
