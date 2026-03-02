@@ -23,16 +23,16 @@ class ItemCard extends StatelessWidget {
       alignment: Alignment.center,
       child: Container(
         width: 220,
-        height: 300,
+        height: 290,
         // padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-        padding: EdgeInsets.only(bottom: 15, top: 1, left: 10, right: 10),
+        padding: EdgeInsets.only(bottom: 10, top: 10, left: 10, right: 10),
         decoration: BoxDecoration(
           color: Color(0xffe6d2b5),
           boxShadow: [
             BoxShadow(
               offset: Offset(0, 2),
               blurRadius: 10,
-              spreadRadius: 3,
+              spreadRadius: 1,
               color: Color(0xff6b4a34),
             ),
           ],
@@ -42,14 +42,14 @@ class ItemCard extends StatelessWidget {
 
         child: Column(
           children: [
-            ClipRRect(child: Image.asset(image, width: 120, height: 200)),
+            ClipRRect(child: Image.asset(image, width: 150, height: 150)),
             Text(
               title,
               style: GoogleFonts.uncialAntiqua(
-                // fredoka
-                fontSize: 30,
-                letterSpacing: 1.0,
+                fontSize: 36,
+                letterSpacing: 1.5,
                 fontWeight: FontWeight.bold,
+                
                 color: Color(0xff4a2e1f),
               ),
             ),
