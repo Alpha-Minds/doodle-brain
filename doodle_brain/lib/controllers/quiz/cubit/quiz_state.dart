@@ -2,20 +2,7 @@ part of 'quiz_cubit.dart';
 
 @immutable
 class QuizState extends Equatable {
-  final Map<Topic, String> monsterUrl = {
-    Topic.islam: "lib/assets/graphics/enemies/islam.png",
-    Topic.general: "lib/assets/graphics/enemies/islam.png",
-    Topic.math: "lib/assets/graphics/enemies/islam.png",
-    Topic.programming: "lib/assets/graphics/enemies/islam.png",
-  };
-  final Map<Topic, String> backgrounds = {
-    Topic.islam: "lib/assets/graphics/enemies/islam.png",
-    Topic.general: "lib/assets/graphics/enemies/islam.png",
-    Topic.math: "lib/assets/graphics/enemies/islam.png",
-    Topic.programming: "lib/assets/graphics/enemies/islam.png",
-  };
   
-
   final Map<Topic, Map<Difficulty, LevelProgress<Question>>> progress;
   final Topic? currentTopic;
   final Difficulty? currentDifficulty;
@@ -29,8 +16,6 @@ class QuizState extends Equatable {
   final int remainingTime;
   final RoundStatus roundStatus;
 
-  final String? backgroundUrl;
-  final ThemeData? roundTheme;
 
   QuizState({
     required this.progress,
@@ -44,8 +29,6 @@ class QuizState extends Equatable {
     this.currentPlayerHealth = 2,
     this.remainingTime = 10,
     this.roundStatus = RoundStatus.playing,
-    this.backgroundUrl,
-    this.roundTheme,
   });
 
   QuizState copyWith({
@@ -60,8 +43,6 @@ class QuizState extends Equatable {
     int? currentPlayerHealth,
     int? remainingTime,
     RoundStatus? roundStatus,
-    ThemeData? roundTheme,
-    String? backgroundUrl
   }) {
     return QuizState(
       progress: progress ?? this.progress,
@@ -75,8 +56,6 @@ class QuizState extends Equatable {
       currentPlayerHealth: currentPlayerHealth ?? this.currentPlayerHealth,
       remainingTime: remainingTime ?? this.remainingTime,
       roundStatus: roundStatus ?? this.roundStatus,
-      roundTheme: roundTheme??this.roundTheme,
-      backgroundUrl: backgroundUrl??this.backgroundUrl,
     );
   }
 
@@ -93,7 +72,5 @@ class QuizState extends Equatable {
     currentPlayerHealth,
     remainingTime,
     roundStatus,
-    roundTheme,
-    backgroundUrl
   ];
 }

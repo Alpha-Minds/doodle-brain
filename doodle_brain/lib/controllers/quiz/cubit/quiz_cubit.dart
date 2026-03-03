@@ -31,7 +31,7 @@ class QuizCubit extends Cubit<QuizState> {
     Difficulty difficulty,
   ) async {
     // Build file name dynamically
-    final fileName = 'assets/questions/${topic.name}_${difficulty.name}.json';
+    final fileName = 'lib/assets/data/questions/${topic.name}/${difficulty.name}.json';
 
     // Return cached questions if already loaded
     if (_cache.containsKey(fileName)) return _cache[fileName]!;
@@ -55,7 +55,9 @@ class QuizCubit extends Cubit<QuizState> {
 
   // Select a level (topic + difficulty)
   Future<void> selectLevel(Topic topic, Difficulty difficulty) async {
-    emit(state.copyWith(isLoading: true)); // Show loading state
+    print("SELECT LEVEL CALLED");
+    emit(state.copyWith(isLoading: true));
+    print(state.isLoading); // Show loading state
 
     // Load questions for selected level
     final question = await _loadQuestions(topic, difficulty);
@@ -86,6 +88,7 @@ class QuizCubit extends Cubit<QuizState> {
     progress[topic]![difficulty] = levelProgress;
 
     // Emit updated state
+    print(state.currentRound.toString());
     emit(
       state.copyWith(
         progress: progress,
@@ -93,15 +96,15 @@ class QuizCubit extends Cubit<QuizState> {
         currentDifficulty: difficulty,
         currentRound: [],
         isLoading: false,
-        currentMonsterUrl: state.monsterUrl[topic],
-        backgroundUrl: state.backgrounds[topic],
-        roundTheme: fightTheme[topic],
+        currentMonsterUrl: monsterUrl[topic],
       ),
     );
+    print(state.currentTopic);
   }
 
   // Move to next round (default 5 questions per round)
   void nextRound({int count = 5}) {
+    print("next round");
     final topic = state.currentTopic;
     final difficulty = state.currentDifficulty;
 
@@ -116,15 +119,22 @@ class QuizCubit extends Cubit<QuizState> {
     // TODO: Handle when questions end
     if (index >= questions.length) {
       emit(state.copyWith(isLevelFinished: true));
+      return;
     }
 
+    final end = (index + count > questions.length)
+      ? questions.length
+      : index + count;
+
     // Take next batch of questions
-    final round = questions.sublist(index, index + count);
+    final round = questions.sublist(index, end);
+
+    print(round.length);
 
     // Update index
     final updatedLevel = level.copyWith(
       questions: questions,
-      currentIndex: index + count,
+      currentIndex: end,
     );
 
     // Save updated index in Hive
@@ -198,7 +208,9 @@ class QuizCubit extends Cubit<QuizState> {
     _timer?.cancel(); // Stop timer
 
     // Check if answer is correct
-    final correct = selectedAnswer == state.currentRound[0].answer;
+    if (state.currentRound.isEmpty) return;
+
+    final correct = selectedAnswer == state.currentRound.first.answer;  
 
     _applyDamage(isCorrect: correct);
   }
@@ -208,7 +220,7 @@ class QuizCubit extends Cubit<QuizState> {
     int playerHealth = state.currentPlayerHealth;
     int monsterHealth = state.currentMonsterHealth;
 
-    List<Question> updatedQuestions = state.currentRound;
+    List<Question> updatedQuestions = List.from(state.currentRound);
 
     if (updatedQuestions.isEmpty) return;
 
@@ -259,4 +271,60 @@ class QuizCubit extends Cubit<QuizState> {
 
     startTimer(); // Restart timer
   }
+
+
+  void resetCurrentLevel() {
+  final topic = state.currentTopic;
+  final difficulty = state.currentDifficulty;
+
+  if (topic == null || difficulty == null) return;
+
+  final key = '${topic.name}_${difficulty.name}';
+
+  // Reset Hive progress
+  _box.put(key, 0);
+
+  // Reset in-memory progress
+  final updatedProgress = Map<Topic, Map<Difficulty, LevelProgress<Question>>>.from(state.progress);
+
+  if (updatedProgress[topic] != null && updatedProgress[topic]![difficulty] != null) {
+    final level = updatedProgress[topic]![difficulty]!;
+
+    updatedProgress[topic]![difficulty] = level.copyWith(currentIndex: 0);
+  }
+  print(updatedProgress[topic]![difficulty]!.currentIndex);
+
+  // Emit updated state
+  emit(state.copyWith(
+    progress: updatedProgress,
+    currentRound: [], // clear current round
+    isLevelFinished: false,
+  ));
+}
+
+void resetAllProgress() {
+  // Clear all Hive progress
+  for (var topicEntry in state.progress.entries) {
+    final topic = topicEntry.key;
+    for (var difficultyEntry in topicEntry.value.entries) {
+      final difficulty = difficultyEntry.key;
+      final key = '${topic.name}_${difficulty.name}';
+      _box.put(key, 0);
+    }
+  }
+
+  // Reset all in-memory progress
+  final updatedProgress = state.progress.map((topic, diffMap) {
+    final resetDiffMap = diffMap.map((difficulty, level) {
+      return MapEntry(difficulty, level.copyWith(currentIndex: 0));
+    });
+    return MapEntry(topic, resetDiffMap);
+  });
+
+  emit(state.copyWith(
+    progress: updatedProgress,
+    currentRound: [],
+    isLevelFinished: false,
+  ));
+}
 }
