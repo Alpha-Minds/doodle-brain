@@ -1,12 +1,9 @@
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
 import 'package:doodle_brain/controllers/quiz/cubit/quiz_cubit.dart';
-import 'package:doodle_brain/main.dart';
 import 'package:doodle_brain/models/enums.dart';
-import 'package:doodle_brain/models/item_model.dart';
 import 'package:doodle_brain/models/themes.dart';
-import 'package:doodle_brain/models/user_model.dart';
-import 'package:doodle_brain/widgets/custom_button.dart';
+import 'package:doodle_brain/pages/rewardScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -16,11 +13,37 @@ class Fightscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<QuizCubit, QuizState>(
-      listener: (context, state){if (state.roundStatus != RoundStatus.playing) Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => MyWidget(),));},
+      listenWhen: (previous, current) =>
+          previous.roundStatus != current.roundStatus,
+      listener: (context, state) {
+        if (state.roundStatus != RoundStatus.playing) {
+          if (state.roundStatus==RoundStatus.playerDead) {
+
+            Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (_) => RewardScreen(massage: "you lose!",)),
+          );
+          } else if (state.roundStatus==RoundStatus.monsterDead) {
+            Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (_) => RewardScreen(massage: "you win!",)),
+          );
+          } 
+          
+        }
+      },
       builder: (context, state) {
         if (state.isLoading) {
           return Scaffold(body: Center(child: CircularProgressIndicator()));
         }
+        if (state.roundStatus != RoundStatus.playing) {
+          return const SizedBox(); // 👈 prevent building fight UI
+        }
+
+        if (state.currentRound.isEmpty) {
+          return const SizedBox(); // 👈 extra safety
+        }
+
         return Theme(
           data: fightTheme[state.currentTopic]!,
           child: Scaffold(
@@ -109,25 +132,6 @@ class Fightscreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          // child: Container(
-                          //   decoration: BoxDecoration(
-                          //     borderRadius: BorderRadius.circular(7),
-                          //     border: Border.all(
-                          //       color: Theme.of(context).colorScheme.onPrimary,
-                          //       width: 3,
-                          //     ),
-                          //     color: Theme.of(context).colorScheme.primary,
-                          //   ),
-                          //   child: Center(
-                          //     child: Text(
-                          //       state.currentRound.first.question,
-                          //       style: TextStyle(
-                          //         fontSize: 18,
-                          //         fontWeight: FontWeight.bold,
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
                         ),
                         SizedBox(height: 15),
                         SizedBox(
@@ -142,7 +146,11 @@ class Fightscreen extends StatelessWidget {
                                 ),
                             itemCount: 4,
                             itemBuilder: (context, index) => ElevatedButton(
-                              onPressed: () {context.read<QuizCubit>().submitAnswer(state.currentRound.first.choices[index]);},
+                              onPressed: () {
+                                context.read<QuizCubit>().submitAnswer(
+                                  state.currentRound.first.choices[index],
+                                );
+                              },
                               child: Text(
                                 state.currentRound.first.choices[index],
                               ),

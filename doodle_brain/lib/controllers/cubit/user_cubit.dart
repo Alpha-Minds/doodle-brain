@@ -58,7 +58,7 @@ class UserCubit extends Cubit<UserState> {
       if (current.coins < price ) {
       return false;
     }
-    changeCoins(-price);
+    await changeCoins(-price);
 
       String? newWeaponId = current.equippedWeapon;
 

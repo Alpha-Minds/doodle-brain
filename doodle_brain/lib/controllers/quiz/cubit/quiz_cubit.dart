@@ -88,7 +88,7 @@ class QuizCubit extends Cubit<QuizState> {
     progress[topic]![difficulty] = levelProgress;
 
     // Emit updated state
-    print(state.currentRound.toString());
+    
     emit(
       state.copyWith(
         progress: progress,
@@ -217,6 +217,9 @@ class QuizCubit extends Cubit<QuizState> {
 
   // Handles damage logic for player and monster
   void _applyDamage({required bool isCorrect}) {
+
+    if (state.roundStatus != RoundStatus.playing) return;
+
     int playerHealth = state.currentPlayerHealth;
     int monsterHealth = state.currentMonsterHealth;
 
@@ -238,6 +241,7 @@ class QuizCubit extends Cubit<QuizState> {
 
     // If player dies
     if (playerHealth <= 0) {
+      _timer?.cancel();
       emit(
         state.copyWith(
           currentPlayerHealth: 0,
@@ -249,6 +253,7 @@ class QuizCubit extends Cubit<QuizState> {
 
     // If monster dies
     if (monsterHealth <= 0) {
+      _timer?.cancel();
       emit(
         state.copyWith(
           currentRound: [],

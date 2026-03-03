@@ -19,7 +19,7 @@ void main() async {
 
   await ItemService().loadItems();
 
-   runApp(
+  runApp(
     MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => UserCubit(box)),
@@ -37,55 +37,8 @@ class DoodleBrain extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Builder(
-        builder: (context) {
-          return Scaffold(
-            body: Column(
-              children: [ElevatedButton(
-                    onPressed: () async {
-                      await context.read<QuizCubit>().selectLevel(
-                        Topic.general,
-                        Difficulty.easy,
-                      );
-                       context.read<QuizCubit>().resetCurrentLevel();
-                       print("reset");
-                    },
-                    child: const Text("click reset"),
-                  ),
-                Center(
-                  child: ElevatedButton(
-                    onPressed: () async {
-                       await context.read<QuizCubit>().selectLevel(
-                        Topic.general,
-                        Difficulty.easy,
-                      );
-                
-                      context.read<QuizCubit>().nextRound();
-                      context.read<QuizCubit>().startTimer();
-                
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => Fightscreen(),
-                        ),
-                      );
-                    },
-                    child: const Text("click"),
-                  ),
-                ),
-              ],
-            ),
-          );
-        },
-      ),
     );
   }
 }
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
+
