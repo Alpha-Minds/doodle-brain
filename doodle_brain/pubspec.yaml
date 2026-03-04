@@ -71,6 +71,7 @@ flutter:
     - lib/assets/graphics/weapons/
     - lib/assets/graphics/enemies/
     - lib/assets/icons/
+    - lib/assets/
     - lib/assets/backgrounds/
 
   # An image asset can refer to one or more resolution-specific "variants", see
