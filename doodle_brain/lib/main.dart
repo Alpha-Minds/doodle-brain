@@ -1,3 +1,4 @@
+import 'package:doodle_brain/controllers/cubit/nav_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/models/user_model.dart';
 import 'package:doodle_brain/pages/inventory.dart';
@@ -17,7 +18,13 @@ void main() async {
   await ItemService().loadItems();
 
   runApp(
-    BlocProvider(create: (context) => UserCubit(box), child: DoodleBrain()),
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => UserCubit(box)),
+        BlocProvider(create: (context) => NavigationCubit()),
+      ],
+      child: const DoodleBrain(),
+    ),
   );
 }
 
@@ -26,6 +33,10 @@ class DoodleBrain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Inventory());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Doodle Brain",
+      home: Inventory(),
+    );
   }
 }
