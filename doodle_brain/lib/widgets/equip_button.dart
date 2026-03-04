@@ -46,7 +46,7 @@ class ButtonEquipped extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: Color(0xffc26a2e).withOpacity(0.7),
-        padding: EdgeInsets.symmetric(horizontal: 22, vertical: 10),
+        padding: EdgeInsets.symmetric(horizontal: 22, vertical: 15),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         elevation: 8,
       ),
@@ -57,7 +57,7 @@ class ButtonEquipped extends StatelessWidget {
         "EQUIPPED",
         style: GoogleFonts.playfair(
           fontWeight: FontWeight.w700,
-          fontSize: 18,
+          fontSize: 20,
           color: Color(0xffe6d2b5),
         ),
       ),
