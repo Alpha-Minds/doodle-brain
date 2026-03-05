@@ -121,7 +121,7 @@ final Map<Topic, ThemeData> fightTheme = {
 
 final Map<Topic, String> monsterUrl = {
   Topic.islam: "lib/assets/graphics/enemies/islam.png",
-  Topic.general: "lib/assets/graphics/enemies/islam.png",
+  Topic.general: "lib/assets/graphics/enemies/general.png",
   Topic.math: "lib/assets/graphics/enemies/math.png",
   Topic.programming: "lib/assets/graphics/enemies/programming.png",
 };
