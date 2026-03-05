@@ -7,7 +7,7 @@ import 'package:doodle_brain/services/ItemSecrvice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-
+import 'package:doodle_brain/pages/profileScreen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -37,24 +37,8 @@ class DoodleBrain extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: Builder(
-      //   builder: (context) {
-      //     return Scaffold(body: ElevatedButton(
-      //       onPressed: () async {
-      //         await context.read<QuizCubit>().selectLevel(Topic.general, Difficulty.easy);
-      //         // context.read<QuizCubit>().resetCurrentLevel();
-      //         context.read<QuizCubit>().startRound();
-      //         Navigator.pushReplacement(
-      //     context,
-      //     MaterialPageRoute(
-      //       builder: (_) => const Fightscreen(),
-      //     ),
-      //         );
-      //       },
-      //       child: const Text("Start Fight"),
-      //     ),);
-      //   }
-      // ),
+      home: Profile(),
+
     );
   }
 }
