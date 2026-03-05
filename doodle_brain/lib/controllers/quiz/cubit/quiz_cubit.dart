@@ -131,30 +131,10 @@ class QuizCubit extends Cubit<QuizState> {
 
     print(round.length);
 
-    // Update index
-    final updatedLevel = level.copyWith(
-      questions: questions,
-      currentIndex: end,
-    );
 
-    // Save updated index in Hive
-    final key = '${topic.name}_${difficulty.name}';
-    _box.put(key, updatedLevel.currentIndex);
-
-    // Clone progress map
-    final updatedProgress =
-        Map<Topic, Map<Difficulty, LevelProgress<Question>>>.from(
-          state.progress,
-        );
-
-    updatedProgress[topic] = Map<Difficulty, LevelProgress<Question>>.from(
-      updatedProgress[topic]!,
-    );
-
-    updatedProgress[topic]![difficulty] = updatedLevel;
 
     // Emit new round
-    emit(state.copyWith(currentRound: round, progress: updatedProgress));
+    emit(state.copyWith(currentRound: round));
   }
 
   // Start a new round with initial stats
@@ -254,13 +234,40 @@ class QuizCubit extends Cubit<QuizState> {
     // If monster dies
     if (monsterHealth <= 0) {
       _timer?.cancel();
-      emit(
-        state.copyWith(
-          currentRound: [],
-          currentMonsterHealth: 0,
-          roundStatus: RoundStatus.monsterDead,
-        ),
+       final topic = state.currentTopic!;
+  final difficulty = state.currentDifficulty!;
+  final level = state.progress[topic]![difficulty]!;
+
+  // Move forward by number of questions in this round
+  final newIndex = level.currentIndex + 5;
+
+  final updatedLevel = level.copyWith(
+    currentIndex: newIndex,
+  );
+
+  final key = '${topic.name}_${difficulty.name}';
+  _box.put(key, newIndex);
+
+  final updatedProgress =
+      Map<Topic, Map<Difficulty, LevelProgress<Question>>>.from(
+        state.progress,
       );
+
+  updatedProgress[topic] =
+      Map<Difficulty, LevelProgress<Question>>.from(
+        updatedProgress[topic]!,
+      );
+
+  updatedProgress[topic]![difficulty] = updatedLevel;
+
+  emit(
+    state.copyWith(
+      currentRound: [],
+      currentMonsterHealth: 0,
+      roundStatus: RoundStatus.monsterDead,
+      progress: updatedProgress,
+    ),
+  );
       return;
     }
 
@@ -331,5 +338,10 @@ void resetAllProgress() {
     currentRound: [],
     isLevelFinished: false,
   ));
+}
+@override
+Future<void> close() {
+  _timer?.cancel();
+  return super.close();
 }
 }
