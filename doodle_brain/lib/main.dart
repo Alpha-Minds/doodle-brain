@@ -37,24 +37,24 @@ class DoodleBrain extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Builder(
-        builder: (context) {
-          return Scaffold(body: ElevatedButton(
-            onPressed: () async {
-              await context.read<QuizCubit>().selectLevel(Topic.general, Difficulty.easy);
-              // context.read<QuizCubit>().resetCurrentLevel();
-              context.read<QuizCubit>().startRound();
-              Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (_) => const Fightscreen(),
-          ),
-              );
-            },
-            child: const Text("Start Fight"),
-          ),);
-        }
-      ),
+      // home: Builder(
+      //   builder: (context) {
+      //     return Scaffold(body: ElevatedButton(
+      //       onPressed: () async {
+      //         await context.read<QuizCubit>().selectLevel(Topic.general, Difficulty.easy);
+      //         // context.read<QuizCubit>().resetCurrentLevel();
+      //         context.read<QuizCubit>().startRound();
+      //         Navigator.pushReplacement(
+      //     context,
+      //     MaterialPageRoute(
+      //       builder: (_) => const Fightscreen(),
+      //     ),
+      //         );
+      //       },
+      //       child: const Text("Start Fight"),
+      //     ),);
+      //   }
+      // ),
     );
   }
 }
