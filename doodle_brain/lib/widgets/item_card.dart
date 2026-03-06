@@ -42,7 +42,7 @@ class ItemCard extends StatelessWidget {
 
         child: Column(
           children: [
-            ClipRRect(child: Image.asset(image, width: 150, height: 150)),
+            Image.asset(image, width: 150, height: 150),
             Text(
               title,
               style: GoogleFonts.uncialAntiqua(
