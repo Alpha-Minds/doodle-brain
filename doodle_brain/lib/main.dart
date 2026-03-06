@@ -1,4 +1,6 @@
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
+import 'package:doodle_brain/cubit/NavigationCubit.dart';
+import 'package:doodle_brain/pages/inventory.dart';
 import 'package:doodle_brain/controllers/quiz/cubit/quiz_cubit.dart';
 import 'package:doodle_brain/models/enums.dart';
 import 'package:doodle_brain/models/user_model.dart';
@@ -23,6 +25,7 @@ void main() async {
     MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => UserCubit(box)),
+        BlocProvider(create: (context) => NavigationCubit()),
         BlocProvider(create: (context) => QuizCubit()),
       ],
       child: const DoodleBrain(),
@@ -37,8 +40,8 @@ class DoodleBrain extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Profile(),
-
+      title: "Doodle Brain",
+      home: Inventory(),
     );
   }
 }

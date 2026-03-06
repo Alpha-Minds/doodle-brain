@@ -11,6 +11,7 @@ class Item {
     required this.image_url,
     required this.price,
   });
+  
   /// function that convert json to an item object
   factory Item.fromJson(Map<String, dynamic> json) {
     return Item(
@@ -21,3 +22,4 @@ class Item {
     );
   }
 }
+ 

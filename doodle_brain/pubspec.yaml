@@ -37,7 +37,7 @@ dependencies:
   hive_flutter: ^1.1.0
   flutter_bloc: ^9.1.1
   equatable: ^2.0.8
-  google_fonts: ^6.3.2
+  google_fonts: ^8.0.2
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +74,9 @@ flutter:
     - lib/assets/graphics/character/
     - lib/assets/graphics/weapons/
     - lib/assets/graphics/enemies/
+    - lib/assets/icons/
+    - lib/assets/
+    - lib/assets/backgrounds/
     - lib/assets/graphics/others/
 
   # An image asset can refer to one or more resolution-specific "variants", see
