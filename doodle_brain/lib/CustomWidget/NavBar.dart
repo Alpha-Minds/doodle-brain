@@ -15,7 +15,7 @@ Widget buildCustomNavBar(BuildContext context) {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             buildNavIcon(context, 'lib/assets/battle.png', "Battle", 0, state),
-            buildNavIcon(context, 'lib/assets/shop.png', "Shop", 1, state),
+            buildNavIcon(context, 'lib/assets/store.png', "Shop", 1, state),
             buildNavIcon(
               context,
               'lib/assets/inventory.png',

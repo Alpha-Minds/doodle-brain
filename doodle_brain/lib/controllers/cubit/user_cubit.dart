@@ -33,7 +33,6 @@ class UserCubit extends Cubit<UserState> {
     if(state is UserLoaded){
       final current = (state as UserLoaded).user;
       final updated = current.copyWith(coins: current.coins+amount);
-      if (updated.coins<0) updated.copyWith(coins: 0);
       await box.put('currentUser', updated);
       emit(UserLoaded(updated));
     }
@@ -43,7 +42,6 @@ class UserCubit extends Cubit<UserState> {
     if(state is UserLoaded){
       final current = (state as UserLoaded).user;
       final updated = current.copyWith(points: current.points+amount);
-      if (updated.points<0) updated.copyWith(points: 0);
       await box.put('currentUser', updated);
       emit(UserLoaded(updated));
     }
@@ -60,7 +58,7 @@ class UserCubit extends Cubit<UserState> {
       if (current.coins < price ) {
       return false;
     }
-    await changeCoins(-price);
+    changeCoins(-price);
 
       String? newWeaponId = current.equippedWeapon;
 

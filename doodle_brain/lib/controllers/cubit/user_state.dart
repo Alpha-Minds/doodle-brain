@@ -41,11 +41,9 @@ List<Item> getShopWeapons(){
   ///getter for all the items in the inventory of the user
   List<Item> getUserItems() =>
       ItemService().getItemsByIds(user.inventoryItemsIds);
-
   ///getter for all the characters in the inventory of the user
   List<Item> getUserCharacters() =>
       getUserItems().where((item) => item.id.startsWith('c')).toList();
-      
   ///getter for all the weapons in the inventory of the user
   List<Item> getUserWeapons() =>
       getUserItems().where((item) => item.id.startsWith('w')).toList();

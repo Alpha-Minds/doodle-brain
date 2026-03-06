@@ -1,7 +1,7 @@
 class Question {
   final int id;
   final String question;
-  final List choices;
+  final List<String> choices;
   final String answer;
 
   Question({
