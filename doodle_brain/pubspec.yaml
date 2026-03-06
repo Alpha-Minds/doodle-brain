@@ -37,7 +37,7 @@ dependencies:
   hive_flutter: ^1.1.0
   flutter_bloc: ^9.1.1
   equatable: ^2.0.8
-  google_fonts: ^6.3.2
+  google_fonts: ^8.0.2
 
 dev_dependencies:
   flutter_test:
@@ -77,6 +77,9 @@ flutter:
 
     - lib/assets/back ground/background.png
     - lib/assets/back ground/coin.jpeg
+    - lib/assets/icons/
+    - lib/assets/
+    - lib/assets/backgrounds/
     - lib/assets/graphics/others/
 
 
@@ -91,12 +94,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: bios
+      fonts:
+        - asset: lib/assets/fonts/bios.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
