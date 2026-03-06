@@ -1,3 +1,4 @@
+import 'package:doodle_brain/CustomWidget/NavBar.dart';
 import 'package:doodle_brain/models/item_model.dart';
 import 'package:doodle_brain/widgets/item_card.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
@@ -25,6 +26,7 @@ class Inventory extends StatelessWidget {
           length: 2,
           child: SafeArea(
             child: Scaffold(
+              bottomNavigationBar: buildCustomNavBar(context),
               backgroundColor: Colors.transparent,
               appBar: AppBar(
                 backgroundColor: Colors.transparent,
