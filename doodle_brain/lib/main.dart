@@ -1,5 +1,5 @@
-import 'package:doodle_brain/controllers/cubit/nav_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
+import 'package:doodle_brain/cubit/NavigationCubit.dart';
 import 'package:doodle_brain/models/user_model.dart';
 import 'package:doodle_brain/pages/inventory.dart';
 import 'package:doodle_brain/services/ItemSecrvice.dart';
