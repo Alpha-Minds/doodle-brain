@@ -57,7 +57,7 @@ class BattlePage extends StatelessWidget {
                       height: 250,
                       // Fallback image if the specific character image fails to load
                       errorBuilder: (context, error, stackTrace) =>
-                          Image.asset("lib/assets/char.png"),
+                          Image.asset("lib/assets/graphics/character/1.png"),
                     ),
                     const SizedBox(height: 20),
                     buildPlayButton(),

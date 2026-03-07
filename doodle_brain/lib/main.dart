@@ -7,6 +7,12 @@ import 'package:doodle_brain/services/ItemSecrvice.dart';
 import 'cubit/NavigationCubit.dart';
 import './pages/GameHomeScreen.dart';
 
+// import 'package:doodle_brain/store.dart';
+
+// import 'package:flutter/material.dart';
+// import 'package:flutter_bloc/flutter_bloc.dart';
+// import 'package:hive_flutter/hive_flutter.dart';
+// import 'package:doodle_brain/pages/profileScreen.dart';
 void main() async {
    WidgetsFlutterBinding.ensureInitialized();
 
@@ -34,7 +40,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Doodle Brain',
       theme: ThemeData(primarySwatch: Colors.brown),

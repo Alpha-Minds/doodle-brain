@@ -14,18 +14,18 @@ Widget buildCustomNavBar(BuildContext context) {
         return Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            buildNavIcon(context, 'lib/assets/battle.png', "Battle", 0, state),
-            buildNavIcon(context, 'lib/assets/store.png', "Shop", 1, state),
+            buildNavIcon(context, 'lib/assets/graphics/others/battle.png', "Battle", 0, state),
+            buildNavIcon(context, 'lib/assets/graphics/others/store.png', "Shop", 1, state),
             buildNavIcon(
               context,
-              'lib/assets/inventory.png',
+              'lib/assets/graphics/others/inventory.png',
               "Inventory",
               2,
               state,
             ),
             buildNavIcon(
               context,
-              'lib/assets/profile.png',
+              'lib/assets/graphics/others/profile.png',
               "Profile",
               3,
               state,

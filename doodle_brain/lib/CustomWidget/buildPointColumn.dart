@@ -5,7 +5,7 @@
         Text(title),
         Row(
           children: [
-            Image.asset("lib/assets/coins.png", width: 20, height: 20),
+            Image.asset("lib/assets/graphics/others/coins.png", width: 20, height: 20),
             Text(value),
           ],
         ),

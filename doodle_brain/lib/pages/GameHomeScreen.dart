@@ -35,7 +35,7 @@ class GameHomeScreen extends StatelessWidget {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset("lib/assets/background.jpeg", fit: BoxFit.cover),
+            child: Image.asset("lib/assets/graphics/background/1.png", fit: BoxFit.cover),
           ),
           Column(
             children: [
