@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../cubit/NavigationCubit.dart';
 import 'boxDecoration.dart';
-
+import '../assets/fonts/app_fonts.dart';
 
 Widget buildCustomNavBar(BuildContext context) {
   return Container(
@@ -14,8 +14,20 @@ Widget buildCustomNavBar(BuildContext context) {
         return Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            buildNavIcon(context, 'lib/assets/graphics/others/battle.png', "Battle", 0, state),
-            buildNavIcon(context, 'lib/assets/graphics/others/store.png', "Shop", 1, state),
+            buildNavIcon(
+              context,
+              'lib/assets/graphics/others/battle.png',
+              "Battle",
+              0,
+              state,
+            ),
+            buildNavIcon(
+              context,
+              'lib/assets/graphics/others/store.png',
+              "Shop",
+              1,
+              state,
+            ),
             buildNavIcon(
               context,
               'lib/assets/graphics/others/inventory.png',
@@ -57,9 +69,10 @@ Widget buildNavIcon(
         const SizedBox(height: 4),
         Text(
           label,
-          style: TextStyle(
+          style: AppFonts.titlesFont(
             fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
             color: isActive ? Colors.brown : Colors.brown.withOpacity(0.6),
+            fontSize: 14,
           ),
         ),
       ],

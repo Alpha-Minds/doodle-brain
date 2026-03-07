@@ -26,7 +26,7 @@ Widget buildHeader(BuildContext context) {
                 ),
               ),
               const Text(
-                "Doodle Draw",
+                "Doodle Brain",
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
