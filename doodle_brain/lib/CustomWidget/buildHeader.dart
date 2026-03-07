@@ -1,3 +1,4 @@
+import 'package:doodle_brain/assets/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../cubit/NavigationCubit.dart';
@@ -5,7 +6,7 @@ import 'boxDecoration.dart';
 import '../controllers/cubit/user_cubit.dart';
 import '../controllers/cubit/user_state.dart';
 
-Widget buildHeader(BuildContext context) {
+Widget buildHeader(BuildContext context,{String title="Doodle Brain"}) {
   return BlocBuilder<UserCubit, UserState>(
     builder: (context, state) {
       if (state is UserLoaded) {
@@ -25,19 +26,44 @@ Widget buildHeader(BuildContext context) {
                   height: 25,
                 ),
               ),
-              const Text(
+               Text(
                 "Doodle Brain",
-                style: TextStyle(
+                style: AppFonts.titlesFont(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: Colors.brown,
                 ),
               ),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const Icon(Icons.monetization_on, color: Colors.amber),
+                  Image.asset(
+                    "lib/assets/graphics/others/points.png",
+                    width: 30,
+                    height: 30,
+                  ),
                   const SizedBox(width: 4),
-                  Text("${user.coins}"),
+                  Text(
+                    "${user.points}",
+                    style: AppFonts.buttonsFont(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  Image.asset(
+                    "lib/assets/graphics/others/coins.png",
+                    width: 30,
+                    height: 30,
+                  ),
+                  const SizedBox(width: 4),
+                  Text(
+                    "${user.coins}",
+                    style: AppFonts.buttonsFont(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ],

@@ -1,4 +1,5 @@
 import 'package:doodle_brain/CustomWidget/NavBar.dart';
+import 'package:doodle_brain/CustomWidget/boxDecoration.dart';
 import 'package:doodle_brain/CustomWidget/item_card.dart';
 import 'package:doodle_brain/models/item_model.dart';
 // import 'package:doodle_brain/widgets/item_card.dart';
@@ -38,10 +39,15 @@ class Inventory extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 2.5,
+                        ),
+                        decoration: boxDecoration(),
                         child: Text(
                           "INVENTORY",
                           style: GoogleFonts.uncialAntiqua(
-                            fontSize: 45,
+                            fontSize: 30,
                             fontWeight: FontWeight.bold,
                             letterSpacing: 5,
                             color: Color(0xff2a1b14),
@@ -78,15 +84,15 @@ class Inventory extends StatelessWidget {
                             margin: EdgeInsets.only(bottom: 3),
                             child: Image.asset(
                               "lib/assets/icons/helmet.png",
-                              width: 45,
-                              height: 45,
+                              width: 35,
+                              height: 35,
                             ),
                           ),
                           SizedBox(width: 2),
                           Text(
                             "Characters",
                             style: GoogleFonts.playfair(
-                              fontSize: 30,
+                              fontSize: 20,
                               fontWeight: FontWeight.w700,
                               letterSpacing: 1.25,
                             ),
@@ -99,14 +105,14 @@ class Inventory extends StatelessWidget {
                         children: [
                           Image.asset(
                             "lib/assets/icons/swords.png",
-                            width: 33,
-                            height: 33,
+                            width: 25,
+                            height: 25,
                           ),
                           SizedBox(width: 8.5),
                           Text(
                             "Weapons",
                             style: GoogleFonts.playfair(
-                              fontSize: 30,
+                              fontSize: 20,
                               fontWeight: FontWeight.w700,
                               letterSpacing: 1.25,
                             ),

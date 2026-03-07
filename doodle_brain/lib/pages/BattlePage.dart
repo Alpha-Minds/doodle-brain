@@ -25,23 +25,23 @@ class BattlePage extends StatelessWidget {
           return SingleChildScrollView(
             child: Column(
               children: [
-                const SizedBox(height: 12),
-                Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 16),
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: const Color(0xffC9B2A0),
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.brown, width: 2),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      buildPointColumn("Points", "${user.points}"),
-                      buildPointColumn("Points", "${user.points}"),
-                    ],
-                  ),
-                ),
+                // const SizedBox(height: 1),
+                // Container(
+                //   margin: const EdgeInsets.symmetric(horizontal: 16),
+                //   padding: const EdgeInsets.all(12),
+                //   decoration: BoxDecoration(
+                //     color: const Color(0xffC9B2A0),
+                //     borderRadius: BorderRadius.circular(12),
+                //     border: Border.all(color: Colors.brown, width: 2),
+                //   ),
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+                //     children: [
+                //       buildPointColumn("Points", "${user.points}"),
+                //       buildPointColumn("Points", "${user.points}"),
+                //     ],
+                //   ),
+                // ),
                 const SizedBox(height: 20),
                 Image.asset(
                   equippedChar.image_url,
