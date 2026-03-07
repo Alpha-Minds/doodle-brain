@@ -8,44 +8,48 @@ import 'package:hive_flutter/hive_flutter.dart';
 class UserCubit extends Cubit<UserState> {
   final Box<User> box;
 
-  UserCubit(this.box) : super(UserLoading()){
+  UserCubit(this.box) : super(UserLoading()) {
     loadUser();
   }
+
   ///function load the user from the database and if it the initialization of the app it will make the init user model
-  Future<void> loadUser()async{
+  Future<void> loadUser() async {
     User? user = box.get('currentUser');
 
-  if (user == null) {
-    user = User(
-      name: 'player',
-      points: 0,
-      coins: 0,
-      inventoryItemsIds: ['c1'],
-      equippedCharacter: "c1",
-    );
+    if (user == null) {
+      user = User(
+        name: 'player',
+        points: 0,
+        coins: 0,
+        inventoryItemsIds: ['c1'],
+        equippedCharacter: "c1",
+      );
 
-    await box.put('currentUser', user);
+      await box.put('currentUser', user);
+    }
+    emit(UserLoaded(user));
   }
-  emit(UserLoaded(user));
-  }
+
   ///function for change coins by adding (if you want to buy make the amount negative to subtract)
-  Future<void> changeCoins(int amount) async{
-    if(state is UserLoaded){
+  Future<void> changeCoins(int amount) async {
+    if (state is UserLoaded) {
       final current = (state as UserLoaded).user;
-      final updated = current.copyWith(coins: current.coins+amount);
+      final updated = current.copyWith(coins: current.coins + amount);
       await box.put('currentUser', updated);
       emit(UserLoaded(updated));
     }
   }
+
   /// function for change points by adding (if the user lose in game make the amount negative to subtract)
-  Future<void> changePoints(int amount) async{
-    if(state is UserLoaded){
+  Future<void> changePoints(int amount) async {
+    if (state is UserLoaded) {
       final current = (state as UserLoaded).user;
-      final updated = current.copyWith(points: current.points+amount);
+      final updated = current.copyWith(points: current.points + amount);
       await box.put('currentUser', updated);
       emit(UserLoaded(updated));
     }
   }
+
   /// function for buy item and add it to inventory and subtract the price from thr user coins
   Future<bool> buyItem(String itemId) async {
     if (state is UserLoaded) {
@@ -55,10 +59,10 @@ class UserCubit extends Cubit<UserState> {
 
       final price = ItemService().getItemById(itemId).price;
 
-      if (current.coins < price ) {
-      return false;
-    }
-    changeCoins(-price);
+      if (current.coins < price) {
+        return false;
+      }
+      // await changeCoins(-price);
 
       String? newWeaponId = current.equippedWeapon;
 
@@ -67,6 +71,7 @@ class UserCubit extends Cubit<UserState> {
       }
 
       final updated = current.copyWith(
+        coins: current.coins - price,
         inventoryItemsIds: [...current.inventoryItemsIds, itemId],
         equippedWeapon: newWeaponId,
       );
@@ -77,6 +82,7 @@ class UserCubit extends Cubit<UserState> {
     }
     return false;
   }
+
   ///function equipped the character from inventory
   Future<void> equipCharacter(String characterId) async {
     if (state is UserLoaded) {
@@ -90,6 +96,7 @@ class UserCubit extends Cubit<UserState> {
       emit(UserLoaded(updated));
     }
   }
+
   ///function equipped the weapon from inventory
   Future<void> equipWeapon(String weaponId) async {
     if (state is UserLoaded) {

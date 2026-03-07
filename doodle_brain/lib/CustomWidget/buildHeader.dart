@@ -6,7 +6,7 @@ import 'boxDecoration.dart';
 import '../controllers/cubit/user_cubit.dart';
 import '../controllers/cubit/user_state.dart';
 
-Widget buildHeader(BuildContext context,{String title="Doodle Brain"}) {
+Widget buildHeader(BuildContext context, {String title = "Doodle Brain"}) {
   return BlocBuilder<UserCubit, UserState>(
     builder: (context, state) {
       if (state is UserLoaded) {
@@ -26,10 +26,10 @@ Widget buildHeader(BuildContext context,{String title="Doodle Brain"}) {
                   height: 25,
                 ),
               ),
-               Text(
-                "Doodle Brain",
+              Text(
+                title,
                 style: AppFonts.titlesFont(
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.brown,
                 ),

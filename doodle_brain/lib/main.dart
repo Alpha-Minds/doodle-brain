@@ -1,3 +1,4 @@
+import 'package:doodle_brain/controllers/quiz/cubit/quiz_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -14,7 +15,7 @@ import './pages/GameHomeScreen.dart';
 // import 'package:hive_flutter/hive_flutter.dart';
 // import 'package:doodle_brain/pages/profileScreen.dart';
 void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
 
   await Hive.initFlutter();
   if (!Hive.isAdapterRegistered(UserAdapter().typeId)) {
@@ -22,13 +23,16 @@ void main() async {
   }
 
   final box = await Hive.openBox<User>('userBox');
+  final box1= await Hive.openBox('quizProgress');
+  // await Future.wait([box.clear(),box1.clear()]);
   await ItemService().loadItems();
 
-   runApp(
+  runApp(
     MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => UserCubit(box)),
-         BlocProvider(create: (context) => NavigationCubit()),
+        BlocProvider(create: (context) => QuizCubit()),
+        BlocProvider(create: (context) => NavigationCubit()),
       ],
       child: const MyApp(),
     ),
@@ -40,11 +44,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Doodle Brain',
       theme: ThemeData(primarySwatch: Colors.brown),
-       home:  GameHomeScreen(),
+      home: GameHomeScreen(),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:doodle_brain/controllers/TopicSelector/cubit/topic_selector_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../controllers/cubit/user_cubit.dart';
@@ -51,12 +52,23 @@ class BattlePage extends StatelessWidget {
                   errorBuilder: (context, error, stackTrace) =>
                       Image.asset("lib/assets/char.png", height: 250),
                 ),
-                const SizedBox(height: 20),
-                buildPlayButton(),
-                const SizedBox(height: 25),
-                buildDifficultyButtons("Easy"),
-                const SizedBox(height: 20),
-                buildTopicButtons("Islamic"),
+                BlocProvider(
+                  create: (context) => TopicSelectorCubit(),
+                  child: BlocBuilder<TopicSelectorCubit, TopicSelectorState>(
+                    builder: (context, state) {
+                      return Column(
+                        children: [
+                          const SizedBox(height: 20),
+                          buildPlayButton(context,state.currentTopic,state.currentDifficulty),
+                          const SizedBox(height: 25),
+                          buildDifficultyButtons(state.currentDifficulty.name,context),
+                          const SizedBox(height: 20),
+                          buildTopicButtons(state.currentTopic.name,context),
+                        ],
+                      );
+                    },
+                  ),
+                ),
               ],
             ),
           );

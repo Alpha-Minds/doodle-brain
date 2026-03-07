@@ -21,12 +21,12 @@ class Fightscreen extends StatelessWidget {
 
             Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (_) => RewardScreen(massage: "you lose!",)),
+            MaterialPageRoute(builder: (_) => RewardScreen(message: "you lose!",)),
           );
           } else if (state.roundStatus==RoundStatus.monsterDead) {
             Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (_) => RewardScreen(massage: "you win!",)),
+            MaterialPageRoute(builder: (_) => RewardScreen(message: "you win!",)),
           );
           } 
           

@@ -26,7 +26,7 @@ class ButtonEquip extends StatelessWidget {
       },
       child: Text(
         "EQUIP",
-        style: GoogleFonts.medievalSharp(
+        style: GoogleFonts.playfair(
           fontWeight: FontWeight.w700,
           fontSize: 19,
           color: Color(0xffe6d2b5),
