@@ -37,19 +37,21 @@ class GameHomeScreen extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Column(
-            children: [
-              const SizedBox(height: 5),
-              buildHeader(context),
-              Expanded(
-                child: BlocBuilder<NavigationCubit, int>(
-                  builder: (context, state) {
-                    return BattlePage();
-                  },
+          SafeArea(
+            child: Column(
+              children: [
+                const SizedBox(height: 5),
+                buildHeader(context),
+                Expanded(
+                  child: BlocBuilder<NavigationCubit, int>(
+                    builder: (context, state) {
+                      return BattlePage();
+                    },
+                  ),
                 ),
-              ),
-              buildCustomNavBar(context),
-            ],
+                buildCustomNavBar(context),
+              ],
+            ),
           ),
         ],
       ),

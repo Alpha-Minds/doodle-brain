@@ -39,53 +39,55 @@ class StoreScreen extends StatelessWidget {
                 child: Container(color: Colors.white.withOpacity(0.2)),
               ),
 
-              Column(
-                children: [
-                  buildHeader(context, title: "Store"),
-                  Expanded(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          const SizedBox(height: 20),
-
-                          /// ===== STORE TITLE =====
-                          // Column(
-                          //   children: [
-                          //     Text(
-                          //       "STORE",
-                          //       style: GoogleFonts.uncialAntiqua(
-                          //         fontSize: 44,
-                          //         fontWeight: FontWeight.bold,
-                          //         color: Colors.black,
-                          //       ),
-                          //     ),
-                          //     const SizedBox(height: 8),
-                          //     Container(
-                          //       width: 250,
-                          //       height: 6,
-                          //       decoration: BoxDecoration(
-                          //         color: const Color(0xffc26a2e),
-                          //         borderRadius: BorderRadius.circular(20),
-                          //       ),
-                          //     ),
-                          //   ],
-                          // ),
-
-                          // const SizedBox(height: 10),
-
-                          /// ===== CHARACTERS =====
-                          _section(context, "CHARACTERS", characters),
-
-                          const SizedBox(height: 28),
-
-                          /// ===== WEAPONS =====
-                          _section(context, "WEAPONS", weapons),
-                        ],
+              SafeArea(
+                child: Column(
+                  children: [
+                    buildHeader(context, title: "Store"),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 20),
+                
+                            /// ===== STORE TITLE =====
+                            // Column(
+                            //   children: [
+                            //     Text(
+                            //       "STORE",
+                            //       style: GoogleFonts.uncialAntiqua(
+                            //         fontSize: 44,
+                            //         fontWeight: FontWeight.bold,
+                            //         color: Colors.black,
+                            //       ),
+                            //     ),
+                            //     const SizedBox(height: 8),
+                            //     Container(
+                            //       width: 250,
+                            //       height: 6,
+                            //       decoration: BoxDecoration(
+                            //         color: const Color(0xffc26a2e),
+                            //         borderRadius: BorderRadius.circular(20),
+                            //       ),
+                            //     ),
+                            //   ],
+                            // ),
+                
+                            // const SizedBox(height: 10),
+                
+                            /// ===== CHARACTERS =====
+                            _section(context, "CHARACTERS", characters),
+                
+                            const SizedBox(height: 28),
+                
+                            /// ===== WEAPONS =====
+                            _section(context, "WEAPONS", weapons),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  buildCustomNavBar(context),
-                ],
+                    buildCustomNavBar(context),
+                  ],
+                ),
               ),
             ],
           ),
