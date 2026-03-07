@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../cubit/NavigationCubit.dart';
 import 'boxDecoration.dart';
-
+import '../assets/fonts/app_fonts.dart';
 
 Widget buildCustomNavBar(BuildContext context) {
   return Container(
@@ -57,9 +57,10 @@ Widget buildNavIcon(
         const SizedBox(height: 4),
         Text(
           label,
-          style: TextStyle(
+          style: AppFonts.tabsFont(
             fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
             color: isActive ? Colors.brown : Colors.brown.withOpacity(0.6),
+            fontSize: 14,
           ),
         ),
       ],
