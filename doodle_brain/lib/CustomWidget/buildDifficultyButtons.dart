@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
-import '../CustomWidget/expandedButton.dart';
+import 'buildCustomRadio.dart';
 
-Widget buildDifficultyButtons() {
+Widget buildDifficultyButtons(String selected) {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 16),
     child: Row(
       children: [
-        expandedButton("Easy", const Color(0xFF81A263)),
+        buildCustomRadio("Easy", const Color(0xFF81A263), selected == "Easy"),
         const SizedBox(width: 10),
-        expandedButton("Medium", const Color(0xFFE79E4F)),
+        buildCustomRadio(
+          "Medium",
+          const Color(0xFFE79E4F),
+          selected == "Medium",
+        ),
         const SizedBox(width: 10),
-        expandedButton("Hard", const Color(0xFFAD524A)),
+        buildCustomRadio("Hard", const Color(0xFFAD524A), selected == "Hard"),
       ],
     ),
   );
