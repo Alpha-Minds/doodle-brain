@@ -3,25 +3,25 @@
     "id": "c1",
     "name": "mark",
     "image_url": "lib/assets/graphics/character/1.png",
-    "price": 500
+    "price": 100
   },
   {
     "id": "c2",
     "name": "mage",
     "image_url": "lib/assets/graphics/character/2.png",
-    "price": 700
+    "price": 300
   },
   {
     "id": "c3",
     "name": "flora",
     "image_url": "lib/assets/graphics/character/3.png",
-    "price": 500
+    "price": 400
   },
   {
     "id": "c4",
     "name": "fananys",
     "image_url": "lib/assets/graphics/character/4.png",
-    "price": 800
+    "price": 250
   },
   {
     "id": "c5",
@@ -34,13 +34,13 @@
     "id": "w1",
     "name": "sword",
     "image_url": "lib/assets/graphics/weapons/1.png",
-    "price": 600
+    "price": 400
   },
   {
     "id": "w2",
     "name": "akm",
     "image_url": "lib/assets/graphics/weapons/2.png",
-    "price": 700
+    "price": 350
   },
   {
     "id": "w3",
