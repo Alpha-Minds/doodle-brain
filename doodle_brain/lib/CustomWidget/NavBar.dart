@@ -57,7 +57,7 @@ Widget buildNavIcon(
         const SizedBox(height: 4),
         Text(
           label,
-          style: AppFonts.tabsFont(
+          style: AppFonts.titlesFont(
             fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
             color: isActive ? Colors.brown : Colors.brown.withOpacity(0.6),
             fontSize: 14,
