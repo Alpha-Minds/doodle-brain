@@ -34,7 +34,11 @@ class UserCubit extends Cubit<UserState> {
   Future<void> changeCoins(int amount) async {
     if (state is UserLoaded) {
       final current = (state as UserLoaded).user;
-      final updated = current.copyWith(coins: current.coins + amount);
+      int updatedCoins = current.coins + amount;
+      if (updatedCoins<0) {
+        updatedCoins=0;
+      }
+      final updated = current.copyWith(coins: updatedCoins);
       await box.put('currentUser', updated);
       emit(UserLoaded(updated));
     }
@@ -44,7 +48,11 @@ class UserCubit extends Cubit<UserState> {
   Future<void> changePoints(int amount) async {
     if (state is UserLoaded) {
       final current = (state as UserLoaded).user;
-      final updated = current.copyWith(points: current.points + amount);
+      int updatedPoints = current.points + amount;
+      if (updatedPoints<0) {
+        updatedPoints=0;
+      }
+      final updated = current.copyWith(points: updatedPoints);
       await box.put('currentUser', updated);
       emit(UserLoaded(updated));
     }

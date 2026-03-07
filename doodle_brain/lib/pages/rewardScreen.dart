@@ -16,17 +16,22 @@ class RewardScreen extends StatefulWidget {
 }
 
 class _RewardScreenState extends State<RewardScreen> {
+
+  int coinsAmount = 0;
+  int pointsAmount = 0;
+
+  bool rewardGiven =false;
+
   @override
   void initState() {
+    _calculateReward();
     super.initState();
-    _giveReward();
   }
 
-  Future<void> _giveReward() async {
-    final state = context.read<QuizCubit>().state;
+  void _calculateReward() async  {
 
-    int coinsAmount = 0;
-    int pointsAmount = 0;
+    if (rewardGiven) return;
+    final state = context.read<QuizCubit>().state;
 
     if (state.roundStatus == RoundStatus.monsterDead) {
       switch (state.currentDifficulty) {
@@ -69,6 +74,24 @@ class _RewardScreenState extends State<RewardScreen> {
 
     await context.read<UserCubit>().changeCoins(coinsAmount);
     await context.read<UserCubit>().changePoints(pointsAmount);
+
+    rewardGiven = true;
+  }
+
+  Widget rewardRow(String asset, int value){
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset(asset,width: 40,height: 40,), SizedBox(width: 10,),
+        TweenAnimationBuilder(tween: IntTween(begin: 0,end: value), duration: const Duration(seconds: 2), builder: (context, animatedValue, child) {
+          return Text(animatedValue >= 0?"+$animatedValue":"$animatedValue",style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+            color: animatedValue >= 0 ? Colors.green : Colors.red
+          ),);
+        },)
+      ],
+    );
   }
 
   @override
@@ -87,7 +110,7 @@ class _RewardScreenState extends State<RewardScreen> {
               ),
             ),
             Positioned(
-              top: 300,
+              top: 200,
               child: SafeArea(
                 child: Column(
                   // mainAxisAlignment: MainAxisAlignment.center,
@@ -95,12 +118,25 @@ class _RewardScreenState extends State<RewardScreen> {
                     Text(
                       widget.message,
                       style: const TextStyle(
-                        fontSize: 30,
+                        fontSize: 32,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
 
-                    const SizedBox(height: 100),
+                    const SizedBox(height: 40),
+
+                    rewardRow(
+                    "lib/assets/graphics/others/coins.png",
+                    coinsAmount,
+                  ),
+                  const SizedBox(height: 20),
+
+                  rewardRow(
+                    "lib/assets/graphics/others/points.png",
+                    pointsAmount,
+                  ),
+
+                  const SizedBox(height: 60),
 
                     ElevatedButton(
                       onPressed: () {
@@ -111,7 +147,7 @@ class _RewardScreenState extends State<RewardScreen> {
                           ),
                         );
                       },
-                      child: const Text("OK"),
+                      child: const Text("Continue"),
                     ),
                   ],
                 ),
