@@ -21,12 +21,24 @@ Widget buildPlayButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
       onPressed: () async {
+        print("${context.read<QuizCubit>().state.isLevelFinished}  snack");
         await context.read<QuizCubit>().selectLevel(topic, difficulty);
         context.read<QuizCubit>().startRound();
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => Fightscreen()),
-        );
+        if (!context.read<QuizCubit>().state.isLevelFinished) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => Fightscreen()),
+          );
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                "You finished all questions in this difficulty progress",
+              ),
+              duration: Duration(seconds: 2),
+            ),
+          );
+        }
       },
       child: Text(
         "Play",

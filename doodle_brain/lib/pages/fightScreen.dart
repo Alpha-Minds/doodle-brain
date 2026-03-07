@@ -29,7 +29,6 @@ class Fightscreen extends StatelessWidget {
             MaterialPageRoute(builder: (_) => RewardScreen(message: "you win!",)),
           );
           } 
-          
         }
       },
       builder: (context, state) {

@@ -118,7 +118,7 @@ class QuizCubit extends Cubit<QuizState> {
 
     // TODO: Handle when questions end
     if (index >= questions.length) {
-      emit(state.copyWith(isLevelFinished: true));
+      emit(state.copyWith(isLevelFinished: true,currentRound: []));
       return;
     }
 
@@ -132,9 +132,9 @@ class QuizCubit extends Cubit<QuizState> {
     print(round.length);
 
 
-
+    final finished = end >= questions.length;
     // Emit new round
-    emit(state.copyWith(currentRound: round));
+    emit(state.copyWith(currentRound: round,isLevelFinished: finished));
   }
 
   // Start a new round with initial stats
