@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'BattlePage.dart';
 import '../CustomWidget/Header.dart';
 import '../CustomWidget/NavBar.dart';
-import '../cubit/NavigationCubit.dart';
+import '../controllers/cubit/NavigationCubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class GameHomeScreen extends StatelessWidget {

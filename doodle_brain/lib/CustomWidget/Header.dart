@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:doodle_brain/assets/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../cubit/NavigationCubit.dart';
+import '../controllers/cubit/NavigationCubit.dart';
 import 'boxDecoration.dart';
 import '../controllers/cubit/user_cubit.dart';
 import '../controllers/cubit/user_state.dart';

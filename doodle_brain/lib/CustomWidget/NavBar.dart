@@ -4,7 +4,7 @@ import 'package:doodle_brain/pages/profileScreen.dart';
 import 'package:doodle_brain/pages/store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../cubit/NavigationCubit.dart';
+import '../controllers/cubit/NavigationCubit.dart';
 import 'boxDecoration.dart';
 import '../assets/fonts/app_fonts.dart';
 
