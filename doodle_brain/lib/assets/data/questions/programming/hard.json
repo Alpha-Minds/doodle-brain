@@ -1,277 +1,1307 @@
 [
-    {
-      "id": 1,
-      "question": "What is the correct order of Flutter rendering pipeline?",
-      "choices": [
-        "Widget → Element → RenderObject",
-        "Element → Widget → RenderObject",
-        "RenderObject → Widget → Element",
-        "Widget → RenderObject → Element"
-      ],
-      "answer": "Widget → Element → RenderObject"
-    },
-    {
-      "id": 2,
-      "question": "Which layer is responsible for layout and painting?",
-      "choices": [
-        "Widget layer",
-        "Element layer",
-        "RenderObject layer",
-        "Foundation layer"
-      ],
-      "answer": "RenderObject layer"
-    },
-    {
-      "id": 3,
-      "question": "What triggers a rebuild in Flutter?",
-      "choices": [
-        "Creating new Widget instance",
-        "Calling setState()",
-        "Element.markNeedsBuild()",
-        "All of the above"
-      ],
-      "answer": "All of the above"
-    },
-    {
-      "id": 4,
-      "question": "Why are Widgets immutable?",
-      "choices": [
-        "To improve rendering speed",
-        "To simplify rebuild diffing",
-        "To reduce memory",
-        "To allow multithreading"
-      ],
-      "answer": "To simplify rebuild diffing"
-    },
-    {
-      "id": 5,
-      "question": "What is the purpose of the Element tree?",
-      "choices": [
-        "Handles layout constraints",
-        "Stores mutable widget state",
-        "Paints pixels on screen",
-        "Handles gestures"
-      ],
-      "answer": "Stores mutable widget state"
-    },
-    {
-      "id": 6,
-      "question": "Which method must be overridden when creating a custom RenderObject?",
-      "choices": [
-        "build()",
-        "performLayout()",
-        "initState()",
-        "didUpdateWidget()"
-      ],
-      "answer": "performLayout()"
-    },
-    {
-      "id": 7,
-      "question": "What is the main purpose of Isolates in Dart?",
-      "choices": [
-        "Multithreading with shared memory",
-        "Parallel execution without shared memory",
-        "Async UI rendering",
-        "Background animations"
-      ],
-      "answer": "Parallel execution without shared memory"
-    },
-    {
-      "id": 8,
-      "question": "Which method is used to spawn a new isolate?",
-      "choices": [
-        "Isolate.run()",
-        "Isolate.spawn()",
-        "Future.spawn()",
-        "compute.spawn()"
-      ],
-      "answer": "Isolate.spawn()"
-    },
-    {
-      "id": 9,
-      "question": "What does the compute() function use internally?",
-      "choices": [
-        "Threads",
-        "Streams",
-        "Isolates",
-        "Microtasks"
-      ],
-      "answer": "Isolates"
-    },
-    {
-      "id": 10,
-      "question": "Which phase applies constraints in Flutter layout?",
-      "choices": [
-        "Build phase",
-        "Layout phase",
-        "Paint phase",
-        "Semantics phase"
-      ],
-      "answer": "Layout phase"
-    },
-    {
-      "id": 11,
-      "question": "What is the constraint rule in Flutter layout?",
-      "choices": [
-        "Parent sizes child",
-        "Child sizes parent",
-        "Parent gives constraints, child chooses size",
-        "Child gives constraints"
-      ],
-      "answer": "Parent gives constraints, child chooses size"
-    },
-    {
-      "id": 12,
-      "question": "Which widget prevents unnecessary rebuilds by using const constructor?",
-      "choices": [
-        "StatelessWidget",
-        "StatefulWidget",
-        "Const widget",
-        "Any widget with const constructor"
-      ],
-      "answer": "Any widget with const constructor"
-    },
-    {
-      "id": 13,
-      "question": "What does addPostFrameCallback() do?",
-      "choices": [
-        "Runs before build",
-        "Runs after layout & paint of current frame",
-        "Runs before layout",
-        "Runs during animation"
-      ],
-      "answer": "Runs after layout & paint of current frame"
-    },
-    {
-      "id": 14,
-      "question": "Which object manages animation tickers?",
-      "choices": [
-        "AnimationController",
-        "Ticker",
-        "TickerProvider",
-        "SchedulerBinding"
-      ],
-      "answer": "Ticker"
-    },
-    {
-      "id": 15,
-      "question": "What happens if you forget to dispose AnimationController?",
-      "choices": [
-        "Nothing",
-        "Memory leak & ticker error",
-        "App crash immediately",
-        "Animation stops"
-      ],
-      "answer": "Memory leak & ticker error"
-    },
-    {
-      "id": 16,
-      "question": "Which class bridges Widget and RenderObject?",
-      "choices": [
-        "State",
-        "BuildContext",
-        "Element",
-        "InheritedWidget"
-      ],
-      "answer": "Element"
-    },
-    {
-      "id": 17,
-      "question": "What is the difference between microtask and event queue?",
-      "choices": [
-        "Microtasks run before events",
-        "Events run before microtasks",
-        "They are identical",
-        "Microtasks are slower"
-      ],
-      "answer": "Microtasks run before events"
-    },
-    {
-      "id": 18,
-      "question": "Which binding gives access to scheduler?",
-      "choices": [
-        "WidgetsBinding",
-        "SchedulerBinding",
-        "GestureBinding",
-        "PaintingBinding"
-      ],
-      "answer": "SchedulerBinding"
-    },
-    {
-      "id": 19,
-      "question": "Which widget is best for very large scrollable custom layouts?",
-      "choices": [
-        "ListView",
-        "SingleChildScrollView",
-        "CustomScrollView with Slivers",
-        "Column"
-      ],
-      "answer": "CustomScrollView with Slivers"
-    },
-    {
-      "id": 20,
-      "question": "What does repaint boundary do?",
-      "choices": [
-        "Prevents rebuild",
-        "Isolates repaint area",
-        "Improves layout speed",
-        "Prevents state change"
-      ],
-      "answer": "Isolates repaint area"
-    },
-    {
-      "id": 21,
-      "question": "Which widget should be used for performance when list items are dynamic and large?",
-      "choices": [
-        "Column",
-        "ListView",
-        "ListView.builder",
-        "GridView.count"
-      ],
-      "answer": "ListView.builder"
-    },
-    {
-      "id": 22,
-      "question": "What does GlobalKey allow access to?",
-      "choices": [
-        "RenderObject",
-        "Widget state across tree",
-        "Navigator only",
-        "Theme only"
-      ],
-      "answer": "Widget state across tree"
-    },
-    {
-      "id": 23,
-      "question": "Which pattern avoids prop drilling in Flutter?",
-      "choices": [
-        "InheritedWidget",
-        "Passing constructor parameters",
-        "setState",
-        "FutureBuilder"
-      ],
-      "answer": "InheritedWidget"
-    },
-    {
-      "id": 24,
-      "question": "Which object is responsible for painting pixels?",
-      "choices": [
-        "Widget",
-        "RenderObject",
-        "Canvas",
-        "Element"
-      ],
-      "answer": "RenderObject"
-    },
-    {
-      "id": 25,
-      "question": "What does markNeedsLayout() trigger?",
-      "choices": [
-        "Rebuild",
-        "Relayout phase",
-        "Repaint only",
-        "Dispose"
-      ],
-      "answer": "Relayout phase"
-    }
-  ]
+  {
+    "id": 1,
+    "question": "Which internal Flutter object represents the 'location' of a widget in the tree and acts as the 'glue' between the Widget and RenderObject trees?",
+    "choices": ["State", "Element", "BuildContext", "RenderProxyBox"],
+    "answer": "Element"
+  },
+  {
+    "id": 2,
+    "question": "In Dart's memory management, which generational collection area is specifically optimized for short-lived objects using a semi-space copying strategy?",
+    "choices": ["Old Space", "New Space (Scavenger)", "Code Space", "Heap Map"],
+    "answer": "New Space (Scavenger)"
+  },
+  {
+    "id": 3,
+    "question": "Which method in the RenderObject class is responsible for calculating the size and position of children without actually performing a layout?",
+    "choices": [
+      "performLayout()",
+      "computeMinIntrinsicWidth()",
+      "getDistanceToBaseline()",
+      "layout()"
+    ],
+    "answer": "computeMinIntrinsicWidth()"
+  },
+  {
+    "id": 4,
+    "question": "When calling 'Isolate.spawn()', what is the technical reason why you cannot pass a closure that captures local variables?",
+    "choices": [
+      "Closures are too large for the stack",
+      "Isolates do not share a heap, and captured variables cannot be safely serialized",
+      "Dart doesn't support closures in background tasks",
+      "The garbage collector would freeze the main isolate"
+    ],
+    "answer": "Isolates do not share a heap, and captured variables cannot be safely serialized"
+  },
+  {
+    "id": 5,
+    "question": "What is the primary difference between 'StatelessElement' and 'StatefulElement'?",
+    "choices": [
+      "StatelessElement does not have a build method",
+      "StatefulElement maintains a reference to a State object",
+      "StatelessElement is immutable",
+      "There is no difference in the tree"
+    ],
+    "answer": "StatefulElement maintains a reference to a State object"
+  },
+  {
+    "id": 6,
+    "question": "Which Dart library would you use to call C/C++ functions directly using native pointers?",
+    "choices": ["dart:ui", "dart:ffi", "dart:convert", "dart:js_util"],
+    "answer": "dart:ffi"
+  },
+  {
+    "id": 7,
+    "question": "What occurs during the 'Compositing' phase of the Flutter rendering pipeline?",
+    "choices": [
+      "Widget diffing",
+      "Painting pixels onto a canvas",
+      "Organizing painted layers into a scene for the GPU",
+      "Calculating widget constraints"
+    ],
+    "answer": "Organizing painted layers into a scene for the GPU"
+  },
+  {
+    "id": 8,
+    "question": "Which mixin is required to turn a RenderObject into a 'ContainerRenderObject' that can hold multiple children?",
+    "choices": [
+      "RenderObjectWithChildMixin",
+      "ContainerRenderObjectMixin",
+      "MultiChildRenderObjectWidget",
+      "RenderBoxContainerDefaultsMixin"
+    ],
+    "answer": "ContainerRenderObjectMixin"
+  },
+  {
+    "id": 9,
+    "question": "In Dart's 'dart:async' library, what is the 'Zone' used for?",
+    "choices": [
+      "Managing physical screen areas",
+      "Handling asynchronous error boundaries and data shadowing",
+      "Allocating memory to Isolates",
+      "Storing static assets"
+    ],
+    "answer": "Handling asynchronous error boundaries and data shadowing"
+  },
+  {
+    "id": 10,
+    "question": "Which specific 'Binding' class is responsible for intercepting pointer events from the engine and dispatching them to the HitTest target?",
+    "choices": [
+      "WidgetsBinding",
+      "GestureBinding",
+      "RendererBinding",
+      "SchedulerBinding"
+    ],
+    "answer": "GestureBinding"
+  },
+  {
+    "id": 11,
+    "question": "What is 'Relayout Boundary' in Flutter performance optimization?",
+    "choices": [
+      "A widget that stops constraints from passing down",
+      "A RenderObject that prevents layout changes from bubbling up to the root",
+      "The edge of the screen",
+      "A specialized type of Stack"
+    ],
+    "answer": "A RenderObject that prevents layout changes from bubbling up to the root"
+  },
+  {
+    "id": 12,
+    "question": "Which property of the 'PointerEvent' helps distinguish between a physical finger touch and a mouse click in a multi-device environment?",
+    "choices": ["kind", "device", "buttons", "pressure"],
+    "answer": "kind"
+  },
+  {
+    "id": 13,
+    "question": "In Dart, what is a 'Sync*' generator's primary advantage over returning a standard List?",
+    "choices": [
+      "It is faster to iterate",
+      "It computes values lazily, only when requested by the iterator",
+      "It can be converted to a Stream easily",
+      "It uses less CPU but more memory"
+    ],
+    "answer": "It computes values lazily, only when requested by the iterator"
+  },
+  {
+    "id": 14,
+    "question": "What is the role of the 'PipelineOwner' in the Flutter framework?",
+    "choices": [
+      "Managing the network stack",
+      "Managing the lifecycle of RenderObjects and triggering layout/paint/compositing",
+      "Compiling the app to machine code",
+      "Handling navigation transitions"
+    ],
+    "answer": "Managing the lifecycle of RenderObjects and triggering layout/paint/compositing"
+  },
+  {
+    "id": 15,
+    "question": "Why would you use 'RepaintBoundary' inside a CustomScrollView with many complex items?",
+    "choices": [
+      "To speed up the scroll physics",
+      "To prevent an item from being repainted every time the scroll position changes",
+      "To make the items clickable",
+      "To automatically cache images"
+    ],
+    "answer": "To prevent an item from being repainted every time the scroll position changes"
+  },
+  {
+    "id": 16,
+    "question": "What is the difference between 'Future.microtask' and 'Future.value'?",
+    "choices": [
+      "Future.value is always slower",
+      "Future.microtask schedules the callback on the microtask queue, while Future.value completes immediately",
+      "Future.microtask is for UI only",
+      "There is no difference"
+    ],
+    "answer": "Future.microtask schedules the callback on the microtask queue, while Future.value completes immediately"
+  },
+  {
+    "id": 17,
+    "question": "Which class is the base for widgets that want to provide their own RenderObject implementation?",
+    "choices": [
+      "StatelessWidget",
+      "RenderObjectWidget",
+      "LeafRenderObjectWidget",
+      "InheritedWidget"
+    ],
+    "answer": "RenderObjectWidget"
+  },
+  {
+    "id": 18,
+    "question": "What happens if a RenderObject's 'isRepaintBoundary' returns true?",
+    "choices": [
+      "It receives its own Layer in the Layer Tree",
+      "It cannot have children",
+      "It is ignored by the hit tester",
+      "It will never rebuild"
+    ],
+    "answer": "It receives its own Layer in the Layer Tree"
+  },
+  {
+    "id": 19,
+    "question": "What is a 'Layer Tree' in the context of the Flutter Engine?",
+    "choices": [
+      "A list of all widgets",
+      "The output of the Paint phase used by the compositor",
+      "The internal CSS of the app",
+      "The list of assets in the APK"
+    ],
+    "answer": "The output of the Paint phase used by the compositor"
+  },
+  {
+    "id": 20,
+    "question": "In Dart, what does the 'external' keyword signify in a function declaration?",
+    "choices": [
+      "The function is private",
+      "The implementation is provided by the environment (e.g., C++ or JS host)",
+      "The function runs in a separate isolate",
+      "The function is deprecated"
+    ],
+    "answer": "The implementation is provided by the environment (e.g., C++ or JS host)"
+  },
+  {
+    "id": 21,
+    "question": "Which method in the 'State' class is the only place where it is safe to call 'dependOnInheritedWidgetOfExactType'?",
+    "choices": [
+      "initState()",
+      "build()",
+      "didChangeDependencies()",
+      "dispose()"
+    ],
+    "answer": "didChangeDependencies()"
+  },
+  {
+    "id": 22,
+    "question": "What is 'Intrinsic Sizing' and why is it generally discouraged in complex Flutter layouts?",
+    "choices": [
+      "It is too fast for the engine",
+      "It requires an extra pass through the RenderObject tree, leading to O(N^2) complexity",
+      "It only works on iOS",
+      "It causes memory leaks"
+    ],
+    "answer": "It requires an extra pass through the RenderObject tree, leading to O(N^2) complexity"
+  },
+  {
+    "id": 23,
+    "question": "Which object acts as the 'messenger' between the UI thread and the Platform (Android/iOS) thread in a Platform Channel?",
+    "choices": [
+      "MethodChannel",
+      "BinaryMessenger",
+      "EventChannel",
+      "StandardMessageCodec"
+    ],
+    "answer": "BinaryMessenger"
+  },
+  {
+    "id": 24,
+    "question": "What is 'Canvas.saveLayer' used for and what is its performance cost?",
+    "choices": [
+      "Saving an image; low cost",
+      "Applying effects like blend modes or opacity to a group of commands; high cost",
+      "Creating a new route; no cost",
+      "Storing local data; medium cost"
+    ],
+    "answer": "Applying effects like blend modes or opacity to a group of commands; high cost"
+  },
+  {
+    "id": 25,
+    "question": "Which Dart feature allows you to run code during the 'compilation' phase to generate boilerplate?",
+    "choices": ["Reflections", "Macros (Dart 3.x+)", "Mixins", "Isolates"],
+    "answer": "Macros (Dart 3.x+)"
+  },
+  {
+    "id": 26,
+    "question": "What is the purpose of 'SemanticsBinding'?",
+    "choices": [
+      "To handle typography",
+      "To bridge the accessibility tree with the platform's accessibility services",
+      "To manage dark mode",
+      "To handle gestures"
+    ],
+    "answer": "To bridge the accessibility tree with the platform's accessibility services"
+  },
+  {
+    "id": 27,
+    "question": "What is the primary difference between 'SingleChildRenderObjectElement' and 'MultiChildRenderObjectElement'?",
+    "choices": [
+      "The number of render objects they can manage",
+      "The number of child elements they manage in the element tree",
+      "Only one can use a GlobalKey",
+      "Memory usage"
+    ],
+    "answer": "The number of child elements they manage in the element tree"
+  },
+  {
+    "id": 28,
+    "question": "In the 'dart:ui' library, what does 'window.onDrawFrame' represent?",
+    "choices": [
+      "A callback triggered when the user draws on screen",
+      "A low-level hook triggered by the engine to start a frame rendering",
+      "An animation controller event",
+      "A network update"
+    ],
+    "answer": "A low-level hook triggered by the engine to start a frame rendering"
+  },
+  {
+    "id": 29,
+    "question": "What is 'WeakReference' in Dart and why is it useful?",
+    "choices": [
+      "A reference that can be null",
+      "A reference that does not prevent the garbage collector from reclaiming the object",
+      "A pointer to a C function",
+      "A variable with 'late' keyword"
+    ],
+    "answer": "A reference that does not prevent the garbage collector from reclaiming the object"
+  },
+  {
+    "id": 30,
+    "question": "How does 'SchedulerBinding.instance.addPersistentFrameCallback' differ from 'addPostFrameCallback'?",
+    "choices": [
+      "It only runs once",
+      "It runs every single frame until the app is closed",
+      "It runs in the background isolate",
+      "It is used for layout only"
+    ],
+    "answer": "It runs every single frame until the app is closed"
+  },
+  {
+    "id": 31,
+    "question": "Which widget would you use to provide a custom hit-test behavior without changing the visual painting?",
+    "choices": [
+      "CustomPaint",
+      "RenderProxyBox",
+      "HitTestTarget",
+      "GestureDetector"
+    ],
+    "answer": "RenderProxyBox"
+  },
+  {
+    "id": 32,
+    "question": "In Dart, what is 'Method Mirroring' and is it supported in Flutter?",
+    "choices": [
+      "A way to copy classes; yes",
+      "Reflection-based inspection of code; no (not in Flutter)",
+      "Linking C++ methods; yes",
+      "Handling async methods; yes"
+    ],
+    "answer": "Reflection-based inspection of code; no (not in Flutter)"
+  },
+  {
+    "id": 33,
+    "question": "What is the difference between 'BoxConstraints' and 'SliverConstraints'?",
+    "choices": [
+      "BoxConstraints deal with 2D space; SliverConstraints deal with scroll offset and viewport information",
+      "BoxConstraints are for web only",
+      "SliverConstraints are immutable",
+      "There is no difference"
+    ],
+    "answer": "BoxConstraints deal with 2D space; SliverConstraints deal with scroll offset and viewport information"
+  },
+  {
+    "id": 34,
+    "question": "What is the role of 'LayerLink' when using CompositedTransformFollower?",
+    "choices": [
+      "To link two different routes",
+      "To synchronize the position of a floating widget with a target across different layers",
+      "To download assets",
+      "To handle state"
+    ],
+    "answer": "To synchronize the position of a floating widget with a target across different layers"
+  },
+  {
+    "id": 35,
+    "question": "Which phase of the pipeline generates the 'Display List' used by Skia/Impeller?",
+    "choices": [
+      "Layout phase",
+      "Compositing phase",
+      "Paint phase",
+      "Build phase"
+    ],
+    "answer": "Paint phase"
+  },
+  {
+    "id": 36,
+    "question": "What is 'Tree Surgery' in the context of Flutter elements?",
+    "choices": [
+      "Removing unused widgets",
+      "The process of the Element tree moving a subtree to a new parent without re-initializing state",
+      "Deleting the build folder",
+      "Optimizing the GPU"
+    ],
+    "answer": "The process of the Element tree moving a subtree to a new parent without re-initializing state"
+  },
+  {
+    "id": 37,
+    "question": "In a CustomScrollView, what is the 'Viewport's' responsibility?",
+    "choices": [
+      "Managing the camera",
+      "Determining which slivers are visible based on the current scroll offset",
+      "Rendering the background",
+      "Handling user clicks"
+    ],
+    "answer": "Determining which slivers are visible based on the current scroll offset"
+  },
+  {
+    "id": 38,
+    "question": "What is 'dart:developer' used for?",
+    "choices": [
+      "Building production apps",
+      "Accessing low-level debugging tools, timelines, and service protocols",
+      "Designing UIs",
+      "Writing tests"
+    ],
+    "answer": "Accessing low-level debugging tools, timelines, and service protocols"
+  },
+  {
+    "id": 39,
+    "question": "Which widget is used to inject a native platform view (like Google Maps) into the Flutter widget tree?",
+    "choices": [
+      "PlatformViewLink",
+      "NativeBox",
+      "AndroidView / UiKitView",
+      "PlatformWidget"
+    ],
+    "answer": "AndroidView / UiKitView"
+  },
+  {
+    "id": 40,
+    "question": "What is 'Partial Repaint' in Flutter?",
+    "choices": [
+      "Repainting only half the screen",
+      "The ability to repaint only specific layers that changed without touching the rest of the scene",
+      "Painting in low resolution",
+      "A bug in the engine"
+    ],
+    "answer": "The ability to repaint only specific layers that changed without touching the rest of the scene"
+  },
+  {
+    "id": 41,
+    "question": "What is 'PointerRouter' responsible for?",
+    "choices": [
+      "Navigation between screens",
+      "Routing low-level pointer events to specific gesture recognizers",
+      "Handling mouse scrolls",
+      "Managing deep links"
+    ],
+    "answer": "Routing low-level pointer events to specific gesture recognizers"
+  },
+  {
+    "id": 42,
+    "question": "Which RenderObject property ensures that its children cannot paint outside its bounds?",
+    "choices": [
+      "needsCompositing",
+      "clipBehavior",
+      "isRepaintBoundary",
+      "paintBounds"
+    ],
+    "answer": "clipBehavior"
+  },
+  {
+    "id": 43,
+    "question": "In Dart, what is the difference between an 'Expando' and a 'Map'?",
+    "choices": [
+      "Expando is faster",
+      "Expando allows adding properties to an object without preventing its garbage collection",
+      "Map is for strings only",
+      "Expando is for web only"
+    ],
+    "answer": "Expando allows adding properties to an object without preventing its garbage collection"
+  },
+  {
+    "id": 44,
+    "question": "What is the 'BuildOwner' responsible for?",
+    "choices": [
+      "Compiling the app",
+      "Managing the list of 'dirty' elements and initiating the build phase",
+      "Handling network requests",
+      "Saving app state"
+    ],
+    "answer": "Managing the list of 'dirty' elements and initiating the build phase"
+  },
+  {
+    "id": 45,
+    "question": "Which class would you use to create a high-performance custom animation that doesn't rely on the build system?",
+    "choices": [
+      "AnimationController",
+      "Ticker",
+      "CustomPainter",
+      "RenderBox with a Ticker"
+    ],
+    "answer": "RenderBox with a Ticker"
+  },
+  {
+    "id": 46,
+    "question": "What is the 'Semantic Tag' used for in Flutter?",
+    "choices": [
+      "Styling text",
+      "Giving a specific meaning to a group of widgets for the accessibility system",
+      "Tagging code versions",
+      "Filtering lists"
+    ],
+    "answer": "Giving a specific meaning to a group of widgets for the accessibility system"
+  },
+  {
+    "id": 47,
+    "question": "In 'dart:ffi', what is a 'Finalizable' object?",
+    "choices": [
+      "A final variable",
+      "An object that needs to run native cleanup code when it is garbage collected",
+      "A constant list",
+      "A function that cannot be overridden"
+    ],
+    "answer": "An object that needs to run native cleanup code when it is garbage collected"
+  },
+  {
+    "id": 48,
+    "question": "What is 'Implicit Compositing'?",
+    "choices": [
+      "When a widget automatically paints its child",
+      "When a RenderObject is forced into its own Layer because a child is already on a Layer",
+      "A way to merge two widgets",
+      "Handling themes"
+    ],
+    "answer": "When a RenderObject is forced into its own Layer because a child is already on a Layer"
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of 'KeepAliveHandle'?",
+    "choices": [
+      "To keep the app running in the background",
+      "To tell a scroll view to keep a specific item alive even when it's off-screen",
+      "To handle session tokens",
+      "To prevent screen timeout"
+    ],
+    "answer": "To tell a scroll view to keep a specific item alive even when it's off-screen"
+  },
+  {
+    "id": 50,
+    "question": "What is 'Double Buffering' in the context of the Flutter engine?",
+    "choices": [
+      "Using two state managers",
+      "The process of drawing one frame while the previous one is being displayed to prevent flickering",
+      "Using two CPU cores",
+      "Having two main.dart files"
+    ],
+    "answer": "The process of drawing one frame while the previous one is being displayed to prevent flickering"
+  },
+  {
+    "id": 51,
+    "question": "Which object manages the mapping between a GestureRecognizer and a specific pointer?",
+    "choices": [
+      "GestureBinding",
+      "PointerRouter",
+      "GestureArenaManager",
+      "PrimaryPointerGestureRecognizer"
+    ],
+    "answer": "GestureArenaManager"
+  },
+  {
+    "id": 52,
+    "question": "What is the difference between 'tight' and 'loose' constraints in Flutter?",
+    "choices": [
+      "Tight constraints have a specific width/height; loose constraints allow a range starting from zero",
+      "Loose is faster",
+      "Tight is for containers only",
+      "There is no difference"
+    ],
+    "answer": "Tight constraints have a specific width/height; loose constraints allow a range starting from zero"
+  },
+  {
+    "id": 53,
+    "question": "In 'dart:io', what is 'RawDatagramSocket' used for?",
+    "choices": [
+      "TCP communication",
+      "UDP communication",
+      "Handling HTTP requests",
+      "Reading files"
+    ],
+    "answer": "UDP communication"
+  },
+  {
+    "id": 54,
+    "question": "What is the role of 'PaintingContext'?",
+    "choices": [
+      "Holding the app theme",
+      "Providing a canvas and managing layers during the paint phase",
+      "Selecting font families",
+      "Managing icons"
+    ],
+    "answer": "Providing a canvas and managing layers during the paint phase"
+  },
+  {
+    "id": 55,
+    "question": "Which Dart feature allows you to execute code when a library is first loaded?",
+    "choices": [
+      "Constructor",
+      "Static initializer",
+      "Main function",
+      "There is no official 'onLoad' (it happens lazily on first access)"
+    ],
+    "answer": "There is no official 'onLoad' (it happens lazily on first access)"
+  },
+  {
+    "id": 56,
+    "question": "What is a 'SliverGeometry' object used for?",
+    "choices": [
+      "Defining the shape of a widget",
+      "Reporting how much space a sliver takes, its paint extent, and scroll extent back to the Viewport",
+      "Managing grid layouts",
+      "Calculating font metrics"
+    ],
+    "answer": "Reporting how much space a sliver takes, its paint extent, and scroll extent back to the Viewport"
+  },
+  {
+    "id": 57,
+    "question": "Which internal mechanism does Flutter use to detect if a widget's 'key' or 'runtimeType' has changed during a rebuild?",
+    "choices": [
+      "Widget.canUpdate",
+      "Element.update",
+      "RenderObject.needsLayout",
+      "BuildOwner.diff"
+    ],
+    "answer": "Widget.canUpdate"
+  },
+  {
+    "id": 58,
+    "question": "What is the performance implication of using 'Opacity' vs 'AnimatedOpacity'?",
+    "choices": [
+      "Opacity is always faster",
+      "AnimatedOpacity uses a more efficient layer-based approach when animating",
+      "Opacity causes memory leaks",
+      "None"
+    ],
+    "answer": "AnimatedOpacity uses a more efficient layer-based approach when animating"
+  },
+  {
+    "id": 59,
+    "question": "In Dart, what is a 'Symbol' literally used for internally?",
+    "choices": [
+      "As an identifier that is safe from name minification",
+      "As a high-res image",
+      "As a secret key",
+      "As a pointer"
+    ],
+    "answer": "As an identifier that is safe from name minification"
+  },
+  {
+    "id": 60,
+    "question": "What is 'Canvas.save' vs 'Canvas.saveLayer'?",
+    "choices": [
+      "Save stores only transformation/clip state; saveLayer creates a temporary offscreen buffer for complex effects",
+      "Save is for web only",
+      "SaveLayer is faster",
+      "They are identical"
+    ],
+    "answer": "Save stores only transformation/clip state; saveLayer creates a temporary offscreen buffer for complex effects"
+  },
+  {
+    "id": 61,
+    "question": "Which mixin allows a RenderObject to handle mouse cursors?",
+    "choices": [
+      "MouseTrackerMixin",
+      "RenderMouseCursor",
+      "MouseTrackerAnnotation",
+      "CursorMixin"
+    ],
+    "answer": "MouseTrackerAnnotation"
+  },
+  {
+    "id": 62,
+    "question": "What is the purpose of 'AutofillGroup'?",
+    "choices": [
+      "To fill lists with dummy data",
+      "To group multiple text fields so the OS can provide relevant autofill data (e.g., credit card info)",
+      "To automatically fix bugs",
+      "To handle database entries"
+    ],
+    "answer": "To group multiple text fields so the OS can provide relevant autofill data (e.g., credit card info)"
+  },
+  {
+    "id": 63,
+    "question": "In 'dart:isolate', what is 'TransferableTypedData'?",
+    "choices": [
+      "A way to send large byte buffers between isolates without copying memory",
+      "A type of string",
+      "A database model",
+      "A Flutter widget"
+    ],
+    "answer": "A way to send large byte buffers between isolates without copying memory"
+  },
+  {
+    "id": 64,
+    "question": "What is the 'View Configuration' in the RendererBinding?",
+    "choices": [
+      "The theme of the app",
+      "Physical constraints like screen size and device pixel ratio provided to the root RenderObject",
+      "The list of routes",
+      "The settings menu"
+    ],
+    "answer": "Physical constraints like screen size and device pixel ratio provided to the root RenderObject"
+  },
+  {
+    "id": 65,
+    "question": "Which RenderObject method ensures that the layout is updated after a change?",
+    "choices": [
+      "markNeedsLayout()",
+      "setState()",
+      "performLayout()",
+      "update()"
+    ],
+    "answer": "markNeedsLayout()"
+  },
+  {
+    "id": 66,
+    "question": "What is 'Shader Mask' used for?",
+    "choices": [
+      "Applying a color to an icon",
+      "Applying a shader (like a gradient or image) as a mask over a widget subtree",
+      "Protecting code from hackers",
+      "Handling user input"
+    ],
+    "answer": "Applying a shader (like a gradient or image) as a mask over a widget subtree"
+  },
+  {
+    "id": 67,
+    "question": "In Dart, what is 'Tear-off' caching?",
+    "choices": [
+      "Storing deleted code",
+      "Reusing a closure created from a method to avoid new allocations",
+      "A performance bug",
+      "A way to speed up network requests"
+    ],
+    "answer": "Reusing a closure created from a method to avoid new allocations"
+  },
+  {
+    "id": 68,
+    "question": "Which class would you use to listen to the exact time the engine is ready to produce a frame?",
+    "choices": ["SchedulerBinding", "FrameTicker", "EngineBinding", "Window"],
+    "answer": "SchedulerBinding"
+  },
+  {
+    "id": 69,
+    "question": "What is the 'Gesture Arena'?",
+    "choices": [
+      "A place where developers compete",
+      "The mechanism that resolves which gesture recognizer wins when multiple gestures (e.g., tap and pan) overlap",
+      "A testing framework",
+      "A game engine"
+    ],
+    "answer": "The mechanism that resolves which gesture recognizer wins when multiple gestures (e.g., tap and pan) overlap"
+  },
+  {
+    "id": 70,
+    "question": "What is 'BoxHitTestEntry'?",
+    "choices": [
+      "A record of a hit-test result including the RenderBox and the local position of the hit",
+      "A bug report",
+      "A list of widgets",
+      "A navigation log"
+    ],
+    "answer": "A record of a hit-test result including the RenderBox and the local position of the hit"
+  },
+  {
+    "id": 71,
+    "question": "In 'dart:convert', what is the purpose of 'ChunkedConversion'?",
+    "choices": [
+      "Converting data in small pieces to save memory with large files",
+      "Converting data faster",
+      "Converting data for web only",
+      "Encryption"
+    ],
+    "answer": "Converting data in small pieces to save memory with large files"
+  },
+  {
+    "id": 72,
+    "question": "What is the 'RootRenderObject' in a typical Flutter app?",
+    "choices": [
+      "The first widget in main()",
+      "RenderView",
+      "RenderBox",
+      "RenderApp"
+    ],
+    "answer": "RenderView"
+  },
+  {
+    "id": 73,
+    "question": "Which Dart operator is used to distinguish between identical objects in memory?",
+    "choices": ["==", "identical()", "is", "as"],
+    "answer": "identical()"
+  },
+  {
+    "id": 74,
+    "question": "What is the purpose of 'DiagnosticsNode'?",
+    "choices": [
+      "To handle errors",
+      "To provide a structured representation of an object for debugging and the Widget Inspector",
+      "To monitor CPU",
+      "To manage logs"
+    ],
+    "answer": "To provide a structured representation of an object for debugging and the Widget Inspector"
+  },
+  {
+    "id": 75,
+    "question": "Which internal Flutter class handles the scheduling of 'microtasks' inside the framework?",
+    "choices": ["dart:async", "SchedulerBinding", "Zone", "ServiceProtocol"],
+    "answer": "dart:async"
+  },
+  {
+    "id": 76,
+    "question": "What is 'SliverPersistentHeaderDelegate' primarily used for?",
+    "choices": [
+      "Creating sticky headers that stay at the top during scrolling",
+      "Creating text",
+      "Handling images",
+      "Managing state"
+    ],
+    "answer": "Creating sticky headers that stay at the top during scrolling"
+  },
+  {
+    "id": 77,
+    "question": "In 'dart:ffi', what is 'NativeFunction'?",
+    "choices": [
+      "A standard Dart function",
+      "A type representing a C-style function signature",
+      "A background task",
+      "A browser function"
+    ],
+    "answer": "A type representing a C-style function signature"
+  },
+  {
+    "id": 78,
+    "question": "What is the 'Layer Tree' used for after the Paint phase?",
+    "choices": [
+      "Rendering pixels",
+      "Compositing the scene on the GPU via the Engine",
+      "Diffing widgets",
+      "Saving state"
+    ],
+    "answer": "Compositing the scene on the GPU via the Engine"
+  },
+  {
+    "id": 79,
+    "question": "Which RenderObject property indicates it has children that paint on different layers?",
+    "choices": [
+      "isRepaintBoundary",
+      "needsCompositing",
+      "isLayered",
+      "hasMultipleLayers"
+    ],
+    "answer": "needsCompositing"
+  },
+  {
+    "id": 80,
+    "question": "What is 'PointerDataPacket'?",
+    "choices": [
+      "A list of network packets",
+      "A collection of raw pointer events sent from the engine to the framework",
+      "A gesture",
+      "A state object"
+    ],
+    "answer": "A collection of raw pointer events sent from the engine to the framework"
+  },
+  {
+    "id": 81,
+    "question": "Which method should be used to avoid 'Layout-on-Build' errors?",
+    "choices": [
+      "WidgetsBinding.addPostFrameCallback",
+      "setState",
+      "initState",
+      "didUpdateWidget"
+    ],
+    "answer": "WidgetsBinding.addPostFrameCallback"
+  },
+  {
+    "id": 82,
+    "question": "What is 'Platform Channels' serialization overhead?",
+    "choices": [
+      "The time it takes to draw UI",
+      "The cost of converting data to binary and sending it between Dart and Java/Swift",
+      "Memory used by images",
+      "Download speed"
+    ],
+    "answer": "The cost of converting data to binary and sending it between Dart and Java/Swift"
+  },
+  {
+    "id": 83,
+    "question": "In Dart, what is the 'Heap'?",
+    "choices": [
+      "A list of variables",
+      "The region of memory used for dynamic object allocation",
+      "The CPU cache",
+      "The build folder"
+    ],
+    "answer": "The region of memory used for dynamic object allocation"
+  },
+  {
+    "id": 84,
+    "question": "What is 'SliverPadding' vs 'Padding'?",
+    "choices": [
+      "SliverPadding is for CustomScrollView/Slivers; Padding is for RenderBoxes",
+      "SliverPadding is faster",
+      "SliverPadding is for web only",
+      "No difference"
+    ],
+    "answer": "SliverPadding is for CustomScrollView/Slivers; Padding is for RenderBoxes"
+  },
+  {
+    "id": 85,
+    "question": "Which widget allows you to create a completely custom scroll behavior, including custom physics and sliver placement?",
+    "choices": ["Scrollable", "ListView", "CustomScrollView", "Viewport"],
+    "answer": "Scrollable"
+  },
+  {
+    "id": 86,
+    "question": "What is the purpose of 'AnnotatedRegion'?",
+    "choices": [
+      "To add comments to code",
+      "To pass data (like status bar color) to the underlying platform",
+      "To highlight text",
+      "To manage themes"
+    ],
+    "answer": "To pass data (like status bar color) to the underlying platform"
+  },
+  {
+    "id": 87,
+    "question": "In 'dart:typed_data', what is 'Float64List' used for?",
+    "choices": [
+      "Storing integers",
+      "Storing high-precision decimal numbers in a memory-efficient way",
+      "Managing lists of strings",
+      "Handling network data"
+    ],
+    "answer": "Storing high-precision decimal numbers in a memory-efficient way"
+  },
+  {
+    "id": 88,
+    "question": "What is 'RenderPointerListener'?",
+    "choices": [
+      "A widget that listens to clicks",
+      "A RenderObject that intercepts raw pointer events during the hit-testing phase",
+      "A state manager",
+      "A network tool"
+    ],
+    "answer": "A RenderObject that intercepts raw pointer events during the hit-testing phase"
+  },
+  {
+    "id": 89,
+    "question": "Which internal tool would you use to find memory leaks by inspecting the heap in real-time?",
+    "choices": [
+      "Widget Inspector",
+      "DevTools Memory Profiler",
+      "Network Tab",
+      "Debugger"
+    ],
+    "answer": "DevTools Memory Profiler"
+  },
+  {
+    "id": 90,
+    "question": "What is the purpose of 'RestorationManager'?",
+    "choices": [
+      "To fix broken code",
+      "To allow the app to save and restore its state if the OS kills it in the background",
+      "To handle database backups",
+      "To restore deleted files"
+    ],
+    "answer": "To allow the app to save and restore its state if the OS kills it in the background"
+  },
+  {
+    "id": 91,
+    "question": "In Dart, what is a 'Finalizer'?",
+    "choices": [
+      "The last function in a class",
+      "A way to run code after an object is garbage collected (from dart:ffi)",
+      "A constant variable",
+      "A private constructor"
+    ],
+    "answer": "A way to run code after an object is garbage collected (from dart:ffi)"
+  },
+  {
+    "id": 92,
+    "question": "What is 'SliverLayoutBuilder'?",
+    "choices": [
+      "A widget that builds grids",
+      "A widget that provides SliverConstraints to its child at build time",
+      "A tool for UI design",
+      "A network manager"
+    ],
+    "answer": "A widget that provides SliverConstraints to its child at build time"
+  },
+  {
+    "id": 93,
+    "question": "Which RenderObject method converts global coordinates to local coordinates?",
+    "choices": [
+      "globalToLocal()",
+      "localToGlobal()",
+      "getOffsetToReveal()",
+      "applyPaintTransform()"
+    ],
+    "answer": "globalToLocal()"
+  },
+  {
+    "id": 94,
+    "question": "What is 'ChildDocument' in the context of Flutter rendering?",
+    "choices": [
+      "A new screen",
+      "A low-level concept in the engine related to text layout",
+      "A file in assets",
+      "A widget property"
+    ],
+    "answer": "A low-level concept in the engine related to text layout"
+  },
+  {
+    "id": 95,
+    "question": "In 'dart:async', what is 'StreamGroup'?",
+    "choices": [
+      "A group of users",
+      "A utility to merge multiple streams into a single stream",
+      "A way to handle errors",
+      "A database tool"
+    ],
+    "answer": "A utility to merge multiple streams into a single stream"
+  },
+  {
+    "id": 96,
+    "question": "What is the role of the 'HardwareKeyboard' class?",
+    "choices": [
+      "To style the keyboard",
+      "To provide a unified API for physical key events across all platforms",
+      "To handle touch screen typing",
+      "To manage USB devices"
+    ],
+    "answer": "To provide a unified API for physical key events across all platforms"
+  },
+  {
+    "id": 97,
+    "question": "Which widget is used to manage a 'Lifecycle' of a native resource?",
+    "choices": [
+      "StatefulWidget",
+      "DisposableWidget",
+      "There isn't a specific 'Lifecycle' widget; it's managed via State.dispose()",
+      "Container"
+    ],
+    "answer": "There isn't a specific 'Lifecycle' widget; it's managed via State.dispose()"
+  },
+  {
+    "id": 98,
+    "question": "What is 'ImageStream'?",
+    "choices": [
+      "A video player",
+      "An object that handles the asynchronous loading of an image's pixel data",
+      "A list of images",
+      "A network stream"
+    ],
+    "answer": "An object that handles the asynchronous loading of an image's pixel data"
+  },
+  {
+    "id": 99,
+    "question": "What is 'FlowDelegate' used for?",
+    "choices": [
+      "To manage network flow",
+      "To provide custom layout and painting logic for the Flow widget",
+      "To handle state",
+      "To manage routes"
+    ],
+    "answer": "To provide custom layout and painting logic for the Flow widget"
+  },
+  {
+    "id": 100,
+    "question": "Which internal Flutter mechanism ensures that the UI remains responsive even during heavy build phases by splitting work?",
+    "choices": [
+      "Isolates",
+      "The Build Phase is synchronous, but 'compute' or Isolates must be used for heavy non-UI logic",
+      "Microtasks",
+      "Multi-threading"
+    ],
+    "answer": "The Build Phase is synchronous, but 'compute' or Isolates must be used for heavy non-UI logic"
+  },
+  {
+    "id": 101,
+    "question": "What is the correct order of Flutter rendering pipeline?",
+    "choices": [
+      "Widget → Element → RenderObject",
+      "Element → Widget → RenderObject",
+      "RenderObject → Widget → Element",
+      "Widget → RenderObject → Element"
+    ],
+    "answer": "Widget → Element → RenderObject"
+  },
+  {
+    "id": 102,
+    "question": "Which layer is responsible for layout and painting?",
+    "choices": [
+      "Widget layer",
+      "Element layer",
+      "RenderObject layer",
+      "Foundation layer"
+    ],
+    "answer": "RenderObject layer"
+  },
+  {
+    "id": 103,
+    "question": "What triggers a rebuild in Flutter?",
+    "choices": [
+      "Creating new Widget instance",
+      "Calling setState()",
+      "Element.markNeedsBuild()",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "id": 104,
+    "question": "Why are Widgets immutable?",
+    "choices": [
+      "To improve rendering speed",
+      "To simplify rebuild diffing",
+      "To reduce memory",
+      "To allow multithreading"
+    ],
+    "answer": "To simplify rebuild diffing"
+  },
+  {
+    "id": 105,
+    "question": "What is the purpose of the Element tree?",
+    "choices": [
+      "Handles layout constraints",
+      "Stores mutable widget state",
+      "Paints pixels on screen",
+      "Handles gestures"
+    ],
+    "answer": "Stores mutable widget state"
+  },
+  {
+    "id": 106,
+    "question": "Which method must be overridden when creating a custom RenderObject?",
+    "choices": [
+      "build()",
+      "performLayout()",
+      "initState()",
+      "didUpdateWidget()"
+    ],
+    "answer": "performLayout()"
+  },
+  {
+    "id": 107,
+    "question": "What is the main purpose of Isolates in Dart?",
+    "choices": [
+      "Multithreading with shared memory",
+      "Parallel execution without shared memory",
+      "Async UI rendering",
+      "Background animations"
+    ],
+    "answer": "Parallel execution without shared memory"
+  },
+  {
+    "id": 108,
+    "question": "Which method is used to spawn a new isolate?",
+    "choices": [
+      "Isolate.run()",
+      "Isolate.spawn()",
+      "Future.spawn()",
+      "compute.spawn()"
+    ],
+    "answer": "Isolate.spawn()"
+  },
+  {
+    "id": 109,
+    "question": "What does the compute() function use internally?",
+    "choices": ["Threads", "Streams", "Isolates", "Microtasks"],
+    "answer": "Isolates"
+  },
+  {
+    "id": 110,
+    "question": "Which phase applies constraints in Flutter layout?",
+    "choices": [
+      "Build phase",
+      "Layout phase",
+      "Paint phase",
+      "Semantics phase"
+    ],
+    "answer": "Layout phase"
+  },
+  {
+    "id": 111,
+    "question": "What is the constraint rule in Flutter layout?",
+    "choices": [
+      "Parent sizes child",
+      "Child sizes parent",
+      "Parent gives constraints, child chooses size",
+      "Child gives constraints"
+    ],
+    "answer": "Parent gives constraints, child chooses size"
+  },
+  {
+    "id": 112,
+    "question": "Which widget prevents unnecessary rebuilds by using const constructor?",
+    "choices": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "Const widget",
+      "Any widget with const constructor"
+    ],
+    "answer": "Any widget with const constructor"
+  },
+  {
+    "id": 113,
+    "question": "What does addPostFrameCallback() do?",
+    "choices": [
+      "Runs before build",
+      "Runs after layout & paint of current frame",
+      "Runs before layout",
+      "Runs during animation"
+    ],
+    "answer": "Runs after layout & paint of current frame"
+  },
+  {
+    "id": 114,
+    "question": "Which object manages animation tickers?",
+    "choices": [
+      "AnimationController",
+      "Ticker",
+      "TickerProvider",
+      "SchedulerBinding"
+    ],
+    "answer": "Ticker"
+  },
+  {
+    "id": 115,
+    "question": "What happens if you forget to dispose AnimationController?",
+    "choices": [
+      "Nothing",
+      "Memory leak & ticker error",
+      "App crash immediately",
+      "Animation stops"
+    ],
+    "answer": "Memory leak & ticker error"
+  },
+  {
+    "id": 116,
+    "question": "Which class bridges Widget and RenderObject?",
+    "choices": ["State", "BuildContext", "Element", "InheritedWidget"],
+    "answer": "Element"
+  },
+  {
+    "id": 117,
+    "question": "What is the difference between microtask and event queue?",
+    "choices": [
+      "Microtasks run before events",
+      "Events run before microtasks",
+      "They are identical",
+      "Microtasks are slower"
+    ],
+    "answer": "Microtasks run before events"
+  },
+  {
+    "id": 118,
+    "question": "Which binding gives access to scheduler?",
+    "choices": [
+      "WidgetsBinding",
+      "SchedulerBinding",
+      "GestureBinding",
+      "PaintingBinding"
+    ],
+    "answer": "SchedulerBinding"
+  },
+  {
+    "id": 119,
+    "question": "Which widget is best for very large scrollable custom layouts?",
+    "choices": [
+      "ListView",
+      "SingleChildScrollView",
+      "CustomScrollView with Slivers",
+      "Column"
+    ],
+    "answer": "CustomScrollView with Slivers"
+  },
+  {
+    "id": 120,
+    "question": "What does repaint boundary do?",
+    "choices": [
+      "Prevents rebuild",
+      "Isolates repaint area",
+      "Improves layout speed",
+      "Prevents state change"
+    ],
+    "answer": "Isolates repaint area"
+  },
+  {
+    "id": 121,
+    "question": "Which widget should be used for performance when list items are dynamic and large?",
+    "choices": ["Column", "ListView", "ListView.builder", "GridView.count"],
+    "answer": "ListView.builder"
+  },
+  {
+    "id": 122,
+    "question": "What does GlobalKey allow access to?",
+    "choices": [
+      "RenderObject",
+      "Widget state across tree",
+      "Navigator only",
+      "Theme only"
+    ],
+    "answer": "Widget state across tree"
+  },
+  {
+    "id": 123,
+    "question": "Which pattern avoids prop drilling in Flutter?",
+    "choices": [
+      "InheritedWidget",
+      "Passing constructor parameters",
+      "setState",
+      "FutureBuilder"
+    ],
+    "answer": "InheritedWidget"
+  },
+  {
+    "id": 124,
+    "question": "Which object is responsible for painting pixels?",
+    "choices": ["Widget", "RenderObject", "Canvas", "Element"],
+    "answer": "RenderObject"
+  },
+  {
+    "id": 125,
+    "question": "What does markNeedsLayout() trigger?",
+    "choices": ["Rebuild", "Relayout phase", "Repaint only", "Dispose"],
+    "answer": "Relayout phase"
+  }
+]

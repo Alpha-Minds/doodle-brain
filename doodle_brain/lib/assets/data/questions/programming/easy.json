@@ -1,302 +1,933 @@
 [
-    {
-      "id": 1,
-      "question": "What programming language is used to develop Flutter apps?",
-      "choices": ["Java", "Kotlin", "Dart", "Swift"],
-      "answer": "Dart"
-    },
-    {
-      "id": 2,
-      "question": "Who developed Flutter?",
-      "choices": ["Facebook", "Microsoft", "Google", "Apple"],
-      "answer": "Google"
-    },
-    {
-      "id": 3,
-      "question": "Which widget is used for immutable layouts in Flutter?",
-      "choices": ["StatefulWidget", "StatelessWidget", "Container", "Scaffold"],
-      "answer": "StatelessWidget"
-    },
-    {
-      "id": 4,
-      "question": "Which widget is used for mutable state in Flutter?",
-      "choices": ["StatelessWidget", "StatefulWidget", "MaterialApp", "Text"],
-      "answer": "StatefulWidget"
-    },
-    {
-      "id": 5,
-      "question": "Which function is the entry point of a Flutter app?",
-      "choices": ["start()", "main()", "run()", "init()"],
-      "answer": "main()"
-    },
-    {
-      "id": 6,
-      "question": "Which widget provides the basic material design layout structure?",
-      "choices": ["Container", "Column", "Scaffold", "Center"],
-      "answer": "Scaffold"
-    },
-    {
-      "id": 7,
-      "question": "Which widget is used to arrange children vertically?",
-      "choices": ["Row", "Column", "Stack", "ListView"],
-      "answer": "Column"
-    },
-    {
-      "id": 8,
-      "question": "Which widget is used to arrange children horizontally?",
-      "choices": ["Column", "Stack", "Row", "ListView"],
-      "answer": "Row"
-    },
-    {
-      "id": 9,
-      "question": "Which keyword is used to declare a constant in Dart?",
-      "choices": ["var", "final", "const", "static"],
-      "answer": "const"
-    },
-    {
-      "id": 10,
-      "question": "Which keyword is used to declare a variable in Dart?",
-      "choices": ["int", "var", "let", "define"],
-      "answer": "var"
-    },
-    {
-      "id": 11,
-      "question": "Which widget is used to add padding around another widget?",
-      "choices": ["Container", "Padding", "Center", "Align"],
-      "answer": "Padding"
-    },
-    {
-      "id": 12,
-      "question": "Which widget centers its child?",
-      "choices": ["Column", "Row", "Center", "Stack"],
-      "answer": "Center"
-    },
-    {
-      "id": 13,
-      "question": "Which widget is used to display text?",
-      "choices": ["Label", "Text", "String", "Font"],
-      "answer": "Text"
-    },
-    {
-      "id": 14,
-      "question": "Which widget is used to create a scrollable list?",
-      "choices": ["Column", "Row", "ListView", "Stack"],
-      "answer": "ListView"
-    },
-    {
-      "id": 15,
-      "question": "Which method rebuilds a StatefulWidget?",
-      "choices": ["initState()", "setState()", "build()", "dispose()"],
-      "answer": "setState()"
-    },
-    {
-      "id": 16,
-      "question": "Which file contains dependencies in a Flutter project?",
-      "choices": ["main.dart", "pubspec.yaml", "index.html", "config.json"],
-      "answer": "pubspec.yaml"
-    },
-    {
-      "id": 17,
-      "question": "Which widget allows overlapping children?",
-      "choices": ["Row", "Column", "Stack", "ListView"],
-      "answer": "Stack"
-    },
-    {
-      "id": 18,
-      "question": "Which operator is used for null-aware access in Dart?",
-      "choices": ["??", "?.", "!!", "::"],
-      "answer": "?."
-    },
-    {
-      "id": 19,
-      "question": "Which keyword prevents a class from being extended?",
-      "choices": ["const", "final", "sealed", "static"],
-      "answer": "sealed"
-    },
-    {
-      "id": 20,
-      "question": "Which widget is used for app navigation?",
-      "choices": ["Navigator", "Router", "Scaffold", "MaterialApp"],
-      "answer": "Navigator"
-    },
-    {
-      "id": 21,
-      "question": "Which widget is used to create a button in Flutter?",
-      "choices": ["TextButton", "Container", "Column", "Icon"],
-      "answer": "TextButton"
-    },
-    {
-      "id": 22,
-      "question": "Which keyword is used to create a class in Dart?",
-      "choices": ["function", "class", "object", "struct"],
-      "answer": "class"
-    },
-    {
-      "id": 23,
-      "question": "Which data type is used for whole numbers in Dart?",
-      "choices": ["double", "int", "num", "String"],
-      "answer": "int"
-    },
-    {
-      "id": 24,
-      "question": "Which widget is used to display an image?",
-      "choices": ["Photo", "Image", "Picture", "Icon"],
-      "answer": "Image"
-    },
-    {
-      "id": 25,
-      "question": "Which method is called when a StatefulWidget is first created?",
-      "choices": ["dispose()", "initState()", "build()", "setState()"],
-      "answer": "initState()"
-    },
-    {
-      "id": 26,
-      "question": "Which keyword makes a variable immutable after assignment?",
-      "choices": ["const", "var", "let", "dynamic"],
-      "answer": "final"
-    },
-    {
-      "id": 27,
-      "question": "Which widget is used to add margin and decoration?",
-      "choices": ["Padding", "Container", "Center", "Row"],
-      "answer": "Container"
-    },
-    {
-      "id": 28,
-      "question": "Which function runs a Flutter app?",
-      "choices": ["startApp()", "runApp()", "launchApp()", "mainApp()"],
-      "answer": "runApp()"
-    },
-    {
-      "id": 29,
-      "question": "Which collection stores key-value pairs in Dart?",
-      "choices": ["List", "Set", "Map", "Array"],
-      "answer": "Map"
-    },
-    {
-      "id": 30,
-      "question": "Which widget is used to create input fields?",
-      "choices": ["Text", "TextField", "InputBox", "FormField"],
-      "answer": "TextField"
-    },
-    {
-      "id": 31,
-      "question": "Which keyword is used for inheritance in Dart?",
-      "choices": ["implements", "extends", "with", "super"],
-      "answer": "extends"
-    },
-    {
-      "id": 32,
-      "question": "Which widget is used for spacing in a Row or Column?",
-      "choices": ["Spacer", "Padding", "Container", "Align"],
-      "answer": "Spacer"
-    },
-    {
-      "id": 33,
-      "question": "Which widget displays icons?",
-      "choices": ["Image", "Icon", "Text", "Button"],
-      "answer": "Icon"
-    },
-    {
-      "id": 34,
-      "question": "Which function removes a widget from memory?",
-      "choices": ["dispose()", "remove()", "delete()", "clear()"],
-      "answer": "dispose()"
-    },
-    {
-      "id": 35,
-      "question": "Which operator checks equality in Dart?",
-      "choices": ["=", "==", "!=", "==="],
-      "answer": "=="
-    },
-    {
-      "id": 36,
-      "question": "Which widget creates a scrollable grid?",
-      "choices": ["GridView", "ListView", "Row", "Column"],
-      "answer": "GridView"
-    },
-    {
-      "id": 37,
-      "question": "Which keyword is used for asynchronous functions?",
-      "choices": ["sync", "async", "await", "future"],
-      "answer": "async"
-    },
-    {
-      "id": 38,
-      "question": "Which keyword waits for a Future to complete?",
-      "choices": ["wait", "then", "async", "await"],
-      "answer": "await"
-    },
-    {
-      "id": 39,
-      "question": "Which class represents asynchronous computation in Dart?",
-      "choices": ["Stream", "Future", "Async", "Promise"],
-      "answer": "Future"
-    },
-    {
-      "id": 40,
-      "question": "Which widget provides app-wide configuration?",
-      "choices": ["Scaffold", "MaterialApp", "Navigator", "Theme"],
-      "answer": "MaterialApp"
-    },
-    {
-      "id": 41,
-      "question": "Which widget is used to group multiple input fields?",
-      "choices": ["Form", "Column", "Container", "Card"],
-      "answer": "Form"
-    },
-    {
-      "id": 42,
-      "question": "Which lifecycle method is called before dispose()?",
-      "choices": ["initState()", "build()", "deactivate()", "createState()"],
-      "answer": "deactivate()"
-    },
-    {
-      "id": 43,
-      "question": "Which data type is used for decimal numbers?",
-      "choices": ["int", "double", "num", "String"],
-      "answer": "double"
-    },
-    {
-      "id": 44,
-      "question": "Which widget draws material design cards?",
-      "choices": ["Card", "Container", "Box", "Paper"],
-      "answer": "Card"
-    },
-    {
-      "id": 45,
-      "question": "Which keyword defines a mixin in Dart?",
-      "choices": ["extends", "implements", "mixin", "with"],
-      "answer": "mixin"
-    },
-    {
-      "id": 46,
-      "question": "Which widget is used for floating action buttons?",
-      "choices": ["Button", "FloatingActionButton", "IconButton", "ActionButton"],
-      "answer": "FloatingActionButton"
-    },
-    {
-      "id": 47,
-      "question": "Which keyword allows a class to implement an interface?",
-      "choices": ["extends", "with", "implements", "abstract"],
-      "answer": "implements"
-    },
-    {
-      "id": 48,
-      "question": "Which widget provides themes in Flutter?",
-      "choices": ["Theme", "MaterialApp", "Scaffold", "Container"],
-      "answer": "Theme"
-    },
-    {
-      "id": 49,
-      "question": "Which function builds the UI of a widget?",
-      "choices": ["createState()", "build()", "render()", "initState()"],
-      "answer": "build()"
-    },
-    {
-      "id": 50,
-      "question": "Which widget is used to detect gestures?",
-      "choices": ["GestureDetector", "InkWell", "Listener", "Detector"],
-      "answer": "GestureDetector"
-    }
-  ]
+  {
+    "id": 1,
+    "question": "What programming language is used to develop Flutter apps?",
+    "choices": ["Java", "Kotlin", "Dart", "Swift"],
+    "answer": "Dart"
+  },
+  {
+    "id": 2,
+    "question": "Who developed Flutter?",
+    "choices": ["Facebook", "Microsoft", "Google", "Apple"],
+    "answer": "Google"
+  },
+  {
+    "id": 3,
+    "question": "Which widget is used for immutable layouts in Flutter?",
+    "choices": ["StatefulWidget", "StatelessWidget", "Container", "Scaffold"],
+    "answer": "StatelessWidget"
+  },
+  {
+    "id": 4,
+    "question": "Which widget is used for mutable state in Flutter?",
+    "choices": ["StatelessWidget", "StatefulWidget", "MaterialApp", "Text"],
+    "answer": "StatefulWidget"
+  },
+  {
+    "id": 5,
+    "question": "Which function is the entry point of a Flutter app?",
+    "choices": ["start()", "main()", "run()", "init()"],
+    "answer": "main()"
+  },
+  {
+    "id": 6,
+    "question": "Which widget provides the basic material design layout structure?",
+    "choices": ["Container", "Column", "Scaffold", "Center"],
+    "answer": "Scaffold"
+  },
+  {
+    "id": 7,
+    "question": "Which widget is used to arrange children vertically?",
+    "choices": ["Row", "Column", "Stack", "ListView"],
+    "answer": "Column"
+  },
+  {
+    "id": 8,
+    "question": "Which widget is used to arrange children horizontally?",
+    "choices": ["Column", "Stack", "Row", "ListView"],
+    "answer": "Row"
+  },
+  {
+    "id": 9,
+    "question": "Which keyword is used to declare a constant in Dart?",
+    "choices": ["var", "final", "const", "static"],
+    "answer": "const"
+  },
+  {
+    "id": 10,
+    "question": "Which keyword is used to declare a variable in Dart?",
+    "choices": ["int", "var", "let", "define"],
+    "answer": "var"
+  },
+  {
+    "id": 11,
+    "question": "Which widget is used to add padding around another widget?",
+    "choices": ["Container", "Padding", "Center", "Align"],
+    "answer": "Padding"
+  },
+  {
+    "id": 12,
+    "question": "Which widget centers its child?",
+    "choices": ["Column", "Row", "Center", "Stack"],
+    "answer": "Center"
+  },
+  {
+    "id": 13,
+    "question": "Which widget is used to display text?",
+    "choices": ["Label", "Text", "String", "Font"],
+    "answer": "Text"
+  },
+  {
+    "id": 14,
+    "question": "Which widget is used to create a scrollable list?",
+    "choices": ["Column", "Row", "ListView", "Stack"],
+    "answer": "ListView"
+  },
+  {
+    "id": 15,
+    "question": "Which method rebuilds a StatefulWidget?",
+    "choices": ["initState()", "setState()", "build()", "dispose()"],
+    "answer": "setState()"
+  },
+  {
+    "id": 16,
+    "question": "Which file contains dependencies in a Flutter project?",
+    "choices": ["main.dart", "pubspec.yaml", "index.html", "config.json"],
+    "answer": "pubspec.yaml"
+  },
+  {
+    "id": 17,
+    "question": "Which widget allows overlapping children?",
+    "choices": ["Row", "Column", "Stack", "ListView"],
+    "answer": "Stack"
+  },
+  {
+    "id": 18,
+    "question": "Which operator is used for null-aware access in Dart?",
+    "choices": ["??", "?.", "!!", "::"],
+    "answer": "?."
+  },
+  {
+    "id": 19,
+    "question": "Which keyword prevents a class from being extended?",
+    "choices": ["const", "final", "sealed", "static"],
+    "answer": "sealed"
+  },
+  {
+    "id": 20,
+    "question": "Which widget is used for app navigation?",
+    "choices": ["Navigator", "Router", "Scaffold", "MaterialApp"],
+    "answer": "Navigator"
+  },
+  {
+    "id": 21,
+    "question": "Which widget is used to create a button in Flutter?",
+    "choices": ["TextButton", "Container", "Column", "Icon"],
+    "answer": "TextButton"
+  },
+  {
+    "id": 22,
+    "question": "Which keyword is used to create a class in Dart?",
+    "choices": ["function", "class", "object", "struct"],
+    "answer": "class"
+  },
+  {
+    "id": 23,
+    "question": "Which data type is used for whole numbers in Dart?",
+    "choices": ["double", "int", "num", "String"],
+    "answer": "int"
+  },
+  {
+    "id": 24,
+    "question": "Which widget is used to display an image?",
+    "choices": ["Photo", "Image", "Picture", "Icon"],
+    "answer": "Image"
+  },
+  {
+    "id": 25,
+    "question": "Which method is called when a StatefulWidget is first created?",
+    "choices": ["dispose()", "initState()", "build()", "setState()"],
+    "answer": "initState()"
+  },
+  {
+    "id": 26,
+    "question": "Which keyword makes a variable immutable after assignment?",
+    "choices": ["const", "var", "let", "dynamic"],
+    "answer": "final"
+  },
+  {
+    "id": 27,
+    "question": "Which widget is used to add margin and decoration?",
+    "choices": ["Padding", "Container", "Center", "Row"],
+    "answer": "Container"
+  },
+  {
+    "id": 28,
+    "question": "Which function runs a Flutter app?",
+    "choices": ["startApp()", "runApp()", "launchApp()", "mainApp()"],
+    "answer": "runApp()"
+  },
+  {
+    "id": 29,
+    "question": "Which collection stores key-value pairs in Dart?",
+    "choices": ["List", "Set", "Map", "Array"],
+    "answer": "Map"
+  },
+  {
+    "id": 30,
+    "question": "Which widget is used to create input fields?",
+    "choices": ["Text", "TextField", "InputBox", "FormField"],
+    "answer": "TextField"
+  },
+  {
+    "id": 31,
+    "question": "Which keyword is used for inheritance in Dart?",
+    "choices": ["implements", "extends", "with", "super"],
+    "answer": "extends"
+  },
+  {
+    "id": 32,
+    "question": "Which widget is used for spacing in a Row or Column?",
+    "choices": ["Spacer", "Padding", "Container", "Align"],
+    "answer": "Spacer"
+  },
+  {
+    "id": 33,
+    "question": "Which widget displays icons?",
+    "choices": ["Image", "Icon", "Text", "Button"],
+    "answer": "Icon"
+  },
+  {
+    "id": 34,
+    "question": "Which function removes a widget from memory?",
+    "choices": ["dispose()", "remove()", "delete()", "clear()"],
+    "answer": "dispose()"
+  },
+  {
+    "id": 35,
+    "question": "Which operator checks equality in Dart?",
+    "choices": ["=", "==", "!=", "==="],
+    "answer": "=="
+  },
+  {
+    "id": 36,
+    "question": "Which widget creates a scrollable grid?",
+    "choices": ["GridView", "ListView", "Row", "Column"],
+    "answer": "GridView"
+  },
+  {
+    "id": 37,
+    "question": "Which keyword is used for asynchronous functions?",
+    "choices": ["sync", "async", "await", "future"],
+    "answer": "async"
+  },
+  {
+    "id": 38,
+    "question": "Which keyword waits for a Future to complete?",
+    "choices": ["wait", "then", "async", "await"],
+    "answer": "await"
+  },
+  {
+    "id": 39,
+    "question": "Which class represents asynchronous computation in Dart?",
+    "choices": ["Stream", "Future", "Async", "Promise"],
+    "answer": "Future"
+  },
+  {
+    "id": 40,
+    "question": "Which widget provides app-wide configuration?",
+    "choices": ["Scaffold", "MaterialApp", "Navigator", "Theme"],
+    "answer": "MaterialApp"
+  },
+  {
+    "id": 41,
+    "question": "Which widget is used to group multiple input fields?",
+    "choices": ["Form", "Column", "Container", "Card"],
+    "answer": "Form"
+  },
+  {
+    "id": 42,
+    "question": "Which lifecycle method is called before dispose()?",
+    "choices": ["initState()", "build()", "deactivate()", "createState()"],
+    "answer": "deactivate()"
+  },
+  {
+    "id": 43,
+    "question": "Which data type is used for decimal numbers?",
+    "choices": ["int", "double", "num", "String"],
+    "answer": "double"
+  },
+  {
+    "id": 44,
+    "question": "Which widget draws material design cards?",
+    "choices": ["Card", "Container", "Box", "Paper"],
+    "answer": "Card"
+  },
+  {
+    "id": 45,
+    "question": "Which keyword defines a mixin in Dart?",
+    "choices": ["extends", "implements", "mixin", "with"],
+    "answer": "mixin"
+  },
+  {
+    "id": 46,
+    "question": "Which widget is used for floating action buttons?",
+    "choices": ["Button", "FloatingActionButton", "IconButton", "ActionButton"],
+    "answer": "FloatingActionButton"
+  },
+  {
+    "id": 47,
+    "question": "Which keyword allows a class to implement an interface?",
+    "choices": ["extends", "with", "implements", "abstract"],
+    "answer": "implements"
+  },
+  {
+    "id": 48,
+    "question": "Which widget provides themes in Flutter?",
+    "choices": ["Theme", "MaterialApp", "Scaffold", "Container"],
+    "answer": "Theme"
+  },
+  {
+    "id": 49,
+    "question": "Which function builds the UI of a widget?",
+    "choices": ["createState()", "build()", "render()", "initState()"],
+    "answer": "build()"
+  },
+  {
+    "id": 50,
+    "question": "Which widget is used to detect gestures?",
+    "choices": ["GestureDetector", "InkWell", "Listener", "Detector"],
+    "answer": "GestureDetector"
+  },
+
+  {
+    "id": 51,
+    "question": "Which Dart data type is used for a sequence of characters?",
+    "choices": ["char", "String", "Text", "List"],
+    "answer": "String"
+  },
+  {
+    "id": 52,
+    "question": "Which widget is used as a top navigation bar in a Scaffold?",
+    "choices": ["NavBar", "Header", "AppBar", "TopBar"],
+    "answer": "AppBar"
+  },
+  {
+    "id": 53,
+    "question": "In Dart, what is the syntax for a single-line comment?",
+    "choices": ["# comment", "// comment", "/* comment", "-- comment"],
+    "answer": "// comment"
+  },
+  {
+    "id": 54,
+    "question": "Which widget displays a circular profile image?",
+    "choices": ["CircleAvatar", "RoundImage", "OvalImage", "UserIcon"],
+    "answer": "CircleAvatar"
+  },
+  {
+    "id": 55,
+    "question": "Which Container property adds space inside its borders?",
+    "choices": ["margin", "padding", "spacing", "gap"],
+    "answer": "padding"
+  },
+  {
+    "id": 56,
+    "question": "What does the 'final' keyword mean in Dart?",
+    "choices": ["Set once", "Global constant", "Compile-time only", "Private"],
+    "answer": "Set once"
+  },
+  {
+    "id": 57,
+    "question": "Which widget fills available space in a Row or Column?",
+    "choices": ["Fill", "Expanded", "Stretch", "Flexible"],
+    "answer": "Expanded"
+  },
+  {
+    "id": 58,
+    "question": "Which operator checks if an object is a specific type?",
+    "choices": ["as", "is", "typeof", "check"],
+    "answer": "is"
+  },
+  {
+    "id": 59,
+    "choices": ["pub get", "flutter install", "get packages", "update pub"],
+    "question": "Which command fetches dependencies in the pubspec.yaml?",
+    "answer": "pub get"
+  },
+  {
+    "id": 60,
+    "question": "Which widget is used to display a simple alert box?",
+    "choices": ["Alert", "MessageDialog", "AlertDialog", "Popup"],
+    "answer": "AlertDialog"
+  },
+  {
+    "id": 61,
+    "question": "Which property changes the background color of a Container?",
+    "choices": ["background", "color", "decoration", "paint"],
+    "answer": "color"
+  },
+  {
+    "id": 62,
+    "question": "What is the boolean keyword in Dart?",
+    "choices": ["bit", "bool", "boolean", "Binary"],
+    "answer": "bool"
+  },
+  {
+    "id": 63,
+    "question": "Which widget adds a 'Material' ripple effect on tap?",
+    "choices": ["GestureDetector", "InkWell", "TapBox", "Button"],
+    "answer": "InkWell"
+  },
+  {
+    "id": 64,
+    "question": "Which property aligns Row children horizontally?",
+    "choices": ["crossAxisAlignment", "mainAxisAlignment", "center", "align"],
+    "answer": "mainAxisAlignment"
+  },
+  {
+    "id": 65,
+    "question": "Which property aligns Column children horizontally?",
+    "choices": [
+      "crossAxisAlignment",
+      "mainAxisAlignment",
+      "verticalAlign",
+      "align"
+    ],
+    "answer": "crossAxisAlignment"
+  },
+  {
+    "id": 66,
+    "question": "Which folder stores assets like images by default?",
+    "choices": ["images/", "assets/", "public/", "static/"],
+    "answer": "assets/"
+  },
+  {
+    "id": 67,
+    "question": "What does 'hot reload' do in Flutter?",
+    "choices": [
+      "Restarts app",
+      "Updates code changes",
+      "Clears cache",
+      "Compiles APK"
+    ],
+    "answer": "Updates code changes"
+  },
+  {
+    "id": 68,
+    "question": "Which widget is used to add a shadow to a box?",
+    "choices": ["Shadow", "BoxDecoration", "BoxShadow", "Elevation"],
+    "answer": "BoxDecoration"
+  },
+  {
+    "id": 69,
+    "question": "What is the default value of an uninitialized int in Dart (before null safety)?",
+    "choices": ["0", "null", "undefined", "-1"],
+    "answer": "null"
+  },
+  {
+    "id": 70,
+    "question": "Which widget allows you to limit a child's width and height?",
+    "choices": ["Box", "SizedBox", "LimitBox", "ConstrainedBox"],
+    "answer": "SizedBox"
+  },
+  {
+    "id": 71,
+    "question": "Which symbol is used for string interpolation in Dart?",
+    "choices": ["&", "%", "$", "@"],
+    "answer": "$"
+  },
+  {
+    "id": 72,
+    "question": "Which widget makes its child look 'clipped' into an oval?",
+    "choices": ["ClipRect", "ClipOval", "ClipRRect", "ClipPath"],
+    "answer": "ClipOval"
+  },
+  {
+    "id": 73,
+    "question": "How do you define a list in Dart?",
+    "choices": ["{ }", "[ ]", "( )", "< >"],
+    "answer": "[ ]"
+  },
+  {
+    "id": 74,
+    "question": "Which widget is used for a 'hamburger' menu?",
+    "choices": ["Drawer", "Sidebar", "Menu", "LeftPanel"],
+    "answer": "Drawer"
+  },
+  {
+    "id": 75,
+    "question": "Which property of Text changes the font size?",
+    "choices": ["font", "size", "style", "weight"],
+    "answer": "style"
+  },
+  {
+    "id": 76,
+    "question": "Which widget provides a scrollable list of long, uniform items?",
+    "choices": ["ListView", "SingleChildScrollView", "Column", "ScrollBox"],
+    "answer": "ListView"
+  },
+  {
+    "id": 77,
+    "question": "What is the extension of a Dart file?",
+    "choices": [".dart", ".fltr", ".dt", ".js"],
+    "answer": ".dart"
+  },
+  {
+    "id": 78,
+    "question": "Which widget allows a child to be positioned at a specific (x,y) in a Stack?",
+    "choices": ["Align", "Positioned", "Center", "Padding"],
+    "answer": "Positioned"
+  },
+  {
+    "id": 79,
+    "question": "Which widget is used to draw a line between items in a list?",
+    "choices": ["Line", "Separator", "Divider", "Border"],
+    "answer": "Divider"
+  },
+  {
+    "id": 80,
+    "question": "Which keyword is used to import a library in Dart?",
+    "choices": ["using", "import", "require", "include"],
+    "answer": "import"
+  },
+  {
+    "id": 81,
+    "question": "Which widget is used to display a sequence of images or pages?",
+    "choices": ["ListView", "PageView", "GridView", "Stack"],
+    "answer": "PageView"
+  },
+  {
+    "id": 82,
+    "question": "What is the name of the tool used to manage Dart packages?",
+    "choices": ["npm", "pip", "pub", "gem"],
+    "answer": "pub"
+  },
+  {
+    "id": 83,
+    "question": "Which widget is used to add a background image?",
+    "choices": ["Container", "Image", "Stack", "Scaffold"],
+    "answer": "Container"
+  },
+  {
+    "id": 84,
+    "question": "How do you make a variable optional (nullable) in Dart?",
+    "choices": ["var?", "int?", "optional int", "null int"],
+    "answer": "int?"
+  },
+  {
+    "id": 85,
+    "question": "Which widget shows a loading spinner?",
+    "choices": [
+      "ProgressIcon",
+      "CircularProgressIndicator",
+      "LoadingCircle",
+      "Spinner"
+    ],
+    "answer": "CircularProgressIndicator"
+  },
+  {
+    "id": 86,
+    "question": "Which widget is used for long-press detection?",
+    "choices": ["Button", "GestureDetector", "LongPressBox", "InkWell"],
+    "answer": "GestureDetector"
+  },
+  {
+    "id": 87,
+    "question": "Which property of a Scaffold shows a bottom bar?",
+    "choices": ["bottomNavigationBar", "footer", "bottomBar", "navBar"],
+    "answer": "bottomNavigationBar"
+  },
+  {
+    "id": 88,
+    "question": "What is the main purpose of the 'super' keyword?",
+    "choices": [
+      "Create a class",
+      "Call parent class",
+      "Make a constant",
+      "Export code"
+    ],
+    "answer": "Call parent class"
+  },
+  {
+    "id": 89,
+    "question": "Which widget can be used to wrap a Text widget to prevent it from overflowing?",
+    "choices": ["Container", "Wrap", "FittedBox", "Flexible"],
+    "answer": "Flexible"
+  },
+  {
+    "id": 90,
+    "question": "Which collection type in Dart prevents duplicate items?",
+    "choices": ["List", "Map", "Set", "Queue"],
+    "answer": "Set"
+  },
+  {
+    "id": 91,
+    "question": "Which widget is used for a multi-line input?",
+    "choices": ["TextField", "TextArea", "Input", "Editor"],
+    "answer": "TextField"
+  },
+  {
+    "id": 92,
+    "question": "Which named constructor creates an Image from a URL?",
+    "choices": ["Image.file", "Image.asset", "Image.network", "Image.memory"],
+    "answer": "Image.network"
+  },
+  {
+    "id": 93,
+    "question": "Which widget is used to make a child circular?",
+    "choices": ["CircleBox", "ClipOval", "RoundedContainer", "Oval"],
+    "answer": "ClipOval"
+  },
+  {
+    "id": 94,
+    "question": "Which keyword is used to handle exceptions in Dart?",
+    "choices": ["catch", "try", "error", "handle"],
+    "answer": "try"
+  },
+  {
+    "id": 95,
+    "question": "Which widget is used to change the opacity of its child?",
+    "choices": ["Invisible", "Opacity", "Transparent", "Alpha"],
+    "answer": "Opacity"
+  },
+  {
+    "id": 96,
+    "question": "What is the keyword for the current instance of a class?",
+    "choices": ["self", "me", "this", "instance"],
+    "answer": "this"
+  },
+  {
+    "id": 97,
+    "question": "Which widget is used to display a short message at the bottom of the screen?",
+    "choices": ["SnackBar", "Toast", "Alert", "Footer"],
+    "answer": "SnackBar"
+  },
+  {
+    "id": 98,
+    "question": "Which method is called only once in the lifecycle of a State object?",
+    "choices": ["build", "setState", "initState", "didUpdateWidget"],
+    "answer": "initState"
+  },
+  {
+    "id": 99,
+    "question": "Which widget is used to apply a specific theme to a part of the app?",
+    "choices": ["MaterialApp", "Theme", "Style", "Config"],
+    "answer": "Theme"
+  },
+  {
+    "id": 100,
+    "question": "Which widget is used to create a tabbed interface?",
+    "choices": ["TabBar", "Pager", "ListView", "Stack"],
+    "answer": "TabBar"
+  },
+  {
+    "id": 101,
+    "question": "Which keyword defines an abstract class in Dart?",
+    "choices": ["interface", "abstract", "virtual", "base"],
+    "answer": "abstract"
+  },
+  {
+    "id": 102,
+    "question": "Which widget is used to add a border around a child?",
+    "choices": ["Border", "Container", "Box", "Outline"],
+    "answer": "Container"
+  },
+  {
+    "id": 103,
+    "question": "Which property in a ListView.builder defines the number of items?",
+    "choices": ["length", "count", "itemCount", "size"],
+    "answer": "itemCount"
+  },
+  {
+    "id": 104,
+    "question": "Which widget is used to handle scrolling for a single child?",
+    "choices": [
+      "ListView",
+      "SingleChildScrollView",
+      "ScrollBox",
+      "SingleScroll"
+    ],
+    "answer": "SingleChildScrollView"
+  },
+  {
+    "id": 105,
+    "question": "What is the result of 5 ~/ 2 in Dart?",
+    "choices": ["2.5", "2", "3", "Error"],
+    "answer": "2"
+  },
+  {
+    "id": 106,
+    "question": "Which widget is used to make a child look like a card with rounded corners?",
+    "choices": ["Box", "Card", "Panel", "Paper"],
+    "answer": "Card"
+  },
+  {
+    "id": 107,
+    "question": "Which constructor is used to create a constant list?",
+    "choices": [
+      "const List()",
+      "List.const()",
+      "static List()",
+      "final List()"
+    ],
+    "answer": "const List()"
+  },
+  {
+    "id": 108,
+    "question": "Which widget is used to switch between different screens?",
+    "choices": ["Navigator", "Switcher", "Router", "MaterialApp"],
+    "answer": "Navigator"
+  },
+  {
+    "id": 109,
+    "question": "Which property of a TextField hides the input (for passwords)?",
+    "choices": ["hideText", "secureEntry", "obscureText", "passwordMode"],
+    "answer": "obscureText"
+  },
+  {
+    "id": 110,
+    "question": "Which method is called when you navigate back from a screen?",
+    "choices": ["onPop", "pop", "dispose", "back"],
+    "answer": "pop"
+  },
+  {
+    "id": 111,
+    "question": "Which widget is used to create a vertical list of tiles?",
+    "choices": ["ListTile", "ListRow", "ItemTile", "TileRow"],
+    "answer": "ListTile"
+  },
+  {
+    "id": 112,
+    "question": "What is the Dart syntax for 'not equal'?",
+    "choices": ["<>", "!==", "!=", "not="],
+    "answer": "!="
+  },
+  {
+    "id": 113,
+    "question": "Which widget is used to display an Icon from the Material library?",
+    "choices": ["Image", "Icon", "Graphic", "Symbol"],
+    "answer": "Icon"
+  },
+  {
+    "id": 114,
+    "question": "Which property of a Row defines how it handles extra space?",
+    "choices": ["mainAxisSize", "crossAxisSize", "fit", "flex"],
+    "answer": "mainAxisSize"
+  },
+  {
+    "id": 115,
+    "question": "Which widget can hold only one child?",
+    "choices": ["Column", "Container", "Row", "Stack"],
+    "answer": "Container"
+  },
+  {
+    "id": 116,
+    "question": "Which widget is used to display a back button automatically?",
+    "choices": ["AppBar", "BackButton", "Navigator", "Scaffold"],
+    "answer": "AppBar"
+  },
+  {
+    "id": 117,
+    "question": "Which keyword is used to return a value from a function?",
+    "choices": ["give", "return", "back", "send"],
+    "answer": "return"
+  },
+  {
+    "id": 118,
+    "question": "Which widget is used to change the background of the entire screen?",
+    "choices": ["Container", "Scaffold", "MaterialApp", "Background"],
+    "answer": "Scaffold"
+  },
+  {
+    "id": 119,
+    "question": "Which method is used to update the UI in a StatefulWidget?",
+    "choices": ["update()", "setState()", "refresh()", "rebuild()"],
+    "answer": "setState()"
+  },
+  {
+    "id": 120,
+    "question": "Which widget is used to define the root of a Flutter application?",
+    "choices": ["MaterialApp", "Scaffold", "Container", "Main"],
+    "answer": "MaterialApp"
+  },
+  {
+    "id": 121,
+    "question": "Which widget is used for simple text input?",
+    "choices": ["TextField", "Text", "Label", "Input"],
+    "answer": "TextField"
+  },
+  {
+    "id": 122,
+    "question": "Which widget allows you to create a grid of items?",
+    "choices": ["GridView", "ListView", "Table", "Row"],
+    "answer": "GridView"
+  },
+  {
+    "id": 123,
+    "question": "What is the return type of the build method?",
+    "choices": ["void", "Widget", "State", "Material"],
+    "answer": "Widget"
+  },
+  {
+    "id": 124,
+    "question": "Which widget is used to add a fixed amount of space between widgets?",
+    "choices": ["Spacer", "SizedBox", "Padding", "Margin"],
+    "answer": "SizedBox"
+  },
+  {
+    "id": 125,
+    "question": "Which property of a Column aligns its children vertically?",
+    "choices": ["crossAxisAlignment", "mainAxisAlignment", "center", "top"],
+    "answer": "mainAxisAlignment"
+  },
+  {
+    "id": 126,
+    "question": "Which widget is used to detect double taps?",
+    "choices": ["Button", "GestureDetector", "InkWell", "TapBox"],
+    "answer": "GestureDetector"
+  },
+  {
+    "id": 127,
+    "question": "Which widget is used to clip its child to a rounded rectangle?",
+    "choices": ["ClipOval", "ClipRRect", "ClipRect", "ClipPath"],
+    "answer": "ClipRRect"
+  },
+  {
+    "id": 128,
+    "question": "Which widget is used to display a set of radio buttons?",
+    "choices": ["Radio", "Checkbox", "Switch", "Toggle"],
+    "answer": "Radio"
+  },
+  {
+    "id": 129,
+    "question": "Which widget is used to create a checkbox?",
+    "choices": ["Radio", "Checkbox", "Switch", "Toggle"],
+    "answer": "Checkbox"
+  },
+  {
+    "id": 130,
+    "question": "Which widget is used to create a toggle switch?",
+    "choices": ["Radio", "Checkbox", "Switch", "Toggle"],
+    "answer": "Switch"
+  },
+  {
+    "id": 131,
+    "question": "Which property of an Image widget defines how it fits its box?",
+    "choices": ["size", "fit", "scale", "match"],
+    "answer": "fit"
+  },
+  {
+    "id": 132,
+    "question": "Which widget is used to add an icon button?",
+    "choices": ["IconButton", "Icon", "Button", "TextButton"],
+    "answer": "IconButton"
+  },
+  {
+    "id": 133,
+    "question": "Which widget is used to add a shadow effect with elevation?",
+    "choices": ["Container", "Material", "Shadow", "Box"],
+    "answer": "Material"
+  },
+  {
+    "id": 134,
+    "question": "Which keyword is used to define a constructor in Dart?",
+    "choices": ["constructor", "init", "ClassName", "new"],
+    "answer": "ClassName"
+  },
+  {
+    "id": 135,
+    "question": "Which widget is used to center its child widget?",
+    "choices": ["Align", "Center", "Padding", "Positioned"],
+    "answer": "Center"
+  },
+  {
+    "id": 136,
+    "question": "Which widget is used to display a small icon on the right side of a ListTile?",
+    "choices": ["leading", "trailing", "title", "subtitle"],
+    "answer": "trailing"
+  },
+  {
+    "id": 137,
+    "question": "Which widget is used to display a small icon on the left side of a ListTile?",
+    "choices": ["leading", "trailing", "title", "subtitle"],
+    "answer": "leading"
+  },
+  {
+    "id": 138,
+    "question": "Which widget is used for a scrollable horizontal list of items?",
+    "choices": ["ListView", "Row", "GridView", "SingleChildScrollView"],
+    "answer": "ListView"
+  },
+  {
+    "id": 139,
+    "question": "Which method is called to clear a TextController?",
+    "choices": ["clear()", "reset()", "delete()", "empty()"],
+    "answer": "clear()"
+  },
+  {
+    "id": 140,
+    "question": "Which widget is used to create an elevated button?",
+    "choices": ["ElevatedButton", "TextButton", "FlatButton", "RaisedButton"],
+    "answer": "ElevatedButton"
+  },
+  {
+    "id": 141,
+    "question": "Which widget is used to wrap a child in a safe area?",
+    "choices": ["Container", "SafeArea", "Padding", "SizedBox"],
+    "answer": "SafeArea"
+  },
+  {
+    "id": 142,
+    "question": "Which widget is used for layout based on percentage of screen?",
+    "choices": ["Expanded", "Flexible", "FractionallySizedBox", "SizedBox"],
+    "answer": "FractionallySizedBox"
+  },
+  {
+    "id": 143,
+    "question": "What is the base class of all Flutter widgets?",
+    "choices": ["Object", "Widget", "Element", "RenderObject"],
+    "answer": "Widget"
+  },
+  {
+    "id": 144,
+    "question": "Which keyword is used to create a new instance in Dart (optional)?",
+    "choices": ["create", "new", "instance", "init"],
+    "answer": "new"
+  },
+  {
+    "id": 145,
+    "question": "Which widget provides a way to overlay widgets on top of each other?",
+    "choices": ["Row", "Column", "Stack", "Layer"],
+    "answer": "Stack"
+  },
+  {
+    "id": 146,
+    "question": "Which widget is used to create a list of items that can be reordered?",
+    "choices": ["ListView", "ReorderableListView", "GridView", "Stack"],
+    "answer": "ReorderableListView"
+  },
+  {
+    "id": 147,
+    "question": "Which property of a Container is used to round the corners?",
+    "choices": ["borderRadius", "border", "shape", "padding"],
+    "answer": "borderRadius"
+  },
+  {
+    "id": 148,
+    "question": "Which widget is used to apply a gradient to a background?",
+    "choices": ["GradientBox", "Container", "BoxDecoration", "Paint"],
+    "answer": "BoxDecoration"
+  },
+  {
+    "id": 149,
+    "question": "Which keyword is used to declare a variable that is assigned later but cannot be null?",
+    "choices": ["late", "final", "const", "var"],
+    "answer": "late"
+  },
+  {
+    "id": 150,
+    "question": "Which widget is used to make a widget take up as much space as possible along the cross axis?",
+    "choices": ["Expanded", "Flexible", "Align", "Center"],
+    "answer": "Expanded"
+  }
+]

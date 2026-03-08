@@ -1,4 +1,5 @@
 import 'package:doodle_brain/controllers/quiz/cubit/quiz_cubit.dart';
+import 'package:doodle_brain/pages/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -23,8 +24,8 @@ void main() async {
   }
 
   final box = await Hive.openBox<User>('userBox');
-  final box1= await Hive.openBox('quizProgress');
-  // await Future.wait([box.clear(),box1.clear()]);
+  final box1 = await Hive.openBox('quizProgress');
+  await Hive.openBox('settings');
   await ItemService().loadItems();
 
   runApp(
@@ -44,11 +45,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool seenOnboard = Hive.box(
+      'settings',
+    ).get('seenOnboard', defaultValue: false);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Doodle Brain',
       theme: ThemeData(primarySwatch: Colors.brown),
-      home: GameHomeScreen(),
+      home: seenOnboard ? GameHomeScreen() : OnBoardingScreen(),
     );
   }
 }

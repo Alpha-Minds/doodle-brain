@@ -1,61 +1,922 @@
 [
-  { "id": 1, "question": "What is the derivative of x²?", "choices": ["x", "2x", "x²", "2"], "answer": "2x" },
-  { "id": 2, "question": "What is the derivative of 5x?", "choices": ["5", "x", "0", "5x"], "answer": "5" },
-  { "id": 3, "question": "What is the derivative of a constant?", "choices": ["1", "0", "Constant", "x"], "answer": "0" },
-  { "id": 4, "question": "What is the derivative of x³?", "choices": ["2x²", "3x²", "3x", "x²"], "answer": "3x²" },
-  { "id": 5, "question": "What is ∫ x dx?", "choices": ["x²", "x²/2 + C", "2x + C", "ln x"], "answer": "x²/2 + C" },
+  {
+    "id": 1,
+    "question": "What is the derivative of x²?",
+    "choices": ["x", "2x", "x²", "2"],
+    "answer": "2x"
+  },
+  {
+    "id": 2,
+    "question": "What is the derivative of 5x?",
+    "choices": ["5", "x", "0", "5x"],
+    "answer": "5"
+  },
+  {
+    "id": 3,
+    "question": "What is the derivative of a constant?",
+    "choices": ["1", "0", "Constant", "x"],
+    "answer": "0"
+  },
+  {
+    "id": 4,
+    "question": "What is the derivative of x³?",
+    "choices": ["2x²", "3x²", "3x", "x²"],
+    "answer": "3x²"
+  },
+  {
+    "id": 5,
+    "question": "What is ∫ x dx?",
+    "choices": ["x²", "x²/2 + C", "2x + C", "ln x"],
+    "answer": "x²/2 + C"
+  },
 
-  { "id": 6, "question": "What is ∫ 3 dx?", "choices": ["3x + C", "3", "x + C", "0"], "answer": "3x + C" },
-  { "id": 7, "question": "What is the derivative of sin(x)?", "choices": ["-sin(x)", "cos(x)", "-cos(x)", "tan(x)"], "answer": "cos(x)" },
-  { "id": 8, "question": "What is the derivative of cos(x)?", "choices": ["sin(x)", "-sin(x)", "cos(x)", "-cos(x)"], "answer": "-sin(x)" },
-  { "id": 9, "question": "What is ∫ 2x dx?", "choices": ["x² + C", "2x + C", "x²/2 + C", "2x² + C"], "answer": "x² + C" },
-  { "id": 10, "question": "What is the derivative of e^x?", "choices": ["e^x", "xe^x", "1", "ln(x)"], "answer": "e^x" },
+  {
+    "id": 6,
+    "question": "What is ∫ 3 dx?",
+    "choices": ["3x + C", "3", "x + C", "0"],
+    "answer": "3x + C"
+  },
+  {
+    "id": 7,
+    "question": "What is the derivative of sin(x)?",
+    "choices": ["-sin(x)", "cos(x)", "-cos(x)", "tan(x)"],
+    "answer": "cos(x)"
+  },
+  {
+    "id": 8,
+    "question": "What is the derivative of cos(x)?",
+    "choices": ["sin(x)", "-sin(x)", "cos(x)", "-cos(x)"],
+    "answer": "-sin(x)"
+  },
+  {
+    "id": 9,
+    "question": "What is ∫ 2x dx?",
+    "choices": ["x² + C", "2x + C", "x²/2 + C", "2x² + C"],
+    "answer": "x² + C"
+  },
+  {
+    "id": 10,
+    "question": "What is the derivative of e^x?",
+    "choices": ["e^x", "xe^x", "1", "ln(x)"],
+    "answer": "e^x"
+  },
 
-  { "id": 11, "question": "What is the derivative of ln(x)?", "choices": ["x", "1/x", "ln(x)", "e^x"], "answer": "1/x" },
-  { "id": 12, "question": "What is ∫ e^x dx?", "choices": ["e^x + C", "xe^x + C", "ln(x)", "1/x + C"], "answer": "e^x + C" },
-  { "id": 13, "question": "What is ∫ cos(x) dx?", "choices": ["-sin(x) + C", "sin(x) + C", "cos(x) + C", "-cos(x) + C"], "answer": "sin(x) + C" },
-  { "id": 14, "question": "What is ∫ sin(x) dx?", "choices": ["cos(x) + C", "-cos(x) + C", "-sin(x) + C", "tan(x) + C"], "answer": "-cos(x) + C" },
-  { "id": 15, "question": "What is the derivative of x⁴?", "choices": ["3x³", "4x³", "4x⁴", "x³"], "answer": "4x³" },
+  {
+    "id": 11,
+    "question": "What is the derivative of ln(x)?",
+    "choices": ["x", "1/x", "ln(x)", "e^x"],
+    "answer": "1/x"
+  },
+  {
+    "id": 12,
+    "question": "What is ∫ e^x dx?",
+    "choices": ["e^x + C", "xe^x + C", "ln(x)", "1/x + C"],
+    "answer": "e^x + C"
+  },
+  {
+    "id": 13,
+    "question": "What is ∫ cos(x) dx?",
+    "choices": ["-sin(x) + C", "sin(x) + C", "cos(x) + C", "-cos(x) + C"],
+    "answer": "sin(x) + C"
+  },
+  {
+    "id": 14,
+    "question": "What is ∫ sin(x) dx?",
+    "choices": ["cos(x) + C", "-cos(x) + C", "-sin(x) + C", "tan(x) + C"],
+    "answer": "-cos(x) + C"
+  },
+  {
+    "id": 15,
+    "question": "What is the derivative of x⁴?",
+    "choices": ["3x³", "4x³", "4x⁴", "x³"],
+    "answer": "4x³"
+  },
 
-  { "id": 16, "question": "What is ∫ x³ dx?", "choices": ["x⁴ + C", "x⁴/4 + C", "4x³ + C", "x³/3 + C"], "answer": "x⁴/4 + C" },
-  { "id": 17, "question": "What is the derivative of 1/x?", "choices": ["-1/x²", "1/x²", "-x²", "x²"], "answer": "-1/x²" },
-  { "id": 18, "question": "What is ∫ 1/x dx?", "choices": ["1/x² + C", "ln|x| + C", "x + C", "e^x + C"], "answer": "ln|x| + C" },
-  { "id": 19, "question": "What is the derivative of tan(x)?", "choices": ["sec²(x)", "cos²(x)", "sin(x)", "-sec²(x)"], "answer": "sec²(x)" },
-  { "id": 20, "question": "What is ∫ 0 dx?", "choices": ["0", "C", "1", "x"], "answer": "C" },
+  {
+    "id": 16,
+    "question": "What is ∫ x³ dx?",
+    "choices": ["x⁴ + C", "x⁴/4 + C", "4x³ + C", "x³/3 + C"],
+    "answer": "x⁴/4 + C"
+  },
+  {
+    "id": 17,
+    "question": "What is the derivative of 1/x?",
+    "choices": ["-1/x²", "1/x²", "-x²", "x²"],
+    "answer": "-1/x²"
+  },
+  {
+    "id": 18,
+    "question": "What is ∫ 1/x dx?",
+    "choices": ["1/x² + C", "ln|x| + C", "x + C", "e^x + C"],
+    "answer": "ln|x| + C"
+  },
+  {
+    "id": 19,
+    "question": "What is the derivative of tan(x)?",
+    "choices": ["sec²(x)", "cos²(x)", "sin(x)", "-sec²(x)"],
+    "answer": "sec²(x)"
+  },
+  {
+    "id": 20,
+    "question": "What is ∫ 0 dx?",
+    "choices": ["0", "C", "1", "x"],
+    "answer": "C"
+  },
 
-  { "id": 21, "question": "What is the derivative of 7x²?", "choices": ["14x", "7x", "2x", "14x²"], "answer": "14x" },
-  { "id": 22, "question": "What is ∫ 4x³ dx?", "choices": ["x⁴ + C", "4x⁴ + C", "x⁴/4 + C", "3x⁴ + C"], "answer": "x⁴ + C" },
-  { "id": 23, "question": "What is the derivative of √x?", "choices": ["1/(2√x)", "√x", "2√x", "1/x"], "answer": "1/(2√x)" },
-  { "id": 24, "question": "What is ∫ √x dx?", "choices": ["2x√x/3 + C", "√x + C", "x² + C", "1/(2√x) + C"], "answer": "2x√x/3 + C" },
-  { "id": 25, "question": "What is the derivative of x⁵?", "choices": ["4x⁴", "5x⁴", "5x⁵", "x⁴"], "answer": "5x⁴" },
+  {
+    "id": 21,
+    "question": "What is the derivative of 7x²?",
+    "choices": ["14x", "7x", "2x", "14x²"],
+    "answer": "14x"
+  },
+  {
+    "id": 22,
+    "question": "What is ∫ 4x³ dx?",
+    "choices": ["x⁴ + C", "4x⁴ + C", "x⁴/4 + C", "3x⁴ + C"],
+    "answer": "x⁴ + C"
+  },
+  {
+    "id": 23,
+    "question": "What is the derivative of √x?",
+    "choices": ["1/(2√x)", "√x", "2√x", "1/x"],
+    "answer": "1/(2√x)"
+  },
+  {
+    "id": 24,
+    "question": "What is ∫ √x dx?",
+    "choices": ["2x√x/3 + C", "√x + C", "x² + C", "1/(2√x) + C"],
+    "answer": "2x√x/3 + C"
+  },
+  {
+    "id": 25,
+    "question": "What is the derivative of x⁵?",
+    "choices": ["4x⁴", "5x⁴", "5x⁵", "x⁴"],
+    "answer": "5x⁴"
+  },
 
-  { "id": 26, "question": "What is ∫ 6x² dx?", "choices": ["2x³ + C", "6x³ + C", "3x³ + C", "x³ + C"], "answer": "2x³ + C" },
-  { "id": 27, "question": "What is the derivative of 3e^x?", "choices": ["3e^x", "e^x", "3xe^x", "0"], "answer": "3e^x" },
-  { "id": 28, "question": "What is ∫ sec²(x) dx?", "choices": ["tan(x) + C", "sec(x) + C", "cos(x) + C", "sin(x) + C"], "answer": "tan(x) + C" },
-  { "id": 29, "question": "What is the derivative of ln(3x)?", "choices": ["1/x", "1/(3x)", "3/x", "ln(x)"], "answer": "1/x" },
-  { "id": 30, "question": "What is ∫ 5e^x dx?", "choices": ["5e^x + C", "e^x + C", "5xe^x + C", "0"], "answer": "5e^x + C" },
+  {
+    "id": 26,
+    "question": "What is ∫ 6x² dx?",
+    "choices": ["2x³ + C", "6x³ + C", "3x³ + C", "x³ + C"],
+    "answer": "2x³ + C"
+  },
+  {
+    "id": 27,
+    "question": "What is the derivative of 3e^x?",
+    "choices": ["3e^x", "e^x", "3xe^x", "0"],
+    "answer": "3e^x"
+  },
+  {
+    "id": 28,
+    "question": "What is ∫ sec²(x) dx?",
+    "choices": ["tan(x) + C", "sec(x) + C", "cos(x) + C", "sin(x) + C"],
+    "answer": "tan(x) + C"
+  },
+  {
+    "id": 29,
+    "question": "What is the derivative of ln(3x)?",
+    "choices": ["1/x", "1/(3x)", "3/x", "ln(x)"],
+    "answer": "1/x"
+  },
+  {
+    "id": 30,
+    "question": "What is ∫ 5e^x dx?",
+    "choices": ["5e^x + C", "e^x + C", "5xe^x + C", "0"],
+    "answer": "5e^x + C"
+  },
 
-  { "id": 31, "question": "What is the derivative of x⁻²?", "choices": ["-2x⁻³", "2x⁻³", "-2x²", "x⁻³"], "answer": "-2x⁻³" },
-  { "id": 32, "question": "What is ∫ x⁻² dx?", "choices": ["-x⁻¹ + C", "x⁻¹ + C", "ln x + C", "x⁻³ + C"], "answer": "-x⁻¹ + C" },
-  { "id": 33, "question": "What is the derivative of x² + 3x?", "choices": ["2x + 3", "2x", "3x", "x + 3"], "answer": "2x + 3" },
-  { "id": 34, "question": "What is ∫ (2x + 3) dx?", "choices": ["x² + 3x + C", "2x² + 3x + C", "x² + C", "2x + C"], "answer": "x² + 3x + C" },
-  { "id": 35, "question": "What is the derivative of 4?", "choices": ["4", "1", "0", "x"], "answer": "0" },
+  {
+    "id": 31,
+    "question": "What is the derivative of x⁻²?",
+    "choices": ["-2x⁻³", "2x⁻³", "-2x²", "x⁻³"],
+    "answer": "-2x⁻³"
+  },
+  {
+    "id": 32,
+    "question": "What is ∫ x⁻² dx?",
+    "choices": ["-x⁻¹ + C", "x⁻¹ + C", "ln x + C", "x⁻³ + C"],
+    "answer": "-x⁻¹ + C"
+  },
+  {
+    "id": 33,
+    "question": "What is the derivative of x² + 3x?",
+    "choices": ["2x + 3", "2x", "3x", "x + 3"],
+    "answer": "2x + 3"
+  },
+  {
+    "id": 34,
+    "question": "What is ∫ (2x + 3) dx?",
+    "choices": ["x² + 3x + C", "2x² + 3x + C", "x² + C", "2x + C"],
+    "answer": "x² + 3x + C"
+  },
+  {
+    "id": 35,
+    "question": "What is the derivative of 4?",
+    "choices": ["4", "1", "0", "x"],
+    "answer": "0"
+  },
 
-  { "id": 36, "question": "What is ∫ 8 dx?", "choices": ["8", "8x + C", "x + C", "C"], "answer": "8x + C" },
-  { "id": 37, "question": "What is the derivative of x⁶?", "choices": ["5x⁵", "6x⁵", "6x⁶", "x⁵"], "answer": "6x⁵" },
-  { "id": 38, "question": "What is ∫ x⁵ dx?", "choices": ["x⁶ + C", "x⁶/6 + C", "6x⁵ + C", "x⁵/5 + C"], "answer": "x⁶/6 + C" },
-  { "id": 39, "question": "What is the derivative of ln(x²)?", "choices": ["2/x", "1/x²", "2x", "ln(x)"], "answer": "2/x" },
-  { "id": 40, "question": "What is ∫ 1 dx?", "choices": ["1", "x + C", "C", "0"], "answer": "x + C" },
+  {
+    "id": 36,
+    "question": "What is ∫ 8 dx?",
+    "choices": ["8", "8x + C", "x + C", "C"],
+    "answer": "8x + C"
+  },
+  {
+    "id": 37,
+    "question": "What is the derivative of x⁶?",
+    "choices": ["5x⁵", "6x⁵", "6x⁶", "x⁵"],
+    "answer": "6x⁵"
+  },
+  {
+    "id": 38,
+    "question": "What is ∫ x⁵ dx?",
+    "choices": ["x⁶ + C", "x⁶/6 + C", "6x⁵ + C", "x⁵/5 + C"],
+    "answer": "x⁶/6 + C"
+  },
+  {
+    "id": 39,
+    "question": "What is the derivative of ln(x²)?",
+    "choices": ["2/x", "1/x²", "2x", "ln(x)"],
+    "answer": "2/x"
+  },
+  {
+    "id": 40,
+    "question": "What is ∫ 1 dx?",
+    "choices": ["1", "x + C", "C", "0"],
+    "answer": "x + C"
+  },
 
-  { "id": 41, "question": "What is the derivative of x²e^x? (product rule result simplified)", "choices": ["2xe^x + x²e^x", "x²e^x", "2x + e^x", "xe^x"], "answer": "2xe^x + x²e^x" },
-  { "id": 42, "question": "What is ∫ 2 dx?", "choices": ["2x + C", "x + C", "2", "C"], "answer": "2x + C" },
-  { "id": 43, "question": "What is the derivative of x³ + x²?", "choices": ["3x² + 2x", "3x + 2", "x² + x", "3x²"], "answer": "3x² + 2x" },
-  { "id": 44, "question": "What is ∫ 3x² dx?", "choices": ["x³ + C", "3x³ + C", "x² + C", "x³/3 + C"], "answer": "x³ + C" },
-  { "id": 45, "question": "What is the derivative of e^(2x)?", "choices": ["2e^(2x)", "e^(2x)", "2xe^x", "e^x"], "answer": "2e^(2x)" },
+  {
+    "id": 41,
+    "question": "What is the derivative of x²e^x? (product rule result simplified)",
+    "choices": ["2xe^x + x²e^x", "x²e^x", "2x + e^x", "xe^x"],
+    "answer": "2xe^x + x²e^x"
+  },
+  {
+    "id": 42,
+    "question": "What is ∫ 2 dx?",
+    "choices": ["2x + C", "x + C", "2", "C"],
+    "answer": "2x + C"
+  },
+  {
+    "id": 43,
+    "question": "What is the derivative of x³ + x²?",
+    "choices": ["3x² + 2x", "3x + 2", "x² + x", "3x²"],
+    "answer": "3x² + 2x"
+  },
+  {
+    "id": 44,
+    "question": "What is ∫ 3x² dx?",
+    "choices": ["x³ + C", "3x³ + C", "x² + C", "x³/3 + C"],
+    "answer": "x³ + C"
+  },
+  {
+    "id": 45,
+    "question": "What is the derivative of e^(2x)?",
+    "choices": ["2e^(2x)", "e^(2x)", "2xe^x", "e^x"],
+    "answer": "2e^(2x)"
+  },
 
-  { "id": 46, "question": "What is ∫ 2e^(2x) dx?", "choices": ["e^(2x) + C", "2e^(2x) + C", "e^x + C", "x e^(2x)"], "answer": "e^(2x) + C" },
-  { "id": 47, "question": "What is the derivative of x⁷?", "choices": ["6x⁶", "7x⁶", "7x⁷", "x⁶"], "answer": "7x⁶" },
-  { "id": 48, "question": "What is ∫ x⁷ dx?", "choices": ["x⁸ + C", "x⁸/8 + C", "8x⁷ + C", "x⁷/7 + C"], "answer": "x⁸/8 + C" },
-  { "id": 49, "question": "What is the derivative of sin(2x)?", "choices": ["2cos(2x)", "cos(2x)", "-2cos(2x)", "2sin(2x)"], "answer": "2cos(2x)" },
-  { "id": 50, "question": "What is ∫ 2cos(2x) dx?", "choices": ["sin(2x) + C", "2sin(2x) + C", "cos(2x) + C", "-sin(2x) + C"], "answer": "sin(2x) + C" }
+  {
+    "id": 46,
+    "question": "What is ∫ 2e^(2x) dx?",
+    "choices": ["e^(2x) + C", "2e^(2x) + C", "e^x + C", "x e^(2x)"],
+    "answer": "e^(2x) + C"
+  },
+  {
+    "id": 47,
+    "question": "What is the derivative of x⁷?",
+    "choices": ["6x⁶", "7x⁶", "7x⁷", "x⁶"],
+    "answer": "7x⁶"
+  },
+  {
+    "id": 48,
+    "question": "What is ∫ x⁷ dx?",
+    "choices": ["x⁸ + C", "x⁸/8 + C", "8x⁷ + C", "x⁷/7 + C"],
+    "answer": "x⁸/8 + C"
+  },
+  {
+    "id": 49,
+    "question": "What is the derivative of sin(2x)?",
+    "choices": ["2cos(2x)", "cos(2x)", "-2cos(2x)", "2sin(2x)"],
+    "answer": "2cos(2x)"
+  },
+  {
+    "id": 50,
+    "question": "What is ∫ 2cos(2x) dx?",
+    "choices": ["sin(2x) + C", "2sin(2x) + C", "cos(2x) + C", "-sin(2x) + C"],
+    "answer": "sin(2x) + C"
+  },
+
+  {
+    "id": 51,
+    "question": "What is the limit as x approaches 0 of sin(x)/x?",
+    "choices": ["0", "1", "Infinity", "Undefined"],
+    "answer": "1"
+  },
+  {
+    "id": 52,
+    "question": "Find the derivative of f(x) = ln(sin(x)).",
+    "choices": ["cos(x)", "tan(x)", "cot(x)", "1/sin(x)"],
+    "answer": "cot(x)"
+  },
+  {
+    "id": 53,
+    "question": "What is the second derivative of e^(3x)?",
+    "choices": ["3e^(3x)", "6e^(3x)", "9e^(3x)", "27e^(3x)"],
+    "answer": "9e^(3x)"
+  },
+  {
+    "id": 54,
+    "question": "Calculate the determinant of a 2x2 matrix [[3, 2], [1, 4]].",
+    "choices": ["10", "11", "12", "14"],
+    "answer": "10"
+  },
+  {
+    "id": 55,
+    "question": "What is the integral of ln(x) dx?",
+    "choices": ["1/x + C", "x ln(x) - x + C", "ln(x)²/2 + C", "e^x + C"],
+    "answer": "x ln(x) - x + C"
+  },
+  {
+    "id": 56,
+    "question": "What is the derivative of arcsin(x)?",
+    "choices": ["1/√(1-x²)", "-1/√(1-x²)", "1/(1+x²)", "sec²(x)"],
+    "answer": "1/√(1-x²)"
+  },
+  {
+    "id": 57,
+    "question": "Solve for x in the equation log₂(x) + log₂(x-2) = 3.",
+    "choices": ["2", "4", "6", "8"],
+    "answer": "4"
+  },
+  {
+    "id": 58,
+    "question": "What is the derivative of f(x) = x^x?",
+    "choices": ["x^x", "x^x(1 + ln x)", "x * x^(x-1)", "ln(x)"],
+    "answer": "x^x(1 + ln x)"
+  },
+  {
+    "id": 59,
+    "question": "Evaluate the integral ∫ (0 to π) sin(x) dx.",
+    "choices": ["0", "1", "2", "π"],
+    "answer": "2"
+  },
+  {
+    "id": 60,
+    "question": "What is the value of i⁴ in complex numbers?",
+    "choices": ["i", "-i", "1", "-1"],
+    "answer": "1"
+  },
+  {
+    "id": 61,
+    "question": "What is the slope of the tangent line to y = x³ at x = 2?",
+    "choices": ["4", "8", "12", "16"],
+    "answer": "12"
+  },
+  {
+    "id": 62,
+    "question": "Find the derivative of cos²(x).",
+    "choices": ["2cos(x)", "-2sin(x)cos(x)", "sin²(x)", "-sin(2x)"],
+    "answer": "-sin(2x)"
+  },
+  {
+    "id": 63,
+    "question": "What is the sum of the infinite geometric series: 1 + 1/2 + 1/4 + 1/8...?",
+    "choices": ["1.5", "2", "3", "Infinity"],
+    "answer": "2"
+  },
+  {
+    "id": 64,
+    "question": "What is the derivative of tan⁻¹(x)?",
+    "choices": ["1/(1+x²)", "1/√(1-x²)", "sec²(x)", "1/x"],
+    "answer": "1/(1+x²)"
+  },
+  {
+    "id": 65,
+    "question": "Evaluate ∫ tan(x) dx.",
+    "choices": [
+      "sec²(x) + C",
+      "ln|sec(x)| + C",
+      "-ln|sin(x)| + C",
+      "tan²(x)/2 + C"
+    ],
+    "answer": "ln|sec(x)| + C"
+  },
+  {
+    "id": 66,
+    "question": "What is the limit as x approaches infinity of (2x² + 3)/(x² - 5)?",
+    "choices": ["0", "1", "2", "Infinity"],
+    "answer": "2"
+  },
+  {
+    "id": 67,
+    "question": "What is the eccentricity of a circle?",
+    "choices": ["0", "1", "0.5", "Undefined"],
+    "answer": "0"
+  },
+  {
+    "id": 68,
+    "question": "Find the cross product of vectors <1, 0, 0> and <0, 1, 0>.",
+    "choices": ["<1, 1, 0>", "<0, 0, 1>", "<0, 0, 0>", "<1, 1, 1>"],
+    "answer": "<0, 0, 1>"
+  },
+  {
+    "id": 69,
+    "question": "What is the derivative of 2^x?",
+    "choices": ["x * 2^(x-1)", "2^x", "2^x * ln(2)", "ln(2x)"],
+    "answer": "2^x * ln(2)"
+  },
+  {
+    "id": 70,
+    "question": "Evaluate ∫ x e^x dx.",
+    "choices": ["e^x(x - 1) + C", "x e^x + C", "e^x/x + C", "x²e^x/2 + C"],
+    "answer": "e^x(x - 1) + C"
+  },
+  {
+    "id": 71,
+    "question": "What is the radius of the circle x² + y² - 4x + 6y - 3 = 0?",
+    "choices": ["2", "3", "4", "16"],
+    "answer": "4"
+  },
+  {
+    "id": 72,
+    "question": "What is the derivative of f(x) = (3x + 2)⁵?",
+    "choices": ["5(3x + 2)⁴", "15(3x + 2)⁴", "3(3x + 2)⁴", "45(3x + 2)⁴"],
+    "answer": "15(3x + 2)⁴"
+  },
+  {
+    "id": 73,
+    "question": "Find the integral ∫ 1/(x² + 1) dx.",
+    "choices": ["ln|x²+1| + C", "tan⁻¹(x) + C", "sin⁻¹(x) + C", "1/x + C"],
+    "answer": "tan⁻¹(x) + C"
+  },
+  {
+    "id": 74,
+    "question": "What is the value of the complex number (1 + i)²?",
+    "choices": ["2", "2i", "1 + 2i", "0"],
+    "answer": "2i"
+  },
+  {
+    "id": 75,
+    "question": "What is the partial derivative of f(x,y) = x²y with respect to x?",
+    "choices": ["2xy", "x²", "2y", "x²y"],
+    "answer": "2xy"
+  },
+  {
+    "id": 76,
+    "question": "What is the Taylor series expansion of e^x centered at 0?",
+    "choices": ["Σ x^n", "Σ x^n/n!", "Σ (-1)^n x^n", "Σ x^n/n"],
+    "answer": "Σ x^n/n!"
+  },
+  {
+    "id": 77,
+    "question": "Find the integral ∫ sin²(x) + cos²(x) dx.",
+    "choices": ["x + C", "sin(x) + C", "cos(x) + C", "1 + C"],
+    "answer": "x + C"
+  },
+  {
+    "id": 78,
+    "question": "What is the derivative of sinh(x)?",
+    "choices": ["cosh(x)", "-cosh(x)", "sech(x)", "tanh(x)"],
+    "answer": "cosh(x)"
+  },
+  {
+    "id": 79,
+    "question": "What is the argument of the complex number 1 + i?",
+    "choices": ["0", "π/4", "π/2", "π"],
+    "answer": "π/4"
+  },
+  {
+    "id": 80,
+    "question": "Evaluate the limit as x -> 0 of (1 - cos(x))/x².",
+    "choices": ["0", "1/2", "1", "Undefined"],
+    "answer": "1/2"
+  },
+  {
+    "id": 81,
+    "question": "Solve the differential equation dy/dx = y.",
+    "choices": ["y = x + C", "y = Ce^x", "y = x² + C", "y = ln(x) + C"],
+    "answer": "y = Ce^x"
+  },
+  {
+    "id": 82,
+    "question": "What is the dot product of <2, 3> and <4, -1>?",
+    "choices": ["5", "11", "8", "6"],
+    "answer": "5"
+  },
+  {
+    "id": 83,
+    "question": "What is the derivative of f(x) = |x| at x = 0?",
+    "choices": ["1", "-1", "0", "Does not exist"],
+    "answer": "Does not exist"
+  },
+  {
+    "id": 84,
+    "question": "What is the volume of a sphere with radius r?",
+    "choices": ["πr²", "2πr", "4/3 πr³", "4πr²"],
+    "answer": "4/3 πr³"
+  },
+  {
+    "id": 85,
+    "question": "Evaluate ∫ (1 to 2) 1/x dx.",
+    "choices": ["1", "ln(2)", "e", "0.5"],
+    "answer": "ln(2)"
+  },
+  {
+    "id": 86,
+    "question": "What is the coefficient of x² in the expansion of (x + 2)⁴?",
+    "choices": ["8", "12", "24", "32"],
+    "answer": "24"
+  },
+  {
+    "id": 87,
+    "question": "What is the derivative of log₁₀(x)?",
+    "choices": ["1/x", "1/(x ln 10)", "10/x", "ln(10)/x"],
+    "answer": "1/(x ln 10)"
+  },
+  {
+    "id": 88,
+    "question": "Find the area under y = x² from x=0 to x=3.",
+    "choices": ["3", "6", "9", "27"],
+    "answer": "9"
+  },
+  {
+    "id": 89,
+    "question": "What is the rank of an identity matrix of size 3x3?",
+    "choices": ["1", "2", "3", "0"],
+    "answer": "3"
+  },
+  {
+    "id": 90,
+    "question": "What is the derivative of f(x) = √ (x² + 1)?",
+    "choices": ["x/√(x²+1)", "1/√(x²+1)", "2x/√(x²+1)", "x"],
+    "answer": "x/√(x²+1)"
+  },
+  {
+    "id": 91,
+    "question": "Calculate the surface area of a cube with side length 3.",
+    "choices": ["27", "36", "54", "81"],
+    "answer": "54"
+  },
+  {
+    "id": 92,
+    "question": "What is the derivative of sec(x)?",
+    "choices": ["sec²(x)", "sec(x)tan(x)", "tan²(x)", "csc(x)"],
+    "answer": "sec(x)tan(x)"
+  },
+  {
+    "id": 93,
+    "question": "Evaluate ∫₀¹ x³ dx.",
+    "choices": ["1/3", "1/4", "1", "0"],
+    "answer": "1/4"
+  },
+  {
+    "id": 94,
+    "question": "What is the modulus of the complex number 3 + 4i?",
+    "choices": ["5", "7", "25", "1"],
+    "answer": "5"
+  },
+  {
+    "id": 95,
+    "question": "Which of these is a solution to x² + 1 = 0?",
+    "choices": ["1", "-1", "i", "0"],
+    "answer": "i"
+  },
+  {
+    "id": 96,
+    "question": "What is the derivative of f(x) = 1/x²?",
+    "choices": ["-2/x³", "2/x³", "-1/x", "1/x³"],
+    "answer": "-2/x³"
+  },
+  {
+    "id": 97,
+    "question": "Evaluate the limit as x -> 1 of (x² - 1)/(x - 1).",
+    "choices": ["0", "1", "2", "Undefined"],
+    "answer": "2"
+  },
+  {
+    "id": 98,
+    "question": "What is the period of the function f(x) = sin(2x)?",
+    "choices": ["π/2", "π", "2π", "4π"],
+    "answer": "π"
+  },
+  {
+    "id": 99,
+    "question": "What is the derivative of cot(x)?",
+    "choices": ["-csc²(x)", "sec²(x)", "csc(x)cot(x)", "-sin(x)"],
+    "answer": "-csc²(x)"
+  },
+  {
+    "id": 100,
+    "question": "Find the integral ∫ 2x/(x² + 1) dx.",
+    "choices": ["ln(x² + 1) + C", "tan⁻¹(x) + C", "2 ln(x) + C", "x² + C"],
+    "answer": "ln(x² + 1) + C"
+  },
+  {
+    "id": 101,
+    "question": "What is the trace of the matrix [[1, 2], [3, 4]]?",
+    "choices": ["3", "5", "7", "10"],
+    "answer": "5"
+  },
+  {
+    "id": 102,
+    "question": "Calculate the integral ∫ xe^(x²) dx.",
+    "choices": ["e^(x²)/2 + C", "e^(x²) + C", "2e^(x²) + C", "x²e^x + C"],
+    "answer": "e^(x²)/2 + C"
+  },
+  {
+    "id": 103,
+    "question": "What is the limit as x -> 0 of (e^x - 1)/x?",
+    "choices": ["0", "1", "e", "Undefined"],
+    "answer": "1"
+  },
+  {
+    "id": 104,
+    "question": "What is the derivative of f(x) = (x² + 1)³?",
+    "choices": ["3(x²+1)²", "6x(x²+1)²", "2x(x²+1)²", "6(x²+1)²"],
+    "answer": "6x(x²+1)²"
+  },
+  {
+    "id": 105,
+    "question": "What is the value of Σ (n=1 to 4) n²?",
+    "choices": ["10", "20", "30", "40"],
+    "answer": "30"
+  },
+  {
+    "id": 106,
+    "question": "What is the derivative of f(x) = cos(x³)?",
+    "choices": ["-sin(x³)", "-3x²sin(x³)", "3x²cos(x³)", "sin(3x)"],
+    "answer": "-3x²sin(x³)"
+  },
+  {
+    "id": 107,
+    "question": "Solve for x: e^x = 5.",
+    "choices": ["ln(5)", "log(5)", "5", "e/5"],
+    "answer": "ln(5)"
+  },
+  {
+    "id": 108,
+    "question": "What is the distance between points (1,2) and (4,6)?",
+    "choices": ["3", "4", "5", "7"],
+    "answer": "5"
+  },
+  {
+    "id": 109,
+    "question": "What is the integral ∫ 1/√(1-x²) dx?",
+    "choices": ["sin⁻¹(x) + C", "cos⁻¹(x) + C", "tan⁻¹(x) + C", "ln|x| + C"],
+    "answer": "sin⁻¹(x) + C"
+  },
+  {
+    "id": 110,
+    "question": "What is the second derivative of sin(x)?",
+    "choices": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+    "answer": "-sin(x)"
+  },
+  {
+    "id": 111,
+    "question": "What is the derivative of f(x) = 5^x?",
+    "choices": ["5^x", "x * 5^(x-1)", "5^x ln(5)", "5"],
+    "answer": "5^x ln(5)"
+  },
+  {
+    "id": 112,
+    "question": "Calculate the area of a circle with circumference 2π.",
+    "choices": ["1", "π", "2π", "4π"],
+    "answer": "π"
+  },
+  {
+    "id": 113,
+    "question": "What is the limit as x -> infinity of ln(x)/x?",
+    "choices": ["0", "1", "Infinity", "Undefined"],
+    "answer": "0"
+  },
+  {
+    "id": 114,
+    "question": "What is the integral ∫ sec(x)tan(x) dx?",
+    "choices": ["sec(x) + C", "tan(x) + C", "sec²(x) + C", "ln|sec x| + C"],
+    "answer": "sec(x) + C"
+  },
+  {
+    "id": 115,
+    "question": "Find the derivative of f(x) = ln(x² + 5).",
+    "choices": ["1/(x²+5)", "2x/(x²+5)", "2/(x²+5)", "ln(2x)"],
+    "answer": "2x/(x²+5)"
+  },
+  {
+    "id": 116,
+    "question": "What is the integral ∫₀^π/2 cos(x) dx?",
+    "choices": ["0", "1", "π/2", "-1"],
+    "answer": "1"
+  },
+  {
+    "id": 117,
+    "question": "What is the value of i²?",
+    "choices": ["1", "-1", "i", "-i"],
+    "answer": "-1"
+  },
+  {
+    "id": 118,
+    "question": "What is the derivative of f(x) = 1/x?",
+    "choices": ["-1/x²", "1/x²", "ln(x)", "-2/x"],
+    "answer": "-1/x²"
+  },
+  {
+    "id": 119,
+    "question": "Find the integral ∫ 3x² + 2x + 1 dx.",
+    "choices": ["x³+x²+x+C", "3x³+2x²+x+C", "x³+x²+C", "6x+2+C"],
+    "answer": "x³+x²+x+C"
+  },
+  {
+    "id": 120,
+    "question": "What is the limit as x -> 2 of (x²-4)/(x-2)?",
+    "choices": ["2", "4", "0", "Undefined"],
+    "answer": "4"
+  },
+  {
+    "id": 121,
+    "question": "What is the derivative of f(x) = e^(-x)?",
+    "choices": ["e^(-x)", "-e^(-x)", "e^x", "1/e^x"],
+    "answer": "-e^(-x)"
+  },
+  {
+    "id": 122,
+    "question": "Evaluate ∫ 1/x dx.",
+    "choices": ["ln|x| + C", "-1/x² + C", "1 + C", "e^x + C"],
+    "answer": "ln|x| + C"
+  },
+  {
+    "id": 123,
+    "question": "What is the derivative of f(x) = sin(x)cos(x)?",
+    "choices": ["cos(2x)", "sin(2x)", "-sin(2x)", "1"],
+    "answer": "cos(2x)"
+  },
+  {
+    "id": 124,
+    "question": "What is the integral of 1/x² dx?",
+    "choices": ["-1/x + C", "1/x + C", "ln|x²| + C", "x⁻³ + C"],
+    "answer": "-1/x + C"
+  },
+  {
+    "id": 125,
+    "question": "What is the value of log₁₀(1000)?",
+    "choices": ["2", "3", "10", "100"],
+    "answer": "3"
+  },
+  {
+    "id": 126,
+    "question": "Find the derivative of f(x) = tan(2x).",
+    "choices": ["2sec²(2x)", "sec²(2x)", "2tan(x)", "sec(2x)"],
+    "answer": "2sec²(2x)"
+  },
+  {
+    "id": 127,
+    "question": "What is the integral ∫ e^(2x) dx?",
+    "choices": ["e^(2x)/2 + C", "2e^(2x) + C", "e^x + C", "e^(2x) + C"],
+    "answer": "e^(2x)/2 + C"
+  },
+  {
+    "id": 128,
+    "question": "What is the derivative of f(x) = √x?",
+    "choices": ["1/(2√x)", "2√x", "x^(1/2)", "1/x"],
+    "answer": "1/(2√x)"
+  },
+  {
+    "id": 129,
+    "question": "Evaluate ∫ (1 to e) 1/x dx.",
+    "choices": ["0", "1", "e", "ln(e)"],
+    "answer": "1"
+  },
+  {
+    "id": 130,
+    "question": "What is the derivative of f(x) = ln(3x)?",
+    "choices": ["1/x", "3/x", "1/3x", "ln(3)"],
+    "answer": "1/x"
+  },
+  {
+    "id": 131,
+    "question": "What is the value of 5!?",
+    "choices": ["25", "60", "120", "240"],
+    "answer": "120"
+  },
+  {
+    "id": 132,
+    "question": "What is the integral ∫ sin(x) dx?",
+    "choices": ["cos(x)+C", "-cos(x)+C", "sin(x)+C", "-sin(x)+C"],
+    "answer": "-cos(x)+C"
+  },
+  {
+    "id": 133,
+    "question": "Find the derivative of f(x) = x⁴ - 3x² + 5.",
+    "choices": ["4x³-6x", "4x³-6x+5", "x³-3x", "4x⁴-6x"],
+    "answer": "4x³-6x"
+  },
+  {
+    "id": 134,
+    "question": "What is the limit as x -> 0 of tan(x)/x?",
+    "choices": ["0", "1", "Undefined", "Infinity"],
+    "answer": "1"
+  },
+  {
+    "id": 135,
+    "question": "What is the integral ∫ cos(2x) dx?",
+    "choices": [
+      "sin(2x)/2 + C",
+      "2sin(2x) + C",
+      "-sin(2x)/2 + C",
+      "cos(x) + C"
+    ],
+    "answer": "sin(2x)/2 + C"
+  },
+  {
+    "id": 136,
+    "question": "What is the derivative of f(x) = ln(e^x)?",
+    "choices": ["e^x", "1", "1/e^x", "x"],
+    "answer": "1"
+  },
+  {
+    "id": 137,
+    "question": "What is the value of cos(π)?",
+    "choices": ["0", "1", "-1", "Undefined"],
+    "answer": "-1"
+  },
+  {
+    "id": 138,
+    "question": "Find the derivative of f(x) = 1/√(x).",
+    "choices": ["-1/(2x√x)", "1/(2√x)", "-1/2x", "√x"],
+    "answer": "-1/(2x√x)"
+  },
+  {
+    "id": 139,
+    "question": "What is the integral ∫ 1/√(x) dx?",
+    "choices": ["2√x + C", "√x + C", "1/(2√x) + C", "ln|√x| + C"],
+    "answer": "2√x + C"
+  },
+  {
+    "id": 140,
+    "question": "What is the limit as x -> infinity of (1 + 1/x)^x?",
+    "choices": ["1", "e", "0", "Infinity"],
+    "answer": "e"
+  },
+  {
+    "id": 141,
+    "question": "What is the derivative of f(x) = x ln(x)?",
+    "choices": ["ln(x) + 1", "ln(x)", "1", "1/x"],
+    "answer": "ln(x) + 1"
+  },
+  {
+    "id": 142,
+    "question": "Evaluate ∫₀^¹ x dx.",
+    "choices": ["0", "1", "0.5", "2"],
+    "answer": "0.5"
+  },
+  {
+    "id": 143,
+    "question": "What is the derivative of f(x) = e^(x²)?",
+    "choices": ["e^(x²)", "2xe^(x²)", "x²e^(x²)", "2e^x"],
+    "answer": "2xe^(x²)"
+  },
+  {
+    "id": 144,
+    "question": "Find the integral ∫ 1/(x+1) dx.",
+    "choices": ["ln|x+1| + C", "1/(x+1)² + C", "x+1 + C", "ln|x| + C"],
+    "answer": "ln|x+1| + C"
+  },
+  {
+    "id": 145,
+    "question": "What is the value of sin(π/2)?",
+    "choices": ["0", "1", "-1", "0.5"],
+    "answer": "1"
+  },
+  {
+    "id": 146,
+    "question": "What is the derivative of f(x) = 3x³ - x?",
+    "choices": ["9x²-1", "9x-1", "3x²-1", "x²"],
+    "answer": "9x²-1"
+  },
+  {
+    "id": 147,
+    "question": "What is the integral ∫ 4x dx?",
+    "choices": ["4x² + C", "2x² + C", "x² + C", "4 + C"],
+    "answer": "2x² + C"
+  },
+  {
+    "id": 148,
+    "question": "What is the limit as x -> 3 of (x²-9)/(x-3)?",
+    "choices": ["3", "6", "9", "0"],
+    "answer": "6"
+  },
+  {
+    "id": 149,
+    "question": "What is the derivative of f(x) = sin(x²)?",
+    "choices": ["2xcos(x²)", "cos(x²)", "-2xcos(x²)", "2xsin(x)"],
+    "answer": "2xcos(x²)"
+  },
+  {
+    "id": 150,
+    "question": "Find the integral ∫ (x + 1)² dx.",
+    "choices": ["(x+1)³/3 + C", "x²/2 + x + C", "x³+x+C", "2(x+1) + C"],
+    "answer": "(x+1)³/3 + C"
+  }
 ]

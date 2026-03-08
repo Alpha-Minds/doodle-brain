@@ -81,6 +81,7 @@ flutter:
     - lib/assets/graphics/character/
     - lib/assets/graphics/weapons/
     - lib/assets/graphics/enemies/
+    - lib/assets/graphics/on_board/
     - lib/assets/background.jpeg
     - lib/assets/battle.png
     - lib/assets/game-store.png

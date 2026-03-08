@@ -298,5 +298,605 @@
     "question": "Which shape has four equal sides?",
     "choices": ["Rectangle", "Triangle", "Square", "Circle"],
     "answer": "Square"
-  }
+  },
+  {
+    "id": 51,
+    "question": "What is the national bird of the United States?",
+    "choices": ["Eagle", "Hawk", "Bald Eagle", "Sparrow"],
+    "answer": "Bald Eagle"
+  },
+  {
+    "id": 52,
+    "question": "What color is an emerald?",
+    "choices": ["Red", "Blue", "Green", "Yellow"],
+    "answer": "Green"
+  },
+  {
+    "id": 53,
+    "question": "Who is often credited with inventing the light bulb?",
+    "choices": ["Isaac Newton", "Thomas Edison", "Nikola Tesla", "Albert Einstein"],
+    "answer": "Thomas Edison"
+  },
+  {
+    "id": 54,
+    "question": "Which is the largest country by land area?",
+    "choices": ["China", "USA", "Canada", "Russia"],
+    "answer": "Russia"
+  },
+  {
+    "id": 55,
+    "question": "Which sense do you use to detect flavor?",
+    "choices": ["Sight", "Taste", "Smell", "Touch"],
+    "answer": "Taste"
+  },
+  {
+    "id": 56,
+    "question": "How many states are there in the United States?",
+    "choices": ["48", "49", "50", "51"],
+    "answer": "50"
+  },
+  {
+    "id": 57,
+    "question": "What is a baby frog called?",
+    "choices": ["Cub", "Tadpole", "Fry", "Kitten"],
+    "answer": "Tadpole"
+  },
+  {
+    "id": 58,
+    "question": "What is the capital city of Japan?",
+    "choices": ["Kyoto", "Osaka", "Tokyo", "Seoul"],
+    "answer": "Tokyo"
+  },
+  {
+    "id": 59,
+    "question": "Which animal lives in a hive?",
+    "choices": ["Ant", "Bee", "Spider", "Bird"],
+    "answer": "Bee"
+  },
+  {
+    "id": 60,
+    "question": "What is the primary ingredient in hummus?",
+    "choices": ["Lentils", "Chickpeas", "Beans", "Peas"],
+    "answer": "Chickpeas"
+  },
+  {
+    "id": 61,
+    "question": "What is the smallest continent in the world?",
+    "choices": ["Europe", "Antarctica", "Australia", "South America"],
+    "answer": "Australia"
+  },
+  {
+    "id": 62,
+    "question": "In which city is the Statue of Liberty located?",
+    "choices": ["Washington D.C.", "New York City", "Los Angeles", "Miami"],
+    "answer": "New York City"
+  },
+  {
+    "id": 63,
+    "question": "How many players are on a standard soccer team on the field?",
+    "choices": ["9", "10", "11", "12"],
+    "answer": "11"
+  },
+  {
+    "id": 64,
+    "question": "What are the colors of the Italian flag?",
+    "choices": ["Red, White, Blue", "Green, White, Red", "Yellow, Blue, Red", "Green, Yellow, Black"],
+    "answer": "Green, White, Red"
+  },
+  {
+    "id": 65,
+    "question": "What is the center of an atom called?",
+    "choices": ["Proton", "Electron", "Nucleus", "Shell"],
+    "answer": "Nucleus"
+  },
+  {
+    "id": 66,
+    "question": "Which Disney character has very long hair and lives in a tower?",
+    "choices": ["Belle", "Cinderella", "Rapunzel", "Snow White"],
+    "answer": "Rapunzel"
+  },
+  {
+    "id": 67,
+    "question": "Which fruit is said to have fallen on Isaac Newton's head?",
+    "choices": ["Pear", "Apple", "Orange", "Banana"],
+    "answer": "Apple"
+  },
+  {
+    "id": 68,
+    "question": "The 'White House' is the official residence of the president of which country?",
+    "choices": ["Canada", "United Kingdom", "USA", "Australia"],
+    "answer": "USA"
+  },
+  {
+    "id": 69,
+    "question": "Which planet is famous for its prominent rings?",
+    "choices": ["Mars", "Jupiter", "Saturn", "Neptune"],
+    "answer": "Saturn"
+  },
+  {
+    "id": 70,
+    "question": "Which month has the fewest days?",
+    "choices": ["January", "February", "June", "September"],
+    "answer": "February"
+  },
+  {
+    "id": 71,
+    "question": "What do you call a person who travels into space?",
+    "choices": ["Pilot", "Sailor", "Astronaut", "Scientist"],
+    "answer": "Astronaut"
+  },
+  {
+    "id": 72,
+    "question": "What is the shape of a standard 'Stop' sign?",
+    "choices": ["Square", "Circle", "Octagon", "Hexagon"],
+    "answer": "Octagon"
+  },
+  {
+    "id": 73,
+    "question": "Which animal is known as the 'Ship of the Desert'?",
+    "choices": ["Horse", "Camel", "Donkey", "Elephant"],
+    "answer": "Camel"
+  },
+  {
+    "id": 74,
+    "question": "What is the capital city of the United Kingdom?",
+    "choices": ["Dublin", "Edinburgh", "London", "Cardiff"],
+    "answer": "London"
+  },
+  {
+    "id": 75,
+    "question": "What is the chemical symbol for Gold?",
+    "choices": ["Gd", "Ag", "Au", "Fe"],
+    "answer": "Au"
+  },
+  {
+    "id": 76,
+    "question": "Which part of a plant grows underground?",
+    "choices": ["Stem", "Leaf", "Root", "Flower"],
+    "answer": "Root"
+  },
+  {
+    "id": 77,
+    "question": "In which country is the Taj Mahal located?",
+    "choices": ["India", "Pakistan", "China", "Iran"],
+    "answer": "India"
+  },
+  {
+    "id": 78,
+    "question": "What is the primary language spoken in Spain?",
+    "choices": ["English", "French", "Spanish", "German"],
+    "answer": "Spanish"
+  },
+  {
+    "id": 79,
+    "question": "What is the opposite of the word 'Hot'?",
+    "choices": ["Warm", "Cold", "Sweet", "Fast"],
+    "answer": "Cold"
+  },
+  {
+    "id": 80,
+    "question": "Who was the first person to walk on the moon?",
+    "choices": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "id": 81,
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "choices": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+    "answer": "Nitrogen"
+  },
+  {
+    "id": 82,
+    "question": "What type of animal is a penguin?",
+    "choices": ["Mammal", "Fish", "Bird", "Reptile"],
+    "answer": "Bird"
+  },
+  {
+    "id": 83,
+    "question": "How many minutes are in one hour?",
+    "choices": ["50", "60", "70", "100"],
+    "answer": "60"
+  },
+  {
+    "id": 84,
+    "question": "Which ocean is the smallest in the world?",
+    "choices": ["Pacific", "Atlantic", "Indian", "Arctic"],
+    "answer": "Arctic"
+  },
+  {
+    "id": 85,
+    "question": "What do you traditionally use to write on a chalkboard?",
+    "choices": ["Pen", "Pencil", "Chalk", "Marker"],
+    "answer": "Chalk"
+  },
+  {
+    "id": 86,
+    "question": "Who is the main character in Disney's 'The Lion King'?",
+    "choices": ["Mufasa", "Scar", "Simba", "Timon"],
+    "answer": "Simba"
+  },
+  {
+    "id": 87,
+    "question": "How many teeth does an adult human usually have?",
+    "choices": ["28", "30", "32", "34"],
+    "answer": "32"
+  },
+  {
+    "id": 88,
+    "question": "Which social media platform is famous for its 280-character limit (originally 140)?",
+    "choices": ["Facebook", "Instagram", "X (Twitter)", "LinkedIn"],
+    "answer": "X (Twitter)"
+  },
+  {
+    "id": 89,
+    "question": "What is the name of the fairy in Peter Pan?",
+    "choices": ["Tinkerbell", "Flora", "Fauna", "Merryweather"],
+    "answer": "Tinkerbell"
+  },
+  {
+    "id": 90,
+    "question": "Which organ in the human body is the largest by surface area?",
+    "choices": ["Liver", "Lungs", "Skin", "Brain"],
+    "answer": "Skin"
+  },
+  {
+    "id": 91,
+    "question": "In which direction does the Sun rise?",
+    "choices": ["North", "South", "East", "West"],
+    "answer": "East"
+  },
+  {
+    "id": 92,
+    "question": "What is the capital city of China?",
+    "choices": ["Shanghai", "Beijing", "Guangzhou", "Hong Kong"],
+    "answer": "Beijing"
+  },
+  {
+    "id": 93,
+    "question": "Which fairy tale character lost her glass slipper?",
+    "choices": ["Sleeping Beauty", "Snow White", "Cinderella", "Ariel"],
+    "answer": "Cinderella"
+  },
+  {
+    "id": 94,
+    "question": "How many strings does a standard violin have?",
+    "choices": ["3", "4", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "id": 95,
+    "question": "What is the main ingredient in chocolate?",
+    "choices": ["Milk", "Sugar", "Cocoa beans", "Vanilla"],
+    "answer": "Cocoa beans"
+  },
+  {
+    "id": 96,
+    "question": "What color is a standard school bus in the United States?",
+    "choices": ["Red", "White", "Yellow", "Blue"],
+    "answer": "Yellow"
+  },
+  {
+    "id": 97,
+    "question": "Which continent is the South Pole located on?",
+    "choices": ["Africa", "Australia", "Antarctica", "Asia"],
+    "answer": "Antarctica"
+  },
+  {
+    "id": 98,
+    "question": "What is the name of the galaxy we live in?",
+    "choices": ["Andromeda", "Milky Way", "Sombrero", "Triangulum"],
+    "answer": "Milky Way"
+  },
+  {
+    "id": 99,
+    "question": "How many years are in a century?",
+    "choices": ["10", "50", "100", "1000"],
+    "answer": "100"
+  },
+  {
+    "id": 100,
+    "question": "Which animal is famous for building dams?",
+    "choices": ["Otter", "Beaver", "Platypus", "Seal"],
+    "answer": "Beaver"
+  },
+    {
+      "id": 101,
+      "question": "What is the name of the toy cowboy in the movie 'Toy Story'?",
+      "choices": ["Buzz", "Woody", "Rex", "Slinky"],
+      "answer": "Woody"
+    },
+    {
+      "id": 102,
+      "question": "Which gas do humans exhale when they breathe out?",
+      "choices": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"],
+      "answer": "Carbon Dioxide"
+    },
+    {
+      "id": 103,
+      "question": "What is the largest country in Africa by land area?",
+      "choices": ["Egypt", "South Africa", "Algeria", "Nigeria"],
+      "answer": "Algeria"
+    },
+    {
+      "id": 104,
+      "question": "How many centimeters are there in a meter?",
+      "choices": ["10", "100", "1000", "50"],
+      "answer": "100"
+    },
+    {
+      "id": 105,
+      "question": "Who is the Greek god of the sea?",
+      "choices": ["Zeus", "Hades", "Poseidon", "Apollo"],
+      "answer": "Poseidon"
+    },
+    {
+      "id": 106,
+      "question": "What is the primary ingredient used to make bread?",
+      "choices": ["Sugar", "Salt", "Flour", "Milk"],
+      "answer": "Flour"
+    },
+    {
+      "id": 107,
+      "question": "Which planet in our solar system is known for being the hottest?",
+      "choices": ["Mercury", "Mars", "Venus", "Jupiter"],
+      "answer": "Venus"
+    },
+    {
+      "id": 108,
+      "question": "What is the capital city of Germany?",
+      "choices": ["Munich", "Berlin", "Hamburg", "Frankfurt"],
+      "answer": "Berlin"
+    },
+    {
+      "id": 109,
+      "question": "How many rings are on the Olympic flag?",
+      "choices": ["3", "4", "5", "6"],
+      "answer": "5"
+    },
+    {
+      "id": 110,
+      "question": "What is a group of lions called?",
+      "choices": ["Pack", "Herd", "Pride", "Flock"],
+      "answer": "Pride"
+    },
+    {
+      "id": 111,
+      "question": "What was the name of the famous ship that sank in 1912?",
+      "choices": ["Titanic", "Britannic", "Olympic", "Lusitania"],
+      "answer": "Titanic"
+    },
+    {
+      "id": 112,
+      "question": "Which fruit is traditionally used to make wine?",
+      "choices": ["Apples", "Grapes", "Pears", "Berries"],
+      "answer": "Grapes"
+    },
+    {
+      "id": 113,
+      "question": "How many seconds are in one minute?",
+      "choices": ["30", "60", "90", "100"],
+      "answer": "60"
+    },
+    {
+      "id": 114,
+      "question": "What is the name of the longest-running animated sitcom in the USA?",
+      "choices": ["Family Guy", "South Park", "The Simpsons", "Futurama"],
+      "answer": "The Simpsons"
+    },
+    {
+      "id": 115,
+      "question": "Which ocean is located on the East Coast of the United States?",
+      "choices": ["Pacific", "Indian", "Atlantic", "Arctic"],
+      "answer": "Atlantic"
+    },
+    {
+      "id": 116,
+      "question": "What is the capital city of Egypt?",
+      "choices": ["Alexandria", "Luxor", "Cairo", "Giza"],
+      "answer": "Cairo"
+    },
+    {
+      "id": 117,
+      "question": "What color are bananas usually when they are fully ripe?",
+      "choices": ["Green", "Yellow", "Red", "Blue"],
+      "answer": "Yellow"
+    },
+    {
+      "id": 118,
+      "question": "How many sides does a hexagon have?",
+      "choices": ["5", "6", "7", "8"],
+      "answer": "6"
+    },
+    {
+      "id": 119,
+      "question": "Which animal is the national symbol of Australia?",
+      "choices": ["Koala", "Kangaroo", "Emu", "Wombat"],
+      "answer": "Kangaroo"
+    },
+    {
+      "id": 120,
+      "question": "Which metal is the Statue of Liberty made of?",
+      "choices": ["Iron", "Copper", "Steel", "Bronze"],
+      "answer": "Copper"
+    },
+    {
+      "id": 121,
+      "question": "What is the largest bone in the human body?",
+      "choices": ["Skull", "Spine", "Femur", "Rib"],
+      "answer": "Femur"
+    },
+    {
+      "id": 122,
+      "question": "Which season comes directly after Winter?",
+      "choices": ["Summer", "Autumn", "Spring", "Monsoon"],
+      "answer": "Spring"
+    },
+    {
+      "id": 123,
+      "question": "What is the name of the wizard in 'The Hobbit' and 'The Lord of the Rings'?",
+      "choices": ["Dumbledore", "Merlin", "Gandalf", "Saruman"],
+      "answer": "Gandalf"
+    },
+    {
+      "id": 124,
+      "question": "How many players are on a standard basketball team on the court?",
+      "choices": ["4", "5", "6", "11"],
+      "answer": "5"
+    },
+    {
+      "id": 125,
+      "question": "What is the capital city of Spain?",
+      "choices": ["Barcelona", "Seville", "Madrid", "Valencia"],
+      "answer": "Madrid"
+    },
+    {
+      "id": 126,
+      "question": "What is the boiling point of water in Fahrenheit?",
+      "choices": ["100°F", "200°F", "212°F", "32°F"],
+      "answer": "212°F"
+    },
+    {
+      "id": 127,
+      "question": "Which planet is the smallest in our solar system?",
+      "choices": ["Mars", "Mercury", "Venus", "Neptune"],
+      "answer": "Mercury"
+    },
+    {
+      "id": 128,
+      "question": "What is the main color of a ruby gemstone?",
+      "choices": ["Blue", "Green", "Red", "Yellow"],
+      "answer": "Red"
+    },
+    {
+      "id": 129,
+      "question": "How many millimeters are in one centimeter?",
+      "choices": ["10", "100", "5", "12"],
+      "answer": "10"
+    },
+    {
+      "id": 130,
+      "question": "What is the common name for the chemical compound Sodium Chloride?",
+      "choices": ["Sugar", "Salt", "Baking Soda", "Vinegar"],
+      "answer": "Salt"
+    },
+    {
+      "id": 131,
+      "question": "Which superhero is also known as Bruce Wayne?",
+      "choices": ["Superman", "Spider-Man", "Batman", "Iron Man"],
+      "answer": "Batman"
+    },
+    {
+      "id": 132,
+      "question": "Which bird is widely recognized as a symbol of peace?",
+      "choices": ["Eagle", "Dove", "Owl", "Swan"],
+      "answer": "Dove"
+    },
+    {
+      "id": 133,
+      "question": "What is the largest state in the USA by land area?",
+      "choices": ["Texas", "California", "Alaska", "Florida"],
+      "answer": "Alaska"
+    },
+    {
+      "id": 134,
+      "question": "Which instrument is played by blowing into it?",
+      "choices": ["Piano", "Guitar", "Flute", "Drums"],
+      "answer": "Flute"
+    },
+    {
+      "id": 135,
+      "question": "What is the name of the princess in the movie 'Aladdin'?",
+      "choices": ["Belle", "Jasmine", "Ariel", "Aurora"],
+      "answer": "Jasmine"
+    },
+    {
+      "id": 136,
+      "question": "How many continents have the word 'America' in their name?",
+      "choices": ["1", "2", "3", "0"],
+      "answer": "2"
+    },
+    {
+      "id": 137,
+      "question": "What do you call a baby cat?",
+      "choices": ["Puppy", "Kitten", "Cub", "Calf"],
+      "answer": "Kitten"
+    },
+    {
+      "id": 138,
+      "question": "What is the capital city of Canada?",
+      "choices": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+      "answer": "Ottawa"
+    },
+    {
+      "id": 139,
+      "question": "Which geometric shape is used for a standard 'Yield' traffic sign?",
+      "choices": ["Circle", "Square", "Triangle", "Diamond"],
+      "answer": "Triangle"
+    },
+    {
+      "id": 140,
+      "question": "What is the name of the force that pulls objects toward Earth?",
+      "choices": ["Magnetism", "Friction", "Gravity", "Inertia"],
+      "answer": "Gravity"
+    },
+    {
+      "id": 141,
+      "question": "How many valves does a standard trumpet have?",
+      "choices": ["2", "3", "4", "5"],
+      "answer": "3"
+    },
+    {
+      "id": 142,
+      "question": "Which country currently has the largest population in the world?",
+      "choices": ["USA", "China", "India", "Indonesia"],
+      "answer": "India"
+    },
+    {
+      "id": 143,
+      "question": "What color is the sky on a clear day?",
+      "choices": ["Green", "Blue", "Pink", "Red"],
+      "answer": "Blue"
+    },
+    {
+      "id": 144,
+      "question": "What is the name of Captain Hook's ship in 'Peter Pan'?",
+      "choices": ["The Black Pearl", "The Jolly Roger", "The Interceptor", "The Enterprise"],
+      "answer": "The Jolly Roger"
+    },
+    {
+      "id": 145,
+      "question": "How many wings does a butterfly have?",
+      "choices": ["2", "4", "6", "8"],
+      "answer": "4"
+    },
+    {
+      "id": 146,
+      "question": "What is the name of the snowman in the movie 'Frozen'?",
+      "choices": ["Sven", "Kristoff", "Olaf", "Hans"],
+      "answer": "Olaf"
+    },
+    {
+      "id": 147,
+      "question": "What is the capital city of Russia?",
+      "choices": ["Saint Petersburg", "Moscow", "Kiev", "Novosibirsk"],
+      "answer": "Moscow"
+    },
+    {
+      "id": 148,
+      "question": "What is the main ingredient in a traditional omelet?",
+      "choices": ["Flour", "Bread", "Eggs", "Potatoes"],
+      "answer": "Eggs"
+    },
+    {
+      "id": 149,
+      "question": "How many years are in a decade?",
+      "choices": ["10", "50", "100", "12"],
+      "answer": "10"
+    },
+    {
+      "id": 150,
+      "question": "Which animal is famous for building dams across streams?",
+      "choices": ["Otter", "Beaver", "Platypus", "Rat"],
+      "answer": "Beaver"
+    }
 ]

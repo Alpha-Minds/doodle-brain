@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
 import 'package:doodle_brain/controllers/quiz/cubit/quiz_cubit.dart';
@@ -36,11 +37,11 @@ class Fightscreen extends StatelessWidget {
           return Scaffold(body: Center(child: CircularProgressIndicator()));
         }
         if (state.roundStatus != RoundStatus.playing) {
-          return const SizedBox(); // 👈 prevent building fight UI
+          return const SizedBox(); 
         }
 
         if (state.currentRound.isEmpty) {
-          return const SizedBox(); // 👈 extra safety
+          return const SizedBox(); 
         }
 
         return Theme(
@@ -122,12 +123,13 @@ class Fightscreen extends StatelessWidget {
                           child: ElevatedButton(
                             onPressed: () {},
                             child: Center(
-                              child: Text(
+                              child: AutoSizeText(
                                 state.currentRound.first.question,
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),
+                                maxLines: 1,
                               ),
                             ),
                           ),
@@ -150,8 +152,10 @@ class Fightscreen extends StatelessWidget {
                                   state.currentRound.first.choices[index],
                                 );
                               },
-                              child: Text(
+                              child: AutoSizeText(
                                 state.currentRound.first.choices[index],
+                                maxLines: 1,
+                                minFontSize: 10,
                               ),
                             ),
                           ),

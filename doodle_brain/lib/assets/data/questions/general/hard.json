@@ -2,7 +2,12 @@
   {
     "id": 1,
     "question": "Which physicist proposed the uncertainty principle?",
-    "choices": ["Albert Einstein", "Niels Bohr", "Werner Heisenberg", "Erwin Schrödinger"],
+    "choices": [
+      "Albert Einstein",
+      "Niels Bohr",
+      "Werner Heisenberg",
+      "Erwin Schrödinger"
+    ],
     "answer": "Werner Heisenberg"
   },
   {
@@ -50,19 +55,34 @@
   {
     "id": 9,
     "question": "Who discovered the neutron?",
-    "choices": ["Ernest Rutherford", "James Chadwick", "J.J. Thomson", "Max Planck"],
+    "choices": [
+      "Ernest Rutherford",
+      "James Chadwick",
+      "J.J. Thomson",
+      "Max Planck"
+    ],
     "answer": "James Chadwick"
   },
   {
     "id": 10,
     "question": "Which empire was ruled by Suleiman the Magnificent?",
-    "choices": ["Roman Empire", "Ottoman Empire", "Byzantine Empire", "Persian Empire"],
+    "choices": [
+      "Roman Empire",
+      "Ottoman Empire",
+      "Byzantine Empire",
+      "Persian Empire"
+    ],
     "answer": "Ottoman Empire"
   },
   {
     "id": 11,
     "question": "What is the deepest ocean trench in the world?",
-    "choices": ["Puerto Rico Trench", "Java Trench", "Mariana Trench", "Tonga Trench"],
+    "choices": [
+      "Puerto Rico Trench",
+      "Java Trench",
+      "Mariana Trench",
+      "Tonga Trench"
+    ],
     "answer": "Mariana Trench"
   },
   {
@@ -86,7 +106,12 @@
   {
     "id": 15,
     "question": "Who was the first female Prime Minister of the United Kingdom?",
-    "choices": ["Theresa May", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
+    "choices": [
+      "Theresa May",
+      "Margaret Thatcher",
+      "Angela Merkel",
+      "Indira Gandhi"
+    ],
     "answer": "Margaret Thatcher"
   },
   {
@@ -182,7 +207,12 @@
   {
     "id": 31,
     "question": "Which treaty ended World War I?",
-    "choices": ["Treaty of Paris", "Treaty of Versailles", "Treaty of Vienna", "Treaty of Berlin"],
+    "choices": [
+      "Treaty of Paris",
+      "Treaty of Versailles",
+      "Treaty of Vienna",
+      "Treaty of Berlin"
+    ],
     "answer": "Treaty of Versailles"
   },
   {
@@ -278,7 +308,12 @@
   {
     "id": 47,
     "question": "Which war was fought between the North and South regions of the United States?",
-    "choices": ["Revolutionary War", "Civil War", "World War I", "Mexican-American War"],
+    "choices": [
+      "Revolutionary War",
+      "Civil War",
+      "World War I",
+      "Mexican-American War"
+    ],
     "answer": "Civil War"
   },
   {
@@ -298,5 +333,725 @@
     "question": "Which country is the largest producer of coffee?",
     "choices": ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
     "answer": "Brazil"
+  },
+  {
+    "id": 51,
+    "question": "Which subatomic particle is known as the 'God Particle'?",
+    "choices": ["Muon", "Higgs Boson", "Tau Neutrino", "Gluon"],
+    "answer": "Higgs Boson"
+  },
+  {
+    "id": 52,
+    "question": "Who was the last Tsar of Russia before the 1917 Revolution?",
+    "choices": [
+      "Alexander III",
+      "Nicholas I",
+      "Nicholas II",
+      "Peter the Great"
+    ],
+    "answer": "Nicholas II"
+  },
+  {
+    "id": 53,
+    "question": "What is the capital of Suriname?",
+    "choices": ["Georgetown", "Paramaribo", "Cayenne", "Montevideo"],
+    "answer": "Paramaribo"
+  },
+  {
+    "id": 54,
+    "question": "Which linguistic family does the Hungarian language belong to?",
+    "choices": ["Indo-European", "Uralic", "Afroasiatic", "Altaic"],
+    "answer": "Uralic"
+  },
+  {
+    "id": 55,
+    "question": "What is the name of the boundary around a black hole beyond which no light can escape?",
+    "choices": ["Singularity", "Photon Sphere", "Event Horizon", "Ergosphere"],
+    "answer": "Event Horizon"
+  },
+  {
+    "id": 56,
+    "question": "Who wrote the 18th-century masterpiece 'The Sorrows of Young Werther'?",
+    "choices": [
+      "Friedrich Schiller",
+      "Johann Wolfgang von Goethe",
+      "Immanuel Kant",
+      "Franz Kafka"
+    ],
+    "answer": "Johann Wolfgang von Goethe"
+  },
+  {
+    "id": 57,
+    "question": "Which archipelago is the Galápagos Islands a part of?",
+    "choices": ["Ecuador", "Peru", "Chile", "Colombia"],
+    "answer": "Ecuador"
+  },
+  {
+    "id": 58,
+    "question": "What is the most abundant protein in the human body?",
+    "choices": ["Keratin", "Hemoglobin", "Collagen", "Actin"],
+    "answer": "Collagen"
+  },
+  {
+    "id": 59,
+    "question": "In which battle was Napoleon Bonaparte finally defeated?",
+    "choices": [
+      "Battle of Austerlitz",
+      "Battle of Borodino",
+      "Battle of Waterloo",
+      "Battle of Leipzig"
+    ],
+    "answer": "Battle of Waterloo"
+  },
+  {
+    "id": 60,
+    "question": "Which element has the atomic number 79?",
+    "choices": ["Silver", "Platinum", "Gold", "Mercury"],
+    "answer": "Gold"
+  },
+  {
+    "id": 61,
+    "question": "Who is the author of 'Being and Nothingness'?",
+    "choices": [
+      "Albert Camus",
+      "Jean-Paul Sartre",
+      "Friedrich Nietzsche",
+      "Simone de Beauvoir"
+    ],
+    "answer": "Jean-Paul Sartre"
+  },
+  {
+    "id": 62,
+    "question": "Which country is the only one in the world to have a non-rectangular flag?",
+    "choices": ["Vatican City", "Switzerland", "Nepal", "Belgium"],
+    "answer": "Nepal"
+  },
+  {
+    "id": 63,
+    "question": "What is the SI unit for the amount of substance?",
+    "choices": ["Kilogram", "Mole", "Candela", "Kelvin"],
+    "answer": "Mole"
+  },
+  {
+    "id": 64,
+    "question": "Who was the primary architect of the Palace of Versailles?",
+    "choices": [
+      "Christopher Wren",
+      "Louis Le Vau",
+      "Gian Lorenzo Bernini",
+      "Andrea Palladio"
+    ],
+    "answer": "Louis Le Vau"
+  },
+  {
+    "id": 65,
+    "question": "Which organelle is responsible for the synthesis of lipids?",
+    "choices": ["Rough ER", "Smooth ER", "Golgi Apparatus", "Lysosome"],
+    "answer": "Smooth ER"
+  },
+  {
+    "id": 66,
+    "question": "What was the name of the first dynasty of Imperial China?",
+    "choices": ["Han Dynasty", "Zhou Dynasty", "Qin Dynasty", "Shang Dynasty"],
+    "answer": "Qin Dynasty"
+  },
+  {
+    "id": 67,
+    "question": "Which mountain is the highest in the Alps?",
+    "choices": ["Matterhorn", "Mont Blanc", "Eiger", "Zugspitze"],
+    "answer": "Mont Blanc"
+  },
+  {
+    "id": 68,
+    "question": "What is the maximum mass a white dwarf star can have before collapsing into a neutron star or black hole?",
+    "choices": [
+      "Hawking Radiation",
+      "Chandrasekhar Limit",
+      "Schwarzschild Radius",
+      "Planck Mass"
+    ],
+    "answer": "Chandrasekhar Limit"
+  },
+  {
+    "id": 69,
+    "question": "Who composed the opera 'The Marriage of Figaro'?",
+    "choices": ["Wagner", "Verdi", "Mozart", "Puccini"],
+    "answer": "Mozart"
+  },
+  {
+    "id": 70,
+    "question": "Which African country was the first to gain independence from colonial rule in 1957?",
+    "choices": ["Nigeria", "Kenya", "Ghana", "Algeria"],
+    "answer": "Ghana"
+  },
+  {
+    "id": 71,
+    "question": "What is the term for the study of tree rings to determine past climates?",
+    "choices": [
+      "Dendrochronology",
+      "Palynology",
+      "Geomorphology",
+      "Speleology"
+    ],
+    "answer": "Dendrochronology"
+  },
+  {
+    "id": 72,
+    "question": "Which philosopher is associated with the 'Allegory of the Cave'?",
+    "choices": ["Aristotle", "Plato", "Socrates", "Epicurus"],
+    "answer": "Plato"
+  },
+  {
+    "id": 73,
+    "question": "What is the capital of Bhutan?",
+    "choices": ["Kathmandu", "Thimphu", "Dhaka", "Lhasa"],
+    "answer": "Thimphu"
+  },
+  {
+    "id": 74,
+    "question": "Which gas is primarily responsible for the smell of rotten eggs?",
+    "choices": ["Sulfur Dioxide", "Hydrogen Sulfide", "Ammonia", "Methane"],
+    "answer": "Hydrogen Sulfide"
+  },
+  {
+    "id": 75,
+    "question": "In which year did the Great Fire of London occur?",
+    "choices": ["1588", "1666", "1712", "1605"],
+    "answer": "1666"
+  },
+  {
+    "id": 76,
+    "question": "Who discovered the structure of the DNA double helix alongside Francis Crick?",
+    "choices": [
+      "Rosalind Franklin",
+      "James Watson",
+      "Linus Pauling",
+      "Maurice Wilkins"
+    ],
+    "answer": "James Watson"
+  },
+  {
+    "id": 77,
+    "question": "Which desert is considered the driest non-polar place on Earth?",
+    "choices": ["Sahara", "Atacama", "Namib", "Mojave"],
+    "answer": "Atacama"
+  },
+  {
+    "id": 78,
+    "question": "What is the legal term for a written defamatory statement?",
+    "choices": ["Slander", "Libel", "Perjury", "Tort"],
+    "answer": "Libel"
+  },
+  {
+    "id": 79,
+    "question": "Who was the last ruler of the Ptolemaic Kingdom of Egypt?",
+    "choices": ["Nefertiti", "Hatshepsut", "Cleopatra VII", "Arsinoe IV"],
+    "answer": "Cleopatra VII"
+  },
+  {
+    "id": 80,
+    "question": "Which particle mediates the strong nuclear force?",
+    "choices": ["Photon", "W Boson", "Gluon", "Graviton"],
+    "answer": "Gluon"
+  },
+  {
+    "id": 81,
+    "question": "What is the capital of Togo?",
+    "choices": ["Lomé", "Accra", "Cotonou", "Niamey"],
+    "answer": "Lomé"
+  },
+  {
+    "id": 82,
+    "question": "Which art movement is Salvador Dalí most closely associated with?",
+    "choices": ["Cubism", "Surrealism", "Impressionism", "Expressionism"],
+    "answer": "Surrealism"
+  },
+  {
+    "id": 83,
+    "question": "What is the longest river in Europe?",
+    "choices": ["Danube", "Rhine", "Volga", "Elbe"],
+    "answer": "Volga"
+  },
+  {
+    "id": 84,
+    "question": "Which scientist is credited with the first vaccination (for smallpox)?",
+    "choices": [
+      "Louis Pasteur",
+      "Robert Koch",
+      "Edward Jenner",
+      "Alexander Fleming"
+    ],
+    "answer": "Edward Jenner"
+  },
+  {
+    "id": 85,
+    "question": "What is the name of the scale used to measure the hardness of minerals?",
+    "choices": [
+      "Richter Scale",
+      "Mohs Scale",
+      "Kelvin Scale",
+      "Beaufort Scale"
+    ],
+    "answer": "Mohs Scale"
+  },
+  {
+    "id": 86,
+    "question": "Who was the British Prime Minister during most of World War I?",
+    "choices": [
+      "Winston Churchill",
+      "David Lloyd George",
+      "Neville Chamberlain",
+      "H.H. Asquith"
+    ],
+    "answer": "David Lloyd George"
+  },
+  {
+    "id": 87,
+    "question": "Which planet in the solar system has the shortest day?",
+    "choices": ["Mars", "Jupiter", "Saturn", "Mercury"],
+    "answer": "Jupiter"
+  },
+  {
+    "id": 88,
+    "question": "What is the name of the chemical process used to produce ammonia industrially?",
+    "choices": [
+      "Contact Process",
+      "Haber-Bosch Process",
+      "Bessemer Process",
+      "Solvay Process"
+    ],
+    "answer": "Haber-Bosch Process"
+  },
+  {
+    "id": 89,
+    "question": "Which country contains the largest portion of the Amazon Rainforest after Brazil?",
+    "choices": ["Colombia", "Peru", "Bolivia", "Venezuela"],
+    "answer": "Peru"
+  },
+  {
+    "id": 90,
+    "question": "In computer science, what does 'HTTP' stand for?",
+    "choices": [
+      "HyperText Transfer Protocol",
+      "High Transition Text Process",
+      "Hyperlink Textual Transfer Plan",
+      "High Tech Terminal Protocol"
+    ],
+    "answer": "HyperText Transfer Protocol"
+  },
+  {
+    "id": 91,
+    "question": "Who wrote the dystopian novel 'Brave New World'?",
+    "choices": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "H.G. Wells"],
+    "answer": "Aldous Huxley"
+  },
+  {
+    "id": 92,
+    "question": "Which emperor moved the capital of the Roman Empire to Byzantium?",
+    "choices": ["Nero", "Trajan", "Constantine the Great", "Hadrian"],
+    "answer": "Constantine the Great"
+  },
+  {
+    "id": 93,
+    "question": "What is the value of the mathematical constant 'e' to two decimal places?",
+    "choices": ["3.14", "2.72", "1.62", "1.41"],
+    "answer": "2.72"
+  },
+  {
+    "id": 94,
+    "question": "Which sea is located between the Korean Peninsula and China?",
+    "choices": [
+      "Yellow Sea",
+      "Sea of Japan",
+      "East China Sea",
+      "South China Sea"
+    ],
+    "answer": "Yellow Sea"
+  },
+  {
+    "id": 95,
+    "question": "What is the medical term for the kneecap?",
+    "choices": ["Scapula", "Patella", "Tibia", "Fibula"],
+    "answer": "Patella"
+  },
+  {
+    "id": 96,
+    "question": "Which artist painted 'The Garden of Earthly Delights'?",
+    "choices": [
+      "Hieronymus Bosch",
+      "Pieter Bruegel",
+      "Jan van Eyck",
+      "Albrecht Dürer"
+    ],
+    "answer": "Hieronymus Bosch"
+  },
+  {
+    "id": 97,
+    "question": "What is the capital of New Zealand?",
+    "choices": ["Auckland", "Christchurch", "Wellington", "Hamilton"],
+    "answer": "Wellington"
+  },
+  {
+    "id": 98,
+    "question": "Which layer of the atmosphere contains the ozone layer?",
+    "choices": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+    "answer": "Stratosphere"
+  },
+  {
+    "id": 99,
+    "question": "Who was the leader of the Zulu Kingdom who fought against the British in the 19th century?",
+    "choices": ["Shaka Zulu", "Cetshwayo kaMpande", "Dingane", "Mpande"],
+    "answer": "Cetshwayo kaMpande"
+  },
+  {
+    "id": 100,
+    "question": "What is the rarest blood type among humans globally?",
+    "choices": ["O Negative", "B Negative", "AB Negative", "A Negative"],
+    "answer": "AB Negative"
+  },
+  {
+    "id": 101,
+    "question": "Which physicist is responsible for the 'Schrödinger's Cat' thought experiment?",
+    "choices": [
+      "Max Planck",
+      "Erwin Schrödinger",
+      "Niels Bohr",
+      "Richard Feynman"
+    ],
+    "answer": "Erwin Schrödinger"
+  },
+  {
+    "id": 102,
+    "question": "What is the name of the first human-made object to leave the solar system?",
+    "choices": ["Voyager 1", "Voyager 2", "Pioneer 10", "New Horizons"],
+    "answer": "Voyager 1"
+  },
+  {
+    "id": 103,
+    "question": "In which city was the composer Ludwig van Beethoven born?",
+    "choices": ["Vienna", "Bonn", "Salzburg", "Berlin"],
+    "answer": "Bonn"
+  },
+  {
+    "id": 104,
+    "question": "What is the primary function of the 'Mitochondria' in a cell?",
+    "choices": [
+      "Protein Synthesis",
+      "Waste Management",
+      "Energy (ATP) Production",
+      "Cell Division"
+    ],
+    "answer": "Energy (ATP) Production"
+  },
+  {
+    "id": 105,
+    "question": "Which country was the first to give women the right to vote in 1893?",
+    "choices": ["USA", "UK", "New Zealand", "Norway"],
+    "answer": "New Zealand"
+  },
+  {
+    "id": 106,
+    "question": "What is the chemical formula for Ozone?",
+    "choices": ["O2", "O3", "CO2", "H2O"],
+    "answer": "O3"
+  },
+  {
+    "id": 107,
+    "question": "Who was the primary author of the U.S. Declaration of Independence?",
+    "choices": [
+      "Benjamin Franklin",
+      "John Adams",
+      "Thomas Jefferson",
+      "George Washington"
+    ],
+    "answer": "Thomas Jefferson"
+  },
+  {
+    "id": 108,
+    "question": "Which mountain range is the highest in North America?",
+    "choices": ["Rockies", "Appalachians", "Alaska Range", "Sierra Nevada"],
+    "answer": "Alaska Range"
+  },
+  {
+    "id": 109,
+    "question": "What is the term for a substance that speeds up a chemical reaction without being consumed?",
+    "choices": ["Solvent", "Reactant", "Catalyst", "Inhibitor"],
+    "answer": "Catalyst"
+  },
+  {
+    "id": 110,
+    "question": "Which conflict was ended by the Treaty of Westphalia in 1648?",
+    "choices": [
+      "Hundred Years' War",
+      "Thirty Years' War",
+      "Seven Years' War",
+      "Napoleonic Wars"
+    ],
+    "answer": "Thirty Years' War"
+  },
+  {
+    "id": 111,
+    "question": "What is the capital of Ethiopia?",
+    "choices": ["Nairobi", "Addis Ababa", "Khartoum", "Asmara"],
+    "answer": "Addis Ababa"
+  },
+  {
+    "id": 112,
+    "question": "Which subatomic particle has a negative charge?",
+    "choices": ["Proton", "Neutron", "Electron", "Positron"],
+    "answer": "Electron"
+  },
+  {
+    "id": 113,
+    "question": "Who painted the 'Mona Lisa'?",
+    "choices": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Donatello"],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "id": 114,
+    "question": "Which element is the primary component of a diamond?",
+    "choices": ["Nitrogen", "Carbon", "Silicon", "Boron"],
+    "answer": "Carbon"
+  },
+  {
+    "id": 115,
+    "question": "What is the largest country in South America by land area?",
+    "choices": ["Argentina", "Colombia", "Brazil", "Peru"],
+    "answer": "Brazil"
+  },
+  {
+    "id": 116,
+    "question": "Which gas is used by plants for photosynthesis?",
+    "choices": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "id": 117,
+    "question": "What is the name of the ship Charles Darwin sailed on?",
+    "choices": ["The Endeavour", "The Beagle", "The Victory", "The Bounty"],
+    "answer": "The Beagle"
+  },
+  {
+    "id": 118,
+    "question": "Who was the 'Mad Monk' of Russian history?",
+    "choices": ["Lenin", "Trotsky", "Rasputin", "Stalin"],
+    "answer": "Rasputin"
+  },
+  {
+    "id": 119,
+    "question": "What is the square root of 625?",
+    "choices": ["15", "25", "35", "45"],
+    "answer": "25"
+  },
+  {
+    "id": 120,
+    "question": "Which ocean is the deepest in the world?",
+    "choices": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "answer": "Pacific"
+  },
+  {
+    "id": 121,
+    "question": "What is the study of fossils called?",
+    "choices": ["Archaeology", "Paleontology", "Geology", "Anthropology"],
+    "answer": "Paleontology"
+  },
+  {
+    "id": 122,
+    "question": "Who wrote 'The Communist Manifesto'?",
+    "choices": ["Adam Smith", "Karl Marx", "John Locke", "Thomas Hobbes"],
+    "answer": "Karl Marx"
+  },
+  {
+    "id": 123,
+    "question": "What is the capital of Iceland?",
+    "choices": ["Reykjavik", "Oslo", "Helsinki", "Copenhagen"],
+    "answer": "Reykjavik"
+  },
+  {
+    "id": 124,
+    "question": "Which vitamin is also known as Ascorbic Acid?",
+    "choices": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin C"
+  },
+  {
+    "id": 125,
+    "question": "What is the chemical symbol for Potassium?",
+    "choices": ["P", "Po", "K", "Pt"],
+    "answer": "K"
+  },
+  {
+    "id": 126,
+    "question": "Who was the first person to walk on the moon?",
+    "choices": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "id": 127,
+    "question": "Which country is home to the ancient city of Troy?",
+    "choices": ["Greece", "Italy", "Turkey", "Egypt"],
+    "answer": "Turkey"
+  },
+  {
+    "id": 128,
+    "question": "What is the speed of light in a vacuum?",
+    "choices": [
+      "300,000 km/s",
+      "150,000 km/s",
+      "1,000,000 km/s",
+      "50,000 km/s"
+    ],
+    "answer": "300,000 km/s"
+  },
+  {
+    "id": 129,
+    "question": "Who discovered Penicillin?",
+    "choices": [
+      "Marie Curie",
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Gregor Mendel"
+    ],
+    "answer": "Alexander Fleming"
+  },
+  {
+    "id": 130,
+    "question": "What is the capital of Australia?",
+    "choices": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "answer": "Canberra"
+  },
+  {
+    "id": 131,
+    "question": "Which Greek hero killed Medusa?",
+    "choices": ["Hercules", "Achilles", "Perseus", "Theseus"],
+    "answer": "Perseus"
+  },
+  {
+    "id": 132,
+    "question": "What is the name of the largest internal organ in the human body?",
+    "choices": ["Heart", "Brain", "Liver", "Lung"],
+    "answer": "Liver"
+  },
+  {
+    "id": 133,
+    "question": "Which country has the most natural lakes?",
+    "choices": ["USA", "Russia", "Canada", "Finland"],
+    "answer": "Canada"
+  },
+  {
+    "id": 134,
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "choices": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Mark Twain",
+      "Leo Tolstoy"
+    ],
+    "answer": "William Shakespeare"
+  },
+  {
+    "id": 135,
+    "question": "What is the chemical symbol for Iron?",
+    "choices": ["I", "Ir", "Fe", "In"],
+    "answer": "Fe"
+  },
+  {
+    "id": 136,
+    "question": "Which planet is known as the 'Red Planet'?",
+    "choices": ["Venus", "Jupiter", "Mars", "Saturn"],
+    "answer": "Mars"
+  },
+  {
+    "id": 137,
+    "question": "What is the value of Pi (π) to two decimal places?",
+    "choices": ["3.12", "3.14", "3.16", "3.18"],
+    "answer": "3.14"
+  },
+  {
+    "id": 138,
+    "question": "Which empire built the Colosseum in Rome?",
+    "choices": ["Greek", "Ottoman", "Roman", "Byzantine"],
+    "answer": "Roman"
+  },
+  {
+    "id": 139,
+    "question": "What is the capital of Japan?",
+    "choices": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"],
+    "answer": "Tokyo"
+  },
+  {
+    "id": 140,
+    "question": "Who developed the theory of relativity?",
+    "choices": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Stephen Hawking",
+      "Nikola Tesla"
+    ],
+    "answer": "Albert Einstein"
+  },
+  {
+    "id": 141,
+    "question": "Which blood type is the universal donor?",
+    "choices": ["A+", "B-", "AB+", "O-"],
+    "answer": "O-"
+  },
+  {
+    "id": 142,
+    "question": "What is the longest river in the world?",
+    "choices": ["Amazon", "Mississippi", "Nile", "Yangtze"],
+    "answer": "Nile"
+  },
+  {
+    "id": 143,
+    "question": "Which desert is the largest in the world?",
+    "choices": ["Sahara", "Gobi", "Antarctic", "Kalahari"],
+    "answer": "Antarctic"
+  },
+  {
+    "id": 144,
+    "question": "Who was the first President of the United States?",
+    "choices": [
+      "Abraham Lincoln",
+      "Thomas Jefferson",
+      "George Washington",
+      "John Adams"
+    ],
+    "answer": "George Washington"
+  },
+  {
+    "id": 145,
+    "question": "What is the chemical symbol for Water?",
+    "choices": ["HO2", "H2O", "OH2", "H2O2"],
+    "answer": "H2O"
+  },
+  {
+    "id": 146,
+    "question": "Which continent is home to the Sahara Desert?",
+    "choices": ["Asia", "South America", "Africa", "Australia"],
+    "answer": "Africa"
+  },
+  {
+    "id": 147,
+    "question": "What is the capital of France?",
+    "choices": ["Lyon", "Marseille", "Paris", "Nice"],
+    "answer": "Paris"
+  },
+  {
+    "id": 148,
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "choices": ["Leonardo da Vinci", "Raphael", "Michelangelo", "Donatello"],
+    "answer": "Michelangelo"
+  },
+  {
+    "id": 149,
+    "question": "What is the smallest prime number?",
+    "choices": ["0", "1", "2", "3"],
+    "answer": "2"
+  },
+  {
+    "id": 150,
+    "question": "Which planet is closest to the Sun?",
+    "choices": ["Venus", "Earth", "Mars", "Mercury"],
+    "answer": "Mercury"
   }
 ]

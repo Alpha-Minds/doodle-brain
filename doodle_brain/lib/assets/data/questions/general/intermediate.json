@@ -298,5 +298,366 @@
     "question": "Which country has the most volcanoes?",
     "choices": ["Japan", "USA", "Indonesia", "Chile"],
     "answer": "Indonesia"
-  }
+  },
+    {
+      "id": 51,
+      "question": "Which chemical element has the highest melting point?",
+      "choices": ["Gold", "Tungsten", "Iron", "Platinum"],
+      "answer": "Tungsten"
+    },
+    {
+      "id": 52,
+      "question": "What is the name of the largest moon of Saturn?",
+      "choices": ["Europa", "Titan", "Ganymede", "Callisto"],
+      "answer": "Titan"
+    },
+    {
+      "id": 53,
+      "question": "Who is considered the first computer programmer?",
+      "choices": ["Alan Turing", "Charles Babbage", "Ada Lovelace", "Bill Gates"],
+      "answer": "Ada Lovelace"
+    },
+    {
+      "id": 54,
+      "question": "Which treaty ended World War I?",
+      "choices": ["Treaty of Paris", "Treaty of Versailles", "Treaty of London", "Treaty of Ghent"],
+      "answer": "Treaty of Versailles"
+    },
+    {
+      "id": 55,
+      "question": "What is the deepest point in the world's oceans?",
+      "choices": ["Java Trench", "Mariana Trench", "Tonga Trench", "Puerto Rico Trench"],
+      "answer": "Mariana Trench"
+    },
+    {
+      "id": 56,
+      "question": "Which blood vessels carry oxygenated blood away from the heart?",
+      "choices": ["Veins", "Capillaries", "Arteries", "Venules"],
+      "answer": "Arteries"
+    },
+    {
+      "id": 57,
+      "question": "In which city is the headquarters of the United Nations located?",
+      "choices": ["Geneva", "London", "New York City", "Paris"],
+      "answer": "New York City"
+    },
+    {
+      "id": 58,
+      "question": "What is the name of the process by which plants lose water through their leaves?",
+      "choices": ["Photosynthesis", "Transpiration", "Respiration", "Osmosis"],
+      "answer": "Transpiration"
+    },
+    {
+      "id": 59,
+      "question": "Which artist is known for the persistence of memory (the melting clocks)?",
+      "choices": ["Pablo Picasso", "Salvador Dalí", "Vincent van Gogh", "Claude Monet"],
+      "answer": "Salvador Dalí"
+    },
+    {
+      "id": 100,
+      "question": "What is the capital of the Byzantine Empire?",
+      "choices": ["Rome", "Athens", "Constantinople", "Alexandria"],
+      "answer": "Constantinople"
+    },
+    {
+      "id": 101,
+      "question": "Which country is the world's largest producer of coffee?",
+      "choices": ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
+      "answer": "Brazil"
+    },
+    {
+      "id": 102,
+      "question": "What does a Geiger counter measure?",
+      "choices": ["Light intensity", "Radiation", "Sound waves", "Magnetic pull"],
+      "answer": "Radiation"
+    },
+    {
+      "id": 103,
+      "question": "In economics, what does 'GDP' stand for?",
+      "choices": ["General Domestic Product", "Gross Domestic Product", "Global Deposit Percentage", "Gross Development Profit"],
+      "answer": "Gross Domestic Product"
+    },
+    {
+      "id": 104,
+      "question": "Which literary character lives at 221B Baker Street?",
+      "choices": ["Hercule Poirot", "Sherlock Holmes", "Atticus Finch", "Jay Gatsby"],
+      "answer": "Sherlock Holmes"
+    },
+    {
+      "id": 105,
+      "question": "What is the chemical symbol for the element Lead?",
+      "choices": ["Ld", "Le", "Pb", "Pd"],
+      "answer": "Pb"
+    },
+    {
+      "id": 106,
+      "question": "Which battle is often cited as the turning point of WWII in Europe?",
+      "choices": ["Battle of the Bulge", "Battle of Britain", "Battle of Stalingrad", "Battle of Midway"],
+      "answer": "Battle of Stalingrad"
+    },
+    {
+      "id": 107,
+      "question": "What is the main component of natural gas?",
+      "choices": ["Ethane", "Butane", "Methane", "Propane"],
+      "answer": "Methane"
+    },
+    {
+      "id": 108,
+      "question": "Which sea is the saltiest body of water on Earth?",
+      "choices": ["Red Sea", "Mediterranean Sea", "Dead Sea", "Caspian Sea"],
+      "answer": "Dead Sea"
+    },
+    {
+      "id": 109,
+      "question": "What is the most common gas in the Sun?",
+      "choices": ["Helium", "Oxygen", "Hydrogen", "Nitrogen"],
+      "answer": "Hydrogen"
+    },
+    {
+      "id": 110,
+      "question": "Who wrote 'The Odyssey'?",
+      "choices": ["Sophocles", "Homer", "Virgil", "Aristotle"],
+      "answer": "Homer"
+    },
+    {
+      "id": 111,
+      "question": "Which layer of the Earth is located between the crust and the outer core?",
+      "choices": ["Lithosphere", "Mantle", "Inner Core", "Asthenosphere"],
+      "answer": "Mantle"
+    },
+    {
+      "id": 112,
+      "question": "What is the name of the first artificial satellite launched into space?",
+      "choices": ["Explorer 1", "Sputnik 1", "Vostok 1", "Apollo 11"],
+      "answer": "Sputnik 1"
+    },
+    {
+      "id": 113,
+      "question": "Which country has the longest coastline in the world?",
+      "choices": ["Russia", "Australia", "Canada", "USA"],
+      "answer": "Canada"
+    },
+    {
+      "id": 114,
+      "question": "Which vitamin is water-soluble?",
+      "choices": ["Vitamin A", "Vitamin K", "Vitamin C", "Vitamin D"],
+      "answer": "Vitamin C"
+    },
+    {
+      "id": 115,
+      "question": "The 'Magna Carta' was signed by which English King?",
+      "choices": ["King Henry VIII", "King Richard I", "King John", "King George III"],
+      "answer": "King John"
+    },
+    {
+      "id": 116,
+      "question": "What is the study of mushrooms called?",
+      "choices": ["Botany", "Mycology", "Phycology", "Entomology"],
+      "answer": "Mycology"
+    },
+    {
+      "id": 117,
+      "question": "In which country was the first modern Olympic Games held in 1896?",
+      "choices": ["France", "USA", "Greece", "Germany"],
+      "answer": "Greece"
+    },
+    {
+      "id": 118,
+      "question": "What is the most abundant metal in the Earth's crust?",
+      "choices": ["Iron", "Gold", "Aluminum", "Copper"],
+      "answer": "Aluminum"
+    },
+    {
+      "id": 119,
+      "question": "Which city is known as the 'Eternal City'?",
+      "choices": ["Athens", "Jerusalem", "Rome", "Cairo"],
+      "answer": "Rome"
+    },
+    {
+      "id": 120,
+      "question": "What is the primary language spoken in Quebec, Canada?",
+      "choices": ["English", "Spanish", "French", "Dutch"],
+      "answer": "French"
+    },
+    {
+      "id": 121,
+      "question": "Which organ in the human body produces insulin?",
+      "choices": ["Liver", "Kidney", "Pancreas", "Gallbladder"],
+      "answer": "Pancreas"
+    },
+    {
+      "id": 122,
+      "question": "The 'Great Wall of China' was primarily built to keep out which group?",
+      "choices": ["Romans", "Mongols", "Vikings", "Persians"],
+      "answer": "Mongols"
+    },
+    {
+      "id": 123,
+      "question": "What is the unit of electrical resistance?",
+      "choices": ["Volt", "Ampere", "Ohm", "Watt"],
+      "answer": "Ohm"
+    },
+    {
+      "id": 124,
+      "question": "Which US President is on the 5-dollar bill?",
+      "choices": ["George Washington", "Alexander Hamilton", "Abraham Lincoln", "Benjamin Franklin"],
+      "answer": "Abraham Lincoln"
+    },
+    {
+      "id": 125,
+      "question": "What is the capital of South Korea?",
+      "choices": ["Busan", "Incheon", "Seoul", "Pyongyang"],
+      "answer": "Seoul"
+    },
+    {
+      "id": 126,
+      "question": "Which gas is used in fire extinguishers to put out electrical fires?",
+      "choices": ["Oxygen", "Carbon Dioxide", "Hydrogen", "Argon"],
+      "answer": "Carbon Dioxide"
+    },
+    {
+      "id": 127,
+      "question": "Who wrote 'The Great Gatsby'?",
+      "choices": ["Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain", "John Steinbeck"],
+      "answer": "F. Scott Fitzgerald"
+    },
+    {
+      "id": 128,
+      "question": "What is the name of the largest desert in Asia?",
+      "choices": ["Sahara", "Gobi", "Thar", "Karakum"],
+      "answer": "Gobi"
+    },
+    {
+      "id": 129,
+      "question": "In Greek mythology, who is the goddess of wisdom?",
+      "choices": ["Aphrodite", "Hera", "Athena", "Artemis"],
+      "answer": "Athena"
+    },
+    {
+      "id": 130,
+      "question": "Which continent is home to the Amazon Rainforest?",
+      "choices": ["Africa", "Asia", "South America", "North America"],
+      "answer": "South America"
+    },
+    {
+      "id": 131,
+      "question": "What is the square root of 225?",
+      "choices": ["13", "14", "15", "16"],
+      "answer": "15"
+    },
+    {
+      "id": 132,
+      "question": "Which planet is known as the 'Ice Giant'?",
+      "choices": ["Jupiter", "Saturn", "Uranus", "Mars"],
+      "answer": "Uranus"
+    },
+    {
+      "id": 133,
+      "question": "The 'Renaissance' period began in which country?",
+      "choices": ["France", "Italy", "England", "Spain"],
+      "answer": "Italy"
+    },
+    {
+      "id": 134,
+      "question": "What is the main component of glass?",
+      "choices": ["Clay", "Silica (Sand)", "Iron", "Carbon"],
+      "answer": "Silica (Sand)"
+    },
+    {
+      "id": 135,
+      "question": "Which country is the smallest in the world by land area?",
+      "choices": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+      "answer": "Vatican City"
+    },
+    {
+      "id": 136,
+      "question": "What is the term for a word that is spelled the same backward as forward?",
+      "choices": ["Anagram", "Palindrome", "Synonym", "Homonym"],
+      "answer": "Palindrome"
+    },
+    {
+      "id": 137,
+      "question": "Which cell part contains the genetic material (DNA)?",
+      "choices": ["Cytoplasm", "Cell Membrane", "Nucleus", "Vacuole"],
+      "answer": "Nucleus"
+    },
+    {
+      "id": 138,
+      "question": "Who was the 'Iron Lady' of British politics?",
+      "choices": ["Queen Victoria", "Theresa May", "Margaret Thatcher", "Angela Merkel"],
+      "answer": "Margaret Thatcher"
+    },
+    {
+      "id": 139,
+      "question": "Which ocean is home to the 'Ring of Fire'?",
+      "choices": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+      "answer": "Pacific Ocean"
+    },
+    {
+      "id": 140,
+      "question": "What is the name of the currency used in Switzerland?",
+      "choices": ["Euro", "Swiss Franc", "Swiss Pound", "Swiss Dollar"],
+      "answer": "Swiss Franc"
+    },
+    {
+      "id": 141,
+      "question": "Which scientist developed the laws of inheritance through pea plant experiments?",
+      "choices": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Thomas Hunt Morgan"],
+      "answer": "Gregor Mendel"
+    },
+    {
+      "id": 142,
+      "question": "What is the capital of Turkey?",
+      "choices": ["Istanbul", "Izmir", "Ankara", "Antalya"],
+      "answer": "Ankara"
+    },
+    {
+      "id": 143,
+      "question": "Which company developed the 'Java' programming language?",
+      "choices": ["Microsoft", "Apple", "Sun Microsystems", "IBM"],
+      "answer": "Sun Microsystems"
+    },
+    {
+      "id": 144,
+      "question": "In the human body, where are the 'alveoli' located?",
+      "choices": ["Brain", "Lungs", "Stomach", "Intestines"],
+      "answer": "Lungs"
+    },
+    {
+      "id": 145,
+      "question": "Which is the largest landlocked country in the world?",
+      "choices": ["Mongolia", "Kazakhstan", "Bolivia", "Ethiopia"],
+      "answer": "Kazakhstan"
+    },
+    {
+      "id": 146,
+      "question": "Who painted 'The Starry Night'?",
+      "choices": ["Claude Monet", "Vincent van Gogh", "Edvard Munch", "Paul Gauguin"],
+      "answer": "Vincent van Gogh"
+    },
+    {
+      "id": 147,
+      "question": "What is the chemical symbol for Silver?",
+      "choices": ["Si", "Sv", "Ag", "Au"],
+      "answer": "Ag"
+    },
+    {
+      "id": 148,
+      "question": "Which language has the most native speakers in the world?",
+      "choices": ["English", "Hindi", "Mandarin Chinese", "Spanish"],
+      "answer": "Mandarin Chinese"
+    },
+    {
+      "id": 149,
+      "question": "Which organ is responsible for filtering toxins from the blood?",
+      "choices": ["Heart", "Lungs", "Liver", "Spleen"],
+      "answer": "Liver"
+    },
+    {
+      "id": 150,
+      "question": "What is the speed of sound roughly (at sea level)?",
+      "choices": ["343 m/s", "100 m/s", "1,000 m/s", "300,000 km/s"],
+      "answer": "343 m/s"
+    }
+  
 ]

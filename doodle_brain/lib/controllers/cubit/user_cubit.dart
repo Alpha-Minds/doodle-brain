@@ -58,6 +58,18 @@ class UserCubit extends Cubit<UserState> {
     }
   }
 
+  Future<void> changeName(String newName) async {
+    print("test");
+    if (state is UserLoaded) {
+      final current = (state as UserLoaded).user;
+      print("OLD NAME: ${current.name}");
+    print("NEW NAME: $newName");
+      final updated = current.copyWith(name: newName);
+      await box.put('currentUser', updated);
+      emit(UserLoaded(updated));
+    }
+  }
+
   /// function for buy item and add it to inventory and subtract the price from thr user coins
   Future<bool> buyItem(String itemId) async {
     if (state is UserLoaded) {

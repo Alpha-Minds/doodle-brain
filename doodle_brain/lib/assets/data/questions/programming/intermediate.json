@@ -1,552 +1,1311 @@
 [
-    {
-      "id": 1,
-      "question": "What is the difference between final and const in Dart?",
-      "choices": [
-        "final is compile-time constant, const is runtime constant",
-        "const is compile-time constant, final is runtime constant",
-        "Both are runtime constants",
-        "Both are compile-time constants"
-      ],
-      "answer": "const is compile-time constant, final is runtime constant"
-    },
-    {
-      "id": 2,
-      "question": "Which method is called when dependencies of a StatefulWidget change?",
-      "choices": [
-        "initState()",
-        "didChangeDependencies()",
-        "dispose()",
-        "reassemble()"
-      ],
-      "answer": "didChangeDependencies()"
-    },
-    {
-      "id": 3,
-      "question": "What does the 'mounted' property indicate in a State object?",
-      "choices": [
-        "Widget is visible on screen",
-        "State object is currently in the widget tree",
-        "Widget has children",
-        "Widget is stateless"
-      ],
-      "answer": "State object is currently in the widget tree"
-    },
-    {
-      "id": 4,
-      "question": "Which widget is best for rebuilding only a small part of the UI on state change?",
-      "choices": [
-        "FutureBuilder",
-        "StreamBuilder",
-        "ValueListenableBuilder",
-        "Builder"
-      ],
-      "answer": "ValueListenableBuilder"
-    },
-    {
-      "id": 5,
-      "question": "What is the purpose of keys in Flutter?",
-      "choices": [
-        "Improve app performance",
-        "Identify widgets uniquely in the widget tree",
-        "Store local state",
-        "Manage routes"
-      ],
-      "answer": "Identify widgets uniquely in the widget tree"
-    },
-    {
-      "id": 6,
-      "question": "Which type of key preserves state when widgets reorder?",
-      "choices": [
-        "Key",
-        "UniqueKey",
-        "GlobalKey",
-        "ValueKey"
-      ],
-      "answer": "ValueKey"
-    },
-    {
-      "id": 7,
-      "question": "What is the default constructor behavior in Dart if none is defined?",
-      "choices": [
-        "Private constructor",
-        "Factory constructor",
-        "Default unnamed constructor",
-        "No constructor is created"
-      ],
-      "answer": "Default unnamed constructor"
-    },
-    {
-      "id": 8,
-      "question": "Which keyword is used to create a named constructor?",
-      "choices": [
-        "named",
-        "this",
-        "className.constructorName",
-        "factory"
-      ],
-      "answer": "className.constructorName"
-    },
-    {
-      "id": 9,
-      "question": "What does the late keyword do in Dart?",
-      "choices": [
-        "Delays variable creation",
-        "Allows non-null variable initialization later",
-        "Makes variable constant",
-        "Makes variable nullable"
-      ],
-      "answer": "Allows non-null variable initialization later"
-    },
-    {
-      "id": 10,
-      "question": "Which widget should be used for efficient long lists?",
-      "choices": [
-        "Column",
-        "ListView",
-        "ListView.builder",
-        "SingleChildScrollView"
-      ],
-      "answer": "ListView.builder"
-    },
-    {
-      "id": 11,
-      "question": "What does async return if no explicit return type is specified?",
-      "choices": [
-        "void",
-        "Future<void>",
-        "Future<dynamic>",
-        "dynamic"
-      ],
-      "answer": "Future<dynamic>"
-    },
-    {
-      "id": 12,
-      "question": "Which mixin is commonly used for animations in Flutter?",
-      "choices": [
-        "TickerProviderStateMixin",
-        "AnimationMixin",
-        "StateMixin",
-        "SingleTickerMixin"
-      ],
-      "answer": "TickerProviderStateMixin"
-    },
-    {
-      "id": 13,
-      "question": "What does setState() actually trigger?",
-      "choices": [
-        "Recreates widget",
-        "Calls dispose()",
-        "Marks widget subtree for rebuild",
-        "Restarts app"
-      ],
-      "answer": "Marks widget subtree for rebuild"
-    },
-    {
-      "id": 14,
-      "question": "Which widget helps avoid rebuilding unnecessary widgets?",
-      "choices": [
-        "Builder",
-        "RepaintBoundary",
-        "InheritedWidget",
-        "Expanded"
-      ],
-      "answer": "RepaintBoundary"
-    },
-    {
-      "id": 15,
-      "question": "What is the purpose of InheritedWidget?",
-      "choices": [
-        "Navigation",
-        "Theme styling",
-        "Share data down the widget tree",
-        "Animation control"
-      ],
-      "answer": "Share data down the widget tree"
-    },
-    {
-      "id": 16,
-      "question": "Which lifecycle method is called after initState()?",
-      "choices": [
-        "build()",
-        "didUpdateWidget()",
-        "didChangeDependencies()",
-        "dispose()"
-      ],
-      "answer": "didChangeDependencies()"
-    },
-    {
-      "id": 17,
-      "question": "What happens if you call setState() after dispose()?",
-      "choices": [
-        "Nothing",
-        "App restarts",
-        "Runtime error",
-        "Widget rebuilds"
-      ],
-      "answer": "Runtime error"
-    },
-    {
-      "id": 18,
-      "question": "Which operator is used for null-coalescing in Dart?",
-      "choices": [
-        "?.",
-        "??",
-        "!!",
-        "::"
-      ],
-      "answer": "??"
-    },
-    {
-      "id": 19,
-      "question": "Which class is used for handling streams of asynchronous data?",
-      "choices": [
-        "Future",
-        "Stream",
-        "Async",
-        "Controller"
-      ],
-      "answer": "Stream"
-    },
-    {
-      "id": 20,
-      "question": "Which widget rebuilds based on a Stream?",
-      "choices": [
-        "FutureBuilder",
-        "StreamBuilder",
-        "Builder",
-        "LayoutBuilder"
-      ],
-      "answer": "StreamBuilder"
-    },
-    {
-      "id": 21,
-      "question": "What is the purpose of factory constructor?",
-      "choices": [
-        "Always creates new instance",
-        "Returns existing instance or subclass",
-        "Prevents object creation",
-        "Creates private constructor"
-      ],
-      "answer": "Returns existing instance or subclass"
-    },
-    {
-      "id": 22,
-      "question": "Which method is used to update widget configuration?",
-      "choices": [
-        "didUpdateWidget()",
-        "initState()",
-        "build()",
-        "dispose()"
-      ],
-      "answer": "didUpdateWidget()"
-    },
-    {
-      "id": 23,
-      "question": "What is the difference between main axis and cross axis?",
-      "choices": [
-        "Width and height",
-        "Primary and perpendicular direction",
-        "Top and bottom",
-        "Left and right"
-      ],
-      "answer": "Primary and perpendicular direction"
-    },
-    {
-      "id": 24,
-      "question": "Which widget forces its child to fill available space?",
-      "choices": [
-        "Expanded",
-        "Flexible",
-        "Container",
-        "SizedBox"
-      ],
-      "answer": "Expanded"
-    },
-    {
-      "id": 25,
-      "question": "What does Navigator.pop(context) do?",
-      "choices": [
-        "Closes app",
-        "Pushes new route",
-        "Removes top route",
-        "Reloads screen"
-      ],
-      "answer": "Removes top route"
-    },
-    {
-      "id": 26,
-      "question": "Which method converts JSON string to Dart object?",
-      "choices": [
-        "jsonEncode()",
-        "jsonDecode()",
-        "parseJson()",
-        "decodeJson()"
-      ],
-      "answer": "jsonDecode()"
-    },
-    {
-      "id": 27,
-      "question": "Which widget provides layout constraints information?",
-      "choices": [
-        "Builder",
-        "LayoutBuilder",
-        "MediaQuery",
-        "Container"
-      ],
-      "answer": "LayoutBuilder"
-    },
-    {
-      "id": 28,
-      "question": "What is hot reload mainly used for?",
-      "choices": [
-        "Reset app state",
-        "Compile app",
-        "Update UI without losing state",
-        "Clean project"
-      ],
-      "answer": "Update UI without losing state"
-    },
-    {
-      "id": 29,
-      "question": "Which class manages focus in input fields?",
-      "choices": [
-        "FocusNode",
-        "InputController",
-        "TextManager",
-        "KeyboardNode"
-      ],
-      "answer": "FocusNode"
-    },
-    {
-      "id": 30,
-      "question": "Which widget is used for custom drawing?",
-      "choices": [
-        "Canvas",
-        "CustomPaint",
-        "PaintWidget",
-        "DrawView"
-      ],
-      "answer": "CustomPaint"
-    },
-    {
-      "id": 31,
-      "question": "What does const constructor improve?",
-      "choices": [
-        "Memory usage by reusing instances",
-        "Network speed",
-        "Animation speed",
-        "Navigation performance"
-      ],
-      "answer": "Memory usage by reusing instances"
-    },
-    {
-      "id": 32,
-      "question": "Which widget is used for adaptive layouts?",
-      "choices": [
-        "MediaQuery",
-        "LayoutBuilder",
-        "Flexible",
-        "Expanded"
-      ],
-      "answer": "MediaQuery"
-    },
-    {
-      "id": 33,
-      "question": "Which operator spreads elements of a collection?",
-      "choices": [
-        "...",
-        "??",
-        "=>",
-        "::"
-      ],
-      "answer": "..."
-    },
-    {
-      "id": 34,
-      "question": "Which keyword is used for abstract classes?",
-      "choices": [
-        "virtual",
-        "abstract",
-        "sealed",
-        "interface"
-      ],
-      "answer": "abstract"
-    },
-    {
-      "id": 35,
-      "question": "Which widget allows flexible space but does not force expansion?",
-      "choices": [
-        "Expanded",
-        "Flexible",
-        "Spacer",
-        "SizedBox"
-      ],
-      "answer": "Flexible"
-    },
-    {
-      "id": 36,
-      "question": "What is a Future in Dart?",
-      "choices": [
-        "Synchronous value",
-        "Delayed computation result",
-        "Loop controller",
-        "UI builder"
-      ],
-      "answer": "Delayed computation result"
-    },
-    {
-      "id": 37,
-      "question": "Which widget rebuilds based on Future completion?",
-      "choices": [
-        "StreamBuilder",
-        "FutureBuilder",
-        "Builder",
-        "AsyncBuilder"
-      ],
-      "answer": "FutureBuilder"
-    },
-    {
-      "id": 38,
-      "question": "Which method is used to remove listeners?",
-      "choices": [
-        "remove()",
-        "dispose()",
-        "removeListener()",
-        "clearListener()"
-      ],
-      "answer": "removeListener()"
-    },
-    {
-      "id": 39,
-      "question": "Which property controls how a Stack positions children?",
-      "choices": [
-        "alignment",
-        "direction",
-        "spacing",
-        "axis"
-      ],
-      "answer": "alignment"
-    },
-    {
-      "id": 40,
-      "question": "Which widget handles gestures with ripple effect?",
-      "choices": [
-        "GestureDetector",
-        "Listener",
-        "InkWell",
-        "Detector"
-      ],
-      "answer": "InkWell"
-    },
-    {
-      "id": 41,
-      "question": "Which class is base class for all widgets?",
-      "choices": [
-        "Element",
-        "BuildContext",
-        "Widget",
-        "RenderObject"
-      ],
-      "answer": "Widget"
-    },
-    {
-      "id": 42,
-      "question": "Which object holds location in the widget tree?",
-      "choices": [
-        "Widget",
-        "Element",
-        "BuildContext",
-        "State"
-      ],
-      "answer": "BuildContext"
-    },
-    {
-      "id": 43,
-      "question": "Which function is used for logging in Dart?",
-      "choices": [
-        "print()",
-        "console.log()",
-        "logPrint()",
-        "echo()"
-      ],
-      "answer": "print()"
-    },
-    {
-      "id": 44,
-      "question": "Which widget is used for slivers?",
-      "choices": [
-        "CustomScrollView",
-        "ListView",
-        "Column",
-        "GridView"
-      ],
-      "answer": "CustomScrollView"
-    },
-    {
-      "id": 45,
-      "question": "Which lifecycle method is called when widget is removed temporarily?",
-      "choices": [
-        "dispose()",
-        "deactivate()",
-        "didUpdateWidget()",
-        "initState()"
-      ],
-      "answer": "deactivate()"
-    },
-    {
-      "id": 46,
-      "question": "Which keyword creates a constant constructor?",
-      "choices": [
-        "final",
-        "const",
-        "static",
-        "immutable"
-      ],
-      "answer": "const"
-    },
-    {
-      "id": 47,
-      "question": "Which widget provides theme data to descendants?",
-      "choices": [
-        "Theme",
-        "MaterialApp",
-        "InheritedWidget",
-        "Scaffold"
-      ],
-      "answer": "Theme"
-    },
-    {
-      "id": 48,
-      "question": "Which function encodes Dart object to JSON?",
-      "choices": [
-        "jsonEncode()",
-        "jsonDecode()",
-        "encodeJson()",
-        "parseJson()"
-      ],
-      "answer": "jsonEncode()"
-    },
-    {
-      "id": 49,
-      "question": "Which class handles animations?",
-      "choices": [
-        "AnimationController",
-        "Animator",
-        "MotionController",
-        "TransitionManager"
-      ],
-      "answer": "AnimationController"
-    },
-    {
-      "id": 50,
-      "question": "Which widget listens to layout changes of its parent?",
-      "choices": [
-        "Builder",
-        "LayoutBuilder",
-        "MediaQuery",
-        "Container"
-      ],
-      "answer": "LayoutBuilder"
-    }
-  ]
+  {
+    "id": 1,
+    "question": "What is the difference between final and const in Dart?",
+    "choices": [
+      "final is compile-time constant, const is runtime constant",
+      "const is compile-time constant, final is runtime constant",
+      "Both are runtime constants",
+      "Both are compile-time constants"
+    ],
+    "answer": "const is compile-time constant, final is runtime constant"
+  },
+  {
+    "id": 2,
+    "question": "Which method is called when dependencies of a StatefulWidget change?",
+    "choices": [
+      "initState()",
+      "didChangeDependencies()",
+      "dispose()",
+      "reassemble()"
+    ],
+    "answer": "didChangeDependencies()"
+  },
+  {
+    "id": 3,
+    "question": "What does the 'mounted' property indicate in a State object?",
+    "choices": [
+      "Widget is visible on screen",
+      "State object is currently in the widget tree",
+      "Widget has children",
+      "Widget is stateless"
+    ],
+    "answer": "State object is currently in the widget tree"
+  },
+  {
+    "id": 4,
+    "question": "Which widget is best for rebuilding only a small part of the UI on state change?",
+    "choices": [
+      "FutureBuilder",
+      "StreamBuilder",
+      "ValueListenableBuilder",
+      "Builder"
+    ],
+    "answer": "ValueListenableBuilder"
+  },
+  {
+    "id": 5,
+    "question": "What is the purpose of keys in Flutter?",
+    "choices": [
+      "Improve app performance",
+      "Identify widgets uniquely in the widget tree",
+      "Store local state",
+      "Manage routes"
+    ],
+    "answer": "Identify widgets uniquely in the widget tree"
+  },
+  {
+    "id": 6,
+    "question": "Which type of key preserves state when widgets reorder?",
+    "choices": ["Key", "UniqueKey", "GlobalKey", "ValueKey"],
+    "answer": "ValueKey"
+  },
+  {
+    "id": 7,
+    "question": "What is the default constructor behavior in Dart if none is defined?",
+    "choices": [
+      "Private constructor",
+      "Factory constructor",
+      "Default unnamed constructor",
+      "No constructor is created"
+    ],
+    "answer": "Default unnamed constructor"
+  },
+  {
+    "id": 8,
+    "question": "Which keyword is used to create a named constructor?",
+    "choices": ["named", "this", "className.constructorName", "factory"],
+    "answer": "className.constructorName"
+  },
+  {
+    "id": 9,
+    "question": "What does the late keyword do in Dart?",
+    "choices": [
+      "Delays variable creation",
+      "Allows non-null variable initialization later",
+      "Makes variable constant",
+      "Makes variable nullable"
+    ],
+    "answer": "Allows non-null variable initialization later"
+  },
+  {
+    "id": 10,
+    "question": "Which widget should be used for efficient long lists?",
+    "choices": [
+      "Column",
+      "ListView",
+      "ListView.builder",
+      "SingleChildScrollView"
+    ],
+    "answer": "ListView.builder"
+  },
+  {
+    "id": 11,
+    "question": "What does async return if no explicit return type is specified?",
+    "choices": ["void", "Future<void>", "Future<dynamic>", "dynamic"],
+    "answer": "Future<dynamic>"
+  },
+  {
+    "id": 12,
+    "question": "Which mixin is commonly used for animations in Flutter?",
+    "choices": [
+      "TickerProviderStateMixin",
+      "AnimationMixin",
+      "StateMixin",
+      "SingleTickerMixin"
+    ],
+    "answer": "TickerProviderStateMixin"
+  },
+  {
+    "id": 13,
+    "question": "What does setState() actually trigger?",
+    "choices": [
+      "Recreates widget",
+      "Calls dispose()",
+      "Marks widget subtree for rebuild",
+      "Restarts app"
+    ],
+    "answer": "Marks widget subtree for rebuild"
+  },
+  {
+    "id": 14,
+    "question": "Which widget helps avoid rebuilding unnecessary widgets?",
+    "choices": ["Builder", "RepaintBoundary", "InheritedWidget", "Expanded"],
+    "answer": "RepaintBoundary"
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of InheritedWidget?",
+    "choices": [
+      "Navigation",
+      "Theme styling",
+      "Share data down the widget tree",
+      "Animation control"
+    ],
+    "answer": "Share data down the widget tree"
+  },
+  {
+    "id": 16,
+    "question": "Which lifecycle method is called after initState()?",
+    "choices": [
+      "build()",
+      "didUpdateWidget()",
+      "didChangeDependencies()",
+      "dispose()"
+    ],
+    "answer": "didChangeDependencies()"
+  },
+  {
+    "id": 17,
+    "question": "What happens if you call setState() after dispose()?",
+    "choices": ["Nothing", "App restarts", "Runtime error", "Widget rebuilds"],
+    "answer": "Runtime error"
+  },
+  {
+    "id": 18,
+    "question": "Which operator is used for null-coalescing in Dart?",
+    "choices": ["?.", "??", "!!", "::"],
+    "answer": "??"
+  },
+  {
+    "id": 19,
+    "question": "Which class is used for handling streams of asynchronous data?",
+    "choices": ["Future", "Stream", "Async", "Controller"],
+    "answer": "Stream"
+  },
+  {
+    "id": 20,
+    "question": "Which widget rebuilds based on a Stream?",
+    "choices": ["FutureBuilder", "StreamBuilder", "Builder", "LayoutBuilder"],
+    "answer": "StreamBuilder"
+  },
+  {
+    "id": 21,
+    "question": "What is the purpose of factory constructor?",
+    "choices": [
+      "Always creates new instance",
+      "Returns existing instance or subclass",
+      "Prevents object creation",
+      "Creates private constructor"
+    ],
+    "answer": "Returns existing instance or subclass"
+  },
+  {
+    "id": 22,
+    "question": "Which method is used to update widget configuration?",
+    "choices": ["didUpdateWidget()", "initState()", "build()", "dispose()"],
+    "answer": "didUpdateWidget()"
+  },
+  {
+    "id": 23,
+    "question": "What is the difference between main axis and cross axis?",
+    "choices": [
+      "Width and height",
+      "Primary and perpendicular direction",
+      "Top and bottom",
+      "Left and right"
+    ],
+    "answer": "Primary and perpendicular direction"
+  },
+  {
+    "id": 24,
+    "question": "Which widget forces its child to fill available space?",
+    "choices": ["Expanded", "Flexible", "Container", "SizedBox"],
+    "answer": "Expanded"
+  },
+  {
+    "id": 25,
+    "question": "What does Navigator.pop(context) do?",
+    "choices": [
+      "Closes app",
+      "Pushes new route",
+      "Removes top route",
+      "Reloads screen"
+    ],
+    "answer": "Removes top route"
+  },
+  {
+    "id": 26,
+    "question": "Which method converts JSON string to Dart object?",
+    "choices": ["jsonEncode()", "jsonDecode()", "parseJson()", "decodeJson()"],
+    "answer": "jsonDecode()"
+  },
+  {
+    "id": 27,
+    "question": "Which widget provides layout constraints information?",
+    "choices": ["Builder", "LayoutBuilder", "MediaQuery", "Container"],
+    "answer": "LayoutBuilder"
+  },
+  {
+    "id": 28,
+    "question": "What is hot reload mainly used for?",
+    "choices": [
+      "Reset app state",
+      "Compile app",
+      "Update UI without losing state",
+      "Clean project"
+    ],
+    "answer": "Update UI without losing state"
+  },
+  {
+    "id": 29,
+    "question": "Which class manages focus in input fields?",
+    "choices": ["FocusNode", "InputController", "TextManager", "KeyboardNode"],
+    "answer": "FocusNode"
+  },
+  {
+    "id": 30,
+    "question": "Which widget is used for custom drawing?",
+    "choices": ["Canvas", "CustomPaint", "PaintWidget", "DrawView"],
+    "answer": "CustomPaint"
+  },
+  {
+    "id": 31,
+    "question": "What does const constructor improve?",
+    "choices": [
+      "Memory usage by reusing instances",
+      "Network speed",
+      "Animation speed",
+      "Navigation performance"
+    ],
+    "answer": "Memory usage by reusing instances"
+  },
+  {
+    "id": 32,
+    "question": "Which widget is used for adaptive layouts?",
+    "choices": ["MediaQuery", "LayoutBuilder", "Flexible", "Expanded"],
+    "answer": "MediaQuery"
+  },
+  {
+    "id": 33,
+    "question": "Which operator spreads elements of a collection?",
+    "choices": ["...", "??", "=>", "::"],
+    "answer": "..."
+  },
+  {
+    "id": 34,
+    "question": "Which keyword is used for abstract classes?",
+    "choices": ["virtual", "abstract", "sealed", "interface"],
+    "answer": "abstract"
+  },
+  {
+    "id": 35,
+    "question": "Which widget allows flexible space but does not force expansion?",
+    "choices": ["Expanded", "Flexible", "Spacer", "SizedBox"],
+    "answer": "Flexible"
+  },
+  {
+    "id": 36,
+    "question": "What is a Future in Dart?",
+    "choices": [
+      "Synchronous value",
+      "Delayed computation result",
+      "Loop controller",
+      "UI builder"
+    ],
+    "answer": "Delayed computation result"
+  },
+  {
+    "id": 37,
+    "question": "Which widget rebuilds based on Future completion?",
+    "choices": ["StreamBuilder", "FutureBuilder", "Builder", "AsyncBuilder"],
+    "answer": "FutureBuilder"
+  },
+  {
+    "id": 38,
+    "question": "Which method is used to remove listeners?",
+    "choices": ["remove()", "dispose()", "removeListener()", "clearListener()"],
+    "answer": "removeListener()"
+  },
+  {
+    "id": 39,
+    "question": "Which property controls how a Stack positions children?",
+    "choices": ["alignment", "direction", "spacing", "axis"],
+    "answer": "alignment"
+  },
+  {
+    "id": 40,
+    "question": "Which widget handles gestures with ripple effect?",
+    "choices": ["GestureDetector", "Listener", "InkWell", "Detector"],
+    "answer": "InkWell"
+  },
+  {
+    "id": 41,
+    "question": "Which class is base class for all widgets?",
+    "choices": ["Element", "BuildContext", "Widget", "RenderObject"],
+    "answer": "Widget"
+  },
+  {
+    "id": 42,
+    "question": "Which object holds location in the widget tree?",
+    "choices": ["Widget", "Element", "BuildContext", "State"],
+    "answer": "BuildContext"
+  },
+  {
+    "id": 43,
+    "question": "Which function is used for logging in Dart?",
+    "choices": ["print()", "console.log()", "logPrint()", "echo()"],
+    "answer": "print()"
+  },
+  {
+    "id": 44,
+    "question": "Which widget is used for slivers?",
+    "choices": ["CustomScrollView", "ListView", "Column", "GridView"],
+    "answer": "CustomScrollView"
+  },
+  {
+    "id": 45,
+    "question": "Which lifecycle method is called when widget is removed temporarily?",
+    "choices": [
+      "dispose()",
+      "deactivate()",
+      "didUpdateWidget()",
+      "initState()"
+    ],
+    "answer": "deactivate()"
+  },
+  {
+    "id": 46,
+    "question": "Which keyword creates a constant constructor?",
+    "choices": ["final", "const", "static", "immutable"],
+    "answer": "const"
+  },
+  {
+    "id": 47,
+    "question": "Which widget provides theme data to descendants?",
+    "choices": ["Theme", "MaterialApp", "InheritedWidget", "Scaffold"],
+    "answer": "Theme"
+  },
+  {
+    "id": 48,
+    "question": "Which function encodes Dart object to JSON?",
+    "choices": ["jsonEncode()", "jsonDecode()", "encodeJson()", "parseJson()"],
+    "answer": "jsonEncode()"
+  },
+  {
+    "id": 49,
+    "question": "Which class handles animations?",
+    "choices": [
+      "AnimationController",
+      "Animator",
+      "MotionController",
+      "TransitionManager"
+    ],
+    "answer": "AnimationController"
+  },
+  {
+    "id": 50,
+    "question": "Which widget listens to layout changes of its parent?",
+    "choices": ["Builder", "LayoutBuilder", "MediaQuery", "Container"],
+    "answer": "LayoutBuilder"
+  },
+  {
+    "id": 51,
+    "question": "What is the primary difference between an Isolate and a Thread in Dart?",
+    "choices": [
+      "Isolates share memory, threads do not",
+      "Isolates do not share memory and communicate via ports",
+      "Isolates are for UI, threads are for background",
+      "Dart does not use Isolates"
+    ],
+    "answer": "Isolates do not share memory and communicate via ports"
+  },
+  {
+    "id": 52,
+    "question": "Which Dart feature allows adding functionality to existing libraries without subclassing?",
+    "choices": ["Mixins", "Extensions", "Interfaces", "Implements"],
+    "answer": "Extensions"
+  },
+  {
+    "id": 53,
+    "question": "In the Flutter rendering pipeline, what comes immediately after the Widget Tree?",
+    "choices": ["Render Tree", "Element Tree", "State Tree", "Layer Tree"],
+    "answer": "Element Tree"
+  },
+  {
+    "id": 54,
+    "question": "Which widget would you use to listen to changes in the orientation of the device specifically?",
+    "choices": [
+      "LayoutBuilder",
+      "OrientationBuilder",
+      "MediaQuery",
+      "AspectWidget"
+    ],
+    "answer": "OrientationBuilder"
+  },
+  {
+    "id": 55,
+    "question": "What is the purpose of the 'rethrow' keyword in a catch block?",
+    "choices": [
+      "To ignore the error",
+      "To preserve the original stack trace while throwing again",
+      "To restart the try block",
+      "To clear the error"
+    ],
+    "answer": "To preserve the original stack trace while throwing again"
+  },
+  {
+    "id": 56,
+    "question": "Which method is used to notify a Listenable's observers?",
+    "choices": ["notifyListeners()", "setState()", "update()", "broadcast()"],
+    "answer": "notifyListeners()"
+  },
+  {
+    "id": 57,
+    "question": "What does 'tree shaking' refer to in Flutter web/mobile builds?",
+    "choices": [
+      "Removing unused code and assets",
+      "Optimizing the widget tree",
+      "Reducing animation lag",
+      "Clearing the cache"
+    ],
+    "answer": "Removing unused code and assets"
+  },
+  {
+    "id": 58,
+    "question": "Which constructor type is used to prevent a class from being instantiated from outside its library?",
+    "choices": [
+      "Private constructor (_)",
+      "Factory constructor",
+      "Const constructor",
+      "Abstract constructor"
+    ],
+    "answer": "Private constructor (_)"
+  },
+  {
+    "id": 59,
+    "question": "In a CustomPainter, which method is called to determine if the painting needs to be updated?",
+    "choices": [
+      "shouldRepaint",
+      "updatePaint",
+      "rebuild",
+      "didChangeDependencies"
+    ],
+    "answer": "shouldRepaint"
+  },
+  {
+    "id": 60,
+    "question": "Which widget is used to prevent the user from interacting with widgets behind it?",
+    "choices": ["IgnorePointer", "AbsorbPointer", "BackdropFilter", "Opacity"],
+    "answer": "AbsorbPointer"
+  },
+  {
+    "id": 61,
+    "question": "What is the role of a 'Ticker' in Flutter?",
+    "choices": [
+      "To track time for animations",
+      "To handle network timeouts",
+      "To count widget rebuilds",
+      "To manage the event loop"
+    ],
+    "answer": "To track time for animations"
+  },
+  {
+    "id": 62,
+    "question": "Which operator is used to perform a bitwise XOR in Dart?",
+    "choices": ["|", "&", "^", "~"],
+    "answer": "^"
+  },
+  {
+    "id": 63,
+    "question": "What does the 'yield' keyword do in a Dart generator function?",
+    "choices": [
+      "Returns a final value",
+      "Pauses execution and produces a value for a Stream/Iterable",
+      "Terminates the loop",
+      "Throws an error"
+    ],
+    "answer": "Pauses execution and produces a value for a Stream/Iterable"
+  },
+  {
+    "id": 64,
+    "question": "Which class provides the 'compute' function for running code in a separate isolate?",
+    "choices": ["dart:ui", "foundation.dart", "dart:isolate", "services.dart"],
+    "answer": "foundation.dart"
+  },
+  {
+    "id": 65,
+    "question": "What is the 'Golden File' test used for in Flutter?",
+    "choices": [
+      "Unit testing logic",
+      "Comparing UI rendering against a master image",
+      "Testing database performance",
+      "Checking memory leaks"
+    ],
+    "answer": "Comparing UI rendering against a master image"
+  },
+  {
+    "id": 66,
+    "question": "Which widget is best for creating parallax or sticky header effects?",
+    "choices": ["ListView", "SliverAppBar", "Stack", "Column"],
+    "answer": "SliverAppBar"
+  },
+  {
+    "id": 67,
+    "question": "What is the difference between a Stream and a BroadcastStream?",
+    "choices": [
+      "BroadcastStream can have multiple listeners",
+      "Stream is faster",
+      "BroadcastStream is for single use",
+      "There is no difference"
+    ],
+    "answer": "BroadcastStream can have multiple listeners"
+  },
+  {
+    "id": 68,
+    "question": "Which Dart keyword ensures that a class can only be extended, not implemented?",
+    "choices": ["base", "interface", "final", "sealed"],
+    "answer": "base"
+  },
+  {
+    "id": 69,
+    "question": "What is the purpose of the 'Semantics' widget?",
+    "choices": [
+      "To improve performance",
+      "To provide accessibility information for screen readers",
+      "To define the app's color scheme",
+      "To handle deep linking"
+    ],
+    "answer": "To provide accessibility information for screen readers"
+  },
+  {
+    "id": 70,
+    "question": "Which method in the State lifecycle is called when the widget is moved from one location in the tree to another using a GlobalKey?",
+    "choices": ["didUpdateWidget", "deactivate", "reassemble", "initState"],
+    "answer": "deactivate"
+  },
+  {
+    "id": 71,
+    "question": "In Dart, what is a 'typedef' used for?",
+    "choices": [
+      "Creating an alias for a function type",
+      "Defining a new class",
+      "Making a variable immutable",
+      "Importing a library"
+    ],
+    "answer": "Creating an alias for a function type"
+  },
+  {
+    "id": 72,
+    "question": "Which widget can be used to monitor the size and position of another widget?",
+    "choices": [
+      "CompositedTransformTarget",
+      "LayoutBuilder",
+      "GlobalKey",
+      "FractionallySizedBox"
+    ],
+    "answer": "CompositedTransformTarget"
+  },
+  {
+    "id": 73,
+    "question": "What is the 'MainBundle' in the context of Flutter assets?",
+    "choices": [
+      "The main.dart file",
+      "The logical container for all app assets",
+      "The pubspec.yaml file",
+      "The root widget"
+    ],
+    "answer": "The logical container for all app assets"
+  },
+  {
+    "id": 74,
+    "question": "Which operator allows you to call a method on an object only if it is not null, otherwise returning null?",
+    "choices": ["?.", "??", "as", "??"],
+    "answer": "?."
+  },
+  {
+    "id": 75,
+    "question": "What is a 'covariant' keyword used for in Dart parameters?",
+    "choices": [
+      "To allow a tighter type in a subclass override",
+      "To make a variable constant",
+      "To handle async data",
+      "To ignore type checking"
+    ],
+    "answer": "To allow a tighter type in a subclass override"
+  },
+  {
+    "id": 76,
+    "question": "Which widget is specifically designed to handle 'WillPopScope' logic for Android back buttons in newer Flutter versions?",
+    "choices": ["PopScope", "Navigator", "BackListener", "WillPopScope"],
+    "answer": "PopScope"
+  },
+  {
+    "id": 77,
+    "question": "What is the purpose of 'ServicesBinding' in Flutter?",
+    "choices": [
+      "To manage the app theme",
+      "To bridge the Flutter framework with the host platform",
+      "To handle widget state",
+      "To compile the app"
+    ],
+    "answer": "To bridge the Flutter framework with the host platform"
+  },
+  {
+    "id": 78,
+    "question": "Which Dart collection allows you to maintain the insertion order of keys while providing fast lookup?",
+    "choices": ["LinkedHashMap", "HashMap", "SplayTreeMap", "HashSet"],
+    "answer": "LinkedHashMap"
+  },
+  {
+    "id": 79,
+    "question": "Which widget is used to restrict a child's aspect ratio?",
+    "choices": [
+      "AspectRatio",
+      "FractionallySizedBox",
+      "ConstrainedBox",
+      "BoxedWidget"
+    ],
+    "answer": "AspectRatio"
+  },
+  {
+    "id": 80,
+    "question": "What does 'JIT' stand for in the context of Dart development?",
+    "choices": [
+      "Just-In-Time compilation",
+      "Joint Integration Tool",
+      "Jump Instruction Table",
+      "JavaScript Interface Template"
+    ],
+    "answer": "Just-In-Time compilation"
+  },
+  {
+    "id": 81,
+    "question": "Which widget is best for creating a 'Glassmorphism' effect?",
+    "choices": ["Opacity", "BackdropFilter", "ClipRect", "DecoratedBox"],
+    "answer": "BackdropFilter"
+  },
+  {
+    "id": 82,
+    "question": "What is the purpose of the 'mixin' keyword compared to 'abstract class'?",
+    "choices": [
+      "Mixins can hold state, abstract classes cannot",
+      "Mixins allow code reuse across multiple class hierarchies without inheritance",
+      "Mixins are for web only",
+      "Abstract classes cannot be instantiated"
+    ],
+    "answer": "Mixins allow code reuse across multiple class hierarchies without inheritance"
+  },
+  {
+    "id": 83,
+    "question": "Which method should you override to provide custom accessibility labels to a widget?",
+    "choices": [
+      "build",
+      "createRenderObject",
+      "describeSemanticsConfiguration",
+      "initState"
+    ],
+    "answer": "describeSemanticsConfiguration"
+  },
+  {
+    "id": 84,
+    "question": "What is the purpose of 'PhysicalModel' widget?",
+    "choices": [
+      "To manage physics simulations",
+      "To provide a clipping and elevation effect with a shadow",
+      "To render 3D objects",
+      "To handle touch input"
+    ],
+    "answer": "To provide a clipping and elevation effect with a shadow"
+  },
+  {
+    "id": 85,
+    "question": "Which Dart keyword is used to represent a constant that is evaluated at runtime, but only once?",
+    "choices": ["final", "const", "late", "static"],
+    "answer": "final"
+  },
+  {
+    "id": 86,
+    "question": "What is the function of 'Overlay' in Flutter?",
+    "choices": [
+      "To manage themes",
+      "To display widgets on top of others, like tooltips or dialogs",
+      "To handle background processes",
+      "To clip images"
+    ],
+    "answer": "To display widgets on top of others, like tooltips or dialogs"
+  },
+  {
+    "id": 87,
+    "question": "In Dart, what is the result of using 'sync*' in a function signature?",
+    "choices": [
+      "It returns a Future",
+      "It returns an Iterable",
+      "It returns a Stream",
+      "It blocks the UI thread"
+    ],
+    "answer": "It returns an Iterable"
+  },
+  {
+    "id": 88,
+    "question": "Which widget helps in ensuring that the UI adjusts when the on-screen keyboard appears?",
+    "choices": ["Scaffold", "SafeArea", "SingleChildScrollView", "Padding"],
+    "answer": "Scaffold"
+  },
+  {
+    "id": 90,
+    "question": "What is the difference between 'identical()' and '==' in Dart?",
+    "choices": [
+      "identical checks for reference equality, == checks for structural equality",
+      "identical is for strings only",
+      "== is faster",
+      "They are exactly the same"
+    ],
+    "answer": "identical checks for reference equality, == checks for structural equality"
+  },
+  {
+    "id": 91,
+    "question": "Which widget is used to keep the state of a child widget even when it's not visible (e.g., in a TabBarView)?",
+    "choices": [
+      "KeepAlive",
+      "AutomaticKeepAliveClientMixin",
+      "StatefulBuilder",
+      "Offstage"
+    ],
+    "answer": "AutomaticKeepAliveClientMixin"
+  },
+  {
+    "id": 92,
+    "question": "What does the 'show' keyword do in an import statement?",
+    "choices": [
+      "Shows all classes in the console",
+      "Imports only specific classes/functions from a library",
+      "Hides specific classes",
+      "Enables debugging for that library"
+    ],
+    "answer": "Imports only specific classes/functions from a library"
+  },
+  {
+    "id": 93,
+    "question": "Which method is used to manually trigger a frame in Flutter?",
+    "choices": ["scheduleFrame()", "drawFrame()", "update()", "forceRebuild()"],
+    "answer": "scheduleFrame()"
+  },
+  {
+    "id": 94,
+    "question": "What is a 'tear-off' in Dart?",
+    "choices": [
+      "A runtime error",
+      "Using a method name as a closure without calling it",
+      "A way to delete code",
+      "A performance optimization for lists"
+    ],
+    "answer": "Using a method name as a closure without calling it"
+  },
+  {
+    "id": 95,
+    "question": "Which widget would you use to create a 'swipe to dismiss' effect?",
+    "choices": [
+      "Dismissible",
+      "Draggable",
+      "GestureDetector",
+      "SlideTransition"
+    ],
+    "answer": "Dismissible"
+  },
+  {
+    "id": 96,
+    "question": "What is the purpose of 'IntrinsicHeight' widget?",
+    "choices": [
+      "To make a child as small as possible",
+      "To force children to be as tall as the tallest child",
+      "To set a fixed height",
+      "To improve scrolling speed"
+    ],
+    "answer": "To force children to be as tall as the tallest child"
+  },
+  {
+    "id": 97,
+    "question": "Which Dart operator is the 'cascade' operator?",
+    "choices": ["..", "...", "?.", "::"],
+    "answer": ".."
+  },
+  {
+    "id": 98,
+    "question": "What is the purpose of 'Flow' layout widget?",
+    "choices": [
+      "To create standard rows",
+      "To perform complex, high-performance custom layouts and animations",
+      "To handle text wrapping",
+      "To manage network streams"
+    ],
+    "answer": "To perform complex, high-performance custom layouts and animations"
+  },
+  {
+    "id": 99,
+    "question": "In Flutter, what is the 'Widget Inspector' primarily used for?",
+    "choices": [
+      "Writing code",
+      "Visualizing and debugging the widget tree",
+      "Managing dependencies",
+      "Running unit tests"
+    ],
+    "answer": "Visualizing and debugging the widget tree"
+  },
+  {
+    "id": 100,
+    "question": "What does 'AOT' stand for in Dart compilation?",
+    "choices": [
+      "Ahead-Of-Time compilation",
+      "Always-On-Top",
+      "Automatic-Object-Transfer",
+      "Asynchronous-Output-Task"
+    ],
+    "answer": "Ahead-Of-Time compilation"
+  },
+  {
+    "id": 101,
+    "question": "Which widget is used to listen to notifications bubbling up the widget tree?",
+    "choices": [
+      "NotificationListener",
+      "StreamBuilder",
+      "InheritedWidget",
+      "ValueListenableBuilder"
+    ],
+    "answer": "NotificationListener"
+  },
+  {
+    "id": 102,
+    "question": "What is the role of 'Layer' in the Flutter engine?",
+    "choices": [
+      "To store widget state",
+      "To represent a physical piece of the screen for compositing",
+      "To handle routing",
+      "To manage icons"
+    ],
+    "answer": "To represent a physical piece of the screen for compositing"
+  },
+  {
+    "id": 103,
+    "question": "Which class is used to create a custom controller for a ScrollView?",
+    "choices": [
+      "ScrollController",
+      "ListController",
+      "ViewController",
+      "PageController"
+    ],
+    "answer": "ScrollController"
+  },
+  {
+    "id": 104,
+    "question": "What is the 'Microtask' queue in Dart?",
+    "choices": [
+      "A queue for long-running tasks",
+      "A high-priority queue that runs before the next Event loop iteration",
+      "A storage for assets",
+      "A way to handle isolates"
+    ],
+    "answer": "A high-priority queue that runs before the next Event loop iteration"
+  },
+  {
+    "id": 105,
+    "question": "Which widget allows a widget to be dragged across the screen?",
+    "choices": ["Draggable", "Moveable", "GestureDetector", "Positioned"],
+    "answer": "Draggable"
+  },
+  {
+    "id": 106,
+    "question": "What is a 'Path' used for in CustomPaint?",
+    "choices": [
+      "Finding file locations",
+      "Defining complex shapes and lines for drawing",
+      "Managing routes",
+      "Setting asset paths"
+    ],
+    "answer": "Defining complex shapes and lines for drawing"
+  },
+  {
+    "id": 107,
+    "question": "Which property in a StatefulWidget's State class tells you if the widget is currently being updated?",
+    "choices": ["mounted", "dirty", "active", "building"],
+    "answer": "mounted"
+  },
+  {
+    "id": 108,
+    "question": "What is the purpose of 'InteractiveViewer'?",
+    "choices": [
+      "To play videos",
+      "To provide pan, zoom, and drag functionality to its child",
+      "To handle text input",
+      "To show dialogs"
+    ],
+    "answer": "To provide pan, zoom, and drag functionality to its child"
+  },
+  {
+    "id": 109,
+    "question": "Which Dart keyword is used to allow a variable to be reassigned, but only within the same class hierarchy?",
+    "choices": [
+      "protected",
+      "base",
+      "final",
+      "none of the above (Dart uses _ for privacy)"
+    ],
+    "answer": "none of the above (Dart uses _ for privacy)"
+  },
+  {
+    "id": 110,
+    "question": "What is the purpose of 'SliverGrid' compared to 'GridView'?",
+    "choices": [
+      "SliverGrid works inside a CustomScrollView",
+      "SliverGrid is for small lists",
+      "GridView is faster",
+      "SliverGrid is for web only"
+    ],
+    "answer": "SliverGrid works inside a CustomScrollView"
+  },
+  {
+    "id": 111,
+    "question": "Which widget is used to apply a transformation (rotation, scale) to its child?",
+    "choices": ["Transform", "RotateBox", "ScaleBox", "Container"],
+    "answer": "Transform"
+  },
+  {
+    "id": 112,
+    "question": "What is the 'FocusScope' used for?",
+    "choices": [
+      "To zoom into a widget",
+      "To manage a group of FocusNodes",
+      "To change the theme",
+      "To handle image focus"
+    ],
+    "answer": "To manage a group of FocusNodes"
+  },
+  {
+    "id": 113,
+    "question": "In Dart, what is a 'Symbol'?",
+    "choices": [
+      "A string used for reflection",
+      "An icon widget",
+      "A mathematical operator",
+      "A type of list"
+    ],
+    "answer": "A string used for reflection"
+  },
+  {
+    "id": 114,
+    "question": "Which method is called when the application's memory is low?",
+    "choices": [
+      "didHaveMemoryPressure",
+      "onLowMemory",
+      "dispose",
+      "deactivate"
+    ],
+    "answer": "didHaveMemoryPressure"
+  },
+  {
+    "id": 115,
+    "question": "What is the purpose of 'ListBody'?",
+    "choices": [
+      "To create scrollable lists",
+      "A layout widget that arranges children along a given axis without scrolling",
+      "To manage list state",
+      "To render HTML"
+    ],
+    "answer": "A layout widget that arranges children along a given axis without scrolling"
+  },
+  {
+    "id": 116,
+    "question": "Which widget is used to create a material 'Chip'?",
+    "choices": ["Chip", "Button", "Card", "Label"],
+    "answer": "Chip"
+  },
+  {
+    "id": 117,
+    "question": "What does the 'as' keyword do in Dart?",
+    "choices": [
+      "Checks type",
+      "Casts an object to a specific type",
+      "Renames an import",
+      "Creates a loop"
+    ],
+    "answer": "Casts an object to a specific type"
+  },
+  {
+    "id": 118,
+    "question": "Which widget is used to implement the 'ExpansionTile'?",
+    "choices": ["ExpansionTile", "ListView", "Stack", "Column"],
+    "answer": "ExpansionTile"
+  },
+  {
+    "id": 119,
+    "question": "What is 'Tree Shaking'?",
+    "choices": [
+      "Removing unused code during build",
+      "Optimizing UI layout",
+      "Testing the widget tree",
+      "Cleaning memory"
+    ],
+    "answer": "Removing unused code during build"
+  },
+  {
+    "id": 120,
+    "question": "Which class is used to listen to hardware keyboard events?",
+    "choices": [
+      "RawKeyboardListener",
+      "KeyboardNode",
+      "FocusNode",
+      "InputListener"
+    ],
+    "answer": "RawKeyboardListener"
+  },
+  {
+    "id": 121,
+    "question": "What is 'Canvas' in Flutter?",
+    "choices": [
+      "A drawing surface",
+      "A layout widget",
+      "A navigation tool",
+      "A state manager"
+    ],
+    "answer": "A drawing surface"
+  },
+  {
+    "id": 122,
+    "question": "Which widget is used to perform hit-testing on a child?",
+    "choices": ["MetaData", "Listener", "GestureDetector", "AbsorbPointer"],
+    "answer": "MetaData"
+  },
+  {
+    "id": 123,
+    "question": "What is the purpose of 'SizedBox.expand'?",
+    "choices": [
+      "To make the child as small as possible",
+      "To make the child as large as the parent allows",
+      "To set a specific height",
+      "To hide the widget"
+    ],
+    "answer": "To make the child as large as the parent allows"
+  },
+  {
+    "id": 124,
+    "question": "Which method in a State object is called when the app is reassembled during hot reload?",
+    "choices": ["reassemble", "initState", "didUpdateWidget", "build"],
+    "answer": "reassemble"
+  },
+  {
+    "id": 125,
+    "question": "What is a 'GlobalObjectKey'?",
+    "choices": [
+      "A key used for global state",
+      "A key that uses the identity of an object to uniquely identify a widget",
+      "A key for navigation",
+      "A key for assets"
+    ],
+    "answer": "A key that uses the identity of an object to uniquely identify a widget"
+  },
+  {
+    "id": 126,
+    "question": "Which widget is used to display a popup menu?",
+    "choices": ["PopupMenuButton", "DropdownButton", "Menu", "Select"],
+    "answer": "PopupMenuButton"
+  },
+  {
+    "id": 127,
+    "question": "What is 'Composition' in Flutter?",
+    "choices": [
+      "Inheriting from other widgets",
+      "Building complex UIs by nesting simpler widgets",
+      "Managing memory",
+      "Compiling to C++"
+    ],
+    "answer": "Building complex UIs by nesting simpler widgets"
+  },
+  {
+    "id": 128,
+    "question": "Which widget is used to apply a specific text style to all descendant Text widgets?",
+    "choices": ["DefaultTextStyle", "Theme", "TextStyle", "TextConfig"],
+    "answer": "DefaultTextStyle"
+  },
+  {
+    "id": 129,
+    "question": "What is the 'ImageCache' in Flutter?",
+    "choices": [
+      "A place to store images on disk",
+      "A singleton that handles caching of image data in memory",
+      "A cloud storage service",
+      "A widget"
+    ],
+    "answer": "A singleton that handles caching of image data in memory"
+  },
+  {
+    "id": 130,
+    "question": "Which widget is used to create a linear progress bar?",
+    "choices": [
+      "LinearProgressIndicator",
+      "CircularProgressIndicator",
+      "ProgressBar",
+      "LoadingLine"
+    ],
+    "answer": "LinearProgressIndicator"
+  },
+  {
+    "id": 131,
+    "question": "What is the purpose of 'FractionalTranslation'?",
+    "choices": [
+      "To move a widget by a pixel amount",
+      "To move a widget by a fraction of its own size",
+      "To scale a widget",
+      "To rotate a widget"
+    ],
+    "answer": "To move a widget by a fraction of its own size"
+  },
+  {
+    "id": 132,
+    "question": "Which widget is used to create a placeholder while an image is loading?",
+    "choices": ["FadeInImage", "ImagePlaceholder", "LoadingImage", "Stack"],
+    "answer": "FadeInImage"
+  },
+  {
+    "id": 133,
+    "question": "What is 'Hit Testing' in Flutter?",
+    "choices": [
+      "Testing code performance",
+      "Determining which widget is at a specific coordinate on the screen",
+      "Testing network speed",
+      "A type of unit test"
+    ],
+    "answer": "Determining which widget is at a specific coordinate on the screen"
+  },
+  {
+    "id": 134,
+    "question": "Which widget is used to apply a blur effect?",
+    "choices": ["BackdropFilter", "Opacity", "ClipRect", "ImageBlur"],
+    "answer": "BackdropFilter"
+  },
+  {
+    "id": 135,
+    "question": "What is the role of 'SemanticsNode'?",
+    "choices": [
+      "To store widget state",
+      "To represent a node in the accessibility tree",
+      "To handle touch events",
+      "To manage themes"
+    ],
+    "answer": "To represent a node in the accessibility tree"
+  },
+  {
+    "id": 136,
+    "question": "Which widget is used to create a page-flipping effect?",
+    "choices": ["PageView", "Stack", "Transform", "ListWheelScrollView"],
+    "answer": "PageView"
+  },
+  {
+    "id": 137,
+    "question": "What is the purpose of 'ErrorWidget'?",
+    "choices": [
+      "To show when a widget fails to build",
+      "To handle network errors",
+      "To debug logic",
+      "To show a dialog"
+    ],
+    "answer": "To show when a widget fails to build"
+  },
+  {
+    "id": 138,
+    "question": "Which widget is used to create a scrollable list with a 'magnification' effect?",
+    "choices": ["ListWheelScrollView", "ListView", "GridView", "Stack"],
+    "answer": "ListWheelScrollView"
+  },
+  {
+    "id": 139,
+    "question": "What is the purpose of 'InheritedModel'?",
+    "choices": [
+      "To share data across the app",
+      "To allow descendants to listen only to specific aspects of a model to avoid unnecessary rebuilds",
+      "To manage database models",
+      "To handle routing"
+    ],
+    "answer": "To allow descendants to listen only to specific aspects of a model to avoid unnecessary rebuilds"
+  },
+  {
+    "id": 140,
+    "question": "Which widget is used to create a custom 'Stepper'?",
+    "choices": ["Stepper", "Column", "Row", "Stack"],
+    "answer": "Stepper"
+  },
+  {
+    "id": 141,
+    "question": "What is 'RepaintBoundary' used for?",
+    "choices": [
+      "To group widgets for state",
+      "To create a separate display list for a subtree to improve performance during repainting",
+      "To handle image borders",
+      "To manage navigation"
+    ],
+    "answer": "To create a separate display list for a subtree to improve performance during repainting"
+  },
+  {
+    "id": 142,
+    "question": "Which widget is used to create a 'Badge'?",
+    "choices": ["Badge", "Stack", "Container", "Icon"],
+    "answer": "Badge"
+  },
+  {
+    "id": 143,
+    "question": "What is the purpose of 'CupertinoApp'?",
+    "choices": [
+      "To build Android apps",
+      "To build iOS-style apps using Apple's design language",
+      "To manage network state",
+      "To handle desktop builds"
+    ],
+    "answer": "To build iOS-style apps using Apple's design language"
+  },
+  {
+    "id": 144,
+    "question": "Which widget is used to create a 'Table' layout?",
+    "choices": ["Table", "GridView", "Column", "Row"],
+    "answer": "Table"
+  },
+  {
+    "id": 145,
+    "question": "What is 'Widget Binding'?",
+    "choices": [
+      "Connecting widgets to data",
+      "A class that binds the widget framework to the Flutter engine",
+      "A way to handle events",
+      "A debugging tool"
+    ],
+    "answer": "A class that binds the widget framework to the Flutter engine"
+  },
+  {
+    "id": 146,
+    "question": "Which widget is used to create a 'ToggleButtons' group?",
+    "choices": ["ToggleButtons", "Row", "Checkbox", "Switch"],
+    "answer": "ToggleButtons"
+  },
+  {
+    "id": 147,
+    "question": "What is the purpose of 'PhysicalShape'?",
+    "choices": [
+      "To create 3D models",
+      "To provide a clipping and elevation effect using a specific shape",
+      "To handle physics",
+      "To manage layouts"
+    ],
+    "answer": "To provide a clipping and elevation effect using a specific shape"
+  },
+  {
+    "id": 148,
+    "question": "Which widget is used to create a 'RangeSlider'?",
+    "choices": ["RangeSlider", "Slider", "Scrollbar", "ProgressBar"],
+    "answer": "RangeSlider"
+  },
+  {
+    "id": 149,
+    "question": "What is 'State Management'?",
+    "choices": [
+      "Managing the app's files",
+      "The process of managing and sharing data across widgets and screens",
+      "Managing memory",
+      "Managing the build process"
+    ],
+    "answer": "The process of managing and sharing data across widgets and screens"
+  },
+  {
+    "id": 150,
+    "question": "Which widget is used to create a 'SearchDelegate'?",
+    "choices": ["showSearch", "TextField", "SearchController", "SearchBox"],
+    "answer": "showSearch"
+  }
+]
