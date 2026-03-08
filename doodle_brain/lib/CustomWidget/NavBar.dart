@@ -1,7 +1,3 @@
-import 'package:doodle_brain/pages/GameHomeScreen.dart';
-import 'package:doodle_brain/pages/inventory.dart';
-import 'package:doodle_brain/pages/profileScreen.dart';
-import 'package:doodle_brain/pages/store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../controllers/cubit/NavigationCubit.dart';
@@ -53,23 +49,6 @@ Widget buildCustomNavBar(BuildContext context) {
   );
 }
 
-void navigatePages( BuildContext context,int index){
-  switch (index) {
-    case 0:
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => GameHomeScreen(),));
-      break;
-    case 1:
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => StoreScreen(),));
-      break; 
-    case 2:
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Inventory(),));
-      break; 
-    case 3:
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Profile(),));
-      break;
-  }
-}
-
 Widget buildNavIcon(
   BuildContext context,
   String imagePath,
@@ -79,8 +58,8 @@ Widget buildNavIcon(
 ) {
   bool isActive = currentIndex == index;
   return GestureDetector(
-    onTap: () { context.read<NavigationCubit>().updateIndex(index);
-    navigatePages(context, index);
+    onTap: () {
+       context.read<NavigationCubit>().updateIndex(index);
     },
     child: Column(
       mainAxisSize: MainAxisSize.min,

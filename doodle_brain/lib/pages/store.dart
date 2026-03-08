@@ -1,9 +1,6 @@
-import 'package:doodle_brain/CustomWidget/NavBar.dart';
-import 'package:doodle_brain/CustomWidget/Header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
 import 'package:doodle_brain/models/item_model.dart';
@@ -16,79 +13,24 @@ class StoreScreen extends StatelessWidget {
     return BlocBuilder<UserCubit, UserState>(
       builder: (context, state) {
         if (state is! UserLoaded) {
-          return const Scaffold(
-            body: Center(child: CircularProgressIndicator()),
-          );
+          return const Center(child: CircularProgressIndicator());
         }
 
         final characters = state.getShopCharacters();
         final weapons = state.getShopWeapons();
 
-        return Scaffold(
-          body: Stack(
+        return SingleChildScrollView(
+          child: Column(
             children: [
-              /// Background
-              Positioned.fill(
-                child: Image.asset(
-                  "lib/assets/graphics/background/1.png",
-                  fit: BoxFit.cover,
-                ),
-              ),
+              const SizedBox(height: 20),
 
-              Positioned.fill(
-                child: Container(color: Colors.white.withOpacity(0.2)),
-              ),
+              section(context, "CHARACTERS", characters),
 
-              SafeArea(
-                child: Column(
-                  children: [
-                    Header(context, title: "Store"),
-                    Expanded(
-                      child: SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            const SizedBox(height: 20),
-                
-                            /// ===== STORE TITLE =====
-                            // Column(
-                            //   children: [
-                            //     Text(
-                            //       "STORE",
-                            //       style: GoogleFonts.uncialAntiqua(
-                            //         fontSize: 44,
-                            //         fontWeight: FontWeight.bold,
-                            //         color: Colors.black,
-                            //       ),
-                            //     ),
-                            //     const SizedBox(height: 8),
-                            //     Container(
-                            //       width: 250,
-                            //       height: 6,
-                            //       decoration: BoxDecoration(
-                            //         color: const Color(0xffc26a2e),
-                            //         borderRadius: BorderRadius.circular(20),
-                            //       ),
-                            //     ),
-                            //   ],
-                            // ),
-                
-                            // const SizedBox(height: 10),
-                
-                            /// ===== CHARACTERS =====
-                            _section(context, "CHARACTERS", characters),
-                
-                            const SizedBox(height: 28),
-                
-                            /// ===== WEAPONS =====
-                            _section(context, "WEAPONS", weapons),
-                          ],
-                        ),
-                      ),
-                    ),
-                    buildCustomNavBar(context),
-                  ],
-                ),
-              ),
+              const SizedBox(height: 28),
+
+              section(context, "WEAPONS", weapons),
+
+              const SizedBox(height: 100),
             ],
           ),
         );
@@ -96,7 +38,7 @@ class StoreScreen extends StatelessWidget {
     );
   }
 
-  Widget _section(BuildContext context, String title, List<Item> items) {
+  Widget section(BuildContext context, String title, List<Item> items) {
     if (items.isEmpty) return const SizedBox();
 
     return Column(
@@ -106,7 +48,7 @@ class StoreScreen extends StatelessWidget {
           style: GoogleFonts.uncialAntiqua(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: Color(0xff2a1b14),
+            color: const Color(0xff2a1b14),
           ),
         ),
         const SizedBox(height: 22),
@@ -134,15 +76,13 @@ class StoreScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xffe6d2b5),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Color(0xff6b4a34), width: 3),
-
-        /// 👇 Shadow هنا
+        border: Border.all(color: const Color(0xff6b4a34), width: 3),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.25),
             blurRadius: 10,
             spreadRadius: 1,
-            offset: const Offset(0, 6), // نازل لتحت شوية
+            offset: const Offset(0, 6),
           ),
         ],
       ),
@@ -159,6 +99,7 @@ class StoreScreen extends StatelessWidget {
               color: Colors.black,
             ),
           ),
+          const SizedBox(height: 8),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xffc26a2e),
