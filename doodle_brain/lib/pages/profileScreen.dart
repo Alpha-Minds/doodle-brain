@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -54,8 +55,9 @@ class _ProfileState extends State<Profile> {
                 const Icon(Icons.help_outline, size: 130),
           ),
           const SizedBox(height: 15),
-          Text(
-            name.toLowerCase(),
+          AutoSizeText(
+            name.toUpperCase(),
+            maxLines: 1,
             textAlign: TextAlign.center,
             style: GoogleFonts.uncialAntiqua(
               fontSize: 24,
@@ -116,8 +118,9 @@ class _ProfileState extends State<Profile> {
             fit: BoxFit.contain,
           ),
           const SizedBox(height: 15),
-          Text(
+          AutoSizeText(
             title.toUpperCase(),
+            maxLines: 1,
             style: GoogleFonts.uncialAntiqua(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -230,7 +233,7 @@ class _ProfileState extends State<Profile> {
                                   color: const Color(0xff1a1412),
                                   fontWeight: FontWeight.w900,
                                   fontSize: 32,
-                                  letterSpacing: 2.0,
+                                  letterSpacing: 2,
                                 ),
                               ),
                             ),
@@ -278,7 +281,7 @@ class _ProfileState extends State<Profile> {
                                         color: const Color(0xff1a1412),
                                         fontWeight: FontWeight.w900,
                                         fontSize: 32,
-                                        letterSpacing: 2.0,
+                                        letterSpacing: 2,
                                       ),
                                     ),
                                   ),
