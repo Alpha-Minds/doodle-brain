@@ -7,7 +7,7 @@ import 'boxDecoration.dart';
 import '../controllers/cubit/user_cubit.dart';
 import '../controllers/cubit/user_state.dart';
 
-Widget buildHeader(BuildContext context, {String title = "Doodle Brain"}) {
+Widget Header(BuildContext context, {String title = "Doodle Brain"}) {
   return BlocBuilder<UserCubit, UserState>(
     builder: (context, state) {
       if (state is UserLoaded) {

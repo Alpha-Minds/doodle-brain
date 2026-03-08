@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:doodle_brain/assets/fonts/app_fonts.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-Widget buildPlayButton(
+Widget PlayButton(
   BuildContext context,
   Topic topic,
   Difficulty difficulty,

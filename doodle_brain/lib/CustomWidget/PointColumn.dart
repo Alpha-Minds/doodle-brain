@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:doodle_brain/assets/fonts/app_fonts.dart';
 
-Widget buildPointColumn(String title, String value) {
+Widget PointColumn(String title, String value) {
   return Column(
     mainAxisSize: MainAxisSize.min,
     children: [

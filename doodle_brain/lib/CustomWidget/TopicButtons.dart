@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'buildCustomRadio.dart';
+import 'CustomRadio.dart';
 
-Widget buildTopicButtons(String selected, BuildContext context) {
+Widget TopicButtons(String selected, BuildContext context) {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 16),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        buildCustomRadio(
+        CustomRadio(
           "Math",
           const Color(0xFF3B82F6),
           selected == "math",
@@ -15,7 +15,7 @@ Widget buildTopicButtons(String selected, BuildContext context) {
           context,
         ),
         // const SizedBox(width: 10),
-        buildCustomRadio(
+        CustomRadio(
           "Programming",
           const Color(0xFFDE5155),
           selected == "programming",
@@ -23,14 +23,14 @@ Widget buildTopicButtons(String selected, BuildContext context) {
           context,
         ),
         // const SizedBox(width: 10),
-        buildCustomRadio(
+        CustomRadio(
           "Islamic",
           const Color(0xFFD0C2B7),
           selected == "islam",
           RadioType.topic,
           context,
         ),
-        buildCustomRadio(
+        CustomRadio(
           "General",
           const Color.fromARGB(255, 55, 75, 153),
           selected == "general",

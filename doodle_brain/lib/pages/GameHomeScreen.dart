@@ -1,7 +1,7 @@
 import 'package:doodle_brain/pages/store.dart';
 import 'package:flutter/material.dart';
 import 'BattlePage.dart';
-import '../CustomWidget/buildHeader.dart';
+import '../CustomWidget/Header.dart';
 import '../CustomWidget/NavBar.dart';
 import '../cubit/NavigationCubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -41,7 +41,7 @@ class GameHomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 5),
-                buildHeader(context),
+                Header(context),
                 Expanded(
                   child: BlocBuilder<NavigationCubit, int>(
                     builder: (context, state) {

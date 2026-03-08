@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 enum RadioType {topic,difficulty}
 
-Widget buildCustomRadio(String label, Color color, bool isSelected, RadioType type,BuildContext context) {
+Widget CustomRadio(String label, Color color, bool isSelected, RadioType type,BuildContext context) {
   return GestureDetector(
     onTap: () {
       if(type==RadioType.topic){

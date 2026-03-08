@@ -1,5 +1,5 @@
 import 'package:doodle_brain/CustomWidget/NavBar.dart';
-import 'package:doodle_brain/CustomWidget/buildHeader.dart';
+import 'package:doodle_brain/CustomWidget/Header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -42,7 +42,7 @@ class StoreScreen extends StatelessWidget {
               SafeArea(
                 child: Column(
                   children: [
-                    buildHeader(context, title: "Store"),
+                    Header(context, title: "Store"),
                     Expanded(
                       child: SingleChildScrollView(
                         child: Column(

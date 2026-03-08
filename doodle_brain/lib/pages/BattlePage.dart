@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../controllers/cubit/user_cubit.dart';
 import '../controllers/cubit/user_state.dart';
-import '../CustomWidget/buildPointColumn.dart';
-import '../CustomWidget/buildDifficultyButtons.dart';
-import '../CustomWidget/buildPlayButton.dart';
-import '../CustomWidget/buildTopicButtons.dart';
+import '../CustomWidget/PointColumn.dart';
+import '../CustomWidget/DifficultyButtons.dart';
+import '../CustomWidget/PlayButton.dart';
+import '../CustomWidget/TopicButtons.dart';
 
 class BattlePage extends StatelessWidget {
   const BattlePage({super.key});
@@ -59,11 +59,18 @@ class BattlePage extends StatelessWidget {
                       return Column(
                         children: [
                           const SizedBox(height: 20),
-                          buildPlayButton(context,state.currentTopic,state.currentDifficulty),
+                          PlayButton(
+                            context,
+                            state.currentTopic,
+                            state.currentDifficulty,
+                          ),
                           const SizedBox(height: 25),
-                          buildDifficultyButtons(state.currentDifficulty.name,context),
+                          DifficultyButtons(
+                            state.currentDifficulty.name,
+                            context,
+                          ),
                           const SizedBox(height: 20),
-                          buildTopicButtons(state.currentTopic.name,context),
+                          TopicButtons(state.currentTopic.name, context),
                         ],
                       );
                     },
