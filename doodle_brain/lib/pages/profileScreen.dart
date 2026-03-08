@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -42,16 +43,19 @@ class ProfileState extends State<Profile> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(
-            imagePath,
-            height: 130,
-            fit: BoxFit.contain,
-            errorBuilder: (context, error, stackTrace) =>
-                const Icon(Icons.help_outline, size: 130),
-          ),
+          imagePath.isNotEmpty 
+            ? Image.asset(
+                imagePath,
+                height: 130,
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) =>
+                    const Icon(Icons.help_outline, size: 130),
+              )
+            : const Icon(Icons.help_outline, size: 130),
           const SizedBox(height: 15),
-          Text(
-            name.toLowerCase(),
+          AutoSizeText(
+            name.toUpperCase(),
+            maxLines: 1,
             textAlign: TextAlign.center,
             style: GoogleFonts.uncialAntiqua(
               fontSize: 24,
@@ -111,8 +115,9 @@ class ProfileState extends State<Profile> {
             fit: BoxFit.contain,
           ),
           const SizedBox(height: 15),
-          Text(
+          AutoSizeText(
             title.toUpperCase(),
+            maxLines: 1,
             style: GoogleFonts.uncialAntiqua(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -160,64 +165,69 @@ class ProfileState extends State<Profile> {
           final equippedWeapon = state.getEquippedWeapon();
           final user = state.user;
 
-          return SingleChildScrollView(
-            child: Column(
-              children: [
-                const SizedBox(height: 30),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20, horizontal: 20),
-                    decoration: BoxDecoration(
-                      color: const Color(0xffe9d7b7),
-                      borderRadius: BorderRadius.circular(25),
-                      border: Border.all(
-                          color: const Color(0xff2a1b14), width: 3),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Colors.black,
-                          blurRadius: 8,
-                          offset: Offset(0, 2),
+          return Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("lib/assets/graphics/background/1.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: SafeArea(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    const SizedBox(height: 30),
+                    // كارت اسم المستخدم
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 40),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                        decoration: BoxDecoration(
+                          color: const Color(0xffe9d7b7),
+                          borderRadius: BorderRadius.circular(25),
+                          border: Border.all(color: const Color(0xff2a1b14), width: 3),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Colors.black,
+                              blurRadius: 8,
+                              offset: Offset(0, 2),
+                            ),
+                          ],
                         ),
-                      ],
+                        child: Center(
+                          child: Text(
+                            user.name.toUpperCase(),
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.uncialAntiqua(
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              color: const Color(0xff2a1b14),
+                              letterSpacing: 2,
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                    child: Center(
+                    const SizedBox(height: 30),
+                    buildDivider(),
+                    const SizedBox(height: 10),
+                    Center(
                       child: Text(
-                        user.name.toUpperCase(),
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.uncialAntiqua(
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          color: const Color(0xff2a1b14),
+                        "PURCHASED ITEMS",
+                        style: GoogleFonts.playfair(
+                          color: const Color(0xff1a1412),
+                          fontWeight: FontWeight.w900,
+                          fontSize: 32,
                           letterSpacing: 2,
                         ),
                       ),
                     ),
-                  ),
-                ),
-                const SizedBox(height: 30),
-                buildDivider(),
-                const SizedBox(height: 10),
-                Center(
-                  child: Text(
-                    "PURCHASED ITEMS",
-                    style: GoogleFonts.playfair(
-                      color: const Color(0xff1a1412),
-                      fontWeight: FontWeight.w900,
-                      fontSize: 32,
-                      letterSpacing: 2.0,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 10),
-                buildDivider(),
-                const SizedBox(height: 30),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Column(
-                    children: [
-                      Row(
+                    const SizedBox(height: 10),
+                    buildDivider(),
+                    const SizedBox(height: 30),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Row(
                         children: [
                           Expanded(
                             child: _buildCard(
@@ -236,24 +246,27 @@ class ProfileState extends State<Profile> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 30),
-                      buildDivider(),
-                      const SizedBox(height: 10),
-                      Center(
-                        child: Text(
-                          "COINS & POINTS",
-                          style: GoogleFonts.playfair(
-                            color: const Color(0xff1a1412),
-                            fontWeight: FontWeight.w900,
-                            fontSize: 32,
-                            letterSpacing: 2.0,
-                          ),
+                    ),
+                    const SizedBox(height: 30),
+                    buildDivider(),
+                    const SizedBox(height: 10),
+                    Center(
+                      child: Text(
+                        "COINS & POINTS",
+                        style: GoogleFonts.playfair(
+                          color: const Color(0xff1a1412),
+                          fontWeight: FontWeight.w900,
+                          fontSize: 32,
+                          letterSpacing: 2,
                         ),
                       ),
-                      const SizedBox(height: 10),
-                      buildDivider(),
-                      const SizedBox(height: 30),
-                      Row(
+                    ),
+                    const SizedBox(height: 10),
+                    buildDivider(),
+                    const SizedBox(height: 30),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Row(
                         children: [
                           Expanded(
                             child: _buildStatCard(
@@ -272,11 +285,11 @@ class ProfileState extends State<Profile> {
                           ),
                         ],
                       ),
-                    ],
-                  ),
+                    ),
+                    const SizedBox(height: 100),
+                  ],
                 ),
-                const SizedBox(height: 100),
-              ],
+              ),
             ),
           );
         }
