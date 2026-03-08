@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:doodle_brain/CustomWidget/equip_button.dart';
 import 'package:doodle_brain/controllers/cubit/user_cubit.dart';
 import 'package:doodle_brain/controllers/cubit/user_state.dart';
@@ -44,7 +45,7 @@ class ItemCard extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(image, width: 150, height: 150),
-            Text(
+            AutoSizeText(
               title,
               style: GoogleFonts.uncialAntiqua(
                 fontSize: 36,
@@ -53,6 +54,8 @@ class ItemCard extends StatelessWidget {
                 
                 color: Color(0xff4a2e1f),
               ),
+              maxLines: 1,
+              minFontSize: 12,
             ),
             Spacer(),
             BlocBuilder<UserCubit, UserState>(

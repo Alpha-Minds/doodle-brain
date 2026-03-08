@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:doodle_brain/assets/fonts/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -43,12 +44,14 @@ Widget buildHeader(BuildContext context, {String title = "Doodle Brain"}) {
                     height: 30,
                   ),
                   const SizedBox(width: 4),
-                  Text(
+                  AutoSizeText(
                     "${user.points}",
                     style: AppFonts.buttonsFont(
-                      fontSize: 16,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
+                    minFontSize: 10,
+                    maxLines: 1,
                   ),
                   const SizedBox(width: 6),
                   Image.asset(
@@ -57,12 +60,14 @@ Widget buildHeader(BuildContext context, {String title = "Doodle Brain"}) {
                     height: 30,
                   ),
                   const SizedBox(width: 4),
-                  Text(
+                 AutoSizeText(
                     "${user.coins}",
                     style: AppFonts.buttonsFont(
-                      fontSize: 16,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
+                    minFontSize: 10,
+                    maxLines: 1,
                   ),
                 ],
               ),
