@@ -25,7 +25,7 @@ class ProfileState extends State<Profile> {
     );
   }
 
-  Widget _buildCard(String name, String imagePath, String buttonText) {
+  Widget buildCard(String name, String imagePath, String buttonText) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 15),
       decoration: BoxDecoration(
@@ -177,7 +177,6 @@ class ProfileState extends State<Profile> {
                 child: Column(
                   children: [
                     const SizedBox(height: 30),
-                    // كارت اسم المستخدم
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 40),
                       child: Container(
@@ -230,7 +229,7 @@ class ProfileState extends State<Profile> {
                       child: Row(
                         children: [
                           Expanded(
-                            child: _buildCard(
+                            child: buildCard(
                               equippedChar.name,
                               equippedChar.image_url,
                               "equipped",
@@ -238,7 +237,7 @@ class ProfileState extends State<Profile> {
                           ),
                           const SizedBox(width: 20),
                           Expanded(
-                            child: _buildCard(
+                            child: buildCard(
                               equippedWeapon?.name ?? "no weapon",
                               equippedWeapon?.image_url ?? "",
                               equippedWeapon != null ? "equipped" : "empty",
