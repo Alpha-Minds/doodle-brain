@@ -27,7 +27,7 @@ class QuizState extends Equatable {
     this.currentMonsterUrl,
     this.currentMonsterHealth = 5,
     this.currentPlayerHealth = 2,
-    this.remainingTime = 10,
+    this.remainingTime = 15,
     this.roundStatus = RoundStatus.playing,
   });
 

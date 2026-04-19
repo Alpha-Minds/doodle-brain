@@ -146,7 +146,8 @@ class Fightscreen extends StatelessWidget {
                                   mainAxisSpacing: 10,
                                 ),
                             itemCount: 4,
-                            itemBuilder: (context, index) => ElevatedButton(
+                            itemBuilder: (context, index) {
+                              return ElevatedButton(
                               onPressed: () {
                                 context.read<QuizCubit>().submitAnswer(
                                   state.currentRound.first.choices[index],
@@ -157,7 +158,8 @@ class Fightscreen extends StatelessWidget {
                                 maxLines: 1,
                                 minFontSize: 10,
                               ),
-                            ),
+                            );
+                            },
                           ),
                         ),
                       ],

@@ -145,7 +145,7 @@ class QuizCubit extends Cubit<QuizState> {
       state.copyWith(
         currentPlayerHealth: 2, // Player HP
         currentMonsterHealth: 5, // Monster HP
-        remainingTime: 10, // 10 seconds per question
+        remainingTime: 15, // 15 seconds per question
         roundStatus: RoundStatus.playing, // Round started
       ),
     );
@@ -159,7 +159,7 @@ class QuizCubit extends Cubit<QuizState> {
   void startTimer() {
     _timer?.cancel(); // Cancel previous timer if exists
 
-    emit(state.copyWith(remainingTime: 10)); // Reset time
+    emit(state.copyWith(remainingTime: 15)); // Reset time
 
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (state.remainingTime == 0) {
@@ -277,7 +277,7 @@ class QuizCubit extends Cubit<QuizState> {
         currentRound: updatedQuestions,
         currentPlayerHealth: playerHealth,
         currentMonsterHealth: monsterHealth,
-        remainingTime: 10, // Reset timer
+        remainingTime: 15, // Reset timer
       ),
     );
 
