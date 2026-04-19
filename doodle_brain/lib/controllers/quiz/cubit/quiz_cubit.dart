@@ -128,6 +128,9 @@ class QuizCubit extends Cubit<QuizState> {
 
     // Take next batch of questions
     final round = questions.sublist(index, end);
+    for (var q in round) {
+  q.choices.shuffle();
+}
 
     print(round.length);
 

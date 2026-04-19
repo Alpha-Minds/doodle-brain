@@ -20,7 +20,7 @@
       "getDistanceToBaseline()",
       "layout()"
     ],
-    "answer": "computeMinIntrinsicWidth()"
+    "answer": "performLayout()"
   },
   {
     "id": 4,
@@ -313,7 +313,7 @@
       "HitTestTarget",
       "GestureDetector"
     ],
-    "answer": "RenderProxyBox"
+    "answer": "GestureDetector"
   },
   {
     "id": 32,
@@ -887,7 +887,7 @@
     "id": 85,
     "question": "Which widget allows you to create a completely custom scroll behavior, including custom physics and sliver placement?",
     "choices": ["Scrollable", "ListView", "CustomScrollView", "Viewport"],
-    "answer": "Scrollable"
+    "answer": "CustomScrollView"
   },
   {
     "id": 86,
@@ -1296,7 +1296,7 @@
     "id": 124,
     "question": "Which object is responsible for painting pixels?",
     "choices": ["Widget", "RenderObject", "Canvas", "Element"],
-    "answer": "RenderObject"
+    "answer": "Canvas"
   },
   {
     "id": 125,

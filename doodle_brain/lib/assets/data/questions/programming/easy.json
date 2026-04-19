@@ -152,7 +152,7 @@
   {
     "id": 26,
     "question": "Which keyword makes a variable immutable after assignment?",
-    "choices": ["const", "var", "let", "dynamic"],
+    "choices": ["const", "final", "let", "dynamic"],
     "answer": "final"
   },
   {
